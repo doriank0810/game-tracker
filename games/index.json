@@ -1,0 +1,5 @@
+[
+  { "id": "inazuma-eleven-victory-road", "title": "Inazuma Eleven: Victory Road", "platform": "Switch", "status": "playing", "accent": "#f5b301" },
+  { "id": "bo3-zombies", "title": "Black Ops 3 Zombies", "platform": "Console", "status": "playing", "accent": "#e2532f" },
+  { "id": "modern-warfare-4", "title": "Modern Warfare 4", "platform": "Console", "status": "playing", "accent": "#5fbf5a" }
+]

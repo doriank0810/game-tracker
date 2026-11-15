@@ -1,0 +1,221 @@
+{
+  "id": "sample-game",
+  "title": "Sample Quest (demo)",
+  "sections": [
+    {
+      "id": "story",
+      "title": "Story",
+      "groups": [
+        {
+          "id": "ch1",
+          "title": "Chapter 1 · Pebble Village",
+          "items": [
+            {
+              "id": "ch1-wake",
+              "title": "Wake up and talk to Grandma Tuff",
+              "detail": "She's in the kitchen. Pick **Yes** twice to skip the long intro."
+            },
+            {
+              "id": "ch1-spoon",
+              "title": "Get the wooden spoon (starter weapon)",
+              "detail": "In the chest behind the house. Equip it from the menu: `Gear → Main hand`."
+            },
+            {
+              "id": "ch1-boss",
+              "title": "Beat the Grumpy Scarecrow",
+              "detail": "Weak to *fire*. Stay on the left side so his hay throws miss.",
+              "guide": "boss-cheatsheet",
+              "tags": ["boss"]
+            },
+            {
+              "id": "ch1-save",
+              "title": "Save at the inn",
+              "detail": "The innkeeper is upstairs. Saving is free."
+            }
+          ]
+        },
+        {
+          "id": "ch2",
+          "title": "Chapter 2 · Mossy Caves",
+          "items": [
+            { "id": "ch2-enter", "title": "Enter the Mossy Caves", "guide": "mossy-caves-route" },
+            {
+              "id": "ch2-lamp",
+              "title": "Find the glow lamp",
+              "detail": "Inside the ring of mushrooms, first fork **left**.\n\n![Route through the caves](img/sample-game/caves-map.svg)"
+            },
+            {
+              "id": "ch2-bridge",
+              "title": "Fix the rope bridge",
+              "detail": "You need 2 rope coils:\n\n1. One on the ledge above the river.\n2. One in the crate by the campfire."
+            },
+            {
+              "id": "ch2-boss",
+              "title": "Beat the Moss Golem",
+              "guide": "boss-cheatsheet",
+              "tags": ["boss"]
+            }
+          ]
+        },
+        {
+          "id": "ch3",
+          "title": "Chapter 3 · Cloud Tower",
+          "items": [
+            { "id": "ch3-climb", "title": "Climb to floor 10" },
+            {
+              "id": "ch3-key",
+              "title": "Get the sky key from the pigeon",
+              "detail": "The pigeon only lands if you stand still for 5 seconds."
+            },
+            {
+              "id": "ch3-finale",
+              "title": "Beat the Thunder Duck (final boss)",
+              "guide": "boss-cheatsheet",
+              "tags": ["boss"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "title": "Side quests",
+      "groups": [
+        {
+          "id": "village-side",
+          "title": "Pebble Village",
+          "items": [
+            {
+              "id": "side-rolling-pin",
+              "title": "Find the baker's rolling pin",
+              "priority": 1,
+              "detail": "Do this first: the reward (*Lucky Bread*) doubles EXP for the next chapter.\n\nThe pin is on the **roof of the well**. Climb the ladder near the fountain."
+            },
+            {
+              "id": "side-raft",
+              "title": "Build the Rainbow Raft",
+              "detail": "Follow the walkthrough step by step. This item ticks itself when every step is done.",
+              "guide": "rainbow-raft"
+            },
+            {
+              "id": "side-cat",
+              "title": "Get the cat down from the tree",
+              "detail": "Needs the glow lamp from chapter 2.",
+              "tags": ["missable"]
+            },
+            {
+              "id": "side-letters",
+              "title": "Deliver letters for the mail frog",
+              "type": "counter",
+              "target": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collectibles",
+      "title": "Collectibles",
+      "groups": [
+        {
+          "id": "pebbles",
+          "title": "Shiny Pebbles",
+          "items": [
+            { "id": "pebble-01", "title": "Pebble 1 · behind the inn", "tags": ["chapter 1"] },
+            { "id": "pebble-02", "title": "Pebble 2 · in the well bucket", "tags": ["chapter 1"] },
+            { "id": "pebble-03", "title": "Pebble 3 · under the bakery sign", "tags": ["chapter 1"] },
+            { "id": "pebble-04", "title": "Pebble 4 · scarecrow field", "tags": ["chapter 1", "missable"], "detail": "Gone after the scarecrow fight. Grab it **before** the boss." },
+            { "id": "pebble-05", "title": "Pebble 5 · fountain basin", "tags": ["chapter 1"] },
+            { "id": "pebble-06", "title": "Pebble 6 · under the first mushroom", "tags": ["chapter 2"], "guide": "mossy-caves-route" },
+            { "id": "pebble-07", "title": "Pebble 7 · behind the waterfall", "tags": ["chapter 2"], "guide": "mossy-caves-route" },
+            { "id": "pebble-08", "title": "Pebble 8 · broken bridge post", "tags": ["chapter 2"], "guide": "mossy-caves-route" },
+            { "id": "pebble-09", "title": "Pebble 9 · golem arena", "tags": ["chapter 2"], "guide": "mossy-caves-route" },
+            { "id": "pebble-10", "title": "Pebble 10 · tower floor 3 window", "tags": ["chapter 3"] },
+            { "id": "pebble-11", "title": "Pebble 11 · pigeon nest", "tags": ["chapter 3"] },
+            { "id": "pebble-12", "title": "Pebble 12 · top of the tower", "tags": ["chapter 3"] }
+          ]
+        },
+        {
+          "id": "grinds",
+          "title": "Grinds",
+          "items": [
+            {
+              "id": "grind-slimes",
+              "title": "Defeat 50 practice slimes",
+              "type": "counter",
+              "target": 50,
+              "guide": "slime-farming",
+              "detail": "Counts toward the *Slime Slayer* badge."
+            },
+            { "id": "grind-feathers", "title": "Collect 25 golden feathers", "type": "counter", "target": 25 },
+            { "id": "grind-fish", "title": "Catch 10 fish", "type": "counter", "target": 10 }
+          ]
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "how-to-use",
+      "title": "How this tracker works",
+      "category": "Help",
+      "body": "This is a **pretend game** so you can try every part of the app. It gets replaced by real games.\n\n## The three tabs\n\n- **Next**: what to do this session. Pinned items come first, then the next things you haven't done.\n- **Checklist**: everything, in sections and groups. Tap a group to open it.\n- **Guides**: longer pages like this one, and step-by-step walkthroughs.\n\n## Ticking things off\n\n1. Tap the box on the left to tick an item.\n2. Tap the title to see more (when there's an arrow).\n3. Tap the pin to put an item at the top of **Next**.\n\nCounters (like *Defeat 50 practice slimes*) have **−** and **+** buttons, or tap the number to type it.\n\n## Walkthroughs\n\nOpen [Build the Rainbow Raft](guide:rainbow-raft) and tap **Follow guide**: one step per screen, big text, and the screen stays on.\n\n## Backups\n\nProgress lives on this device only. Go to **Settings → Export backup** now and then.\n\n> Tip: links can jump between guides, like the [boss cheat sheet](guide:boss-cheatsheet)."
+    },
+    {
+      "id": "rainbow-raft",
+      "title": "Build the Rainbow Raft",
+      "category": "Buildables",
+      "kind": "walkthrough",
+      "intro": "Four parts, all in Pebble Village. Takes about **10 minutes**. You need the glow lamp from chapter 2 for the last part.",
+      "steps": [
+        {
+          "id": "log-1",
+          "title": "Part 1: First log",
+          "where": "Pebble Village, by the well",
+          "text": "Walk behind the well and press `A` on the shiny log.\n\nIf it's not there, it spawned in one of the other spots below.",
+          "image": "img/sample-game/raft-step-1.svg",
+          "alt": "Map of the village with the log marked north of the well",
+          "options": ["Behind the **bakery** chimney", "On the dock, under the fishing net"],
+          "video": "https://example.com/rainbow-raft-clip?t=42"
+        },
+        {
+          "id": "rope",
+          "title": "Part 2: Rope",
+          "where": "The dock, east side",
+          "text": "Open the crate at the end of the dock. Take the **rope**, leave the fish.",
+          "image": "img/sample-game/raft-step-2.svg"
+        },
+        {
+          "id": "sail",
+          "title": "Part 3: Sail",
+          "where": "Grandma Tuff's house",
+          "text": "Ask Grandma for an old bed sheet. Pick:\n\n1. *\"I'm building a raft.\"*\n2. *\"It's for science.\"*"
+        },
+        {
+          "id": "paint",
+          "title": "Part 4: Rainbow paint",
+          "where": "Mossy Caves entrance",
+          "text": "Hold up the glow lamp (`ZR`) next to the mural until the colours drip into your bucket. Then go back to the dock and build the raft."
+        }
+      ]
+    },
+    {
+      "id": "mossy-caves-route",
+      "title": "Mossy Caves: full route",
+      "category": "Walkthrough",
+      "body": "The caves are dark until you have the **glow lamp**. Follow these steps in order.\n\n![Route through the caves: start, lamp, bridge, golem](img/sample-game/caves-map.svg)\n\n## Route\n\n1. Enter from the village side and go **left** at the first fork.\n2. Pick up the glow lamp from the mushroom ring.\n   - Hold `ZR` to raise it.\n   - It runs out after about 2 minutes; refill at any blue crystal.\n3. Cross the river on the stepping stones.\n4. Fix the rope bridge (needs 2 rope coils, both in this area).\n5. Rest at the campfire, then face the Moss Golem. See the [boss cheat sheet](guide:boss-cheatsheet).\n\n## Shiny Pebbles in the caves\n\n| # | Where | Needs |\n|---|-------|:-----:|\n| 6 | Under the first mushroom | – |\n| 7 | Behind the waterfall | Glow lamp |\n| 8 | On the broken bridge post | Rope |\n| 9 | Inside the golem's arena (after the fight) | – |\n\n*Missed one?* You can come back any time after chapter 2."
+    },
+    {
+      "id": "boss-cheatsheet",
+      "title": "Boss cheat sheet",
+      "category": "Reference",
+      "body": "| Boss | Chapter | Weak to | Level | Tip |\n|:-----|:-------:|:--------|------:|-----|\n| Grumpy Scarecrow | 1 | Fire | 3 | Stay on the left side |\n| Moss Golem | 2 | Ice | 8 | Hit the glowing stone on its back |\n| Thunder Duck | 3 | Rubber | 15 | Wear the ~~metal~~ **rubber** boots |\n\n### General tips\n\n- Heal when you drop below **30%**.\n- Bosses can't be fought again, so grab each chapter's collectibles first."
+    },
+    {
+      "id": "slime-farming",
+      "title": "Fastest way to farm slimes",
+      "category": "Tips",
+      "body": "Practice slimes come back every time you leave the **Training Field**.\n\n### Loop\n\n1. Enter the field from the south gate.\n2. Defeat the 5 slimes near the fence.\n3. Leave and come back. Repeat.\n\nThat's **5 slimes per loop**, about *40 seconds* each, so 50 slimes take roughly 7 minutes.\n\n### Notes\n\n- Equip the *Bouncy Charm* for one-hit kills.\n  - Sold in the village shop for 200 coins.\n  - Or found for free in chapter 2.\n- Turn on fast battles: `Options → Battle → Fast`.\n\nMore made-up slime facts: https://example.com/slimes"
+    }
+  ]
+}

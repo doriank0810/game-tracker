@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <title>Placeholder: route through the Mossy Caves</title>
+  <rect width="900" height="420" fill="#141c18"/>
+  <path d="M60 330 C160 250 240 340 330 260 S500 120 600 200 S760 300 840 120" fill="none" stroke="#2f4a3a" stroke-width="56" stroke-linecap="round"/>
+  <path d="M60 330 C160 250 240 340 330 260 S500 120 600 200 S760 300 840 120" fill="none" stroke="#5ad1c0" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" font-size="20" fill="#e8ebf1" text-anchor="middle">
+    <circle cx="60" cy="330" r="16" fill="#5ad1c0"/><text x="60" y="380">Start</text>
+    <circle cx="330" cy="260" r="16" fill="#f2b866"/><text x="330" y="310">Lamp</text>
+    <circle cx="600" cy="200" r="16" fill="#f2b866"/><text x="600" y="160">Bridge</text>
+    <circle cx="840" cy="120" r="18" fill="#f07b80"/><text x="840" y="80">Golem</text>
+  </g>
+  <text x="24" y="400" fill="#7d8aa0" font-family="Arial, sans-serif" font-size="18">PLACEHOLDER PICTURE · sample game</text>
+</svg>

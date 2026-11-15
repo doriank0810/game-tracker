@@ -1,0 +1,3201 @@
+{
+ "id": "inazuma-eleven-victory-road",
+ "title": "Inazuma Eleven: Victory Road",
+ "sections": [
+  {
+   "id": "story",
+   "title": "Story Mode",
+   "groups": [
+    {
+     "id": "ch1",
+     "title": "Chapter 1: You Still Have Football",
+     "items": [
+      {
+       "id": "c1-talk-to-the-4-marked-students-at-the-school-gate",
+       "title": "Talk to the 4 marked students at the school gate",
+       "priority": 1,
+       "type": "check",
+       "detail": "Then open Menu > Intelligence Bookmarks (3rd tab), pick the Nagumohara Junior High result and check all four entries. Kick every Loot Football you pass: blue = common, gold = rare.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-go-to-homeroom-1-a",
+       "title": "Go to homeroom 1-A",
+       "priority": 1,
+       "type": "check",
+       "detail": "Enter by the south front door. Beat the Bodybuilding Club member (rock-paper-scissors battle), take the optional red-icon battle inside for the Finishing Blow tutorial, then go upstairs to the west wing and talk to the teacher.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-beat-kisoji-then-head-home-via-downtown",
+       "title": "Beat Kisoji, then head home via Downtown",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-side-quest-the-fake-cop-of-nagumohara",
+       "title": "Side quest: The Fake Cop of Nagumohara",
+       "priority": 1,
+       "type": "check",
+       "detail": "Policeman outside Nagumohara Hospital. The fake cop is at the Seaside Park entrance; beat him, then report to the kindly cop nearby. Reward: 30 EXP + cards.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-follow-the-waypoint-in-seaside-park",
+       "title": "Follow the waypoint in Seaside Park",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-ask-8-people-about-sakurazaki-at-school",
+       "title": "Ask 8 people about Sakurazaki at school",
+       "priority": 1,
+       "type": "check",
+       "detail": "Spread over the hallway, east wing, ground floor (teacher by the pillar, behind the stairs, both alcoves) and two outside (behind the east wing, west of the main building). Then check Intelligence Bookmarks.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-side-quest-miss-kasumisaki-s-lost-property",
+       "title": "Side quest: Miss Kasumisaki's Lost Property",
+       "priority": 1,
+       "type": "check",
+       "detail": "Teacher by the pillar on the ground floor. Try the Gym Storage door outside to find the Strange Mascot Plushie, then return to her.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-side-quest-top-secret-dangerous-treasure",
+       "title": "Side quest: Top Secret Dangerous Treasure",
+       "priority": 1,
+       "type": "check",
+       "detail": "Student pacing by the east staircase. Keepsakes: next to the bench on 2F, 2F east wing, behind the ground-floor stairs. Reward: 40 EXP + cards.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-leave-school-at-sunset-and-talk-to-the-student-o",
+       "title": "Leave school at sunset and talk to the student on School Road",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-find-josephine-the-cat-in-the-playground",
+       "title": "Find Josephine the cat in the playground",
+       "priority": 1,
+       "type": "check",
+       "detail": "The Cat Lady blocks the road until you do. Beat the cat in battle.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-side-quest-leader-of-the-boys-lost-football",
+       "title": "Side quest: Leader of the Boys' lost football",
+       "priority": 1,
+       "type": "check",
+       "detail": "Accept in the playground. The ball is at the side-quest marker to the west; beat the Irritable Boy. Reward: 30 EXP + cards.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-photograph-and-beat-the-kraken-on-the-rural-road",
+       "title": "Photograph and beat the Kraken on the Rural Road railway",
+       "priority": 1,
+       "type": "check",
+       "detail": "Left on the D-pad opens camera mode. Unlocks the first story achievement.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-side-quest-why-grandma-got-lost-part-1",
+       "title": "Side quest: Why Grandma Got Lost: Part 1",
+       "priority": 1,
+       "type": "check",
+       "detail": "Wayward Grandma on Nagumo Street. Beat her, walk her to Downtown, use the glowing spot on your right.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-side-quest-why-grandma-got-lost-part-2",
+       "title": "Side quest: Why Grandma Got Lost: Part 2",
+       "priority": 1,
+       "type": "check",
+       "detail": "Talk to her again in Downtown and take her back to School Road.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c1-head-home-post-in-inacord-look-for-a-club-room",
+       "title": "Head home, post in Inacord, look for a club room",
+       "priority": 1,
+       "type": "check",
+       "detail": "Follow the waypoints through the remaining 'Make your way back home' objectives.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c1-chase-the-kraken-a-second-time-to-finish-the-cha",
+       "title": "Chase the Kraken a second time to finish the chapter",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch2",
+     "title": "Chapter 2: From Zero to Hero",
+     "items": [
+      {
+       "id": "c2-side-quest-why-grandma-got-lost-part-3",
+       "title": "Side quest: Why Grandma Got Lost: Part 3",
+       "priority": 1,
+       "type": "check",
+       "detail": "Grandma is at the School Road playground right at the start. Beat her, fast travel to Nagumohara Hospital, use the glowing spot at the entrance. Reward: 40 EXP + 4 cards.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c2-go-to-seaside-park-fast-travel",
+       "title": "Go to Seaside Park (fast travel)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Play the scramble mini-game, then use the glowing spot by the bench.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-complete-all-match-simulation-drills-with-momoch",
+       "title": "Complete all Match Simulation drills with Momochi",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-go-to-the-old-gym-storage-then-the-dance-club-ro",
+       "title": "Go to the Old Gym Storage, then the Dance Club room",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-try-to-scout-kodokai",
+       "title": "Try to scout Kodokai",
+       "priority": 1,
+       "type": "check",
+       "detail": "He is on floor 2F by the glass door. Then go back to the Dance Club room.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-ask-6-people-about-raika",
+       "title": "Ask 6 people about Raika",
+       "priority": 1,
+       "type": "check",
+       "detail": "Two inside the Dance Club room, four around it. Then check Intelligence Bookmarks.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-go-to-the-rooftop-plaza",
+       "title": "Go to the Rooftop Plaza",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-eat-at-the-noodle-shop-downtown-as-joji-and-kiso",
+       "title": "Eat at the noodle shop Downtown (as Joji and Kisoji)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Eating mini-game, same rock-paper-scissors idea as battles.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-shop-for-boots-and-accessories-in-the-shopping-d",
+       "title": "Shop for boots and accessories in the Shopping District",
+       "priority": 1,
+       "type": "check",
+       "detail": "Two shops on the way to the Back-Alley Plaza. First chance to buy stat gear.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-5-a-side-vs-the-shopkeepers-back-alley-field",
+       "title": "5-a-side vs the Shopkeepers (Back-Alley Field)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Follow the objectives on the left: get Sakurazaki into the goal area and shoot, start a Focus Battle with Kisoji, then win. If your AT is below the keeper's KP, use a Special Move (Bounce Shot) or keep shooting to drain KP.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c2-go-to-hillview-terrace-and-win-the-battle-as-joj",
+       "title": "Go to Hillview Terrace and win the battle as Joji",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c2-save-then-do-the-dance-off-with-raika",
+       "title": "Save, then do the dance-off with Raika",
+       "priority": 1,
+       "type": "check",
+       "detail": "Rhythm mini-game: press when the ring meets the circle. Losing seems to be scripted and has no effect.",
+       "tags": [
+        "story"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch3",
+     "title": "Chapter 3: The Day Football Changed",
+     "items": [
+      {
+       "id": "c3-check-inacord-then-go-to-cafe-tank-on-nagumo-str",
+       "title": "Check Inacord, then go to Cafe Tank on Nagumo Street",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-gather-info-at-school-then-train-with-joji",
+       "title": "Gather info at school, then train with Joji",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-gather-info-on-school-road-then-train-with-raika",
+       "title": "Gather info on School Road, then train with Raika",
+       "priority": 1,
+       "type": "check",
+       "detail": "Dribble between checkpoints, avoid the krakens.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-gather-info-downtown-then-train-with-kisoji",
+       "title": "Gather info Downtown, then train with Kisoji",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-gather-info-at-school-again-then-train-with-kodo",
+       "title": "Gather info at school again, then train with Kodokai",
+       "priority": 1,
+       "type": "check",
+       "detail": "Give him a pep talk whenever his mind wanders.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-go-to-the-archive-3f-last-room",
+       "title": "Go to the Archive (3F, last room)",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-go-to-cafe-tank-and-talk-to-makino",
+       "title": "Go to Cafe Tank and talk to Makino",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-find-machi-on-the-seaside-park-shoreline",
+       "title": "Find Machi on the Seaside Park shoreline",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-side-quest-the-elusive-prize",
+       "title": "Side quest: The Elusive Prize",
+       "priority": 1,
+       "type": "check",
+       "detail": "Gloomy Man Downtown. Collect all the Raffle Tickets around the area and return. Rewards include Zealot's Boots.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-unable-to-attend-the-reunion",
+       "title": "Side quest: Unable to Attend the Reunion",
+       "priority": 1,
+       "type": "check",
+       "detail": "NPC by the railway on Rural Road, then the food shop in the Downtown shopping street. Reward: Rebel Sunglasses, 2 Finesse Beans.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-show-me-the-best-spots",
+       "title": "Side quest: Show Me the Best Spots",
+       "priority": 1,
+       "type": "check",
+       "detail": "InaTuber by the pillar at Nagumohara Station (you pass him on the way to the Old Shipyard). Start at Seaside Park and follow the glowing spots.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-raika-s-sacred-pilgrimage",
+       "title": "Side quest: Raika's Sacred Pilgrimage",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-tristar-pride",
+       "title": "Side quest: Tristar Pride",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-josephine-s-elegant-stroll-part-1",
+       "title": "Side quest: Josephine's Elegant Stroll: Part 1",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-the-neighborhood-thief",
+       "title": "Side quest: The Neighborhood Thief",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-side-quest-psyranger-makes-an-entrance",
+       "title": "Side quest: PsyRanger Makes an Entrance",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c3-point-of-no-return-enter-the-old-shipyard-wareho",
+       "title": "POINT OF NO RETURN: enter the Old Shipyard warehouse",
+       "priority": 1,
+       "type": "check",
+       "detail": "Unfinished Chapter 3 side quests are lost after this. Beat The Tumblers.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-go-to-seaside-park-and-take-the-team-photo",
+       "title": "Go to Seaside Park and take the team photo",
+       "priority": 1,
+       "type": "check",
+       "detail": "Left on the D-pad.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c3-5-a-side-vs-seagull-fc",
+       "title": "5-a-side vs Seagull FC",
+       "priority": 1,
+       "type": "check",
+       "detail": "Talk to the man in the mauve floral shirt. Keeper has about 162 KP: one Special Move from Joji or two normal shots scores.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c3-buy-and-equip-the-keyman-lockdown-tactic",
+       "title": "Buy and equip the Keyman Lockdown tactic",
+       "priority": 1,
+       "type": "check",
+       "detail": "The game does not tell you to buy it: Special Training Booth (stickman by the pitch) > second-to-last tab. Then Team Dock > Football Battle > empty Tactics slot.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c3-match-vs-the-baseball-club",
+       "title": "Match vs the Baseball Club",
+       "priority": 1,
+       "type": "check",
+       "detail": "Keeper has 227 KP. Your first shot is always saved and Yagyu scores. Then use Keyman Lockdown when prompted (L1/LB + shown button) and shoot freely.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      }
+     ]
+    },
+    {
+     "id": "ch4",
+     "title": "Chapter 4: Invasion of the Football Monster",
+     "items": [
+      {
+       "id": "c4-negotiate-the-club-merger",
+       "title": "Negotiate the club merger",
+       "priority": 1,
+       "type": "check",
+       "detail": "Battle the Stargazing Club (north of campus), then the Space Laboratory club on the roof, then talk to Miss Kasumisaki (ground floor, north wing).",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c4-side-quest-in-depth-coverage",
+       "title": "Side quest: In-Depth Coverage",
+       "priority": 1,
+       "type": "check",
+       "detail": "NPC on 3F. Can only be finished in the training phase: start Hecaton Stairway training with this quest selected. Reward: Power Pendant, beans.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c4-side-quest-coying-up-to-sasanami",
+       "title": "Side quest: Coying Up to Sasanami",
+       "priority": 1,
+       "type": "check",
+       "detail": "NPC on 2F. Three document sets: classroom opposite him, a northern room on 2F, north of 3F. Hand in at the blue spot on the ground floor. Reward: Fiery Keychain.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c4-side-quest-join-me-for-art-training",
+       "title": "Side quest: Join Me for Art Training",
+       "priority": 1,
+       "type": "check",
+       "detail": "Northwest of campus, after the merger talk with Miss Kasumisaki. Reward: Colorful Choker.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c4-side-quest-josephine-s-elegant-stroll-part-2",
+       "title": "Side quest: Josephine's Elegant Stroll: Part 2",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c4-side-quest-finding-shiroyama-kun",
+       "title": "Side quest: Finding Shiroyama-kun",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c4-find-kameo-on-the-bridge-northwest-of-campus",
+       "title": "Find Kameo on the bridge northwest of campus",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c4-fast-travel-to-the-old-shipyard-to-find-raika",
+       "title": "Fast travel to the Old Shipyard to find Raika",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c4-run-the-entry-trials-and-pick-5-new-members",
+       "title": "Run the entry trials and pick 5 new members",
+       "priority": 1,
+       "type": "check",
+       "detail": "Scramble against each group (Kisoji, Shisendo, Momochi). Suggested picks: 2 defenders + 3 midfielders.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c4-check-on-teammates-find-kameo-behind-the-school-",
+       "title": "Check on teammates, find Kameo behind the school, go to the Staff Room",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c4-training-goals-team-at-1100-df-1050",
+       "title": "Training goals: Team AT 1100 / DF 1050",
+       "priority": 1,
+       "type": "check",
+       "detail": "Claim Activities rewards (Menu > Data Files > Activities) for EXP Orbs and spend them on Joji and Raika.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c4-sakurazaki-learns-force-flash-raika-learns-spin-",
+       "title": "Sakurazaki learns Force Flash, Raika learns Spin Shot",
+       "priority": 1,
+       "type": "check",
+       "detail": "Usually already learned. If not: Team Dock > player > equip beans, then train or play friendlies.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c4-friendly-vs-twinford-junior-high",
+       "title": "Friendly vs Twinford Junior High",
+       "priority": 1,
+       "type": "check",
+       "detail": "Easy if Joji and Raika are levelled. Gives the First Victory achievement.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c4-match-vs-west-manor-academy",
+       "title": "Match vs West Manor Academy",
+       "priority": 1,
+       "type": "check",
+       "detail": "First half is scripted: you cannot stop Haru Endo, do not waste effort. Second half you need more than 465 AT to score: Joji's Special Moves, repeated shots, or a Shot Chain. After you score, tackle the ball carrier straight from their kick-off.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      }
+     ]
+    },
+    {
+     "id": "ch5",
+     "title": "Chapter 5: The Crybaby Rival",
+     "items": [
+      {
+       "id": "c5-as-haru-endo-go-to-the-bench-in-front-of-the-sta",
+       "title": "As Haru Endo, go to the bench in front of the stadium",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c5-as-unmei-go-to-the-school-football-field-then-na",
+       "title": "As Unmei, go to the school football field, then Nagumohara Hospital",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c5-friendly-vs-northbright-cannot-be-won",
+       "title": "Friendly vs Northbright (cannot be won)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Their keeper never runs out of KP. A draw is the best possible result, so do not burn time here.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c5-side-quest-the-return-of-doll-and-finn",
+       "title": "Side quest: The Return of Doll and Finn",
+       "priority": 1,
+       "type": "check",
+       "detail": "Old man at the dolphin statue in Seaside Park, then show him training at the Old Shipyard. Reward: Dragon Keychain.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c5-side-quest-picture-perfect-yagyu-s-finest",
+       "title": "Side quest: Picture Perfect: Yagyu's Finest",
+       "priority": 1,
+       "type": "check",
+       "detail": "Yagyu Superfan outside the baseball field. Start a friendly vs Twinford, press Down (Commander Mode) then Left to photograph Yagyu. Return and win the battle. Reward: Smooth Boots.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c5-side-quest-magnetic-field-encounters",
+       "title": "Side quest: Magnetic Field Encounters",
+       "priority": 1,
+       "type": "check",
+       "detail": "Mujuriki north of the school building; visit the three map spots. Reward: Prayer Bracelet.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c5-side-quest-the-perfect-shot",
+       "title": "Side quest: The Perfect Shot",
+       "priority": 1,
+       "type": "check",
+       "detail": "South of the Nagumohara pitch, then a friendly vs Seagull FC at Cove Beach. Reward: Trendy Bracelet.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c5-side-quest-the-dark-society-emerges",
+       "title": "Side quest: The Dark Society Emerges",
+       "priority": 1,
+       "type": "check",
+       "detail": "Kids in the School Road playground. Reward: Pact Pendant.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c5-training-goals-team-at-1500-df-1500",
+       "title": "Training goals: Team AT 1500 / DF 1500",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c5-perfect-spring-thunderclap-nagumohara-pitch-and-",
+       "title": "Perfect Spring Thunderclap (Nagumohara Pitch) and Icy Grace (Baseball Field)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Walk to each waypoint and use the glowing spot.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c5-set-keyman-lockdown-in-tactics",
+       "title": "Set Keyman Lockdown in Tactics",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c5-match-vs-northbright",
+       "title": "Match vs Northbright",
+       "priority": 1,
+       "type": "check",
+       "detail": "First half you cannot score; just do the objectives (Focus Battle vs Soramiya, take a shot). After the scene, Keyman Lockdown on Soramiya (hold L1/LB + button). When Unmei says so, get near goal, pass to Sakurazaki and use Spring Thunderclap. After that first goal you can score normally.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      }
+     ]
+    },
+    {
+     "id": "ch6",
+     "title": "Chapter 6: Come Together, Football Club!",
+     "items": [
+      {
+       "id": "c6-go-to-the-old-shipyard-then-the-football-club-ro",
+       "title": "Go to the Old Shipyard, then the Football Club room (Old Gym Storage)",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c6-go-to-the-baseball-club-building-then-the-noodle",
+       "title": "Go to the Baseball Club building, then the noodle shop",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c6-manager-and-skill-showdown-you-coach-northbright",
+       "title": "Manager and Skill Showdown (you coach Northbright)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Talk to Shimozuru. You play against your own team, levels are normalised. To make it trivial, strip your team's equipment or wreck their formation first.",
+       "tags": [
+        "match"
+       ]
+      },
+      {
+       "id": "c6-side-quest-my-goddess",
+       "title": "Side quest: My Goddess",
+       "priority": 1,
+       "type": "check",
+       "detail": "8th grader outside the Old Gym Storage. Get the pen from Miss Kasumisaki (ground floor, northwest, first room on the right). Reward: Metal Ring.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c6-side-quest-go-viral-special-football-drill",
+       "title": "Side quest: Go Viral! Special Football Drill",
+       "priority": 1,
+       "type": "check",
+       "detail": "Strict Science Teacher in the same room as Miss Kasumisaki, then the man outside the Old Shipyard warehouse. Reward: Wristband of Victory.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c6-side-quest-midori-s-keepsake",
+       "title": "Side quest: Midori's Keepsake",
+       "priority": 1,
+       "type": "check",
+       "detail": "Start inside Cafe Tank on Nagumo Street. Reward: Panda Boots.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c6-side-quest-don-gorillo-bowl-king",
+       "title": "Side quest: Don Gorillo Bowl King",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c6-side-quest-noodle-shop-troubles",
+       "title": "Side quest: Noodle Shop Troubles",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c6-training-goals-team-at-2700-df-2700",
+       "title": "Training goals: Team AT 2700 / DF 2700",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c6-buy-flame-fortress-invisible-link-and-bond-proto",
+       "title": "Buy Flame Fortress, Invisible Link and Bond Protocol; equip Boost 15",
+       "priority": 1,
+       "type": "check",
+       "detail": "Only Boost 15 must be equipped, but equip Flame Fortress too for the match.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c6-meet-the-formation-requirements",
+       "title": "Meet the formation requirements",
+       "priority": 1,
+       "type": "check",
+       "detail": "Soramiya and Shinano must start. Give them equipment.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c6-match-vs-eastwind-international",
+       "title": "Match vs Eastwind International",
+       "priority": 1,
+       "type": "check",
+       "detail": "You cannot score in the first half: stay in your own three quarters, pass around to drain their Tension, use Flame Fortress. Expect injuries and substitutions. You can score from 15 minutes into the second half, then go all out.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c6-as-haru-visit-every-waypoint-in-nagasaki-and-che",
+       "title": "As Haru, visit every waypoint in Nagasaki and check the bookmarks",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch7",
+     "title": "Chapter 7: Keshin in the Storm",
+     "items": [
+      {
+       "id": "c7-visit-the-7-spots-at-odaiba-football-gardens",
+       "title": "Visit the 7 spots at Odaiba Football Gardens",
+       "priority": 1,
+       "type": "check",
+       "detail": "Four in the Lodging Area, three in the Main Area, then check Intelligence Bookmarks.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c7-photograph-the-designated-players",
+       "title": "Photograph the designated players",
+       "priority": 1,
+       "type": "check",
+       "detail": "Three in the Lodging Area (one inside the cottage behind you), then more in the Main Area.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c7-return-to-the-lodging-cottage-then-the-skyport-h",
+       "title": "Return to the Lodging Cottage, then the Skyport helicopter",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c7-side-quest-the-missing-rookie",
+       "title": "Side quest: The Missing Rookie",
+       "priority": 1,
+       "type": "check",
+       "detail": "East side, north of the football field in the Lodging Area. Follow the waypoints until the glowing spot outside the south field. Reward: Blazing Bangle.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-side-quest-can-you-show-me-around",
+       "title": "Side quest: Can You Show Me Around?",
+       "priority": 1,
+       "type": "check",
+       "detail": "Near the shopping malls in Odaiba's Main Area. Tour the Lodging Area spots and photograph him by Mamoru Endo's statue. Reward: Princess Mantle.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-side-quest-where-s-that-ball",
+       "title": "Side quest: Where's That Ball?",
+       "priority": 1,
+       "type": "check",
+       "detail": "Circular platform in the centre of the Main Area; the ball is northwest in the Lodging Area. Reward: Deluxe Oden Charm.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-side-quest-after-hours-student-shenanigans",
+       "title": "Side quest: After-Hours Student Shenanigans",
+       "priority": 1,
+       "type": "check",
+       "detail": "Running track in Nagumohara. Talk to students in the far north, on the school terrace and on the Seaside Park beach, then pass time to Night at the Seaside Park statue and talk to the Wayward Grandma. Reward: Ambrosia Replica.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-side-quest-gunning-for-top-keeper",
+       "title": "Side quest: Gunning for Top Keeper",
+       "priority": 1,
+       "type": "check",
+       "detail": "Night, School Road playground. Needs a match vs the Shopkeepers at the Back Alley Field, only available in the training phase. Reward: Meteor Necklace.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-side-quest-josephine-s-elegant-stroll-part-3",
+       "title": "Side quest: Josephine's Elegant Stroll: Part 3",
+       "priority": 1,
+       "type": "check",
+       "detail": "Night, School Road playground. Beat Josephine, skip to morning, take her to the school, then the Skyport. Reward: Benevolence Bangle.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c7-get-into-the-archive-3f",
+       "title": "Get into the Archive (3F)",
+       "priority": 1,
+       "type": "check",
+       "detail": "It is locked: check the two rooms next to it, then talk to the teacher in the ground-floor north wing. Osamu Manbe joins.",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c7-as-kisoji-follow-the-waypoint-to-the-station-in-",
+       "title": "As Kisoji, follow the waypoint to the station in Odaiba",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c7-training-goals-team-at-3650-df-3450-formation-re",
+       "title": "Training goals: Team AT 3650 / DF 3450 + formation requirements",
+       "priority": 1,
+       "type": "check",
+       "detail": "Train more than the minimum here; the next match is the hardest so far.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c7-set-proto-entertainer-for-kisoji",
+       "title": "Set Proto-Entertainer for Kisoji",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c7-scout-and-recruit-your-first-player",
+       "title": "Scout and recruit your first player",
+       "priority": 1,
+       "type": "check",
+       "detail": "Scouting unlocks here. See the scouting guide.",
+       "tags": [
+        "training"
+       ],
+       "guide": "scouting"
+      },
+      {
+       "id": "c7-match-vs-stormridge-junior-high",
+       "title": "Match vs Stormridge Junior High",
+       "priority": 1,
+       "type": "check",
+       "detail": "They have unlimited Tension. Defend, keep passing to avoid Focus Battles, and only do one when the objective asks (first any, then vs Yashiro, the long-haired defender with the Keshin aura). They get two scripted goals. Second half: pass to Kisoji, start a Focus Battle, use Proto-Entertainer (hold R1/RB + button), keep feeding Kisoji and score with him.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      }
+     ]
+    },
+    {
+     "id": "ch8",
+     "title": "Chapter 8: Alice's Wonderland",
+     "items": [
+      {
+       "id": "c8-fast-travel-to-the-football-gardens-and-visit-bo",
+       "title": "Fast travel to the Football Gardens and visit both waypoints",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c8-friendly-vs-lawcrest-level-32",
+       "title": "Friendly vs Lawcrest (level 32)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Keeper has 1129 KP: chain Special Moves or keep shooting. They steal well, so avoid Focus Battles if you are at or under their level. Level one clean lane (a wing or the centre) rather than everyone.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c8-friendly-vs-noble-insight",
+       "title": "Friendly vs Noble Insight",
+       "priority": 1,
+       "type": "check",
+       "detail": "Lots of defensive Special Moves. Use long passes to skip midfield, then stack your strongest shot moves. Keeper 1129 KP.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c8-friendly-vs-ai-academy",
+       "title": "Friendly vs AI Academy",
+       "priority": 1,
+       "type": "check",
+       "detail": "Same approach as the other two.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c8-training-goals-team-at-4150-df-4100-formation-re",
+       "title": "Training goals: Team AT 4150 / DF 4100 + formation requirements",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c8-buy-and-set-star-path-roar-of-resolve-and-titan-",
+       "title": "Buy and set Star Path, Roar of Resolve and Titan Wall",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c8-buy-16-champon-spikes-and-equip-all-starters-and",
+       "title": "Buy 16 Champon Spikes and equip all starters and bench",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c8-match-vs-royal-academy-level-39",
+       "title": "Match vs Royal Academy (level 39)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Beatable around level 32. They may get a scripted goal during Enchanted Forest. Answer each of their tactics in order: Star Path, then Roar of Resolve after Caucus Race, then Titan Wall after Cavalry Advance. Their keeper reaches about 1700, so wear him down. Second half, after Alice's 'weak link' scene: Focus Battle as Kameo, then as Yagyu, then Kameo passes to Yagyu for Heavenly Thunder (scripted goal).",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c8-as-ren-tsukikage-follow-the-waypoint-then-go-to-",
+       "title": "As Ren Tsukikage, follow the waypoint, then go to the club room",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch9",
+     "title": "Chapter 9: Sunshine Through the Clouds",
+     "items": [
+      {
+       "id": "c9-as-ren-stadium-old-club-room-behind-it-then-up-t",
+       "title": "As Ren: stadium, old club room behind it, then up the stadium stairs",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c9-side-quest-what-do-you-want-to-eat",
+       "title": "Side quest: What Do You Want to Eat?",
+       "priority": 1,
+       "type": "check",
+       "detail": "Pensive Woman near the lighthouse in the Lodging Area; talk to the three marked NPCs. Reward: Speed Glasses.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-new-local-gourmet-dish",
+       "title": "Side quest: New Local Gourmet Dish!",
+       "priority": 1,
+       "type": "check",
+       "detail": "Kitchen staff in your lodge. Visit Midori at Cafe Tank, the Champon shop owner Downtown and the girl at Nagumohara Station. Reward: Energizing Headband.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-chasing-the-bogus-reporter",
+       "title": "Side quest: Chasing the Bogus Reporter",
+       "priority": 1,
+       "type": "check",
+       "detail": "Odaiba Main Area, then Nagumohara Junior High, then Cafe Tank. Reward: Moonlight Bracelet.",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-between-bowls-and-glances",
+       "title": "Side quest: Between Bowls and Glances",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-card-soldier-s-first-crush",
+       "title": "Side quest: Card Soldier's First Crush",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-find-sigdor-s-tale",
+       "title": "Side quest: Find Sigdor's Tale",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-the-ultimate-soup",
+       "title": "Side quest: The Ultimate Soup",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-may-i-take-your-picture",
+       "title": "Side quest: May I Take Your Picture?",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-side-quest-odaiba-s-umibozu-scare",
+       "title": "Side quest: Odaiba's Umibozu Scare",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "side quest"
+       ]
+      },
+      {
+       "id": "c9-as-unmei-go-to-the-lodging-area-football-field",
+       "title": "As Unmei, go to the Lodging Area football field",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "story"
+       ]
+      },
+      {
+       "id": "c9-match-vs-the-baseball-club-team-level-39",
+       "title": "Match vs the Baseball Club team (level 39)",
+       "priority": 1,
+       "type": "check",
+       "detail": "Positions are locked oddly (Raika in goal, Kameo and Shisendo up front). Walk your real forwards up to shoot, or use Yagyu.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "c9-training-goals-team-at-5100-df-5100-formation-re",
+       "title": "Training goals: Team AT 5100 / DF 5100 + formation requirements",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c9-buy-and-set-stalwart-suppression",
+       "title": "Buy and set Stalwart Suppression",
+       "priority": 1,
+       "type": "check",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c9-give-kameo-and-shisendo-a-shot-move-each",
+       "title": "Give Kameo and Shisendo a Shot Move each",
+       "priority": 1,
+       "type": "check",
+       "detail": "On each one's Abilearn Board, follow the green line to the router node and flip it: it opens forward-style slots. Buy shot moves at the Special Training Booth or the Odaiba mall if you have none.",
+       "tags": [
+        "training"
+       ],
+       "guide": "training-phase"
+      },
+      {
+       "id": "c9-final-match-vs-raimon",
+       "title": "Final match vs Raimon",
+       "priority": 1,
+       "type": "check",
+       "detail": "1) Let their first goal in, it is scripted; save your moves. 2) Use Stalwart Suppression as soon as it is offered. 3) Score twice without conceding. 4) After half-time Haru Endo scores twice no matter what. 5) When Unmei comes on, use Aether Virtuoso (R1/RB + button) and score. 6) New keeper Mama Sigdale: your first two shots are scripted saves, so use plain shots. 7) Then chain Kameo's and Shisendo's moves for 2000+ AT, with Shisendo taking the final shot.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "postgame",
+   "title": "After the story",
+   "groups": [
+    {
+     "id": "after",
+     "title": "After the credits",
+     "items": [
+      {
+       "id": "pg-beat-the-extended-story-match",
+       "title": "Beat the Extended Story match",
+       "priority": 2,
+       "type": "check",
+       "detail": "One harder match after the credits. If it is too tough, level the team in Chronicle Mode first.",
+       "tags": [
+        "match"
+       ],
+       "guide": "matches"
+      },
+      {
+       "id": "pg-merge-your-story-team-into-the-other-modes",
+       "title": "Merge your story team into the other modes",
+       "priority": 2,
+       "type": "check",
+       "detail": "After the story your squad and inventory carry over to Chronicle and online play."
+      },
+      {
+       "id": "pg-scout-10-players-in-story-mode",
+       "title": "Scout 10 players in Story Mode",
+       "priority": 2,
+       "type": "counter",
+       "tags": [
+        "scouting"
+       ],
+       "guide": "scouting",
+       "target": 10
+      },
+      {
+       "id": "pg-complete-45-side-quests",
+       "title": "Complete 45 side quests",
+       "priority": 2,
+       "type": "counter",
+       "detail": "Blue circles with an exclamation mark on the map.",
+       "target": 45
+      },
+      {
+       "id": "pg-get-eleven-players-to-level-50",
+       "title": "Get eleven players to level 50",
+       "priority": 2,
+       "type": "counter",
+       "guide": "leveling",
+       "target": 11
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chronicle",
+   "title": "Chronicle Mode",
+   "groups": [
+    {
+     "id": "ff",
+     "title": "Football Frontier Route",
+     "items": [
+      {
+       "id": "ff-royal-academy",
+       "title": "Royal Academy",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-inazuma-kids-fc",
+       "title": "Inazuma Kids FC",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-occult",
+       "title": "Occult",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-wild",
+       "title": "Wild",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-brainwashing",
+       "title": "Brainwashing",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-otaku",
+       "title": "Otaku",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-royal-academy-2",
+       "title": "Royal Academy 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-raimon-veterans",
+       "title": "Raimon Veterans",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-shuriken",
+       "title": "Shuriken",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-farm",
+       "title": "Farm",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-kirkwood",
+       "title": "Kirkwood",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-zeus",
+       "title": "Zeus",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ff-team-ogre",
+       "title": "Team Ogre",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "alius",
+     "title": "Alius Route (after Football Frontier)",
+     "items": [
+      {
+       "id": "alius-gemini-storm",
+       "title": "Gemini Storm",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-secret-service",
+       "title": "Secret Service",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-gemini-storm-2",
+       "title": "Gemini Storm 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-alpine",
+       "title": "Alpine",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-gemini-storm-3",
+       "title": "Gemini Storm 3",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-cloister-divinity",
+       "title": "Cloister Divinity",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-epsilon",
+       "title": "Epsilon",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-royal-academy-redux",
+       "title": "Royal Academy Redux",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-super-triple-c",
+       "title": "Super Triple C",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-epsilon-2",
+       "title": "Epsilon 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-fauxshore",
+       "title": "Fauxshore",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-genesis",
+       "title": "Genesis",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-mary-times",
+       "title": "Mary Times",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-advanced-epsilon",
+       "title": "Advanced Epsilon",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-prominence",
+       "title": "Prominence",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-diamond-dust",
+       "title": "Diamond Dust",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-raimon",
+       "title": "Raimon",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-chaos",
+       "title": "Chaos",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-genesis-2",
+       "title": "Genesis 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "alius-dark-emperors",
+       "title": "Dark Emperors",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "ffi",
+     "title": "Football Frontier International Route (after Alius)",
+     "items": [
+      {
+       "id": "ffi-team-kido",
+       "title": "Team Kido",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-big-waves",
+       "title": "Big Waves",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-desert-lions",
+       "title": "Desert Lions",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-neo-national",
+       "title": "Neo National",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-fire-dragon",
+       "title": "Fire Dragon",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-queen-s-knights",
+       "title": "Queen's Knights",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-team-k",
+       "title": "Team K",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-the-empire",
+       "title": "The Empire",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-unicorn",
+       "title": "Unicorn",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-red-matador",
+       "title": "Red Matador",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-orpheus",
+       "title": "Orpheus",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-apostles-from-the-sky",
+       "title": "Apostles from the Sky",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-devil-army-z",
+       "title": "Devil Army Z",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-dark-angels",
+       "title": "Dark Angels",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-the-kingdom",
+       "title": "The Kingdom",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-team-garshield",
+       "title": "Team Garshield",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-orpheus-2",
+       "title": "Orpheus 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-little-gigantes",
+       "title": "Little Gigantes",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ffi-graduation-team-b",
+       "title": "Graduation Team B",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "saints",
+     "title": "Saint's Way Route",
+     "items": [
+      {
+       "id": "saints-black-templars",
+       "title": "Black Templars",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-inazuma-kids-fc",
+       "title": "Inazuma Kids FC",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-prodigy-grammar",
+       "title": "Prodigy Grammar",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-milky-way-charter",
+       "title": "Milky Way Charter",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-almighty-faith",
+       "title": "Almighty Faith",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-royal-academy",
+       "title": "Royal Academy",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-pirates-cove",
+       "title": "Pirates Cove",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-golden-oldies",
+       "title": "Golden Oldies",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-lunar-sea",
+       "title": "Lunar Sea",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-alpine",
+       "title": "Alpine",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-kirkwood",
+       "title": "Kirkwood",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-eternal-light",
+       "title": "Eternal Light",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-ancient-darkness",
+       "title": "Ancient Darkness",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-team-zero",
+       "title": "Team Zero",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-mirage",
+       "title": "Mirage",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-revolutionaries",
+       "title": "Revolutionaries",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-universal",
+       "title": "Universal",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-mount-olympus",
+       "title": "Mount Olympus",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "saints-dragon-link",
+       "title": "Dragon Link",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "chrono",
+     "title": "Chrono Stone Route",
+     "items": [
+      {
+       "id": "chrono-protocol-omega",
+       "title": "Protocol Omega",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-protocol-omega-2",
+       "title": "Protocol Omega 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-protocol-omega-3",
+       "title": "Protocol Omega 3",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-japan-united",
+       "title": "Japan United",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-shiroshika",
+       "title": "Shiroshika",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-imagawa-s-ire",
+       "title": "Imagawa's Ire",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-protocol-omega-3-0",
+       "title": "Protocol Omega 3.0",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-the-terracota-army",
+       "title": "The Terracota Army",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-zanark-s-domain",
+       "title": "Zanark's Domain",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-zanark-s-domain-2",
+       "title": "Zanark's Domain 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-perfect-cascade",
+       "title": "Perfect Cascade",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-perfect-cascade-2",
+       "title": "Perfect Cascade 2",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-knights-of-the-round-table",
+       "title": "Knights of the Round Table",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-perfect-cascade-3",
+       "title": "Perfect Cascade 3",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-zan",
+       "title": "Zan",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-gihl",
+       "title": "Gihl",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-gahl",
+       "title": "Gahl",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "chrono-ragnah",
+       "title": "Ragnah",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "galaxy",
+     "title": "Galaxy Route (after Chrono Stone)",
+     "items": [
+      {
+       "id": "galaxy-royal-academy",
+       "title": "Royal Academy",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-fire-dragon",
+       "title": "Fire Dragon",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-big-waves",
+       "title": "Big Waves",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-shamshir",
+       "title": "Shamshir",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-muay-tigers",
+       "title": "Muay Tigers",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-japanese-resistance",
+       "title": "Japanese Resistance",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-storm-wolves",
+       "title": "Storm Wolves",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-silica-eleven",
+       "title": "Silica Eleven",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-naiadi-eleven",
+       "title": "Naiadi Eleven",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-magmavia-eleven",
+       "title": "Magmavia Eleven",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-fertilia-eleven",
+       "title": "Fertilia Eleven",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-falam-medius",
+       "title": "Falam Medius",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-ixar-fleet",
+       "title": "Ixar Fleet",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-big-bang",
+       "title": "Big Bang",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-supernova",
+       "title": "Supernova",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-space-rankers",
+       "title": "Space Rankers",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "galaxy-gatekeepers",
+       "title": "Gatekeepers",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "lbx",
+     "title": "LBX Route (needs Chrono Stone + Galaxy)",
+     "items": [
+      {
+       "id": "lbx-lunar-howl",
+       "title": "Lunar Howl",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "lbx-nosfanatica",
+       "title": "Nosfanatica",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "lbx-children-of-the-night",
+       "title": "Children of the Night",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "lbx-inazuma-legend-national",
+       "title": "Inazuma Legend National",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "lbx-the-despairadoes",
+       "title": "The Despairadoes",
+       "priority": 3,
+       "type": "check",
+       "detail": "Chronicle Battle (follow the on-screen objectives), then win the Route Unlock Battle.",
+       "tags": [
+        "chronicle"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "achievements",
+   "title": "Achievements",
+   "groups": [
+    {
+     "id": "ach-story",
+     "title": "Story Mode",
+     "items": [
+      {
+       "id": "ach-phantasy-made-real",
+       "title": "Phantasy Made Real",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Kick 20 Loot Footballs.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-squabble-monster",
+       "title": "Squabble Monster",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Win 20 Focus Squabbles in Story Mode.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-activity-ace",
+       "title": "Activity Ace",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Complete 50 Activities (Menu > Data Files > Activities). Comes naturally.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-cat-s-best-friend",
+       "title": "Cat's Best Friend",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Pet a cat 5 times (Rural Road, Coastal Road, Seaside Park).",
+       "tags": [
+        "achievement"
+       ],
+       "target": 5
+      },
+      {
+       "id": "ach-practice-is-like-rice-balls",
+       "title": "Practice is Like Rice Balls!",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Complete 10 special training sessions.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 10
+      },
+      {
+       "id": "ach-sidekick-supreme",
+       "title": "Sidekick Supreme",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Complete 45 side quests.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 45
+      },
+      {
+       "id": "ach-builder-of-bonds",
+       "title": "Builder of Bonds",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Scout 10 players in Story Mode.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "scouting",
+       "target": 10
+      },
+      {
+       "id": "ach-sunshine-through-the-clouds",
+       "title": "Sunshine Through the Clouds",
+       "priority": 8,
+       "type": "check",
+       "detail": "Finish Chapter 9.",
+       "tags": [
+        "achievement"
+       ]
+      },
+      {
+       "id": "ach-extended-story",
+       "title": "Extended Story",
+       "priority": 8,
+       "type": "check",
+       "detail": "Win the post-credits match.",
+       "tags": [
+        "achievement"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ach-chron",
+     "title": "Chronicle Mode",
+     "items": [
+      {
+       "id": "ach-the-legend-begins",
+       "title": "The Legend Begins",
+       "priority": 8,
+       "type": "check",
+       "detail": "Complete the Football Frontier Route.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ach-invaders-from-space",
+       "title": "Invaders from Space",
+       "priority": 8,
+       "type": "check",
+       "detail": "Complete the Alius Route.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ach-a-challenge-to-the-world",
+       "title": "A Challenge to the World!",
+       "priority": 8,
+       "type": "check",
+       "detail": "Complete the Football Frontier International Route.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "chronicle"
+      },
+      {
+       "id": "ach-the-winds-of-change",
+       "title": "The Winds of Change",
+       "priority": 8,
+       "type": "check",
+       "detail": "Complete the Saint's Way Route.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "chronicle"
+      }
+     ]
+    },
+    {
+     "id": "ach-online",
+     "title": "Online",
+     "items": [
+      {
+       "id": "ach-hands-on-specialist",
+       "title": "Hands-on Specialist",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Use Real Skills 5 times online (grey-background moves with no animation: Clip Shot, Power Shot, Feint Dash).",
+       "tags": [
+        "achievement"
+       ],
+       "target": 5
+      },
+      {
+       "id": "ach-online-contender",
+       "title": "Online Contender",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Play 10 online matches.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 10
+      },
+      {
+       "id": "ach-rising-star",
+       "title": "Rising Star",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Win 10 online matches.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 10
+      },
+      {
+       "id": "ach-hyperdimensional-football",
+       "title": "Hyperdimensional Football",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Use Special Moves 50 times online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-the-last-bastion",
+       "title": "The Last Bastion",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Block 50 shots as goalkeeper online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-net-ripper",
+       "title": "Net Ripper",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Score 50 goals online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-scramble-ace",
+       "title": "Scramble Ace",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Win 20 Scrambles online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-chain-shooter",
+       "title": "Chain Shooter",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Score 20 goals with Shot Chains online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-focus-master",
+       "title": "Focus Master",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Win 50 Focus Battles online.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      }
+     ]
+    },
+    {
+     "id": "ach-bond",
+     "title": "Bond Town",
+     "items": [
+      {
+       "id": "ach-bond-wanderer",
+       "title": "Bond Wanderer",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Visit other players' Bond Towns 3 times.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 3
+      },
+      {
+       "id": "ach-stadium-challenger",
+       "title": "Stadium Challenger",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Play 3 matches at the Bond Town Stadium.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 3
+      },
+      {
+       "id": "ach-collector-of-objects",
+       "title": "Collector of Objects",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 20 bond objects (Bond Shop).",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-town-creator",
+       "title": "Town Creator",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Place 10 objects in your Bond Town.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 10
+      }
+     ]
+    },
+    {
+     "id": "ach-collect",
+     "title": "Collection",
+     "items": [
+      {
+       "id": "ach-equipment-hunter",
+       "title": "Equipment Hunter",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 100 pieces of equipment. Side quests plus tokens from battles spent in shops.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 100
+      },
+      {
+       "id": "ach-ability-unleashed",
+       "title": "Ability Unleashed",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Unlock 50 Abilearn Board nodes. Open the first nodes on several players.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-the-powerful-eleven",
+       "title": "The Powerful Eleven",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Eleven players at level 50.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "leveling",
+       "target": 11
+      },
+      {
+       "id": "ach-universe-unlocker",
+       "title": "Universe Unlocker",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Unlock 10 players in Player Universe.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "players",
+       "target": 10
+      },
+      {
+       "id": "ach-heroes-assemble",
+       "title": "Heroes Assemble",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 3 Hero-rank players. Farm the Hero Battle of 'Team Ogre' on the Football Frontier Route and win as many Focus Battles as you can.",
+       "tags": [
+        "achievement"
+       ],
+       "guide": "players",
+       "target": 3
+      },
+      {
+       "id": "ach-tactical-collector",
+       "title": "Tactical Collector",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 20 Special Tactics. Buy out the Story Mode shops first.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 20
+      },
+      {
+       "id": "ach-move-maniac",
+       "title": "Move Maniac",
+       "priority": 8,
+       "type": "check",
+       "detail": "Collect Special Moves; Story Mode shops are the easiest source.",
+       "tags": [
+        "achievement"
+       ]
+      },
+      {
+       "id": "ach-emblem-bearer",
+       "title": "Emblem Bearer",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 50 emblems.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-uniform-curator",
+       "title": "Uniform Curator",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 50 uniforms. Beat a team's Rare Drop Battle in Chronicle Mode for its kit.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-united-wisdom",
+       "title": "United Wisdom",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 5 managers. Rare Drop and Hero Battles drop manager spirits.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 5
+      },
+      {
+       "id": "ach-stacked-power",
+       "title": "Stacked Power",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Do 50 Spirit Fusions (raising rarity). Costs beans; farm them in Story Mode battles.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 50
+      },
+      {
+       "id": "ach-awakening-seeker",
+       "title": "Awakening Seeker",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Own 4 Awakenings (Spirit Shop in the marketplace).",
+       "tags": [
+        "achievement"
+       ],
+       "target": 4
+      },
+      {
+       "id": "ach-let-s-play-football",
+       "title": "Let's Play Football!",
+       "priority": 8,
+       "type": "counter",
+       "detail": "Register 100 players in the Player Bank.",
+       "tags": [
+        "achievement"
+       ],
+       "target": 100
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "start-here",
+   "title": "Start here: how to use your short sessions",
+   "category": "Basics",
+   "body": "## The plan\n1. **Story Mode first** (9 chapters, roughly 30 to 35 hours). Finishing it hands your levelled team to every other mode.\n2. **Extended Story**: one extra match after the credits.\n3. **Chronicle Mode**: seven routes of classic matches, the best place to grow your squad offline.\n4. **Online and collection achievements** whenever you feel like it.\n\n## Habits that save time\n- Open the map at the start of every session. Blue circles with **!** are side quests; do them before the chapter's training phase ends because many disappear.\n- Take every red crossed-swords battle you walk past. They are quick and pay tokens and EXP.\n- Kick every Loot Football. Gold ones are rare loot.\n- Claim **Menu > Data Files > Activities** now and then: free EXP Orbs.\n- Fast travel from the map instead of walking.\n\n## Names\nThis guide uses the Japanese names (Unmei, Sakurazaki, Raika...). To match, turn on Romaji names in **Options > Gameplay**. The English names differ (for example Unmei Sasanami is Destin Billows)."
+  },
+  {
+   "id": "matches",
+   "title": "How to win matches",
+   "category": "Basics",
+   "body": "## The one rule\nA shot scores when your **total AT** is higher than the keeper's **KP**. Time slows near goal and shows both numbers.\n\n- AT too low? Use a **Special Move**, or **chain** shots between two players (Shot Chain) to add them up.\n- Every shot the keeper saves **lowers his KP**. Two or three plain shots often open the door.\n- Dribbling past a defender works the same way: your Attack against their Defense.\n\n## Scripted moments\nStory matches force certain goals and saves. When the game clearly will not let you score or defend, do not spend Tension. Just complete the objective shown on the left of the screen and wait for the scene.\n\n| Sign | What to do |\n|---|---|\n| Opponent has an 'Enemy Boost' | Let it happen, save your moves |\n| Objective says 'Complete a Focus Battle' | Do exactly one, then go back to passing |\n| A tactic prompt appears | Hold L1/LB (tactics) or R1/RB (Keshin and abilities) + the shown button |\n\n## Cheap tricks\n- Right after you score, sprint at their ball carrier from kick-off and tackle.\n- Against teams that steal a lot, play long passes and avoid Focus Battles.\n- You do not need the whole team levelled. One strong lane from your goal to theirs is enough."
+  },
+  {
+   "id": "training-phase",
+   "title": "Training phases",
+   "category": "Basics",
+   "body": "Before most big matches the story stops until you meet a list of goals.\n\n- **Team AT / DF**: train at the training spots, play friendlies, spend EXP Orbs, and equip boots and accessories on everyone.\n- **Tactics**: buy them at the **Special Training Booth** (the stickman by the pitch, second-to-last tab), then set them in **Team Dock > Football Battle > Tactics**.\n- **Formation requirements**: shown on the Formation screen. Usually named players must start.\n- **Moves**: equip beans on the player and play, or flip the router node on their Abilearn Board to open new slots.\n\nFinish side quests **before** you advance out of the training phase.\n\n| Chapter | Team AT | Team DF | Also needed |\n|---|---|---|---|\n| 4 | 1100 | 1050 | Force Flash, Spin Shot, friendly vs Twinford |\n| 5 | 1500 | 1500 | Spring Thunderclap, Icy Grace, Keyman Lockdown |\n| 6 | 2700 | 2700 | Flame Fortress, Invisible Link, Bond Protocol, Boost 15 set |\n| 7 | 3650 | 3450 | Proto-Entertainer on Kisoji, recruit 1 player |\n| 8 | 4150 | 4100 | Star Path, Roar of Resolve, Titan Wall, 16 Champon Spikes |\n| 9 | 5100 | 5100 | Stalwart Suppression, shot moves for Kameo and Shisendo |"
+  },
+  {
+   "id": "scouting",
+   "title": "Scouting players (from Chapter 7)",
+   "category": "Team",
+   "kind": "walkthrough",
+   "intro": "Unlocks in Chapter 7's training phase. Recruitable students have a four-leaf clover over their head and change with the day and time of day. Ten recruits gives the Builder of Bonds achievement.",
+   "steps": [
+    {
+     "id": "s1",
+     "title": "Talk to the student twice",
+     "text": "The second conversation reveals their name and the **Give a Gift** option."
+    },
+    {
+     "id": "s2",
+     "title": "Read the gift they want",
+     "text": "It is shown on the right of the screen. Write it down."
+    },
+    {
+     "id": "s3",
+     "title": "Buy the gift",
+     "text": "Every gift is sold in a shop. Check these three until you find it.",
+     "options": [
+      "Special Training Booth shop",
+      "Downtown shop in Nagumohara",
+      "Shopping mall in Odaiba"
+     ]
+    },
+    {
+     "id": "s4",
+     "title": "Give the gift",
+     "text": "They hand you an item back and leave for a new spot. The dialogue says where; if you miss it, look in **Menu > Data Files** (scouts screen)."
+    },
+    {
+     "id": "s5",
+     "title": "Meet them at the new spot",
+     "text": "Complete their Bond Quest or beat them in battle, depending on the student."
+    },
+    {
+     "id": "s6",
+     "title": "Recruit",
+     "text": "Talk to them again and choose Recruit. They go to your player bank."
+    }
+   ]
+  },
+  {
+   "id": "leveling",
+   "title": "Levelling fast",
+   "category": "Team",
+   "body": "- **Level difference bonus**: playing teams far above your level pays much more EXP, even if you lose.\n- Spend **EXP Orbs** from Activities on your two or three key scorers first.\n- Equipment that boosts EXP only helps the player wearing it.\n- If you finish the story under level 50, keep levelling the same team in **Chronicle Mode**."
+  },
+  {
+   "id": "chronicle",
+   "title": "Chronicle Mode explained",
+   "category": "Chronicle",
+   "body": "Chronicle Mode replays the matches of the whole series. It is separate from the story, but it is far easier **after** finishing Story Mode because your levelled team comes with you.\n\n## Each chronicle point has four battles\n| Battle | Purpose |\n|---|---|\n| Chronicle Battle | The canon match with a preset team. Just follow the objectives; many results are scripted. |\n| Route Unlock Battle | Played with **your** team. Winning opens the next point. |\n| Rare Drop Battle | Farm items and that team's uniform. |\n| Hero Battle | Farm spirits. Win as many Focus Battles as possible; each can drop a spirit, with a small chance of Hero rank. |\n\n## Route order\n1. Football Frontier\n2. Alius (after Football Frontier)\n3. Football Frontier International (after Alius)\n4. Saint's Way\n5. Chrono Stone\n6. Galaxy (after Chrono Stone)\n7. LBX (needs Chrono Stone and Galaxy; added in an update)\n\nLater updates added more content after these; check the in-game route screen for anything not listed here."
+  },
+  {
+   "id": "players",
+   "title": "Getting new players",
+   "category": "Team",
+   "body": "- **Spirits** drop from match wins and Chronicle battles. Collect a player's spirit, then summon them. Stronger opponents give better odds of Legendary and above.\n- **Player Universe** (Chronicle main menu): spend **Bond Stars** on constellations. Pulls come in sets of 12 for 5 Bond Stars. This is the best source of **Hero** variants. Most of the story cast is in the Victoria constellation once the story is cleared.\n- **Bond Stars** mostly come from online matches (win or lose), with smaller amounts from Chronicle.\n- **Spirit Market**: trade spare spirits and items for specific spirits, Hyper Moves and some Keshin.\n- **Ascension / Spirit Fusion** raises rarity with beans, but stops at Legendary. Hero rank cannot be reached this way.\n\n## Hero variants\n| Variant | Team passive type |\n|---|---|\n| Magma (fire) | Tension or Rough Play |\n| Metal | Justice or Bond |\n| Crystal (pink) | Counter or Breach |\n\nSame base stats and moves; only the team passive differs."
+  }
+ ]
+}

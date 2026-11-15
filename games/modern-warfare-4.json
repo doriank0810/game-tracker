@@ -1,0 +1,1697 @@
+{
+ "id": "modern-warfare-4",
+ "title": "Modern Warfare 4",
+ "sections": [
+  {
+   "id": "camos",
+   "title": "Camo grind (33 launch weapons)",
+   "groups": [
+    {
+     "id": "w-iso-nightshade",
+     "title": "ISO Nightshade (SMG)",
+     "items": [
+      {
+       "id": "iso-nightshade-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 1,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "iso-nightshade-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 1,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "iso-nightshade-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "iso-nightshade-platinum",
+       "title": "Platinum",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "iso-nightshade-harmonic",
+       "title": "Harmonic Break",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-vel-46",
+     "title": "VEL 46 (SMG)",
+     "items": [
+      {
+       "id": "vel-46-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 1,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "vel-46-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 1,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "vel-46-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "vel-46-platinum",
+       "title": "Platinum",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "vel-46-harmonic",
+       "title": "Harmonic Break",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-m4",
+     "title": "M4 (Assault rifle)",
+     "items": [
+      {
+       "id": "m4-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 1,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "m4-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 1,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "m4-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "m4-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "m4-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-han-86",
+     "title": "Han 86 (Assault rifle)",
+     "items": [
+      {
+       "id": "han-86-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 1,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "han-86-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 1,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "han-86-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "han-86-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "han-86-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 1,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-kastov-762",
+     "title": "Kastov 762 (Assault rifle)",
+     "items": [
+      {
+       "id": "kastov-762-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kastov-762-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kastov-762-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kastov-762-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kastov-762-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-hyeon-burst",
+     "title": "Hyeon Burst (Assault rifle)",
+     "items": [
+      {
+       "id": "hyeon-burst-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "hyeon-burst-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "hyeon-burst-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "hyeon-burst-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "hyeon-burst-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-patriot-xmr",
+     "title": "Patriot XMR (Assault rifle)",
+     "items": [
+      {
+       "id": "patriot-xmr-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "patriot-xmr-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "patriot-xmr-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "patriot-xmr-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "patriot-xmr-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-axion",
+     "title": "Axion (Assault rifle)",
+     "items": [
+      {
+       "id": "axion-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "axion-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "axion-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "axion-platinum",
+       "title": "Platinum",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "axion-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Assault rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-cronen-squall",
+     "title": "Cronen Squall",
+     "items": [
+      {
+       "id": "cronen-squall-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "cronen-squall-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "cronen-squall-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "cronen-squall-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "cronen-squall-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-oden",
+     "title": "Oden",
+     "items": [
+      {
+       "id": "oden-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oden-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oden-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oden-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oden-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-x-58-nyx",
+     "title": "X-58 Nyx",
+     "items": [
+      {
+       "id": "x-58-nyx-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "x-58-nyx-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "x-58-nyx-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "x-58-nyx-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "x-58-nyx-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-wz-55-striga",
+     "title": "WZ.55 Striga",
+     "items": [
+      {
+       "id": "wz-55-striga-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "wz-55-striga-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "wz-55-striga-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "wz-55-striga-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "wz-55-striga-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-ppsh-41",
+     "title": "PPSh-41 (SMG)",
+     "items": [
+      {
+       "id": "ppsh-41-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "ppsh-41-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "ppsh-41-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "ppsh-41-platinum",
+       "title": "Platinum",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "ppsh-41-harmonic",
+       "title": "Harmonic Break",
+       "detail": "SMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-rezi-12",
+     "title": "Rezi 12",
+     "items": [
+      {
+       "id": "rezi-12-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rezi-12-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rezi-12-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rezi-12-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rezi-12-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-warlord",
+     "title": "Warlord",
+     "items": [
+      {
+       "id": "warlord-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "warlord-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "warlord-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "warlord-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "warlord-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-apoc-338",
+     "title": "APOC-338",
+     "items": [
+      {
+       "id": "apoc-338-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "apoc-338-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "apoc-338-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "apoc-338-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "apoc-338-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-finn-lmg",
+     "title": "Finn LMG (LMG)",
+     "items": [
+      {
+       "id": "finn-lmg-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "finn-lmg-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "finn-lmg-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "finn-lmg-platinum",
+       "title": "Platinum",
+       "detail": "LMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "finn-lmg-harmonic",
+       "title": "Harmonic Break",
+       "detail": "LMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-type-73",
+     "title": "Type 73 (LMG)",
+     "items": [
+      {
+       "id": "type-73-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "type-73-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "type-73-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "type-73-platinum",
+       "title": "Platinum",
+       "detail": "LMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "type-73-harmonic",
+       "title": "Harmonic Break",
+       "detail": "LMG challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-mosin-nagant",
+     "title": "Mosin-Nagant",
+     "items": [
+      {
+       "id": "mosin-nagant-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mosin-nagant-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mosin-nagant-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mosin-nagant-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mosin-nagant-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-mar-9",
+     "title": "Mar-9",
+     "items": [
+      {
+       "id": "mar-9-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mar-9-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mar-9-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mar-9-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mar-9-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-oris-8-6",
+     "title": "Oris 8.6 (Marksman rifle)",
+     "items": [
+      {
+       "id": "oris-8-6-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oris-8-6-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oris-8-6-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oris-8-6-platinum",
+       "title": "Platinum",
+       "detail": "Marksman rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "oris-8-6-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Marksman rifle challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-astaroth-57",
+     "title": "Astaroth .57",
+     "items": [
+      {
+       "id": "astaroth-57-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "astaroth-57-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "astaroth-57-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "astaroth-57-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "astaroth-57-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-signal-50",
+     "title": "Signal 50",
+     "items": [
+      {
+       "id": "signal-50-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "signal-50-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "signal-50-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "signal-50-platinum",
+       "title": "Platinum",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "signal-50-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Check the weapon's class in game, then: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-kg-7-vulcan",
+     "title": "KG-7 Vulcan (Sniper)",
+     "items": [
+      {
+       "id": "kg-7-vulcan-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kg-7-vulcan-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kg-7-vulcan-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kg-7-vulcan-platinum",
+       "title": "Platinum",
+       "detail": "Sniper challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "kg-7-vulcan-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Sniper challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-sang-9mm",
+     "title": "Sang 9mm (Pistol)",
+     "items": [
+      {
+       "id": "sang-9mm-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "sang-9mm-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "sang-9mm-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "sang-9mm-platinum",
+       "title": "Platinum",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "sang-9mm-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-50-gs",
+     "title": ".50 GS (Pistol)",
+     "items": [
+      {
+       "id": "50-gs-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "50-gs-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "50-gs-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "50-gs-platinum",
+       "title": "Platinum",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "50-gs-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-mojave-357",
+     "title": "Mojave .357 (Pistol)",
+     "items": [
+      {
+       "id": "mojave-357-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mojave-357-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mojave-357-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mojave-357-platinum",
+       "title": "Platinum",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "mojave-357-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-krait-p68",
+     "title": "Krait P68 (Pistol)",
+     "items": [
+      {
+       "id": "krait-p68-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "krait-p68-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "krait-p68-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "krait-p68-platinum",
+       "title": "Platinum",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "krait-p68-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Pistol challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-pila",
+     "title": "Pila (Launcher)",
+     "items": [
+      {
+       "id": "pila-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pila-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pila-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pila-platinum",
+       "title": "Platinum",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pila-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-rpg-8",
+     "title": "RPG-8 (Launcher)",
+     "items": [
+      {
+       "id": "rpg-8-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rpg-8-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rpg-8-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rpg-8-platinum",
+       "title": "Platinum",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "rpg-8-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-jokr",
+     "title": "JOKR (Launcher)",
+     "items": [
+      {
+       "id": "jokr-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "jokr-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "jokr-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "jokr-platinum",
+       "title": "Platinum",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "jokr-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-pm-40-anvil",
+     "title": "PM-40 Anvil (Launcher)",
+     "items": [
+      {
+       "id": "pm-40-anvil-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pm-40-anvil-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pm-40-anvil-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pm-40-anvil-platinum",
+       "title": "Platinum",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "pm-40-anvil-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Launcher challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    },
+    {
+     "id": "w-fss-carbon-edge-1095",
+     "title": "FSS Carbon Edge 1095 (Melee)",
+     "items": [
+      {
+       "id": "fss-carbon-edge-1095-military",
+       "title": "Military camos (8)",
+       "detail": "Level the weapon.",
+       "priority": 2,
+       "type": "counter",
+       "target": 8,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "fss-carbon-edge-1095-special",
+       "title": "Special camos (3)",
+       "detail": "Challenges are shown on the weapon in game.",
+       "priority": 2,
+       "type": "counter",
+       "target": 3,
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "fss-carbon-edge-1095-gold",
+       "title": "Gold",
+       "detail": "15 kills in one multiplayer match.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "fss-carbon-edge-1095-platinum",
+       "title": "Platinum",
+       "detail": "Melee challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      },
+      {
+       "id": "fss-carbon-edge-1095-harmonic",
+       "title": "Harmonic Break",
+       "detail": "Melee challenge: see the camo table.",
+       "priority": 2,
+       "type": "check",
+       "guide": "camo-ladder"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mastery",
+   "title": "Account camos",
+   "groups": [
+    {
+     "id": "acct",
+     "title": "After all 33 weapons",
+     "items": [
+      {
+       "id": "divergence",
+       "title": "Divergence",
+       "detail": "Harmonic Break on all 33 launch weapons.",
+       "priority": 3,
+       "type": "counter",
+       "target": 33,
+       "guide": "camo-ladder"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "quick-pick",
+   "title": "Quick pick: what to run right now",
+   "category": "Start here",
+   "body": "| Situation | Run this |\n|---|---|\n| Shipment or any tiny map | VEL 46 Shredder or ISO Nightshade Rush |\n| Normal 6v6, you want one class for everything | Cronen Osprey Suppressed or M4 All-Rounder |\n| Low level, few unlocks | Han 86 Starter |\n| Hardpoint / Domination | ISO Nightshade Rush, or Type 73 to hold the point |\n| Big maps, long lanes | Kastov Lane Control or KG-7 Vulcan |\n| Search and Destroy | KG-7 Vulcan + ISO |\n\nSites disagree on the single best assault rifle (Axion, Hyeon Burst and Han 86 each top a list). The VEL 46 and KG-7 Vulcan are in nearly every list.\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "shipment",
+   "title": "Shipment: classes and tips",
+   "category": "By map",
+   "body": "## Perks for Shipment\n**Quick Fix, Fast Hands, Scavenger** on every class below. Swap one for **Battle Hardened** if the stun and flash spam is bad (it usually is), and consider **Bomb Squad** against explosives.\n\n## Top 5 classes\n| # | Weapon | Attachments |\n|---|---|---|\n| 1 | M4 (suppressed) | XRK Mil-Tac Suppressor, SZ Gen.6 PEQ, ZLR Phase Grip, FSS Fireline Grip, 5.56 NATO High Velocity |\n| 2 | VEL 46 | XRK Herder 40, VB-46 Series 11, XRK Clutch-LS, V46 R-Skel Grip, FSS Fireline Grip, VEL 46 Snap |\n| 3 | ISO Nightshade | XRK Herder 40, RT Outride-X 8\", Schlager Visiv-5, Demo STP-1, Mire-50 Tac Grip |\n| 4 | Han 86 | FSS IS300, Schlager Visiv-5, Meiko L9P-Fold, Hanbit H86 Grip, FSS Fireline Grip |\n| 5 | Patriot XMR | ZLR Cold Echo, SZ Gen.6 PEQ, IOTA-D, Schlager ATTACK-7 Grip, FSS Fireline Grip |\n\nAlso strong here: Rezi 12, and the Wz.55 Striga with its akimbo Rampage Apex.\n\n## Tips\n- Keep moving, never stand in the open lanes between containers.\n- Reload behind cover, not mid-lane.\n- Best modes for kills: Team Deathmatch, Kill Confirmed.\n- Best map for levelling guns and camo challenges.\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "perks",
+   "title": "Perk packages",
+   "category": "Start here",
+   "body": "Three perks, two grenades, one field upgrade.\n\n| Style | Perks | Grenades | Field upgrade |\n|---|---|---|---|\n| Aggressive / kills | Quick Fix, Blood Rush, Battle Hardened | Concussion, Frag | Portable Radar |\n| Sneaky | Ghost, Ninja, Cold Blooded | Concussion, Frag | Portable Radar |\n| Objective | Ghost, Birdseye, Combat Grid | Smoke, Thermite | Trophy System |\n| Killstreak farming | Kill Chain, Hardline, Battle Hardened | Stim, Thermite | Riot Shield |\n\n## What they do\n- **Quick Fix**: health regen restarts on a kill or objective capture.\n- **Blood Rush**: Tactical Sprint.\n- **Battle Hardened**: less effect from stuns and flashes.\n- **Ghost**: hidden from UAVs. **Ninja**: quieter movement. **Cold Blooded**: hidden from drones and thermal scopes.\n- **Birdseye**: bigger minimap with enemy facing. **Combat Grid**: see enemy streaks and equipment through walls.\n- **Kill Chain**: streak kills count towards the next streak. **Hardline**: streaks cost one kill less.\n- **Overkill**: two primaries. **Fast Hands**: faster reload and swap. **Scavenger**: ammo from bodies. **Bomb Squad**: less explosive damage."
+  },
+  {
+   "id": "camo-ladder",
+   "title": "Camo ladder and challenges by weapon class",
+   "category": "Camos",
+   "body": "## Per weapon, in order\n1. **Military camos (8)**: unlock by levelling the weapon.\n2. **Special camos (3)**: one challenge each, shown on the weapon in game.\n3. **Gold**: 15 kills in one multiplayer match.\n4. **Platinum**: see table.\n5. **Harmonic Break**: see table.\n\n**Divergence** unlocks for the whole account when Harmonic Break is done on all 33 launch weapons. The mastery camos come after it.\n\n## Multiplayer challenges\n| Class | Platinum | Harmonic Break |\n|---|---|---|\n| Assault rifle | 50 headshots | 25 double kills |\n| SMG | 25 kills from behind | 50 hipfire kills |\n| Shotgun | 50 hipfire kills | 2 kills without reloading, 25 times |\n| LMG | 3 kills without dying, 15 times | 2 kills without releasing the trigger, 25 times |\n| Marksman rifle | 75 kills while prone | 75 one-shot kills |\n| Sniper | 75 kills while prone | 75 one-shot kills |\n| Pistol | 20 kills from behind | 40 hipfire kills |\n| Launcher | 2 kills without taking damage, 15 times | 10 kills in a match, 7 times |\n| Melee | 3 kills without dying, 15 times | 25 kills from behind |\n\n## Mastery (multiplayer, per weapon, after Divergence)\n| Camo | Challenge |\n|---|---|\n| Mercurial Drift | 10 kills in a match, 250 times |\n| Polyatomic Reforged | 3 kills without taking damage, 300 times |\n| Orion Reforged | 5 kills without dying, 500 times |\n\nFastest place for almost all of these: Shipment."
+  },
+  {
+   "id": "lo-iso-nightshade-rush",
+   "title": "ISO Nightshade Rush (SMG, tier S)",
+   "category": "Meta loadouts",
+   "body": "**Tier S** · SMG · Best for: Hardpoint, Domination, small maps\n\n## ISO Nightshade\n| Slot | Attachment |\n|---|---|\n| Muzzle | FSS Crackdown |\n| Barrel | ZLR Carbon-900 |\n| Laser | Schlager Visiv-5 |\n| Stock | None |\n| Rear grip | Demo STP-1 |\n| Apex | ISO Trace |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Quick Fix, Blood Rush, Battle Hardened |\n| Equipment | Flash Grenade, Frag Grenade |\n| Field upgrade | Portable Radar |\n| Killstreaks | UAV, Crossfire, Attack Helicopter |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-vel-46-shredder",
+   "title": "VEL 46 Shredder (SMG, tier S)",
+   "category": "Meta loadouts",
+   "body": "**Tier S** · SMG · Best for: Small maps, Shipment\n\n## VEL 46\n| Slot | Attachment |\n|---|---|\n| Muzzle | XRK Herder 40 |\n| Barrel | VB-46 Series 11 |\n| Laser | XRK Clutch-LS |\n| Rear grip | V46 R-Skel Grip |\n| Underbarrel | FSS Fireline Grip |\n| Apex | VEL 46 Snap |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Ghost, Fast Hands, Battle Hardened |\n| Equipment | Flash Grenade, Sticky Grenade |\n| Field upgrade | Portable Radar |\n| Killstreaks | UAV, Crossfire, Wheelson |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-kg-7-vulcan-iso-overkill",
+   "title": "KG-7 Vulcan + ISO (Overkill) (Sniper, tier S)",
+   "category": "Meta loadouts",
+   "body": "**Tier S** · Sniper · Best for: Larger maps, Search and Destroy\n\n## KG-7 Vulcan\n| Slot | Attachment |\n|---|---|\n| Barrel | Haebang Naseon V.5 26\" |\n| Bolt | KT76 Light Bolt |\n| Optic | Corvus Avis-0 |\n| Stock | TT G76-RP |\n| Comb | Haebang YNC-45 |\n| Apex | KG-7 Drillcharge |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | ISO Nightshade (use the Rush build) |\n| Perks | Overkill, Blood Rush, Battle Hardened |\n| Equipment | Smoke Grenade, Sticky Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Crossfire, Attack Helicopter |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-cronen-osprey-suppressed",
+   "title": "Cronen Osprey Suppressed (Assault rifle, tier S)",
+   "category": "Meta loadouts",
+   "body": "**Tier S** · Assault rifle · Best for: Any 6v6, mid range\n\n## Cronen Osprey\n| Slot | Attachment |\n|---|---|\n| Muzzle | XRK Mil-Tac Suppressor |\n| Underbarrel | FSS Tac90 Grip |\n| Magazine | 60 Round Mag |\n| Rear grip | Cronen 56 |\n| Ammunition | 5.56 NATO Overpressured |\n| Apex | Cronen Helix Mk. II |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Ghost, Blood Rush, Battle Hardened |\n| Equipment | Flash Grenade, Frag Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Artillery Beacon, Attack Helicopter |\n\nThe source calls this gun the Cronen Osprey; other lists name a Cronen Squall. Check which Cronen you have in game.\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-m4-all-rounder",
+   "title": "M4 All-Rounder (Assault rifle, tier A)",
+   "category": "Meta loadouts",
+   "body": "**Tier A** · Assault rifle · Best for: Any 6v6, mid range\n\n## M4\n| Slot | Attachment |\n|---|---|\n| Muzzle | TZL-110 V1 |\n| Laser | SA LAZ-500 |\n| Magazine | 45 Round Mag |\n| Rear grip | ZLR Phase Grip |\n| Underbarrel | FSS Fireline Grip |\n| Apex | M4 Hurricane |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Ghost, Blood Rush, Battle Hardened |\n| Equipment | Flash Grenade, Frag Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Artillery Beacon, Attack Helicopter |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-han-86-starter",
+   "title": "Han 86 Starter (Assault rifle, tier A)",
+   "category": "Meta loadouts",
+   "body": "**Tier A** · Assault rifle · Best for: Any 6v6, good from low levels\n\n## Han 86\n| Slot | Attachment |\n|---|---|\n| Muzzle | FSS IS300 |\n| Laser | Schlager Visiv-5 |\n| Stock | Meiko L9P-Fold |\n| Rear grip | Hanbit H86 Grip |\n| Underbarrel | FSS Fireline Grip |\n| Apex | HAN X20 Skybreaker |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Quick Fix, Fast Hands, Battle Hardened |\n| Equipment | Flash Grenade, Frag Grenade |\n| Field upgrade | Portable Radar |\n| Killstreaks | UAV, Artillery Beacon, Attack Helicopter |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-kastov-lane-control",
+   "title": "Kastov Lane Control (Assault rifle, tier A)",
+   "category": "Meta loadouts",
+   "body": "**Tier A** · Assault rifle · Best for: Maps with long sightlines\n\n## Kastov 762\n| Slot | Attachment |\n|---|---|\n| Barrel | Hanbit 74U 205.74mm |\n| Laser | Schlager Visiv-5 |\n| Stock | Spetsnaz S10 |\n| Rear grip | FJX Kastov Grip |\n| Underbarrel | FSS Fireline Grip |\n| Apex | Kastov ARC |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Ghost, Fast Hands, Battle Hardened |\n| Equipment | Flash Grenade, Frag Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Combat Drone, Attack Helicopter |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-oris-8-6-aggressive-sniper",
+   "title": "Oris 8.6 Aggressive Sniper (Marksman rifle, tier B)",
+   "category": "Meta loadouts",
+   "body": "**Tier B** · Marksman rifle · Best for: Search and Destroy, larger maps\n\n## Oris 8.6\n| Slot | Attachment |\n|---|---|\n| Barrel | EXP Crosstac 22\" |\n| Laser | XRK Clutch-LS |\n| Bolt | Lightfire-5 Quick Bolt |\n| Optic | Schlager 7x |\n| Rear grip | Bruen R7-TC Grip |\n| Apex | Oris 8.6 Razor |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Ghost, Fast Hands, Battle Hardened |\n| Equipment | Smoke Grenade, Sticky Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Crossfire, Missile Salvo |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  },
+  {
+   "id": "lo-type-73-hardpoint-anchor",
+   "title": "Type 73 Hardpoint Anchor (LMG, tier B)",
+   "category": "Meta loadouts",
+   "body": "**Tier B** · LMG · Best for: Hardpoint, Domination\n\n## Type 73\n| Slot | Attachment |\n|---|---|\n| Optic | SZ Prima-4 Dot |\n| Laser | XRK Clutch-LS |\n| Barrel | SA Firerush 23.8\" |\n| Muzzle | EXP R3000-V |\n| Underbarrel | Bruen Renegade Grip |\n| Apex | Type 73 Assault |\n\n## Rest of the class\n| | |\n|---|---|\n| Secondary | Krait P68 |\n| Perks | Quick Fix, Bomb Squad, Battle Hardened |\n| Equipment | Concussion Grenade, Frag Grenade |\n| Field upgrade | Trophy System |\n| Killstreaks | UAV, Combat Drone, Wheelson |\n\n*Meta as of 14 November 2026 (Season 1, after the 12 November update). Ask Claude to refresh this after each balance patch.*"
+  }
+ ]
+}

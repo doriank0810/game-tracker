@@ -1,0 +1,3671 @@
+{
+ "id": "bo3-zombies",
+ "title": "Black Ops 3 Zombies",
+ "sections": [
+  {
+   "id": "shadows-of-evil",
+   "title": "Shadows of Evil",
+   "groups": [
+    {
+     "id": "soe-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "soe-key",
+       "title": "Summoning Key (Beast crate on the spawn truck)",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-pap-guide"
+      },
+      {
+       "id": "soe-perks",
+       "title": "Power the perks with the Beast",
+       "detail": "There is no power switch. Each perk is switched on by its own Beast shock.",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-beast-guide"
+      },
+      {
+       "id": "soe-shield",
+       "title": "Rocket Shield",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-shield-guide"
+      },
+      {
+       "id": "soe-items",
+       "title": "Four ritual items (pen, belt, badge, toupee)",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-pap-guide"
+      },
+      {
+       "id": "soe-rituals",
+       "title": "Four rituals and the Gateworms",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-pap-guide"
+      },
+      {
+       "id": "soe-pap",
+       "title": "Pack-a-Punch (Sacred Place ritual)",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-pap-guide"
+      },
+      {
+       "id": "soe-fuses",
+       "title": "Civil Protector: three fuses",
+       "priority": 2,
+       "type": "check",
+       "guide": "soe-civil-guide"
+      }
+     ]
+    },
+    {
+     "id": "soe-weapons",
+     "title": "Wonder weapons",
+     "items": [
+      {
+       "id": "soe-servant",
+       "title": "Apothicon Servant",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-servant-guide"
+      },
+      {
+       "id": "soe-sword",
+       "title": "Apothicon Sword",
+       "priority": 1,
+       "type": "check",
+       "guide": "soe-sword-guide"
+      },
+      {
+       "id": "soe-sword-up",
+       "title": "Upgraded sword (Arch-Ovum rituals)",
+       "priority": 2,
+       "type": "check",
+       "guide": "soe-sword-up-guide"
+      },
+      {
+       "id": "soe-arnie",
+       "title": "Upgrade Li'l Arnie",
+       "priority": 2,
+       "type": "check",
+       "guide": "soe-arnie-guide"
+      },
+      {
+       "id": "soe-goddard",
+       "title": "Upgrade the shield (Goddard Apparatus)",
+       "detail": "Hit 10 or more zombies with one shield charge, **12 charges in a row**. A bowling-pins sound means the charge counted. A charge that hits fewer than 10 resets the streak. Breaking the shield does not.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "soe-gum",
+       "title": "Free Mega GobbleGum (lion mouths)",
+       "detail": "Needs four Widow's Wine grenades. Throw one into each of the four lion mouths in the Canal District room next to Double Tap. Take the grey sphere from a lion, put it on the plate in a shop in the first room, wait two rounds, then eat it from the plate.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "soe-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "the-giant",
+   "title": "The Giant",
+   "groups": [
+    {
+     "id": "giant-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "giant-power",
+       "title": "Turn on the power (Courtyard)",
+       "priority": 1,
+       "type": "check",
+       "guide": "giant-pap-guide"
+      },
+      {
+       "id": "giant-tpa",
+       "title": "Link Teleporter A (Animal Testing Lab side)",
+       "priority": 1,
+       "type": "check",
+       "guide": "giant-pap-guide"
+      },
+      {
+       "id": "giant-tpb",
+       "title": "Link Teleporter B (Garage side)",
+       "priority": 1,
+       "type": "check",
+       "guide": "giant-pap-guide"
+      },
+      {
+       "id": "giant-tpc",
+       "title": "Link Teleporter C (behind the Courtyard)",
+       "priority": 1,
+       "type": "check",
+       "guide": "giant-pap-guide"
+      },
+      {
+       "id": "giant-pap",
+       "title": "Pack-a-Punch (spawn room)",
+       "priority": 1,
+       "type": "check",
+       "guide": "giant-pap-guide"
+      },
+      {
+       "id": "giant-ww",
+       "title": "Wunderwaffe DG-2 from the Mystery Box",
+       "detail": "The map's wonder weapon comes only from the box.",
+       "priority": 1,
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "giant-extras",
+     "title": "Extras",
+     "items": [
+      {
+       "id": "giant-perk",
+       "title": "Secret perk (robot eye beam)",
+       "priority": 2,
+       "type": "check",
+       "guide": "giant-perk-guide"
+      },
+      {
+       "id": "giant-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "detail": "Fly Trap quest. Its reward is the Annihilator in the Garage furnace.",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "der-eisendrache",
+   "title": "Der Eisendrache",
+   "groups": [
+    {
+     "id": "de-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "de-power",
+       "title": "Turn on the power (Armory)",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-pap-guide"
+      },
+      {
+       "id": "de-pads",
+       "title": "Activate the Wundersphere landing pads",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-pads-guide"
+      },
+      {
+       "id": "de-shield",
+       "title": "Rocket Shield",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-shield-guide"
+      },
+      {
+       "id": "de-pap",
+       "title": "Pack-a-Punch (teleport the pieces from 2 of 3 spots)",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-pap-guide"
+      },
+      {
+       "id": "de-dragons",
+       "title": "Feed the three dragons",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-bow-guide"
+      },
+      {
+       "id": "de-bow",
+       "title": "Wrath of the Ancients (bow)",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-bow-guide"
+      },
+      {
+       "id": "de-ragnarok",
+       "title": "Ragnarok DG-4",
+       "priority": 1,
+       "type": "check",
+       "guide": "de-ragnarok-guide"
+      }
+     ]
+    },
+    {
+     "id": "de-upgrades",
+     "title": "Bow upgrades",
+     "items": [
+      {
+       "id": "de-storm",
+       "title": "Storm Bow",
+       "priority": 2,
+       "type": "check",
+       "guide": "de-storm-guide"
+      },
+      {
+       "id": "de-fire",
+       "title": "Fire Bow",
+       "priority": 2,
+       "type": "check",
+       "guide": "de-fire-guide"
+      },
+      {
+       "id": "de-void",
+       "title": "Void Bow",
+       "priority": 2,
+       "type": "check",
+       "guide": "de-void-guide"
+      },
+      {
+       "id": "de-wolf",
+       "title": "Wolf Bow",
+       "priority": 2,
+       "type": "check",
+       "guide": "de-wolf-guide"
+      },
+      {
+       "id": "de-goddard",
+       "title": "Upgrade the shield (Goddard Apparatus)",
+       "detail": "Same as Shadows of Evil: 12 shield charges in a row that each hit 10 or more zombies.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "de-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zetsubou-no-shima",
+   "title": "Zetsubou No Shima",
+   "groups": [
+    {
+     "id": "zns-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "zns-bucket",
+       "title": "Pick up a bucket",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-power-guide"
+      },
+      {
+       "id": "zns-power",
+       "title": "Power: Lab A, Lab B, then the Bunker",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-power-guide"
+      },
+      {
+       "id": "zns-shield",
+       "title": "Zombie Shield",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-shield-guide"
+      },
+      {
+       "id": "zns-mask",
+       "title": "Gas Mask",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-mask-guide"
+      },
+      {
+       "id": "zns-pap",
+       "title": "Pack-a-Punch: three pump parts",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-pap-guide"
+      },
+      {
+       "id": "zns-kt4",
+       "title": "KT-4",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-kt4-guide"
+      },
+      {
+       "id": "zns-skull",
+       "title": "Skull of Nan Sapwe",
+       "priority": 1,
+       "type": "check",
+       "guide": "zns-skull-guide"
+      }
+     ]
+    },
+    {
+     "id": "zns-extras",
+     "title": "Upgrades and extras",
+     "items": [
+      {
+       "id": "zns-spider",
+       "title": "Giant Spider and free Widow's Wine",
+       "priority": 2,
+       "type": "check",
+       "guide": "zns-spider-guide"
+      },
+      {
+       "id": "zns-trials",
+       "title": "Trials of the Ancients (all 3)",
+       "priority": 2,
+       "type": "check",
+       "guide": "zns-trials-guide"
+      },
+      {
+       "id": "zns-elec",
+       "title": "Electrify the shield",
+       "priority": 2,
+       "type": "check",
+       "guide": "zns-trials-guide"
+      },
+      {
+       "id": "zns-masamune",
+       "title": "Upgrade the KT-4 to the Masamune",
+       "priority": 2,
+       "type": "check",
+       "guide": "zns-masamune-guide"
+      },
+      {
+       "id": "zns-fruit",
+       "title": "Free perks from fruit plants",
+       "detail": "Plant a seed and water it once a round for three rounds, using blue, green and purple water once each, with no KT-4. It may grow fruit: eating it gives a free perk if you have a slot.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "zns-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gorod-krovi",
+   "title": "Gorod Krovi",
+   "groups": [
+    {
+     "id": "gk-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "gk-power",
+       "title": "Turn on the power (Dragon Command Center)",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-pap-guide"
+      },
+      {
+       "id": "gk-sophia",
+       "title": "Talk to Sophia",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-pap-guide"
+      },
+      {
+       "id": "gk-shield",
+       "title": "Guard of Fafnir",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-shield-guide"
+      },
+      {
+       "id": "gk-pods",
+       "title": "Three Groph Pods (network modules)",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-pap-guide"
+      },
+      {
+       "id": "gk-pap",
+       "title": "Ride the dragon to Pack-a-Punch",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-pap-guide"
+      },
+      {
+       "id": "gk-strike",
+       "title": "Dragon Strike",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-strike-guide"
+      },
+      {
+       "id": "gk-gauntlet",
+       "title": "Gauntlet of Siegfried",
+       "priority": 1,
+       "type": "check",
+       "guide": "gk-gauntlet-guide"
+      }
+     ]
+    },
+    {
+     "id": "gk-upgrades",
+     "title": "Upgrades and extras",
+     "items": [
+      {
+       "id": "gk-tiamat",
+       "title": "Upgrade the shield to Tiamat's Maw",
+       "priority": 2,
+       "type": "check",
+       "guide": "gk-tiamat-guide"
+      },
+      {
+       "id": "gk-draconite",
+       "title": "Upgrade to the Draconite Controller",
+       "priority": 2,
+       "type": "check",
+       "guide": "gk-strike-guide"
+      },
+      {
+       "id": "gk-wings",
+       "title": "Dragon Wings",
+       "detail": "Ride the dragon from all three platforms, and own the Dragon Strike and the Gauntlet. Then take the wings from the mannequin on the third floor of the Department Store. Free teleport to the Hatchery from the red poles by the platforms, plus fire and explosive resistance.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "gk-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "revelations",
+   "title": "Revelations",
+   "groups": [
+    {
+     "id": "rev-setup",
+     "title": "Every game: setup",
+     "items": [
+      {
+       "id": "rev-engines",
+       "title": "Activate the four Corruption Engines",
+       "priority": 1,
+       "type": "check",
+       "guide": "rev-pap-guide"
+      },
+      {
+       "id": "rev-shield",
+       "title": "Shield (Guard of Fafnir)",
+       "priority": 1,
+       "type": "check",
+       "guide": "rev-shield-guide"
+      },
+      {
+       "id": "rev-pap",
+       "title": "Pack-a-Punch (inside the Apothicon)",
+       "priority": 1,
+       "type": "check",
+       "guide": "rev-pap-guide"
+      },
+      {
+       "id": "rev-ww",
+       "title": "Thundergun or Apothicon Servant from the box",
+       "detail": "Both wonder weapons come from the Mystery Box. The Ragnarok DG-4 is in the box too.",
+       "priority": 1,
+       "type": "check"
+      },
+      {
+       "id": "rev-keeper",
+       "title": "Keeper Protector altar",
+       "priority": 2,
+       "type": "check",
+       "guide": "rev-keeper-guide"
+      }
+     ]
+    },
+    {
+     "id": "rev-upgrades",
+     "title": "Upgrades",
+     "items": [
+      {
+       "id": "rev-servant",
+       "title": "Upgrade the Apothicon Servant",
+       "priority": 2,
+       "type": "check",
+       "guide": "rev-servant-guide"
+      },
+      {
+       "id": "rev-arnie",
+       "title": "Upgrade Li'l Arnie",
+       "detail": "Get 150 kills with Li'l Arnies (all players together). Then throw one into the church bell tower window. Samantha giggles and everyone with Arnies gets upgraded ones. Not checked: which church window exactly.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "rev-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nacht-der-untoten",
+   "title": "Nacht der Untoten",
+   "groups": [
+    {
+     "id": "nacht-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "nacht-mule",
+       "title": "Mule Kick (starting room)",
+       "priority": 1,
+       "type": "check",
+       "guide": "nacht-plan-guide"
+      },
+      {
+       "id": "nacht-fizz",
+       "title": "Der Wunderfizz upstairs",
+       "detail": "No power needed on this map.",
+       "priority": 1,
+       "type": "check",
+       "guide": "nacht-plan-guide"
+      },
+      {
+       "id": "nacht-box",
+       "title": "Box for a wonder weapon",
+       "detail": "Ray Gun, Ray Gun Mark II, Thundergun or Monkey Bombs.",
+       "priority": 1,
+       "type": "check",
+       "guide": "nacht-plan-guide"
+      },
+      {
+       "id": "nacht-pap",
+       "title": "No Pack-a-Punch: use GobbleGum",
+       "detail": "The map has no machine. Only a GobbleGum can upgrade a gun here.",
+       "priority": 2,
+       "type": "check",
+       "guide": "nacht-plan-guide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "verruckt",
+   "title": "Verrückt",
+   "groups": [
+    {
+     "id": "verr-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "verr-power",
+       "title": "Turn on the power",
+       "detail": "The switch is on the far side of the map from where you start, on the opposite side of its room from the Mystery Box. It also opens the door between the two start rooms.",
+       "priority": 1,
+       "type": "check",
+       "guide": "verr-plan-guide"
+      },
+      {
+       "id": "verr-perks",
+       "title": "Buy perks (need power)",
+       "detail": "Der Wunderfizz adds Stamin-Up, Deadshot and Widow's Wine.",
+       "priority": 1,
+       "type": "check",
+       "guide": "verr-plan-guide"
+      },
+      {
+       "id": "verr-box",
+       "title": "Box for the Wunderwaffe DG-2",
+       "detail": "Box also has the Ray Gun, Ray Gun Mark II and Monkey Bombs.",
+       "priority": 1,
+       "type": "check",
+       "guide": "verr-plan-guide"
+      },
+      {
+       "id": "verr-pap",
+       "title": "No Pack-a-Punch: use GobbleGum",
+       "priority": 2,
+       "type": "check",
+       "guide": "verr-plan-guide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shi-no-numa",
+   "title": "Shi No Numa",
+   "groups": [
+    {
+     "id": "snn-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "snn-huts",
+       "title": "Open the four huts for perks",
+       "detail": "No power switch. Each hut gets a random perk machine when you open it. Traps work from the start.",
+       "priority": 1,
+       "type": "check",
+       "guide": "snn-plan-guide"
+      },
+      {
+       "id": "snn-fizz",
+       "title": "Der Wunderfizz",
+       "priority": 1,
+       "type": "check",
+       "guide": "snn-plan-guide"
+      },
+      {
+       "id": "snn-box",
+       "title": "Box for the Wunderwaffe DG-2",
+       "detail": "The Mystery Box moves to a random spot and shows a green beam in the sky.",
+       "priority": 1,
+       "type": "check",
+       "guide": "snn-plan-guide"
+      },
+      {
+       "id": "snn-pap",
+       "title": "No Pack-a-Punch: use GobbleGum",
+       "priority": 2,
+       "type": "check",
+       "guide": "snn-plan-guide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kino-der-toten",
+   "title": "Kino der Toten",
+   "groups": [
+    {
+     "id": "kino-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "kino-power",
+       "title": "Turn on the power (backstage)",
+       "priority": 1,
+       "type": "check",
+       "guide": "kino-pap-guide"
+      },
+      {
+       "id": "kino-link",
+       "title": "Link the teleporter to the mainframe",
+       "priority": 1,
+       "type": "check",
+       "guide": "kino-pap-guide"
+      },
+      {
+       "id": "kino-pap",
+       "title": "Pack-a-Punch (projector room)",
+       "priority": 1,
+       "type": "check",
+       "guide": "kino-pap-guide"
+      },
+      {
+       "id": "kino-fizz",
+       "title": "Der Wunderfizz",
+       "detail": "Gives Widow's Wine, Stamin-Up and Deadshot.",
+       "priority": 2,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ascension",
+   "title": "Ascension",
+   "groups": [
+    {
+     "id": "asc-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "asc-power",
+       "title": "Turn on the power (top floor)",
+       "priority": 1,
+       "type": "check",
+       "guide": "asc-pap-guide"
+      },
+      {
+       "id": "asc-landers",
+       "title": "Ride all three Lunar Landers",
+       "priority": 1,
+       "type": "check",
+       "guide": "asc-pap-guide"
+      },
+      {
+       "id": "asc-rocket",
+       "title": "Launch the rocket",
+       "priority": 1,
+       "type": "check",
+       "guide": "asc-pap-guide"
+      },
+      {
+       "id": "asc-pap",
+       "title": "Pack-a-Punch (launch pad)",
+       "priority": 1,
+       "type": "check",
+       "guide": "asc-pap-guide"
+      },
+      {
+       "id": "asc-dp",
+       "title": "Free Double Points: blow up the rocket",
+       "detail": "Shoot the launching rocket with a strong explosive gun. A Double Points drops below it.",
+       "priority": 2,
+       "type": "check"
+      },
+      {
+       "id": "asc-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shangri-la",
+   "title": "Shangri-La",
+   "groups": [
+    {
+     "id": "shang-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "shang-power",
+       "title": "Pull both power switches",
+       "priority": 1,
+       "type": "check",
+       "guide": "shang-pap-guide"
+      },
+      {
+       "id": "shang-pap",
+       "title": "Raise the Pack-a-Punch stairs",
+       "priority": 1,
+       "type": "check",
+       "guide": "shang-pap-guide"
+      },
+      {
+       "id": "shang-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moon",
+   "title": "Moon",
+   "groups": [
+    {
+     "id": "moon-run",
+     "title": "Every game",
+     "items": [
+      {
+       "id": "moon-a51",
+       "title": "Area 51: early Pack-a-Punch or perk, then teleport",
+       "priority": 1,
+       "type": "check",
+       "guide": "moon-power-guide"
+      },
+      {
+       "id": "moon-pes",
+       "title": "Put on a P.E.S. suit",
+       "priority": 1,
+       "type": "check",
+       "guide": "moon-power-guide"
+      },
+      {
+       "id": "moon-power",
+       "title": "Turn on the power (Power Room)",
+       "priority": 1,
+       "type": "check",
+       "guide": "moon-power-guide"
+      },
+      {
+       "id": "moon-hacker",
+       "title": "Pick up the Hacker",
+       "priority": 1,
+       "type": "check",
+       "guide": "moon-hacker-guide"
+      },
+      {
+       "id": "moon-pap",
+       "title": "Pack-a-Punch trip back to Area 51",
+       "priority": 1,
+       "type": "check",
+       "guide": "moon-pap-guide"
+      },
+      {
+       "id": "moon-exc",
+       "title": "Stop the excavators",
+       "priority": 2,
+       "type": "check",
+       "guide": "moon-hacker-guide"
+      },
+      {
+       "id": "moon-ww",
+       "title": "Box: Wave Gun, Q.E.D. and Gersh Device",
+       "priority": 1,
+       "type": "check"
+      },
+      {
+       "id": "moon-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "origins",
+   "title": "Origins",
+   "groups": [
+    {
+     "id": "ori-gens",
+     "title": "Every game: generators and Pack-a-Punch",
+     "items": [
+      {
+       "id": "ori-gen1",
+       "title": "Generator 1 (spawn)",
+       "detail": "Stand in the zone until it is captured. Defend against the Templar zombies.",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-gen3",
+       "title": "Generator 3 (Workshop, Speed Cola)",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-gen2",
+       "title": "Generator 2 (Tank Station)",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-exc",
+       "title": "Open the Excavation Site",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-gen4",
+       "title": "Generator 4",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-gen5",
+       "title": "Generator 5 (Stamin-Up)",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-gen6",
+       "title": "Generator 6 (behind the Church)",
+       "detail": "Its reward box holds a Fire Staff part.",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      },
+      {
+       "id": "ori-pap",
+       "title": "Pack-a-Punch",
+       "detail": "Works once all six generators are on. Top of the Excavation Site.",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-plan-guide"
+      }
+     ]
+    },
+    {
+     "id": "ori-build",
+     "title": "Buildables",
+     "items": [
+      {
+       "id": "ori-shield",
+       "title": "Zombie Shield",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-shield-guide"
+      },
+      {
+       "id": "ori-gram",
+       "title": "Gramophone and all five records",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-gramophone-guide"
+      },
+      {
+       "id": "ori-drone",
+       "title": "Maxis Drone",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-drone-guide"
+      }
+     ]
+    },
+    {
+     "id": "ori-staffs",
+     "title": "Staffs: build",
+     "items": [
+      {
+       "id": "ori-ice",
+       "title": "Ice Staff",
+       "detail": "Dig the parts first, while it snows.",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-ice-build-guide"
+      },
+      {
+       "id": "ori-lightning",
+       "title": "Lightning Staff",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-lightning-build-guide"
+      },
+      {
+       "id": "ori-wind",
+       "title": "Wind Staff",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-wind-build-guide"
+      },
+      {
+       "id": "ori-fire",
+       "title": "Fire Staff",
+       "priority": 1,
+       "type": "check",
+       "guide": "ori-fire-build-guide"
+      }
+     ]
+    },
+    {
+     "id": "ori-up",
+     "title": "Staffs: upgrade",
+     "items": [
+      {
+       "id": "ori-u-ice",
+       "title": "Ull's Arrow (Ice)",
+       "priority": 2,
+       "type": "check",
+       "guide": "ori-ice-upgrade-guide"
+      },
+      {
+       "id": "ori-u-lightning",
+       "title": "Kimat's Bite (Lightning)",
+       "priority": 2,
+       "type": "check",
+       "guide": "ori-lightning-upgrade-guide"
+      },
+      {
+       "id": "ori-u-wind",
+       "title": "Boreas' Fury (Wind)",
+       "priority": 2,
+       "type": "check",
+       "guide": "ori-wind-upgrade-guide"
+      },
+      {
+       "id": "ori-u-fire",
+       "title": "Kagutsuchi's Blood (Fire)",
+       "priority": 2,
+       "type": "check",
+       "guide": "ori-fire-upgrade-guide"
+      },
+      {
+       "id": "ori-ee",
+       "title": "Main easter egg (guide not written yet)",
+       "priority": 3,
+       "type": "check"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "soe-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Shadows of Evil",
+   "body": "A clean solo run. Each line has its own step-by-step guide.\n\n1. **Round 1**: go Beast at the purple flame shrine in spawn. Smash the crate on the truck for the **Summoning Key**. Shock the crane meter at the Easy Street entrance for the **pen**.\n2. **Rounds 2 to 4**: open one district at a time. In each one, grab the shield part, Beast the ritual item, and Beast-shock the perk panels you want.\n3. **Do the four rituals** as you get each item. A Margwa comes after the 2nd and the 4th ritual: its heart is an Apothicon Servant part.\n4. **Go down to the Rift** with the four Gateworms and do the Sacred Place ritual. Pack-a-Punch opens.\n5. **Sword**: note the three tram symbols, open the wall in the Rift, charge your egg at all four statues.\n6. Build the **Apothicon Servant** once you have the heart, a tentacle (top Harvest Pod) and Xenomatter (round 12+).\n7. Optional: Civil Protector fuses, sword upgrade, Li'l Arnie upgrade.\n\n| District | Ritual item | Ritual site |\n|---|---|---|\n| Junction / Easy Street | Lawyer's pen | Nero's apartment above Easy Street |\n| Waterfront | Championship belt | The Anvil boxing gym |\n| Canal | Detective badge | Ruby Rabbit nightclub |\n| Footlight | Toupee | Black Lace Burlesque |\n\nPerk hint: in the Junction, in front of the doors to the three districts, a broken bottle shows where three perks spawned this game. Red is Juggernog, green is Speed Cola, yellow is Double Tap."
+  },
+  {
+   "id": "soe-beast-guide",
+   "title": "Power the perks with the Beast",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "intro": "Shadows of Evil has no main power switch. You switch on each perk yourself with a Beast shock.",
+   "steps": [
+    {
+     "id": "soe-beast-guide-s1",
+     "title": "Become the Beast",
+     "where": "Any purple flame shrine",
+     "text": "Hold use at a shrine with a purple flame. Solo you get three Beast uses and refill one per round. Each lasts about 30 seconds.",
+     "video": "https://www.youtube.com/watch?v=oALSmR1lPV8&t=5s"
+    },
+    {
+     "id": "soe-beast-guide-s2",
+     "title": "Shock the perk panel",
+     "where": "Next to each perk machine",
+     "text": "Charge and fire the Beast shock at the small electric panel beside the machine. The machine lights up and can be bought as a human."
+    },
+    {
+     "id": "soe-beast-guide-s3",
+     "title": "Find Juggernog, Speed Cola and Double Tap",
+     "where": "Junction",
+     "text": "They move between districts each game. Look at the broken bottle in front of each district door: red = Juggernog, green = Speed Cola, yellow = Double Tap."
+    }
+   ]
+  },
+  {
+   "id": "soe-pap-guide",
+   "title": "Summoning Key, rituals and Pack-a-Punch",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "intro": "Everything here needs the Beast. Each ritual item sits in a crate you can only reach or break as the Beast.",
+   "steps": [
+    {
+     "id": "soe-pap-guide-s1",
+     "title": "Get the Summoning Key",
+     "where": "Spawn alley, Easy Street",
+     "text": "Go Beast. Melee the crate in the back of the truck. Turn back to human and pick up the key.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=33s"
+    },
+    {
+     "id": "soe-pap-guide-s2",
+     "title": "Ritual item 1: Lawyer's pen",
+     "where": "Just outside the Easy Street entrance",
+     "text": "As the Beast, shock the meter by the crane. The crane swings in and drops its crate, which breaks. Pick up the pen as a human. Every ritual item you pick up spawns two Keepers.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=60s"
+    },
+    {
+     "id": "soe-pap-guide-s3",
+     "title": "Ritual item 2: Championship belt",
+     "where": "Waterfront District",
+     "text": "A crate hangs from a chain above the district. As the Beast, grapple to the platform where it hangs and melee it so it falls. Pick up the belt.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=147s"
+    },
+    {
+     "id": "soe-pap-guide-s4",
+     "title": "Ritual item 3: Detective badge",
+     "where": "Canal District",
+     "text": "The crate is behind a locked grate in the canals. As the Beast, find the brickwork painted with the Beast mark and shock the hidden meter behind it. The grate opens. Melee the crate and take the badge.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=299s"
+    },
+    {
+     "id": "soe-pap-guide-s5",
+     "title": "Ritual item 4: Toupee",
+     "where": "Walkways into the Footlight District",
+     "text": "The crate sits on the edge of a building across a gap. As the Beast, cross the gap and knock the crate down. It breaks on the ground. Take the toupee.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=232s"
+    },
+    {
+     "id": "soe-pap-guide-s6",
+     "title": "Do a ritual",
+     "where": "Each item's ritual site",
+     "text": "Place the item on its altar, then use the altar with the Summoning Key. Survive the Keepers and zombies until the floating person dies. A Gateworm appears above the altar: take it. A Margwa spawns after your 2nd and your 4th ritual.",
+     "options": [
+      "Pen: Nero's apartment above Easy Street",
+      "Belt: The Anvil gym, Waterfront",
+      "Badge: Ruby Rabbit nightclub, Canal",
+      "Toupee: Black Lace Burlesque, Footlight"
+     ],
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=110s"
+    },
+    {
+     "id": "soe-pap-guide-s7",
+     "title": "Place the first two Gateworms",
+     "where": "The Rift (subway under the Junction), Sacred Place",
+     "text": "With all four rituals done, the Sacred Place opens. Put a Gateworm on each of the two fiery stands on the altar side. Walls rise out of the gap.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=414s"
+    },
+    {
+     "id": "soe-pap-guide-s8",
+     "title": "Cross and place the other two",
+     "where": "Sacred Place, far side",
+     "text": "Wall-run across the gap on the new walls. Place the last two Gateworms on the far stands. A one-way path back to the altar appears.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=428s"
+    },
+    {
+     "id": "soe-pap-guide-s9",
+     "title": "Final ritual",
+     "where": "Sacred Place altar",
+     "text": "Start the ritual at the altar and survive the Keepers. The Shadowman thanks you and a Margwa spawns. The sky turns red and the Pack-a-Punch portal opens in the Sacred Place. Packing is slow on this map.",
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=435s"
+    }
+   ]
+  },
+  {
+   "id": "soe-shield-guide",
+   "title": "Build the Rocket Shield",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-shield-guide-s1",
+     "title": "Part 1: Eagle Plate",
+     "where": "Canal District, Smoke Lounge",
+     "text": "The wiki lists two spots. If it is in neither, search the rest of the lounge.",
+     "options": [
+      "Leaning against the window in the Smoke Lounge",
+      "Against the wall opposite that window"
+     ],
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=25s"
+    },
+    {
+     "id": "soe-shield-guide-s2",
+     "title": "Part 2: Fuel Canisters",
+     "where": "Waterfront District",
+     "text": "One of three spots.",
+     "options": [
+      "Leaning on the window across from the perk machine",
+      "On the bridge that leads to the lounge",
+      "Inside the lounge, left of the paid gate to the Waterfront train station, leaning on an overturned coffee table"
+     ],
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=73s"
+    },
+    {
+     "id": "soe-shield-guide-s3",
+     "title": "Part 3: Screen",
+     "where": "Footlight District",
+     "text": "The wiki lists two spots.",
+     "options": [
+      "Next to the perk machine",
+      "In the tunnel to the tram station, on a bench on the left"
+     ],
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=120s"
+    },
+    {
+     "id": "soe-shield-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Hold use at a workbench. The shield boosts you forward and knocks zombies away. White gas canisters with a red valve refill one charge; Max Ammo refills all.",
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=172s"
+    }
+   ]
+  },
+  {
+   "id": "soe-civil-guide",
+   "title": "Civil Protector: the three fuses",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-civil-guide-s1",
+     "title": "Fuse 1",
+     "where": "Canal District",
+     "text": "Open the 1250 door near the district's train station and perk machine. The fuse is on the walkway behind it.",
+     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=18s"
+    },
+    {
+     "id": "soe-civil-guide-s2",
+     "title": "Fuse 2",
+     "where": "Waterfront District",
+     "text": "Same idea: 1250 door near the train station, fuse on the walkway.",
+     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=279s"
+    },
+    {
+     "id": "soe-civil-guide-s3",
+     "title": "Fuse 3",
+     "where": "Footlight District",
+     "text": "Same idea: 1250 door near the train station, fuse on the walkway."
+    },
+    {
+     "id": "soe-civil-guide-s4",
+     "title": "Fit the fuses",
+     "where": "Below the city (the Rift)",
+     "text": "Put all three fuses in the fuse box called the Master Switch.",
+     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=62s"
+    },
+    {
+     "id": "soe-civil-guide-s5",
+     "title": "Call the robot",
+     "where": "Any Emergency Response panel",
+     "text": "Costs 2000. You can pay part now and the rest later. Only one robot at a time, and only when the panel is green. It fights in that district and can revive you, but its kills give no points.",
+     "options": [
+      "Junction, near the GobbleGum machine and Chang's laundry",
+      "Canal, in front of the Ruby Rabbit, over the bridge near the hotel",
+      "Footlight, near the Apothicon statue by the gate to the Burlesque",
+      "Waterfront, near the Mystery Box spawn"
+     ],
+     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=69s"
+    }
+   ]
+  },
+  {
+   "id": "soe-servant-guide",
+   "title": "Build the Apothicon Servant",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-servant-guide-s1",
+     "title": "Part 1: Margwa Heart",
+     "where": "Wherever you kill a Margwa",
+     "text": "Margwas drop it. If you miss it, the next Margwa drops a new one. Margwas come after rituals 2 and 4.",
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=50s"
+    },
+    {
+     "id": "soe-servant-guide-s2",
+     "title": "Part 2: Margwa Tentacle",
+     "where": "Harvest Pods around the map",
+     "text": "Comes from a top-tier (fully grown) Harvest Pod. Open fully grown pods until it drops.",
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=68s"
+    },
+    {
+     "id": "soe-servant-guide-s3",
+     "title": "Part 3: Xenomatter",
+     "where": "Anywhere, round 12 or later",
+     "text": "Dropped by Parasites or Insanity Elementals once round 12 is reached.",
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=121s"
+    },
+    {
+     "id": "soe-servant-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Only one player can take the built one. After that it also goes into the Mystery Box. It cannot be Pack-a-Punched on this map.",
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=156s"
+    }
+   ]
+  },
+  {
+   "id": "soe-sword-guide",
+   "title": "Get the Apothicon Sword",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-sword-guide-s1",
+     "title": "Note the three tram symbols",
+     "where": "On the tram",
+     "text": "Each ride shows a symbol in a red-lit window. They change every game. Fastest: ride Waterfront to Footlight looking out the side **opposite** the Bootlegger wall gun (two symbols), then Footlight to Canal looking out the **Bootlegger** side (the third, just before Canal station).",
+     "options": [
+      "Leaving Waterfront: right side, top right window of a square building after the small shack",
+      "Leaving Footlight: left side, after the Peep Show and Celeste's signs",
+      "Leaving Canal: left side, after the Devil-O-Donuts and Hotel signs"
+     ],
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=52s"
+    },
+    {
+     "id": "soe-sword-guide-s2",
+     "title": "Open the sword wall",
+     "where": "The Rift, next to the box spawn and GobbleGum machine",
+     "text": "Go Beast. Nine symbols show around a doorway opposite the Sacred Place. Shock the three you saw. A wrong set hides the symbols until next round. The wall dissolves to show a statue with swords and eggs.",
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=150s"
+    },
+    {
+     "id": "soe-sword-guide-s3",
+     "title": "Take an egg",
+     "where": "Sword statue",
+     "text": "Use the statue to take one egg.",
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=169s"
+    },
+    {
+     "id": "soe-sword-guide-s4",
+     "title": "Charge the egg at four statues",
+     "where": "Inside smashable crates",
+     "text": "Place the egg on each Apothicon statue and kill zombies near it. It takes 12 souls, then glows white. Pick it up and go to the next.",
+     "options": [
+      "Footlight alley, under the perk machine spot",
+      "Canal, behind the Ruby Rabbit front stairs",
+      "Waterfront, in the destroyed building, room after the perk machine",
+      "The Rift, opposite the sword statue"
+     ],
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=175s"
+    },
+    {
+     "id": "soe-sword-guide-s5",
+     "title": "Claim the sword",
+     "where": "Sword statue",
+     "text": "After four statues the egg glows blue. Return it to the statue to get your sword.",
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=216s"
+    }
+   ]
+  },
+  {
+   "id": "soe-sword-up-guide",
+   "title": "Upgrade the Apothicon Sword",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-sword-up-guide-s1",
+     "title": "Get the Arch-Ovum",
+     "where": "Your character's ritual site",
+     "text": "Talk to the Keeper spirit floating above your own character's altar. It gives you the Arch-Ovum egg.",
+     "options": [
+      "Nero: apartment above Easy Street",
+      "Floyd: Anvil gym",
+      "Jack: Ruby Rabbit",
+      "Jessica: Burlesque"
+     ],
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=233s"
+    },
+    {
+     "id": "soe-sword-up-guide-s2",
+     "title": "Four red circles: kill the Margwas",
+     "where": "Red circles on the ground",
+     "text": "Place the egg on a circle. Solo, up to two Margwas spawn and hunt only you. Kill them; the egg comes back with less shell. **One circle per round.**",
+     "options": [
+      "Footlight: in front of the Burlesque entrance",
+      "Canal: between the workbench and the Ruby Rabbit entrance",
+      "Waterfront: right in front of the Anvil gym",
+      "Junction: outside the Easy Street entrance"
+     ],
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=266s"
+    },
+    {
+     "id": "soe-sword-up-guide-s3",
+     "title": "Hand over the sword",
+     "where": "Your character's ritual site",
+     "text": "Give your sword to the Keeper spirit. It comes back upgraded.",
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=340s"
+    }
+   ]
+  },
+  {
+   "id": "soe-arnie-guide",
+   "title": "Upgrade Li'l Arnie",
+   "category": "Shadows of Evil",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "soe-arnie-guide-s1",
+     "title": "Finish all four rituals first",
+     "where": "Whole map",
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=30s"
+    },
+    {
+     "id": "soe-arnie-guide-s2",
+     "title": "Get 100 kills with Li'l Arnie",
+     "where": "Anywhere",
+     "text": "The player holding Arnie needs the kills.",
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=54s"
+    },
+    {
+     "id": "soe-arnie-guide-s3",
+     "title": "Throw Arnie at the three costume items",
+     "where": "Each makes the item vanish",
+     "options": [
+      "Top hat: on a mannequin's head in Nero's apartment",
+      "Bow tie: on a shelf in the boxing gym",
+      "Walking cane: on a sofa, first floor of the Ruby Rabbit"
+     ],
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=104s"
+    },
+    {
+     "id": "soe-arnie-guide-s4",
+     "title": "Throw Arnie at the stage",
+     "where": "Black Lace Burlesque",
+     "text": "Throw it at the ritual stand on the stage. A little creature dances with four Gateworms. When the song ends, your Arnies are upgraded.",
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=154s"
+    }
+   ]
+  },
+  {
+   "id": "giant-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "The Giant",
+   "body": "1. **Rounds 1 to 3**: open toward the Animal Testing Lab or the Garage. Both lead to the Courtyard.\n2. **Power**: drop into the Courtyard next to the bridge and pull the switch on the generator. The bridge comes down.\n3. **Link all three teleporters**. The Pack-a-Punch door in spawn opens a bit with each one.\n4. Hit the box for the Wunderwaffe DG-2 and Monkey Bombs.\n5. With Monkey Bombs: the secret perk.\n\n| Teleporter | Where | Door |\n|---|---|---|\n| A | Behind the Animal Testing Lab | 1250 |\n| B | Up the stairs from the Garage | stairs from the Garage |\n| C | Behind the Courtyard | 1250 |"
+  },
+  {
+   "id": "giant-pap-guide",
+   "title": "Power, teleporters and Pack-a-Punch",
+   "category": "The Giant",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "giant-pap-guide-s1",
+     "title": "Turn on the power",
+     "where": "Courtyard, back of the big generator",
+     "text": "Reach the Courtyard by dropping down next to the bridge from the Lab or Garage side. Pull the switch on the generator.",
+     "video": "https://www.youtube.com/watch?v=FGQgPX0FbUE&t=5s"
+    },
+    {
+     "id": "giant-pap-guide-s2",
+     "title": "Link Teleporter A",
+     "where": "Behind the Animal Testing Lab (1250 door)",
+     "text": "Activate the teleporter at its pad, then run straight back to the mainframe in the spawn room and use it before time runs out."
+    },
+    {
+     "id": "giant-pap-guide-s3",
+     "title": "Link Teleporter B",
+     "where": "Up the stairs from the Garage",
+     "text": "Same thing: activate, then run back to the mainframe."
+    },
+    {
+     "id": "giant-pap-guide-s4",
+     "title": "Link Teleporter C",
+     "where": "Behind the Courtyard (1250 door)",
+     "text": "Same thing again."
+    },
+    {
+     "id": "giant-pap-guide-s5",
+     "title": "Pack-a-Punch",
+     "where": "Spawn room",
+     "text": "With all three linked, the door in spawn is fully open. 5000 points to pack, 2500 to add an ammo upgrade."
+    }
+   ]
+  },
+  {
+   "id": "giant-perk-guide",
+   "title": "Secret perk: the robot eye beam",
+   "category": "The Giant",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "giant-perk-guide-s1",
+     "title": "Get Monkey Bombs and link all teleporters",
+     "where": "Mystery Box",
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=34s"
+    },
+    {
+     "id": "giant-perk-guide-s2",
+     "title": "Teleport with a monkey, three times",
+     "where": "Each teleporter",
+     "text": "Throw a Monkey Bomb on the teleporter pad and teleport together with it. Back at the mainframe, one of three lights on the panel by the mainframe turns from red to green. Do this at A, B and C.",
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=59s"
+    },
+    {
+     "id": "giant-perk-guide-s3",
+     "title": "Press the red button",
+     "where": "Panel by the mainframe",
+     "text": "The giant robot head outside fires its eye beam. It bounces off the metal welcome sign and melts a snow pile, revealing Stamin-Up or Deadshot Daiquiri.",
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=97s"
+    }
+   ]
+  },
+  {
+   "id": "de-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Der Eisendrache",
+   "body": "1. **Round 1**: a free fuse is waiting in spawn for the gondola. Open up toward the Armory and **turn on the power**.\n2. **Rounds 2 to 5**: activate landing pads as you pass them. Grab shield parts in both courtyards. Kill zombies near each dragon head to feed it 8.\n3. **Undercroft** (opens with power): turn on anti-gravity for the shield Screen. Feed the third dragon. Visit a Pack-a-Punch spot.\n4. Visit the other Pack-a-Punch spots (Bastion and Rocket Platform). After two, the third builds the machine.\n5. Take the **bow** from the knight's room above the Undercroft.\n6. **Round 8 or so**: the first Panzersoldat drops a Ragnarok part. Get the other two at the rocket test and from the Death Ray.\n7. Pick **one bow upgrade** and follow its guide. Storm and Wolf are the most forgiving solo.\n\nAnti-gravity: stand about 4 seconds on each of the four floor tiles around the Pyramid until they stay blue. It then turns on and comes back every 2 to 4 minutes."
+  },
+  {
+   "id": "de-pap-guide",
+   "title": "Power and Pack-a-Punch",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-pap-guide-s1",
+     "title": "Turn on the power",
+     "where": "Armory",
+     "text": "The switch is next to a row of generators. Power opens the Undercroft.",
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=23s"
+    },
+    {
+     "id": "de-pap-guide-s2",
+     "title": "Spot 1: Undercroft",
+     "where": "Next to the big central pillar, the side away from the dragon statue",
+     "text": "Walk up to the machine pieces and accept the prompt to teleport them.",
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=51s"
+    },
+    {
+     "id": "de-pap-guide-s3",
+     "title": "Spot 2: Bastion",
+     "where": "Outdoors behind the power switch, opposite the Wundersphere",
+     "text": "Teleport the pieces here too. After two spots, the third builds the machine.",
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=37s"
+    },
+    {
+     "id": "de-pap-guide-s4",
+     "title": "Spot 3: Rocket Platform",
+     "where": "Walkway next to the rocket",
+     "text": "Reach it with the Undercroft teleporter, or the Bastion Wundersphere once its landing pad is on.",
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=81s"
+    },
+    {
+     "id": "de-pap-guide-s5",
+     "title": "Find the machine later",
+     "where": "Any of the three spots",
+     "text": "The machine moves between the three spots from time to time. A board near each spot names where it is now.",
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=92s"
+    }
+   ]
+  },
+  {
+   "id": "de-pads-guide",
+   "title": "Wundersphere landing pads",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-pads-guide-s1",
+     "title": "Turn on each landing pad",
+     "where": "At the landing pad end",
+     "text": "Stand by the landing pad and use it. A blue glow means it is on. Then its Wundersphere launches you there for 500 points.",
+     "options": [
+      "Rocket Test Area sphere lands in the Spawn Room",
+      "Death Ray Area sphere lands at the Rocket Test Area",
+      "Balcony by the Gate Trap sphere lands at the computer by the Clock Tower",
+      "Courtyard by the computer room sphere lands on the staircase by the dragon"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "de-shield-guide",
+   "title": "Build the Rocket Shield",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-shield-guide-s1",
+     "title": "Part 1: Eagle Plate",
+     "where": "Upper Courtyard",
+     "text": "One of three spots.",
+     "options": [
+      "On the ground against big crates by a window, right of the ground-floor entrance to Mission Control",
+      "Clock Tower ground floor, on the floor just left of a corpse sitting at a desk",
+      "Left side of the stairs up to the Clock Tower and its landing pad, leaning on wooden barrels"
+     ],
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=69s"
+    },
+    {
+     "id": "de-shield-guide-s2",
+     "title": "Part 2: Fuel Canisters",
+     "where": "Lower Courtyard",
+     "text": "One of three spots.",
+     "options": [
+      "Coming uphill from Double Tap: on crates right away on your right, by a window",
+      "Same entrance, turn left up the small stairs: at the bottom right of the other small stairs that lead only to a window, against small crates",
+      "From the second-floor landing pad, take the stairs up toward the Death Ray: at the base of the second flight, on the left against the stone wall"
+     ],
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=28s"
+    },
+    {
+     "id": "de-shield-guide-s3",
+     "title": "Part 3: Screen",
+     "where": "Undercroft, high up",
+     "text": "All three need anti-gravity on (stand on the four tiles around the Pyramid). Double jump to reach them.",
+     "options": [
+      "Above the Pack-a-Punch teleporter platform, hanging on the wall (double jump and wall-run)",
+      "Above the doorway to the Rocket Test teleporter, just under the glowing eye glyph",
+      "From the workbench by the Pyramid, turn to face the Pyramid and look up left: hanging on the metal rings that join the four Keeper statues"
+     ],
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=113s"
+    },
+    {
+     "id": "de-shield-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Free replacement at the same bench if it breaks.",
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=194s"
+    }
+   ]
+  },
+  {
+   "id": "de-bow-guide",
+   "title": "Feed the dragons and get the bow",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-bow-guide-s1",
+     "title": "Dragon 1",
+     "where": "Courtyard by Double Tap, above the tunnel to the underground lab",
+     "text": "Kill a zombie near the stone head to wake it. Then keep killing zombies close to it. It lifts and eats one body at a time; kills during a meal do not count. 8 bodies and it crumbles."
+    },
+    {
+     "id": "de-bow-guide-s2",
+     "title": "Dragon 2",
+     "where": "Mission Control, Speed Cola room, above the fireplace at the back",
+     "text": "Feed it 8."
+    },
+    {
+     "id": "de-bow-guide-s3",
+     "title": "Dragon 3",
+     "where": "Undercroft Pyramid room, across from the workbench",
+     "text": "Feed it 8."
+    },
+    {
+     "id": "de-bow-guide-s4",
+     "title": "Take the bow",
+     "where": "The room right above the Undercroft, where a knight lies",
+     "text": "The bow floats above the crate at the back. Every player can take one. If you bleed out, take it again here."
+    }
+   ]
+  },
+  {
+   "id": "de-ragnarok-guide",
+   "title": "Build the Ragnarok DG-4",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-ragnarok-guide-s1",
+     "title": "Part 1: kill the first Panzersoldat",
+     "where": "Wherever it dies",
+     "text": "It drops a part. If you miss it, the next Panzersoldat drops it again.",
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=29s"
+    },
+    {
+     "id": "de-ragnarok-guide-s2",
+     "title": "Part 2: rocket test console",
+     "where": "Rocket Platform",
+     "text": "When a rocket test is about to start, pull the lever with a red light at the bottom of the left stairs behind the rocket (the stairs closest to the Wundersphere). Run into the teleporter tunnel. Survive until all three console lights right of the teleporter are solid green, then use the console quickly. The part appears in the teleporter. Miss the window and you wait for the next test.",
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=134s"
+    },
+    {
+     "id": "de-ragnarok-guide-s3",
+     "title": "Part 3: Death Ray part, mid-air",
+     "where": "Bastion",
+     "text": "Turn on the Death Ray once (1000 points). A part then floats above the Bastion. Ride the Wundersphere from the Upper Courtyard or the Lower Courtyard second floor and press use as you fly past it.",
+     "options": [
+      "On top of the orb above the door to the power switch room",
+      "Floating in the air behind the Wundersphere"
+     ],
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=46s"
+    },
+    {
+     "id": "de-ragnarok-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Plant it to trap zombies and Panzers, or slam it to kill everything nearby.",
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=202s"
+    }
+   ]
+  },
+  {
+   "id": "de-storm-guide",
+   "title": "Storm Bow",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-storm-guide-s1",
+     "title": "Shoot the weathervane",
+     "where": "Bastion, facing the Clock Tower",
+     "text": "A small tower has a lightning symbol and a weathervane on top. Shoot the vane with the bow. The bricks fall and drop the broken arrow. Pick it up.",
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=7s"
+    },
+    {
+     "id": "de-storm-guide-s2",
+     "title": "Light three bonfires",
+     "where": "Far outside the map",
+     "text": "Shoot each with the bow until it burns.",
+     "options": [
+      "Exit the Clock Tower, look over the edge right of the computer: on top of a castle turret (also shootable from the Mule Kick room below)",
+      "From the KRM-262 wall buy by Double Tap, turn about 45 degrees right: far right edge of the ridge over the rocket test site",
+      "Rocket Platform, leaving the teleporter tunnel: high on the cliff to your right, looking back at the castle"
+     ],
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=22s"
+    },
+    {
+     "id": "de-storm-guide-s3",
+     "title": "Wall-run the five wind symbols",
+     "where": "Undercroft, during anti-gravity",
+     "text": "Five long hexagon carvings of a gust of wind are on the walls. Touch all five in one wall-run without touching the ground. A sound tells you if you failed; wait for the next anti-gravity if needed.",
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=61s"
+    },
+    {
+     "id": "de-storm-guide-s4",
+     "title": "Fill three urns and re-shoot the bonfires",
+     "where": "Urns crackle with lightning",
+     "text": "Kill 5 zombies near an urn. Then draw the bow next to it: the arrow sparks. Shoot a bonfire with it; lightning then circles the flames. Do all three bonfires. Missed? Go back to the urn.",
+     "options": [
+      "Room above Double Tap, between the workbench and the L-CAR 9 wall buy",
+      "Rocket Platform tunnel, on the wall across from the teleporter",
+      "Clock Tower ground floor, on crates under the spiral stairs"
+     ],
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=124s"
+    },
+    {
+     "id": "de-storm-guide-s5",
+     "title": "Reforge the arrow",
+     "where": "Back at the weathervane",
+     "text": "Blue fog is now on the ground where the arrow fell. Use it to place the arrow. Wait a few seconds and take the reforged arrow.",
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=269s"
+    },
+    {
+     "id": "de-storm-guide-s6",
+     "title": "Charge and claim",
+     "where": "Undercroft, lightning shrine next to the Pyramid",
+     "text": "Place the arrow in the shrine. Kill 20 zombies inside the square formed by the stairs around the Pyramid. When it stops taking souls, place your bow. Take the Storm Bow.",
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=296s"
+    }
+   ]
+  },
+  {
+   "id": "de-fire-guide",
+   "title": "Fire Bow",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-fire-guide-s1",
+     "title": "Shoot the red symbol",
+     "where": "Clock Tower, top of the spiral staircase",
+     "text": "Shoot the glowing red symbol on the wall. The clock opens and drops the broken arrow pieces. Pick them up.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=9s"
+    },
+    {
+     "id": "de-fire-guide-s2",
+     "title": "Shoot the hot rock after a rocket test",
+     "where": "Rocket Platform",
+     "text": "Tests happen every 5 to 7 minutes. Wait near the blast doors. Right after a test, walk straight out, stop just past the cross tracks, turn 90 degrees right and shoot the orange glowing rock on top of the small VMP building. A fireball flies to the castle.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=20s"
+    },
+    {
+     "id": "de-fire-guide-s3",
+     "title": "Light three rings from a Wundersphere",
+     "where": "Shoot while flying",
+     "text": "Hold a charged shot as you launch and hit the ring while still in the air. A distant wail means it worked.",
+     "options": [
+      "Spawn, between the KRM-262 wall buy and Double Tap (fly from the Bastion or Rocket Platform)",
+      "Bastion, between the Death Ray and its Wundersphere (fly from the Upper Courtyard by the Kuda)",
+      "Outside the Clock Tower on the way to the Bastion (fly from the Lower Courtyard above Double Tap)"
+     ],
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=82s"
+    },
+    {
+     "id": "de-fire-guide-s4",
+     "title": "Kill zombies while standing in each ring",
+     "where": "Each lit ring",
+     "text": "Stand inside so the screen edges glow orange. The zombies do not need to be inside. When full, a fire pillar shoots up to the big fireball over the Bastion.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=197s"
+    },
+    {
+     "id": "de-fire-guide-s5",
+     "title": "Read the fireplace symbol",
+     "where": "Clock Tower clockwork, top of the stairs",
+     "text": "Use the exposed clockwork. A symbol lights up. It names one fireplace, and only that fireplace's ring stays lit.",
+     "options": [
+      "Arrowhead with two pierced triangles, dot left and right: Mission Control fireplace under the dragon (ring at the Bastion)",
+      "Cross with a dot left and right: Samantha's room (ring at spawn)",
+      "Arrowhead with pierced triangles above and below it: Lower Courtyard supply room across from the dragon (ring outside the Clock Tower)"
+     ],
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=216s"
+    },
+    {
+     "id": "de-fire-guide-s6",
+     "title": "Hop the lava to the fireplace",
+     "where": "From that ring to its fireplace",
+     "text": "Stand in the ring and shoot the ground far toward the fireplace: a lava mound appears. Stand next to it (screen glows orange) and shoot again. Hit the fireplace in 4 shots or fewer, then use it to put the arrow in the fire. Failed? Try again next round.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=261s"
+    },
+    {
+     "id": "de-fire-guide-s7",
+     "title": "Catch the reforged arrow",
+     "where": "Next to the Death Ray",
+     "text": "The big fireball is now low. Hold use under it. It hardens, explodes and drops the arrow. If the prompt is stubborn, stand against the Death Ray and inch toward it.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=354s"
+    },
+    {
+     "id": "de-fire-guide-s8",
+     "title": "Charge and claim",
+     "where": "Undercroft, box with dark volcanic rocks by the Pyramid",
+     "text": "Place the arrow, kill 20 zombies close to the box, use the box, take the Fire Bow.",
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=383s"
+    }
+   ]
+  },
+  {
+   "id": "de-void-guide",
+   "title": "Void Bow",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-void-guide-s1",
+     "title": "Shoot the Demon Gate glyph",
+     "where": "Gate Trap room next to Double Tap",
+     "text": "The glyph is painted on the sloped ceiling between the trap's two iron gates. Shoot it with the bow and take the broken arrow.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=17s"
+    },
+    {
+     "id": "de-void-guide-s2",
+     "title": "Free the urn",
+     "where": "Trophy Room, centre",
+     "text": "A floor tile glows purple. Kill a zombie with a **melee** hit right on it. The tile breaks. Use the urn: it rises and makes a summoning circle.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=28s"
+    },
+    {
+     "id": "de-void-guide-s3",
+     "title": "Return six Keeper skulls",
+     "where": "Around the castle",
+     "text": "Use each skull; it glows purple and flies back to the circle.",
+     "options": [
+      "Past the L-CAR 9 wall buy going up from spawn, before the Mule Kick round room: on the floor nook left of a slumped corpse, under a lantern",
+      "Upper Courtyard, on a windowsill up the stairs past the Vesper wall buy, before Mission Control",
+      "Samantha's room, in the open toy chest by the left wall near the bed",
+      "Double Tap, just right of the tipped-over shelves on the broken wall",
+      "Undercroft teleporter room, in the sink by a bucket, right side as you enter",
+      "Rocket Platform, in the back of the truck left of the Trip Mine wall buy"
+     ],
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=68s"
+    },
+    {
+     "id": "de-void-guide-s4",
+     "title": "Feed six crawlers",
+     "where": "Trophy Room circle",
+     "text": "Lead six legless zombies into the circle. A skull kills each one. Grenades or the Crawl Space GobbleGum make crawlers.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=135s"
+    },
+    {
+     "id": "de-void-guide-s5",
+     "title": "Learn the three crests",
+     "where": "Trophy Room, then the armour hallway",
+     "text": "The demon says three of six crests in an order. Write the order down. Shoot the urn to hear it again. In the T-shaped hallway between Samantha's room, the Armory and Mission Control, use each suit of armour to see which glyph goes with each crest (it changes every game). Ignore the suit with no crest.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=158s"
+    },
+    {
+     "id": "de-void-guide-s6",
+     "title": "Collect the glyphs",
+     "where": "Anywhere",
+     "text": "Your kills now sometimes drop glyphs. Keep going until you have the three you need. Extra ones do no harm.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=293s"
+    },
+    {
+     "id": "de-void-guide-s7",
+     "title": "Shoot the name",
+     "where": "Trophy Room circle",
+     "text": "Shoot the three correct glyphs on the circle floor, in the order the demon said them. A fire pillar rises. Place the arrow in it and take it back reforged. Wrong order resets the name.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=349s"
+    },
+    {
+     "id": "de-void-guide-s8",
+     "title": "Charge and claim",
+     "where": "Undercroft, box with the Demon Gate glyph by the Pyramid",
+     "text": "Place the arrow and kill zombies near the box. Then place the bow and kill 20 more. Use the glyph to take the Void Bow.",
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=497s"
+    }
+   ]
+  },
+  {
+   "id": "de-wolf-guide",
+   "title": "Wolf Bow",
+   "category": "Der Eisendrache",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "de-wolf-guide-s1",
+     "title": "Use the four paintings in order",
+     "where": "The paintings swap places each game",
+     "text": "Find the painting for each scene and use them in this order: 1. the king on his throne with wolves; 2. the king in his helmet on a horse; 3. a castle on a mountain with lightning; 4. the king slumped by his shield with a servant. A guitar strum and a wolf symbol mean it was right.",
+     "options": [
+      "Trophy Room, near the KRM-262 wall buy",
+      "Clock Tower, just before the spiral stairs",
+      "Next to the barrier between Samantha's room and the Armory",
+      "Control Room balcony closest to the Armory"
+     ],
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=15s"
+    },
+    {
+     "id": "de-wolf-guide-s2",
+     "title": "Take the broken arrow",
+     "where": "Undercroft, bottom of the stairs from the Family Crypt",
+     "text": "Go down from Mission Control through the Family Crypt. The wolf symbol on the wall crumbles. Take the arrow.",
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=134s"
+    },
+    {
+     "id": "de-wolf-guide-s3",
+     "title": "Shoot the red flag",
+     "where": "Rocket Platform, cliff above and left of the blast doors",
+     "text": "Shoot the base of the pole, not the cloth. Standing on the raised rocket platform helps. A glowing blue dog skull rolls down. Pick it up.",
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=142s"
+    },
+    {
+     "id": "de-wolf-guide-s4",
+     "title": "Follow the spirit wolf to three dig spots",
+     "where": "Start at the Wolf box by the Pyramid",
+     "text": "Place the skull in the Wolf box. A ghost wolf walks off: stay close or it howls and you must restart it at the box. At each spot kill about 10 zombies, then pick up the bones (no prompt shows).",
+     "options": [
+      "Middle of the Upper Courtyard",
+      "Just outside spawn, before the Gate Trap",
+      "Undercroft, next to the Pack-a-Punch spot"
+     ],
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=162s"
+    },
+    {
+     "id": "de-wolf-guide-s5",
+     "title": "Build the platform",
+     "where": "Undercroft, under a big hole high on the wall",
+     "text": "The wolf sits under the hole. With anti-gravity on, wall-run until a double wolf head symbol shows above the crack, then shoot it a few times until a platform forms.",
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=267s"
+    },
+    {
+     "id": "de-wolf-guide-s6",
+     "title": "Open the coffin",
+     "where": "On the new platform",
+     "text": "Use the coffin. The king's skeleton holds out the reforged arrow. Take it.",
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=328s"
+    },
+    {
+     "id": "de-wolf-guide-s7",
+     "title": "Charge and claim",
+     "where": "Undercroft, Wolf box by the Pyramid",
+     "text": "Place the arrow. Kill 20 zombies on the stairs around the Pyramid or the floor it stands on. Place your bow, wait, take the Wolf Bow.",
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=344s"
+    }
+   ]
+  },
+  {
+   "id": "zns-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Zetsubou No Shima",
+   "body": "1. **Round 1**: grab a bucket, fill it at a pond and pour it into the Lab A or Lab B water switch. Collect seeds from zombies and plant them as you go.\n2. **Rounds 2 to 4**: do the other lab switch. The Bunker door opens for free. Grab shield and gas mask parts on the way.\n3. **Main power**: clear the web from turbine 3 underwater and survive the lockdown. Take the pump pipe from the grate.\n4. Get the valve wheel (Mule Kick tunnel) and the pressure gauge (cocoons) for **Pack-a-Punch**.\n5. **KT-4**: glowing scientist vial, spider venom from the Lab A cage, and the item at the end of the Mule Kick tunnel.\n6. KT-4 the webs and kill the **Giant Spider**: free Widow's Wine and the fang.\n7. Do your three trials, cleanse the four skulls for the **Skull of Nan Sapwe**, then go for the Masamune.\n\n| Water | Where |\n|---|---|\n| Blue | Behind Lab A, before the route to the spider nest |\n| Green | Behind Lab B, under scaffolding by a Divinium rock |\n| Purple | Bunker Living Quarters, far left corner |\n| Rainbow (iridescent) | Inside the sewer pipe ride (Masamune only) |"
+  },
+  {
+   "id": "zns-power-guide",
+   "title": "Bucket and power",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-power-guide-s1",
+     "title": "Pick up a bucket",
+     "where": "Metal bucket with glowing blue water on its rim",
+     "text": "One of four spots.",
+     "options": [
+      "Spawn area",
+      "Inside Lab A (also the back room with the GobbleGum machine)",
+      "Inside Lab B (also the upstairs room)",
+      "Near the blue pond by Lab A or the green pond by Lab B"
+     ],
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=6s"
+    },
+    {
+     "id": "zns-power-guide-s2",
+     "title": "Fill it",
+     "where": "Any 115 pond",
+     "text": "Hold use at the water.",
+     "options": [
+      "Blue: behind Lab A",
+      "Green: behind Lab B",
+      "Purple: Bunker Living Quarters"
+     ],
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=38s"
+    },
+    {
+     "id": "zns-power-guide-s3",
+     "title": "Lab A water switch",
+     "where": "Inside Lab A",
+     "text": "Pour the water into the switch. This gives Lab A power for a few minutes, enough to work its cage. Perks stay off.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=43s"
+    },
+    {
+     "id": "zns-power-guide-s4",
+     "title": "Lab B water switch",
+     "where": "Inside Lab B",
+     "text": "Refill and pour into the Lab B switch.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=49s"
+    },
+    {
+     "id": "zns-power-guide-s5",
+     "title": "Open the Bunker",
+     "where": "Bunker front door",
+     "text": "With both labs powered the big door opens for free. Kill the zombies inside fast: one mutates into a Thrasher. The door stays open afterwards.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=79s"
+    },
+    {
+     "id": "zns-power-guide-s6",
+     "title": "Clear turbine 3",
+     "where": "Bunker: past the GobbleGum machine, turn left, 1250 door (1500 in co-op)",
+     "text": "Three lights above the switch are green and one flashes red. Dive into the water and slash the webs off turbine 3. The room locks.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=92s"
+    },
+    {
+     "id": "zns-power-guide-s7",
+     "title": "Survive the underwater lockdown",
+     "where": "Turbine room",
+     "text": "Solo, 12 zombies spawn. They give no points. Surface or pop the spore at the back for air.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=110s"
+    },
+    {
+     "id": "zns-power-guide-s8",
+     "title": "Pull the main switch",
+     "where": "Same room",
+     "text": "Perks now work. A pump pipe for Pack-a-Punch is on the grate in front of turbine 3. Take it.",
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=134s"
+    }
+   ]
+  },
+  {
+   "id": "zns-pap-guide",
+   "title": "Pack-a-Punch: drain the water",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-pap-guide-s1",
+     "title": "Part 1: pipe",
+     "where": "Turbine room, on the grate in front of turbine 3",
+     "text": "Appears after the power lockdown. See the power guide.",
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=55s"
+    },
+    {
+     "id": "zns-pap-guide-s2",
+     "title": "Part 2: valve wheel",
+     "where": "Flooded tunnel right of Mule Kick",
+     "text": "Swim in. It is in the first half of the tunnel, before the walls turn into glowing Divinium. Use the air pockets.",
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=72s"
+    },
+    {
+     "id": "zns-pap-guide-s3",
+     "title": "Part 3: pressure gauge",
+     "where": "The room with zombies wrapped in cocoons, next to the Bunker",
+     "text": "Knife the cocoons. One of them drops the gauge. Which one changes each game.",
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=138s"
+    },
+    {
+     "id": "zns-pap-guide-s4",
+     "title": "Fix the pumps",
+     "where": "Pack-a-Punch chamber in the Bunker",
+     "text": "Use the pumps with all three parts. The water drains and the machine works.",
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=181s"
+    }
+   ]
+  },
+  {
+   "id": "zns-shield-guide",
+   "title": "Build the Zombie Shield",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-shield-guide-s1",
+     "title": "Part 1: Handles",
+     "where": "Directly under Lab A",
+     "text": "Hanging on one of three pillars.",
+     "options": [
+      "The pillar with the Kuda wall buy",
+      "The pillar nearest the bottom of the staircase",
+      "The pillar closest to the window"
+     ],
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=13s"
+    },
+    {
+     "id": "zns-shield-guide-s2",
+     "title": "Part 2: Frame",
+     "where": "Outside the front of Lab B",
+     "text": "Hanging on one of three trees.",
+     "options": [
+      "Tree on the hill facing the lab, by a big boulder and a glowing lamp post",
+      "Tree at the water's edge on the path from Lab B toward the ritual altar and spawn",
+      "Tree in the far right corner in front of Lab B, under the one-way drop from behind the altar, near the Trip Mine wall buy"
+     ],
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=39s"
+    },
+    {
+     "id": "zns-shield-guide-s3",
+     "title": "Part 3: Face Screen",
+     "where": "Anti-Air platform (door inside the Bunker)",
+     "text": "One of three spots.",
+     "options": [
+      "By a window with a seed planter",
+      "Near the window in the machine gun nest",
+      "Up the stairs on the right, in a pile of rubble"
+     ],
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=65s"
+    },
+    {
+     "id": "zns-shield-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench"
+    }
+   ]
+  },
+  {
+   "id": "zns-mask-guide",
+   "title": "Build the Gas Mask",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-mask-guide-s1",
+     "title": "Part 1",
+     "where": "Behind Lab B, where the sewer pipe comes out by the green water",
+     "text": "Either in that area, or next to the ICR-1 wall buy up the stairs on the left.",
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=4s"
+    },
+    {
+     "id": "zns-mask-guide-s2",
+     "title": "Part 2",
+     "where": "The crashed plane",
+     "text": "In or around the plane, near the Propeller Trap and a Mystery Box spot.",
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=38s"
+    },
+    {
+     "id": "zns-mask-guide-s3",
+     "title": "Part 3",
+     "where": "Docks under the Bunker",
+     "text": "Around the zipline and the trial statue.",
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=70s"
+    },
+    {
+     "id": "zns-mask-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Stops spore gas from blocking your sprint and guns, and lets you stay underwater longer. Breaks after about 10 gas clouds; take a new one at the bench."
+    }
+   ]
+  },
+  {
+   "id": "zns-kt4-guide",
+   "title": "Build the KT-4",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-kt4-guide-s1",
+     "title": "Ingredient 1: glowing vial",
+     "where": "Usually around Lab B",
+     "text": "Only after main power. A scientist zombie glows sickly yellow-green. Kill it; the vial on its hip drops and glows. Play rounds near Lab B and it shows up within a few rounds.",
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=125s"
+    },
+    {
+     "id": "zns-kt4-guide-s2",
+     "title": "Ingredient 2: spider venom",
+     "where": "Lab A cage",
+     "text": "With Lab A powered, lower the cage into the swamp. A purple mist arm inside attracts spiders. Lure one in, raise the cage, and a syringe takes its venom.",
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=62s"
+    },
+    {
+     "id": "zns-kt4-guide-s3",
+     "title": "Ingredient 3: the item at the end of the tunnel",
+     "where": "Flooded tunnel right of Mule Kick",
+     "text": "Swim to the very end of the Divinium tunnel, deeper than the valve wheel. Use the air pockets and shoot spores for air.",
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=7s"
+    },
+    {
+     "id": "zns-kt4-guide-s4",
+     "title": "Mix it",
+     "where": "KT-4 bench in the Bunker",
+     "text": "Use the bench with all three. Take the KT-4. It now also appears in the Mystery Box. It shoots your plants to boost them, too.",
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=173s"
+    }
+   ]
+  },
+  {
+   "id": "zns-spider-guide",
+   "title": "Giant Spider and free Widow's Wine",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-spider-guide-s1",
+     "title": "Burn the webs",
+     "where": "Spider lair behind the blue pond near Lab A",
+     "text": "Shoot the webs over the entrance with the KT-4.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=76s"
+    },
+    {
+     "id": "zns-spider-guide-s2",
+     "title": "Kill the Giant Spider",
+     "where": "Inside the lair",
+     "text": "Shoot its glowing orange mouth each time it opens.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=83s"
+    },
+    {
+     "id": "zns-spider-guide-s3",
+     "title": "Free Widow's Wine",
+     "where": "Pool in the spider's den",
+     "text": "Drink from the pool for a free Widow's Wine.",
+     "video": "https://www.youtube.com/watch?v=n6ELumx8Nbo&t=92s"
+    },
+    {
+     "id": "zns-spider-guide-s4",
+     "title": "Take the fang",
+     "where": "The spider's body",
+     "text": "Use the corpse to pull the fang. Needed for the Masamune.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=98s"
+    }
+   ]
+  },
+  {
+   "id": "zns-trials-guide",
+   "title": "Trials of the Ancients and the electric shield",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-trials-guide-s1",
+     "title": "Start your trials",
+     "where": "Trials altar near spawn",
+     "text": "Each player gets three random challenges. The altar shows them. Rewards: an empty perk bottle (top), a Dingo, SVG-100 or 205 Brecci (middle; drop it back in to reroll), and a Max Ammo (bottom).",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=355s"
+    },
+    {
+     "id": "zns-trials-guide-s2",
+     "title": "Claim all three rewards",
+     "where": "Trials altar"
+    },
+    {
+     "id": "zns-trials-guide-s3",
+     "title": "Electrify the shield",
+     "where": "Trials altar area",
+     "text": "Once every player has all three rewards, lightning strikes the altar now and then. Stand there holding the shield out until it is struck. The electric shield shocks zombies and halves perk and GobbleGum prices when you melee the machine.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=368s"
+    }
+   ]
+  },
+  {
+   "id": "zns-skull-guide",
+   "title": "Skull of Nan Sapwe",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-skull-guide-s1",
+     "title": "Take a bloody skull",
+     "where": "Trials altar",
+     "text": "Four bloody skulls sit on the altar. Each has a symbol on its forehead. Take one.",
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=8s"
+    },
+    {
+     "id": "zns-skull-guide-s2",
+     "title": "Cleanse it at the matching pedestal",
+     "where": "Four pedestals",
+     "text": "Put it on the pedestal with the same symbol. Defend it from green-glowing zombies until done, then bring it back. Symbols swap places each game.",
+     "options": [
+      "In front of spawn, by the big central rock before the GobbleGum machine",
+      "By the Propeller Trap, near its lowest switch",
+      "Bunker docks, left of the main power switch, among wooden crates",
+      "Bunker operations room, downstairs by the KT-4 and Masamune benches"
+     ],
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=48s"
+    },
+    {
+     "id": "zns-skull-guide-s3",
+     "title": "Repeat for all four",
+     "where": "Back and forth",
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=119s"
+    },
+    {
+     "id": "zns-skull-guide-s4",
+     "title": "Charge the Skull",
+     "where": "New stairs in front of the altar",
+     "text": "Go down where the fallen tree was. Try to take the Skull: the room locks and Keepers come for it. Solo, kill 20 Keepers. Then take it.",
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=242s"
+    }
+   ]
+  },
+  {
+   "id": "zns-masamune-guide",
+   "title": "Upgrade the KT-4 to the Masamune",
+   "category": "Zetsubou No Shima",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "zns-masamune-guide-s1",
+     "title": "Electrify your shield",
+     "where": "Trials altar",
+     "text": "See the trials guide.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=346s"
+    },
+    {
+     "id": "zns-masamune-guide-s2",
+     "title": "Ingredient 1: Liquid Divinium",
+     "where": "Lab B cage",
+     "text": "Melee the cage control panel with the electric shield. Step into the cage from inside Lab B: it drops into the swamp and opens. A skeleton below holds the vial. Take it and use the console to go back up.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=380s"
+    },
+    {
+     "id": "zns-masamune-guide-s3",
+     "title": "Ingredient 2: spider fang",
+     "where": "Giant Spider's body",
+     "text": "See the Giant Spider guide.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=67s"
+    },
+    {
+     "id": "zns-masamune-guide-s4",
+     "title": "Reveal the hidden planter",
+     "where": "Bunker Living Quarters, then the Mule Kick tunnel",
+     "text": "Use the Skull's Mesmerize on the torn blueprint by the purple water. Then swim to where the third KT-4 ingredient was and Mesmerize the wall on the right beside it. A hidden planter appears.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=240s"
+    },
+    {
+     "id": "zns-masamune-guide-s5",
+     "title": "Get rainbow water",
+     "where": "Sewer pipe ride, Bunker to Lab B (500 each try)",
+     "text": "Start inside the Bunker operations room. Press use just after you pass the second blue section, as a lump of Divinium goes by on the right. Your bucket may need to be empty first.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=138s"
+    },
+    {
+     "id": "zns-masamune-guide-s6",
+     "title": "Grow the plant",
+     "where": "Hidden planter",
+     "text": "Plant a seed. Water it with rainbow water once a round for three rounds. Pick the special plant.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=297s"
+    },
+    {
+     "id": "zns-masamune-guide-s7",
+     "title": "Make the blue ammo",
+     "where": "Second bench, next to the KT-4 bench",
+     "text": "Hold the KT-4 in your hands and use the bench.",
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=428s"
+    }
+   ]
+  },
+  {
+   "id": "gk-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Gorod Krovi",
+   "body": "1. **Rounds 1 to 3**: open toward the Dragon Command Center. Pick up shield parts on the way.\n2. **Power**, then press the button under Sophia's console. Zombies start dropping code cylinders.\n3. **Rounds 4 to 8**: each cylinder calls a Groph Pod. Kill 15 zombies next to it to get a module. Buy Stamin-Up first if you can: pods get attacked fast.\n4. Put the three modules in the Operations Bunker console, call the dragon, and **Pack-a-Punch** at the Hatchery.\n5. Shoot the dragon egg down in the Hatchery and put it in a nest. Do the **Dragon Strike** lockdown when you have a packed gun.\n6. Teach the egg (napalm, penetration, melee kills) and hatch it for the **Gauntlet**.\n7. Optional: Tiamat's Maw, Draconite, Dragon Wings."
+  },
+  {
+   "id": "gk-pap-guide",
+   "title": "Power, Sophia and the dragon ride",
+   "category": "Gorod Krovi",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "gk-pap-guide-s1",
+     "title": "Turn on the power",
+     "where": "Just past the entrance of the Dragon Command Center",
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=15s"
+    },
+    {
+     "id": "gk-pap-guide-s2",
+     "title": "Talk to Sophia",
+     "where": "Dragon Command Center",
+     "text": "Press the button under her centre console. It flashes green, then back to red. Zombies now sometimes drop code cylinders."
+    },
+    {
+     "id": "gk-pap-guide-s3",
+     "title": "Use a code cylinder",
+     "where": "Matching console",
+     "text": "Each cylinder fits one console. A Groph Pod falls somewhere with a green beam above it.",
+     "options": [
+      "Dragon Command Center",
+      "Supply Depot",
+      "Tank Factory"
+     ],
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=32s"
+    },
+    {
+     "id": "gk-pap-guide-s4",
+     "title": "Defend the pod",
+     "where": "Under the green beam",
+     "text": "Zombies attack it right away. Kill 15 zombies close to it (they get shocked when it counts). It opens: take the module. If the pod is destroyed, wait for another cylinder.",
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=50s"
+    },
+    {
+     "id": "gk-pap-guide-s5",
+     "title": "Repeat for all three",
+     "where": "Three consoles",
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=75s"
+    },
+    {
+     "id": "gk-pap-guide-s6",
+     "title": "Fit the modules",
+     "where": "Operations Bunker, middle of the room",
+     "text": "Put all three in the Dragon Network console.",
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=141s"
+    },
+    {
+     "id": "gk-pap-guide-s7",
+     "title": "Ride the dragon",
+     "where": "Any of the three dragon platforms",
+     "text": "Call the dragon for 500 points and hold use to climb on. It drops you into the Hatchery. Pack-a-Punch is on the ground floor.",
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=151s"
+    }
+   ]
+  },
+  {
+   "id": "gk-shield-guide",
+   "title": "Build the Guard of Fafnir",
+   "category": "Gorod Krovi",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "gk-shield-guide-s1",
+     "title": "Part 1: Dragon Visage",
+     "where": "Infirmary",
+     "text": "One of three spots.",
+     "options": [
+      "Top of the Operations Bunker stairs, look slightly left: on the floor between two small crates by a big broken bookshelf",
+      "On the right bunk of the two bunk beds touching the stairs up to Stamin-Up",
+      "Facing Stamin-Up, look left: on debris under the leftmost of three broken windows on the green wall"
+     ],
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=33s"
+    },
+    {
+     "id": "gk-shield-guide-s2",
+     "title": "Part 2: Core",
+     "where": "Department Store and Operations Bunker",
+     "text": "One of three spots.",
+     "options": [
+      "On a wooden chair in the Juggernog room, by a desk lit by a lamp",
+      "On the door of the truck with blue barrels, downstairs from the store before the Bunker, opposite the GobbleGum machine",
+      "On a shelf in the Operations Bunker, right of the electric trap switch, before the stairs up to the Infirmary"
+     ],
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=8s"
+    },
+    {
+     "id": "gk-shield-guide-s3",
+     "title": "Part 3: Maw",
+     "where": "Armory",
+     "text": "One of three spots.",
+     "options": [
+      "Lowest level, beside the Wunderfizz, hanging on a big piece of wooden floor debris",
+      "Going upstairs, just past the doorway by the GobbleGum machine: on the wall next to the metal door to the Supply Depot",
+      "Top level, on the side of a crate straight ahead at the top of the stairs, same wall as the bridge switch"
+     ],
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=58s"
+    },
+    {
+     "id": "gk-shield-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Hold it in front of you to walk through dragon fire. Its melee shoots a green fireball (three charges, one back per round, all back on Max Ammo).",
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=96s"
+    }
+   ]
+  },
+  {
+   "id": "gk-tiamat-guide",
+   "title": "Upgrade to Tiamat's Maw",
+   "category": "Gorod Krovi",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "gk-tiamat-guide-s1",
+     "title": "Stand in dragon fire twice",
+     "where": "Any area the dragon burns",
+     "text": "Be inside the area **before** the fire starts, shield held out, and stay in for the whole burn. Do it twice.",
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=137s"
+    },
+    {
+     "id": "gk-tiamat-guide-s2",
+     "title": "Kill 50 zombies with the shield",
+     "where": "Anywhere",
+     "text": "Melee or fireball. A sound plays when done.",
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=21s"
+    },
+    {
+     "id": "gk-tiamat-guide-s3",
+     "title": "Shoot three purple symbols with fireballs",
+     "where": "Appear after the 50 kills",
+     "text": "A fresh shield from the bench refills your fireballs.",
+     "options": [
+      "Dragon Command Center: stand on the left platform as if boarding the dragon, look left",
+      "Supply Depot: opposite the ramp up to Speed Cola, look up at the broken roof",
+      "Tank Factory: stand on the right platform as if boarding, look right, on the fallen robot's shoulder"
+     ],
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=67s"
+    },
+    {
+     "id": "gk-tiamat-guide-s4",
+     "title": "Dip the shield",
+     "where": "Dead dragon in Belinski Square, by the trial tombstones",
+     "text": "Hold use at the pool of blood. A few seconds later you have Tiamat's Maw (red fireballs, 35 hits).",
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=183s"
+    }
+   ]
+  },
+  {
+   "id": "gk-strike-guide",
+   "title": "Dragon Strike and Draconite Controller",
+   "category": "Gorod Krovi",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "gk-strike-guide-s1",
+     "title": "Start the lockdown",
+     "where": "Hatchery, crystal on the top floor",
+     "text": "Wait until you have a packed gun and ammo. Use the crystal. A Max Ammo floats near Pack-a-Punch; grab it before the last wave."
+    },
+    {
+     "id": "gk-strike-guide-s2",
+     "title": "Survive four waves",
+     "where": "Hatchery",
+     "text": "Zombies, Manglers and Valkyrie Drones. No points. Pack-a-Punch is off during it."
+    },
+    {
+     "id": "gk-strike-guide-s3",
+     "title": "Take the Dragon Strike",
+     "where": "Same crystal",
+     "text": "You also get 500 points."
+    },
+    {
+     "id": "gk-strike-guide-s4",
+     "title": "Upgrade: 40 kills",
+     "where": "Anywhere",
+     "text": "Kill about 40 zombies with Dragon Strikes. A loud roar after a strike means done.",
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=31s"
+    },
+    {
+     "id": "gk-strike-guide-s5",
+     "title": "Upgrade: mark the red flag",
+     "where": "Out of the map",
+     "text": "Red Iron Cross flags stand outside the map. Solo, only one of the four stays. Find it and mark it with a strike.",
+     "options": [
+      "Supply Depot: left dragon platform, look left",
+      "Dragon Command: left dragon platform, straight ahead at ground level, half hidden by rubble",
+      "Tank Factory: top of the stairs to Double Tap, look out near the hanging tank",
+      "Belinski Square: corner by Quick Revive, behind the gushing pipe"
+     ],
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=85s"
+    },
+    {
+     "id": "gk-strike-guide-s6",
+     "title": "Upgrade: second lockdown",
+     "where": "Hatchery crystal",
+     "text": "Start the lockdown again. In every wave, aim the strike outside as often as it recharges (about every 15 to 20 seconds). Then take the Draconite Controller from the crystal.",
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=230s"
+    }
+   ]
+  },
+  {
+   "id": "gk-gauntlet-guide",
+   "title": "Gauntlet of Siegfried",
+   "category": "Gorod Krovi",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "gk-gauntlet-guide-s1",
+     "title": "Shoot down the egg",
+     "where": "Hatchery, above the sewer grate back to the square",
+     "text": "Shoot the only unbroken egg. It rolls to the right of the grate. Pick it up.",
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=37s"
+    },
+    {
+     "id": "gk-gauntlet-guide-s2",
+     "title": "Heat it in dragon fire",
+     "where": "Nest in front of Dragon Command, opposite the middle of the stairs",
+     "text": "Place it **before** the dragon breathes. Then wait out this round and one full round while it cools. Pick it up.",
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=64s"
+    },
+    {
+     "id": "gk-gauntlet-guide-s3",
+     "title": "Trial 1: napalm zombie kills",
+     "where": "Anywhere",
+     "text": "Kill the burning zombies made by dragon fire. Holding the egg, trials go in order.",
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=117s"
+    },
+    {
+     "id": "gk-gauntlet-guide-s4",
+     "title": "Trial 2: penetration kills",
+     "where": "Hatchery top floor helps",
+     "text": "Multi-kills through bodies. The mounted MG42 on the Hatchery top floor (1000 points each time) counts. The GKZ-45 does not."
+    },
+    {
+     "id": "gk-gauntlet-guide-s5",
+     "title": "Trial 3: melee kills",
+     "where": "Anywhere",
+     "text": "Knife, Bowie or shield melee and fireballs count."
+    },
+    {
+     "id": "gk-gauntlet-guide-s6",
+     "title": "Hatch it",
+     "where": "Hatchery basement, incubator",
+     "text": "Place the egg. Survive the lockdown. Leave and come back when Sophia says it is ready.",
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=148s"
+    },
+    {
+     "id": "gk-gauntlet-guide-s7",
+     "title": "Claim the Gauntlet",
+     "where": "Trials tombstone in Belinski Square",
+     "text": "Use the fourth trial on the tombstone. The Gauntlet rises out of the ground.",
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=189s"
+    }
+   ]
+  },
+  {
+   "id": "rev-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Revelations",
+   "body": "1. **Rounds 1 to 3**: spawn Corruption Engine first. Open toward Origins and the jump pads.\n2. Pick up shield and Keeper altar parts as you pass each area.\n3. **Rounds 4 to 8**: activate the Mob of the Dead, Verrückt and Der Eisendrache engines.\n4. Go to Nacht der Untoten upstairs and trap the giant Apothicon. **Pack-a-Punch** inside it.\n5. Build the shield at the Nacht table. Hit the box for the Thundergun or Apothicon Servant.\n\n| Perk | Area |\n|---|---|\n| Quick Revive | Spawn (the House) |\n| Juggernog | Nacht der Untoten, upstairs |\n| Mule Kick | Mob of the Dead cafeteria |\n| Speed Cola | Verrückt, downstairs |\n| Widow's Wine | Kino der Toten, old Pack-a-Punch room |"
+  },
+  {
+   "id": "rev-pap-guide",
+   "title": "Corruption Engines and Pack-a-Punch",
+   "category": "Revelations",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "rev-pap-guide-s1",
+     "title": "Activate the four Corruption Engines",
+     "where": "One per main area",
+     "text": "Each costs 500 points. Not fully checked: you then stay near it and kill the zombies that come until it finishes.",
+     "options": [
+      "Spawn (the House)",
+      "Mob of the Dead, outside the cafeteria",
+      "Verrückt, downstairs (1250 debris)",
+      "Der Eisendrache Undercroft area"
+     ],
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=8s"
+    },
+    {
+     "id": "rev-pap-guide-s2",
+     "title": "Wait for the Apothicon",
+     "where": "Nacht der Untoten, upstairs (750 debris)",
+     "text": "With all four engines on, a panel right of Juggernog lights up and buzzes when the giant Apothicon flies past.",
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=143s"
+    },
+    {
+     "id": "rev-pap-guide-s3",
+     "title": "Trap it",
+     "where": "Panel right of Juggernog",
+     "text": "Press the panel while it flashes. Four death rays freeze the Apothicon in place.",
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=163s"
+    },
+    {
+     "id": "rev-pap-guide-s4",
+     "title": "Go inside",
+     "where": "Stairs down from Nacht to the frozen Apothicon",
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=175s"
+    },
+    {
+     "id": "rev-pap-guide-s5",
+     "title": "Free the machine",
+     "where": "Inside the Apothicon",
+     "text": "The machine is stuck in a sac in its heart. Shoot the yellow tubes on both sides of the sac until the machine drops down. Exits on the right lead to Mob of the Dead, Verrückt, Der Eisendrache and spawn.",
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=182s"
+    }
+   ]
+  },
+  {
+   "id": "rev-shield-guide",
+   "title": "Build the shield (Guard of Fafnir)",
+   "category": "Revelations",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "rev-shield-guide-s1",
+     "title": "Part 1: Dragon Visage",
+     "where": "Origins area",
+     "text": "One of three spots.",
+     "options": [
+      "Coming in from the House, left of some wooden crates just left of the GobbleGum machine",
+      "Past the GobbleGum machine on the left path: before the Pharo wall buy, on a big crate lit by a broken truck",
+      "Past the Pharo, turn right and drop toward the Wunderfizz spot: on a chair across from it, by some shelves"
+     ],
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=6s"
+    },
+    {
+     "id": "rev-shield-guide-s2",
+     "title": "Part 2: Core",
+     "where": "Verrückt area",
+     "text": "One of three spots.",
+     "options": [
+      "On a column right where the Kino jump pad lands you (only the bone back side shows)",
+      "Up the stairs by Speed Cola, straight to the zombie hole, then left: on a fallen wheelchair in the corner (orange glow visible)",
+      "Upstairs, on the table in the middle of the kitchen (bone side only)"
+     ],
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=93s"
+    },
+    {
+     "id": "rev-shield-guide-s3",
+     "title": "Part 3: Maw",
+     "where": "Der Eisendrache area, high up",
+     "text": "All three need anti-gravity: stand about 4 seconds on each of the four tiles around the Pyramid.",
+     "options": [
+      "High on the wall near the VMP wall buy: face the metal map plate, look straight up",
+      "High on the wall above the two Primis statues, halfway between the VMP and the Pyramid, on the left",
+      "High and left on the wall with the GobbleGum machine, by small lights on cables, above the small black desk"
+     ],
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=28s"
+    },
+    {
+     "id": "rev-shield-guide-s4",
+     "title": "Build it",
+     "where": "Crafting table in Nacht der Untoten",
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=134s"
+    }
+   ]
+  },
+  {
+   "id": "rev-keeper-guide",
+   "title": "Keeper Protector altar",
+   "category": "Revelations",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "rev-keeper-guide-s1",
+     "title": "Part 1: Skull",
+     "where": "Verrückt area",
+     "text": "One of three spots.",
+     "options": [
+      "On shelves just right of Speed Cola",
+      "Top of the stairs right of the Corruption Engine, in a wheelchair on the left",
+      "In a wheelchair at a desk with a bloody mattress, near the Wunderfizz spot by the Mob of the Dead jump pad"
+     ],
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=95s"
+    },
+    {
+     "id": "rev-keeper-guide-s2",
+     "title": "Part 2: Purple Crystal",
+     "where": "Der Eisendrache or Kino area",
+     "text": "One of three spots.",
+     "options": [
+      "Der Eisendrache round room with four Primis statues, on a barrel under a white cloth",
+      "Der Eisendrache, in the concrete rubble touching the Pyramid",
+      "Kino, on a small table with a red cloth near the jump pad to Verrückt (from the Bowie ramp, through the doorway left of the GobbleGum machine)"
+     ],
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=9s"
+    },
+    {
+     "id": "rev-keeper-guide-s3",
+     "title": "Part 3: Keeper Flag",
+     "where": "Origins or Mob of the Dead area",
+     "text": "One of three spots.",
+     "options": [
+      "Origins, on sandbags right of the VMP wall buy, across from Double Tap",
+      "Origins, top of the central mound where Pack-a-Punch used to be, in a corner",
+      "Mob of the Dead cafeteria, right of Mule Kick"
+     ],
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=48s"
+    },
+    {
+     "id": "rev-keeper-guide-s4",
+     "title": "Build the altar",
+     "where": "Any unfinished altar",
+     "text": "Altars are in the Der Eisendrache, Kino, Verrückt and Origins areas. Summoning costs 5000 points.",
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=135s"
+    }
+   ]
+  },
+  {
+   "id": "rev-servant-guide",
+   "title": "Upgrade the Apothicon Servant",
+   "category": "Revelations",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "rev-servant-guide-s1",
+     "title": "Shoot five blue panels",
+     "where": "Floating far outside the map",
+     "text": "Hit each glowing blue panel directly with the Servant; it vanishes. No sound plays. Aim between the two middle barbs on top of the gun.",
+     "options": [
+      "Above the jump pad from the House to Shangri-La",
+      "Above the Shangri-La / Der Eisendrache island, behind the doorway between them (top of the big Shangri-La stairs)",
+      "Above the Origins / Mob of the Dead island toward the Verrückt jump pad (from the top of the old dig mound, facing the blue sun)",
+      "Above Verrückt: by the jump pad to the Mob cafeteria, look down the hall at the test tubes, then up",
+      "Above the frozen giant Apothicon at Nacht: top of the stairs down to it, next to a big floating rock"
+     ],
+     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=22s"
+    },
+    {
+     "id": "rev-servant-guide-s2",
+     "title": "Pack-a-Punch it",
+     "where": "Pack-a-Punch",
+     "text": "Now it upgrades for the normal price into the Estoom-oth.",
+     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=141s"
+    }
+   ]
+  },
+  {
+   "id": "nacht-plan-guide",
+   "title": "Session plan",
+   "category": "Nacht der Untoten",
+   "body": "1. **Rounds 1 to 3**: board windows and stay in the start room. Mule Kick is here.\n2. Open the Help room for the Mystery Box, then the upstairs for the Wunderfizz.\n3. Roll the box for the Thundergun or a Ray Gun.\n4. Train in the start room or upstairs. There is nothing else to build."
+  },
+  {
+   "id": "verr-plan-guide",
+   "title": "Session plan",
+   "category": "Verrückt",
+   "body": "1. You spawn in one of two start rooms, split by a locked door.\n2. **Rounds 1 to 4**: open toward the power room on the far side.\n3. **Power**: opposite the Mystery Box in that room. The door between start rooms opens.\n4. Buy perks, then hit the box for the Wunderwaffe DG-2. Electric traps are on once power is on."
+  },
+  {
+   "id": "snn-plan-guide",
+   "title": "Session plan",
+   "category": "Shi No Numa",
+   "body": "1. **Rounds 1 to 3**: get points in the start building.\n2. Open the huts one by one: Storage Hut, Comm Room, Doctor's Quarters, Fishing Hut. Each one rolls a perk.\n3. Follow the green beam to the box for the Wunderwaffe DG-2.\n4. Electric traps cost 1000, the Flogger costs 750."
+  },
+  {
+   "id": "kino-plan-guide",
+   "title": "Session plan",
+   "category": "Kino der Toten",
+   "body": "1. **Rounds 1 to 4**: open from the lobby through the dressing rooms toward the stage.\n2. **Power** backstage. It opens the curtain and the lobby door, and crawlers can now spawn.\n3. Link the teleporter and ride to Pack-a-Punch. You have 30 seconds up there.\n4. Relink every time you want to go back."
+  },
+  {
+   "id": "kino-pap-guide",
+   "title": "Power and Pack-a-Punch",
+   "category": "Kino der Toten",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "kino-pap-guide-s1",
+     "title": "Turn on the power",
+     "where": "Backstage, by the wall gun spot (the M16 in the old game)",
+     "text": "It opens the stage curtain and the lobby door and starts the projector.",
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=147s"
+    },
+    {
+     "id": "kino-pap-guide-s2",
+     "title": "Activate the teleporter",
+     "where": "Theater",
+     "text": "Use the teleporter pad in the theater.",
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=185s"
+    },
+    {
+     "id": "kino-pap-guide-s3",
+     "title": "Link it",
+     "where": "Mainframe in the spawn lobby",
+     "text": "Go back to the lobby and use the mainframe.",
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=190s"
+    },
+    {
+     "id": "kino-pap-guide-s4",
+     "title": "Teleport up",
+     "where": "Teleporter",
+     "text": "Stand on it. It sends you to the projector room with Pack-a-Punch. After 30 seconds you are sent out, sometimes through a side room first, and land back at the mainframe.",
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=202s"
+    },
+    {
+     "id": "kino-pap-guide-s5",
+     "title": "Relink for the next visit",
+     "where": "Mainframe",
+     "text": "The teleporter cools down, then needs a new link each time.",
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=233s"
+    }
+   ]
+  },
+  {
+   "id": "asc-plan-guide",
+   "title": "Session plan",
+   "category": "Ascension",
+   "body": "1. **Rounds 1 to 3**: open up through the centrifuge floors.\n2. **Power** on the top floor of the main building. The map turns to colour and space monkeys start.\n3. Open each lander's door (1250 each) and ride B, D and F back to the centrifuge.\n4. Press the rocket button right of the power switch. Pack-a-Punch opens at the launch pad."
+  },
+  {
+   "id": "asc-pap-guide",
+   "title": "Power, landers and Pack-a-Punch",
+   "category": "Ascension",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "asc-pap-guide-s1",
+     "title": "Turn on the power",
+     "where": "Top floor of the main building",
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=9s"
+    },
+    {
+     "id": "asc-pap-guide-s2",
+     "title": "Ride each Lunar Lander from its pad",
+     "where": "Pads B, D and F",
+     "text": "Buy the ride at the pad itself (250). Calling a lander from the centrifuge does **not** count.",
+     "options": [
+      "Lander B (Б): 1250 access door",
+      "Lander D (Д): 1250 access gate",
+      "Lander F (Ф): 1250 access door"
+     ],
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=85s"
+    },
+    {
+     "id": "asc-pap-guide-s3",
+     "title": "Launch the rocket",
+     "where": "Button right of the power switch",
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=172s"
+    },
+    {
+     "id": "asc-pap-guide-s4",
+     "title": "Pack-a-Punch",
+     "where": "Launch area, below the rocket",
+     "text": "Once the rocket leaves, the big door opens. The machine is on the right. Stay as long as you like.",
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=181s"
+    }
+   ]
+  },
+  {
+   "id": "shang-plan-guide",
+   "title": "Session plan",
+   "category": "Shangri-La",
+   "body": "1. **Rounds 1 to 4**: open toward the underground waterfall area near the Bowie Knife.\n2. Pull **both** power switches. Power turns on only after the second one.\n3. Find the statue with a spinning part and stand on its slab. The Pack-a-Punch stairs rise.\n4. Pack fast: after a while water washes you off the stairs."
+  },
+  {
+   "id": "shang-pap-guide",
+   "title": "Power and Pack-a-Punch",
+   "category": "Shangri-La",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "shang-pap-guide-s1",
+     "title": "Pull switch 1",
+     "where": "Underground, near the Bowie Knife, where water falls on the turbines",
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=5s"
+    },
+    {
+     "id": "shang-pap-guide-s2",
+     "title": "Pull switch 2",
+     "where": "Same area, other side",
+     "text": "Power and the water slide work after both.",
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=50s"
+    },
+    {
+     "id": "shang-pap-guide-s3",
+     "title": "Find the spinning statue",
+     "where": "Four small stone statues",
+     "text": "After power, parts of the statues spin. Solo, only one part spins. Not checked: which statue it is, so look at each.",
+     "options": [
+      "Next to Quick Revive",
+      "Under the big wooden bridge",
+      "Next to the power switches",
+      "In the cave toward the old AK-74u wall buy"
+     ],
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=119s"
+    },
+    {
+     "id": "shang-pap-guide-s4",
+     "title": "Stand on its slab",
+     "where": "Stone slab next to that statue",
+     "text": "The part stops. The missing stairs to the machine rise out of the ground.",
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=139s"
+    },
+    {
+     "id": "shang-pap-guide-s5",
+     "title": "Pack-a-Punch",
+     "where": "Top of the stairs in the start area",
+     "text": "A skull climbs the side of the stairs. When it reaches the top, water flushes you down.",
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=198s"
+    }
+   ]
+  },
+  {
+   "id": "moon-plan-guide",
+   "title": "Session plan",
+   "category": "Moon",
+   "body": "1. **Area 51**: there are no rounds. Zombies get stronger over time. Buy the perk there (Juggernog or Speed Cola, it alternates) if you can, then stand on the teleporter.\n2. **Receiving Bay**: grab the P.E.S. right in front of you. Buy the 750 door.\n3. Take **Tunnel 6** (cheaper) to the Power Room and turn on the power.\n4. Open the Labs and grab the **Hacker**. Hack excavator panels when the warning plays.\n5. Go back to Area 51 from the teleporter Outside to **Pack-a-Punch**.\n\n| Perk | Where |\n|---|---|\n| Juggernog or Speed Cola | Area 51 |\n| Quick Revive | Receiving Bay |\n| Stamin-Up | Tunnel 11 |\n| Double Tap | Labs, 1st floor |\n| Deadshot Daiquiri | Labs, 3rd floor |\n| Mule Kick | Outside, by the teleporter |\n| Widow's Wine | Bio-Dome |"
+  },
+  {
+   "id": "moon-power-guide",
+   "title": "Area 51, P.E.S. and power",
+   "category": "Moon",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "moon-power-guide-s1",
+     "title": "Survive Area 51",
+     "where": "Area 51 (No Man's Land)",
+     "text": "Power is always on here. Pack-a-Punch and one perk are here. No rounds: zombies and dogs get tougher the longer you stay."
+    },
+    {
+     "id": "moon-power-guide-s2",
+     "title": "Teleport to the Moon",
+     "where": "Teleporter in Area 51",
+     "text": "It only goes when every living player stands on it."
+    },
+    {
+     "id": "moon-power-guide-s3",
+     "title": "Put on a P.E.S.",
+     "where": "Locker right in front of you in the Receiving Bay",
+     "text": "Without it you go down after 15 seconds in vacuum (20 with Juggernog). Every airlock has a P.E.S. locker."
+    },
+    {
+     "id": "moon-power-guide-s4",
+     "title": "Open the Receiving Bay",
+     "where": "750 door",
+     "text": "Buying one door opens both."
+    },
+    {
+     "id": "moon-power-guide-s5",
+     "title": "Go through Tunnel 6",
+     "where": "Outside the Receiving Bay",
+     "text": "Cheaper and faster than Tunnel 11."
+    },
+    {
+     "id": "moon-power-guide-s6",
+     "title": "Turn on the power",
+     "where": "Power Room, next to the tunnel entrances",
+     "text": "Oxygen and gravity come back inside buildings. Outside stays airless. Excavators can now start."
+    }
+   ]
+  },
+  {
+   "id": "moon-hacker-guide",
+   "title": "Hacker and excavators",
+   "category": "Moon",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "moon-hacker-guide-s1",
+     "title": "Find the Hacker",
+     "where": "Laboratories, on a yellow card",
+     "text": "One of six spots.",
+     "options": [
+      "Bookshelf left of the entrance from the Power Room",
+      "Bookshelf left of the bottom of the stairs to the 2nd floor",
+      "Small box right of the top of those stairs, by the flag",
+      "Blue rebar on the right just before the stairs with the Bowie Knife wall buy",
+      "Green tank in the corner right of Deadshot Daiquiri",
+      "Shelf between the wall buy and the door to the Bio-Dome"
+     ],
+     "video": "https://www.youtube.com/watch?v=lzwc9cbcZ6E&t=13s"
+    },
+    {
+     "id": "moon-hacker-guide-s2",
+     "title": "Keep it",
+     "where": "Inventory",
+     "text": "It shares a slot with the P.E.S. Hold it for several rounds and it pays bonus points each round. Taking a P.E.S. sends it back to a lab spot."
+    },
+    {
+     "id": "moon-hacker-guide-s3",
+     "title": "Hack the right excavator panel",
+     "where": "Receiving Bay",
+     "text": "When a breach warning plays you have about four minutes. Hack the panel that glows green. Omicron is on the left. Pi and Epsilon are together on the right. Each hack pays 1000.",
+     "options": [
+      "Pi: would breach Tunnel 6",
+      "Omicron: would breach Tunnel 11",
+      "Epsilon: would breach the Bio-Dome"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moon-pap-guide",
+   "title": "Pack-a-Punch on the Moon",
+   "category": "Moon",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "moon-pap-guide-s1",
+     "title": "Go Outside",
+     "where": "Labs, 3rd floor door",
+     "text": "No oxygen outside: wear a P.E.S.",
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=22s"
+    },
+    {
+     "id": "moon-pap-guide-s2",
+     "title": "Stand on the teleporter",
+     "where": "Outside, above the Power Room",
+     "text": "Every player must stand on it. It sends you back to Area 51. You can also jump onto it from the KN-44 wall buy area.",
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=31s"
+    },
+    {
+     "id": "moon-pap-guide-s3",
+     "title": "Pack and return",
+     "where": "Area 51",
+     "text": "Pack-a-Punch, then use the Area 51 teleporter again. The Moon teleporter will not take you back to Area 51 until the next round.",
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=43s"
+    }
+   ]
+  },
+  {
+   "id": "ori-plan-guide",
+   "title": "Session plan: what order to do things",
+   "category": "Origins",
+   "body": "A clean solo run, in order. Each line has its own step-by-step guide.\n\n1. **Rounds 1 to 4**: turn on Generator 1, open towards Generator 3 and 2. It snows on rounds 2 to 4, so **dig for Ice Staff parts now**. Grab the shield Face Screen and Handles and the Maxis Brain as you pass.\n2. **Open the Excavation Site**: pick up the gramophone inside, find the black record outside it, grab the Maxis Rotor.\n3. **Generators 4 and 5**: purple record at Gen 4, yellow record at Gen 5, shield Frame near Gen 4. Build the shield.\n4. **Church and Generator 6**: red record, a Fire Staff part from the Gen 6 reward box, blue record on the way back at the Tank Station.\n5. **Ride the tank** for the three Lightning Staff parts.\n6. **Robots** for the three Wind Staff parts.\n7. **Round 8**: the Panzer drops a Fire Staff part. Shoot down the glowing plane for the last one.\n8. All six generators on = Pack-a-Punch at the top of the Excavation Site.\n9. Gems from the Crazy Place, build the staffs, then upgrade the one you like.\n\n| Staff | Record | Record found near | Tunnel to the Crazy Place |\n|---|---|---|---|\n| Ice | Blue | Tank Station (Gen 2) | Near the Church |\n| Wind | Yellow | Generator 5 | Near Generator 4 |\n| Fire | Red | Church | Near spawn, on the way to Gen 3 |\n| Lightning | Purple | Generator 4 | Near Generator 5 |\n\nNote: each record sits near a **different** staff's tunnel. That is what trips people up."
+  },
+  {
+   "id": "ori-shield-guide",
+   "title": "Build the Zombie Shield",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "Three parts, each with three possible spawns. Check the spots in the order listed; they are ordered along your normal route. Build at any workbench.",
+   "steps": [
+    {
+     "id": "ori-shield-guide-s1",
+     "title": "Part 1: Face Screen",
+     "where": "Spawn side, around the Fire tunnel and Speed Cola",
+     "text": "One of three spots.",
+     "options": [
+      "Fire tunnel: on a table to the right of the gateway",
+      "Trench room to the right of the Fire tunnel",
+      "Trench tunnel near Speed Cola, behind the crate on the way to the Workshop"
+     ],
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=84s"
+    },
+    {
+     "id": "ori-shield-guide-s2",
+     "title": "Part 2: Handles",
+     "where": "Trenches towards Generator 2",
+     "text": "One of three spots.",
+     "options": [
+      "Trench room on the right of the first area leading from spawn to Generator 2",
+      "End of the trenches past Generator 2 and the Workshop",
+      "On top of the Tank Station by Generator 2, near broken piping"
+     ],
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=35s"
+    },
+    {
+     "id": "ori-shield-guide-s3",
+     "title": "Part 3: Shield Frame",
+     "where": "Around Generator 4",
+     "text": "One of three spots.",
+     "options": [
+      "Next to Generator 4, left of the MP40 / KN-44 wall buy",
+      "In the marsh just outside Generator 4, heading to the trenches for the Church",
+      "In a giant robot footprint near the Excavation Site"
+     ],
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=120s"
+    },
+    {
+     "id": "ori-shield-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Hold the use button at a workbench. If it breaks later, take a new one for free from the same bench.",
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=172s"
+    }
+   ]
+  },
+  {
+   "id": "ori-drone-guide",
+   "title": "Build the Maxis Drone",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "The drone shoots, grabs power-ups and can revive you. Also needed for the main easter egg.",
+   "steps": [
+    {
+     "id": "ori-drone-guide-s1",
+     "title": "Part 1: Brain",
+     "where": "Starting room, lower floor",
+     "text": "Always the same place: on a table next to the stairs that go up to Generator 1.",
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=40s"
+    },
+    {
+     "id": "ori-drone-guide-s2",
+     "title": "Part 2: Frame",
+     "where": "Tank path or Ice tunnel",
+     "text": "One of three spots.",
+     "options": [
+      "By the crossbones sign on the tank's muddy path towards Generator 4",
+      "By the crossbones sign on the tank's muddy path towards Generator 5",
+      "In the Ice tunnel near Generator 6, in front of the portal"
+     ],
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=87s"
+    },
+    {
+     "id": "ori-drone-guide-s3",
+     "title": "Part 3: Rotor",
+     "where": "Excavation Site",
+     "text": "One of three spots.",
+     "options": [
+      "Near the very bottom, on a box on the scaffolding next to a lever",
+      "On top of the Excavation Site near Pack-a-Punch",
+      "Around the secret entrance of the Excavation Site"
+     ],
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=53s"
+    },
+    {
+     "id": "ori-drone-guide-s4",
+     "title": "Build it",
+     "where": "Any workbench",
+     "text": "Deploy it like equipment. It lasts about 90 seconds, then recharges at the bench.",
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=129s"
+    }
+   ]
+  },
+  {
+   "id": "ori-gramophone-guide",
+   "title": "Gramophone and the five records",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "You need the gramophone for everything staff-related. Records are thin discs lying flat on crates, shelves and tables.",
+   "steps": [
+    {
+     "id": "ori-gramophone-guide-s1",
+     "title": "Gramophone",
+     "where": "Inside the Excavation Site",
+     "text": "Always on the floor next to a table inside the Excavation Site once you have opened it.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=161s"
+    },
+    {
+     "id": "ori-gramophone-guide-s2",
+     "title": "Black record (opens the lower level)",
+     "where": "Outside, around the Excavation Site",
+     "text": "One of three spots. Then place the gramophone on the table inside to open the stairs down.",
+     "options": [
+      "Next to the Excavation Site sign",
+      "In the wheelbarrow next to Pack-a-Punch",
+      "In the trench by the debris that opens the way to the Church"
+     ],
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=102s"
+    },
+    {
+     "id": "ori-gramophone-guide-s3",
+     "title": "Blue record (Ice)",
+     "where": "Tank Station, Generator 2",
+     "text": "On one of the shelves inside the Tank Station.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s"
+    },
+    {
+     "id": "ori-gramophone-guide-s4",
+     "title": "Purple record (Lightning)",
+     "where": "Generator 4",
+     "text": "One of three spots.",
+     "options": [
+      "Inside the Wind tunnel, near the gateway",
+      "On the wagon to the left as you enter that tunnel",
+      "On the table next to the Der Wunderfizz machine"
+     ],
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s"
+    },
+    {
+     "id": "ori-gramophone-guide-s5",
+     "title": "Yellow record (Wind)",
+     "where": "Generator 5",
+     "text": "One of three spots.",
+     "options": [
+      "On the half-broken wall to the right of Stamin-Up",
+      "On the boxes near the Lightning tunnel entrance",
+      "On the table just inside the Lightning tunnel"
+     ],
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s"
+    },
+    {
+     "id": "ori-gramophone-guide-s6",
+     "title": "Red record (Fire)",
+     "where": "Church",
+     "text": "One of three spots.",
+     "options": [
+      "On boxes between the tank and the staircase up (hard to see when the tank is parked there)",
+      "On the church benches opposite the basin",
+      "On boxes next to Generator 6"
+     ],
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s"
+    }
+   ]
+  },
+  {
+   "id": "ori-ice-build-guide",
+   "title": "Ice Staff: build",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "The parts are buried and can only be dug up **while it is snowing** (rounds 2 to 4, round 10, then random). Do this first. You need the shovel: one is in the spawn room.",
+   "steps": [
+    {
+     "id": "ori-ice-build-guide-s1",
+     "title": "Dig part 1: starting area",
+     "where": "Between spawn and the Workshop",
+     "text": "Dig every pile on both sides of the trenches until a staff part pops out.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=57s"
+    },
+    {
+     "id": "ori-ice-build-guide-s2",
+     "title": "Dig part 2: middle of the map",
+     "where": "No Man's Land around the Excavation Site",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=76s"
+    },
+    {
+     "id": "ori-ice-build-guide-s3",
+     "title": "Dig part 3: church area",
+     "where": "Around the Church",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=80s"
+    },
+    {
+     "id": "ori-ice-build-guide-s4",
+     "title": "Blue record",
+     "where": "Tank Station, Generator 2",
+     "text": "On a shelf inside.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s"
+    },
+    {
+     "id": "ori-ice-build-guide-s5",
+     "title": "Get the blue gem from the Crazy Place",
+     "where": "Ice tunnel, near the Church",
+     "text": "You need the gramophone and the blue record. Place the gramophone at the Ice tunnel entrance, go through the portal, and take the gem from the pedestal glowing blue. The gem only appears if you came in through the Ice tunnel. Pick the gramophone back up on your way out.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=184s"
+    },
+    {
+     "id": "ori-ice-build-guide-s6",
+     "title": "Build the staff",
+     "where": "Excavation Site, lowest level",
+     "text": "You need the gramophone and the black record to open the lower level. Build it on the **blue** pedestal.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=219s"
+    }
+   ]
+  },
+  {
+   "id": "ori-wind-build-guide",
+   "title": "Wind Staff: build",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "One part is inside the head of each of the three giant robots.",
+   "steps": [
+    {
+     "id": "ori-wind-build-guide-s1",
+     "title": "How to get inside a robot",
+     "where": "Under a robot's path",
+     "text": "As a robot walks over, look at the underside of its feet. **One foot has lights on it.** Shoot that foot so the hatch opens, then stand under it and let it step on you. You are pulled up into the head. Which foot is lit changes every pass.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=42s"
+    },
+    {
+     "id": "ori-wind-build-guide-s2",
+     "title": "Part 1: first robot",
+     "where": "Under any robot",
+     "text": "Grab the part on the floor of the head, then use the exit to drop back down. Each of the three robots holds one part.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=60s"
+    },
+    {
+     "id": "ori-wind-build-guide-s3",
+     "title": "Part 2: second robot",
+     "where": "Under a different robot",
+     "text": "Same as above.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=65s"
+    },
+    {
+     "id": "ori-wind-build-guide-s4",
+     "title": "Part 3: third robot",
+     "where": "Under the last robot",
+     "text": "Same as above.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=79s"
+    },
+    {
+     "id": "ori-wind-build-guide-s5",
+     "title": "Yellow record",
+     "where": "Generator 5",
+     "text": "Half-broken wall right of Stamin-Up, boxes by the Lightning tunnel entrance, or the table just inside that tunnel.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s"
+    },
+    {
+     "id": "ori-wind-build-guide-s6",
+     "title": "Get the yellow gem from the Crazy Place",
+     "where": "Wind tunnel, near Generator 4",
+     "text": "You need the gramophone and the yellow record. Place the gramophone at the Wind tunnel entrance, go through the portal, and take the gem from the pedestal glowing yellow. The gem only appears if you came in through the Wind tunnel. Pick the gramophone back up on your way out.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=183s"
+    },
+    {
+     "id": "ori-wind-build-guide-s7",
+     "title": "Build the staff",
+     "where": "Excavation Site, lowest level",
+     "text": "You need the gramophone and the black record to open the lower level. Build it on the **yellow** pedestal.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=219s"
+    }
+   ]
+  },
+  {
+   "id": "ori-fire-build-guide",
+   "title": "Fire Staff: build",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "No searching for these parts: you earn them.",
+   "steps": [
+    {
+     "id": "ori-fire-build-guide-s1",
+     "title": "Part 1: Generator 6 reward box",
+     "where": "Behind the Church",
+     "text": "Capture Generator 6. The reward box next to it opens with the part.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=68s"
+    },
+    {
+     "id": "ori-fire-build-guide-s2",
+     "title": "Part 2: shoot down the glowing plane",
+     "where": "Look up, near the Excavation Site",
+     "text": "After you open the way to the Church, a plane glowing orange circles overhead from the next round. Shoot it down. The part lands by the soul box closest to the Excavation Site, on the small walkway between two robot footprints.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=50s"
+    },
+    {
+     "id": "ori-fire-build-guide-s3",
+     "title": "Part 3: kill the first Panzer Soldat",
+     "where": "Round 8 (solo)",
+     "text": "It drops the part where it dies.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=81s"
+    },
+    {
+     "id": "ori-fire-build-guide-s4",
+     "title": "Red record",
+     "where": "Church",
+     "text": "Boxes between the tank and the stairs, church benches opposite the basin, or boxes next to Generator 6.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s"
+    },
+    {
+     "id": "ori-fire-build-guide-s5",
+     "title": "Get the red gem from the Crazy Place",
+     "where": "Fire tunnel, near spawn on the way to Generator 3",
+     "text": "You need the gramophone and the red record. Place the gramophone at the Fire tunnel entrance, go through the portal, and take the gem from the pedestal glowing red. The gem only appears if you came in through the Fire tunnel. Pick the gramophone back up on your way out.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=181s"
+    },
+    {
+     "id": "ori-fire-build-guide-s6",
+     "title": "Build the staff",
+     "where": "Excavation Site, lowest level",
+     "text": "You need the gramophone and the black record to open the lower level. Build it on the **red** pedestal.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=214s"
+    }
+   ]
+  },
+  {
+   "id": "ori-lightning-build-guide",
+   "title": "Lightning Staff: build",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "intro": "All three parts are on ledges you can only reach by **jumping off the moving tank**. Call the tank at the Church or the Tank Station (500 points). Solo you will need at least two rides.",
+   "steps": [
+    {
+     "id": "ori-lightning-build-guide-s1",
+     "title": "Part 1: Church to Tank Station ride",
+     "where": "Right side, just before the trench to Generator 2",
+     "text": "Jump onto the cut-off wooden staircase on the right. Careful: the robot Thor can step here.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=79s"
+    },
+    {
+     "id": "ori-lightning-build-guide-s2",
+     "title": "Part 2: Tank Station to Church ride",
+     "where": "Left side, by the Excavation Site",
+     "text": "Jump onto the cut-off wooden scaffolding on the left that hangs off the dig site. It leads into a small hole with the part.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=100s"
+    },
+    {
+     "id": "ori-lightning-build-guide-s3",
+     "title": "Part 3: Tank Station to Church ride",
+     "where": "Right side, just before the Church",
+     "text": "Jump onto the dirt path on the right. It leads to an upper level of the Church with the part.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=130s"
+    },
+    {
+     "id": "ori-lightning-build-guide-s4",
+     "title": "Purple record",
+     "where": "Generator 4",
+     "text": "Inside the Wind tunnel by the gateway, on the wagon left of that tunnel's entrance, or on the table next to Der Wunderfizz.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s"
+    },
+    {
+     "id": "ori-lightning-build-guide-s5",
+     "title": "Get the purple gem from the Crazy Place",
+     "where": "Lightning tunnel, near Generator 5",
+     "text": "You need the gramophone and the purple record. Place the gramophone at the Lightning tunnel entrance, go through the portal, and take the gem from the pedestal glowing purple. The gem only appears if you came in through the Lightning tunnel. Pick the gramophone back up on your way out.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=224s"
+    },
+    {
+     "id": "ori-lightning-build-guide-s6",
+     "title": "Build the staff",
+     "where": "Excavation Site, lowest level",
+     "text": "You need the gramophone and the black record to open the lower level. Build it on the **purple** pedestal.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=261s"
+    }
+   ]
+  },
+  {
+   "id": "ori-ice-upgrade-guide",
+   "title": "Ice Staff: upgrade to Ull's Arrow",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "ori-ice-upgrade-guide-s1",
+     "title": "Crazy Place: flip the six stone panels",
+     "where": "Ice section of the Crazy Place",
+     "text": "A blue panel on the wall shows a dot pattern. Shoot the floating stone above the portal whose symbol matches it. Six in a row; a wrong shot resets them all. A matching chart is the fastest way; tell Claude to add one here.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=228s"
+    },
+    {
+     "id": "ori-ice-upgrade-guide-s2",
+     "title": "Freeze and break three gravestones",
+     "where": "Back in the main map",
+     "text": "Shoot each water-dripping gravestone with the Ice Staff, then break it with a bullet weapon.",
+     "options": [
+      "Right of the MP40 / KN-44 wall buy near Generator 4",
+      "Between the Excavation Site and a giant footprint, close to Generator 4",
+      "On the small hill to the right of the Tank Station's back exit (Generator 2), by the downed robot's hand"
+     ],
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=279s"
+    },
+    {
+     "id": "ori-ice-upgrade-guide-s3",
+     "title": "Turn the rings blue and shoot the orb",
+     "where": "Excavation Site, lower level",
+     "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **blue**. Then shoot the blue orb in the middle with the staff. It glows and shoots up.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=318s"
+    },
+    {
+     "id": "ori-ice-upgrade-guide-s4",
+     "title": "Charge it in the Crazy Place",
+     "where": "Crazy Place",
+     "text": "Take the Ice tunnel to the Crazy Place, put the staff in the **blue** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=361s"
+    }
+   ]
+  },
+  {
+   "id": "ori-wind-upgrade-guide",
+   "title": "Wind Staff: upgrade to Boreas' Fury",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "ori-wind-upgrade-guide-s1",
+     "title": "Crazy Place: line up the four rings",
+     "where": "Wind section of the Crazy Place",
+     "text": "Above the portal are four rings of symbols. Shoot a ring with the Wind Staff to rotate it until each column of symbols matches the pillar it points at. The solution never changes, so a reference picture solves it; tell Claude to add one here.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=226s"
+    },
+    {
+     "id": "ori-wind-upgrade-guide-s2",
+     "title": "Blow three smoking stone balls towards the dig site",
+     "where": "Main map",
+     "text": "Shoot each ball with the staff so its smoke drifts towards the Excavation Site.",
+     "options": [
+      "At Generator 4, between the generator and the Wind tunnel",
+      "Behind Stamin-Up near Generator 5",
+      "On the tank's return path, outer No Man's Land: reach it from the Church by walking back along the tank track"
+     ],
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=256s"
+    },
+    {
+     "id": "ori-wind-upgrade-guide-s3",
+     "title": "Turn the rings yellow and shoot the orb",
+     "where": "Excavation Site, lower level",
+     "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **yellow**. Then shoot the yellow orb in the middle with the staff. It glows and shoots up.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=302s"
+    },
+    {
+     "id": "ori-wind-upgrade-guide-s4",
+     "title": "Charge it in the Crazy Place",
+     "where": "Crazy Place",
+     "text": "Take the Wind tunnel to the Crazy Place, put the staff in the **yellow** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=322s"
+    }
+   ]
+  },
+  {
+   "id": "ori-fire-upgrade-guide",
+   "title": "Fire Staff: upgrade to Kagutsuchi's Blood",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "ori-fire-upgrade-guide-s1",
+     "title": "Crazy Place: fill the four cauldrons",
+     "where": "Fire section of the Crazy Place",
+     "text": "Kill about 30 zombies with the Fire Staff while they stand on the **metal grates**. They burst into black smoke that fills the cauldrons.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=226s"
+    },
+    {
+     "id": "ori-fire-upgrade-guide-s2",
+     "title": "Light the right four torches",
+     "where": "Church",
+     "text": "Upstairs on the far wall, four symbols are lit. Each stands for a number. In the basement, seven torches have numbers under them (the bloodstain is 4, and 4 is always one of the answers). Light the four matching torches with the staff.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=258s"
+    },
+    {
+     "id": "ori-fire-upgrade-guide-s3",
+     "title": "Turn the rings red and shoot the orb",
+     "where": "Excavation Site, lower level",
+     "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **red**. Then shoot the red orb in the middle with the staff. It glows and shoots up.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=347s"
+    },
+    {
+     "id": "ori-fire-upgrade-guide-s4",
+     "title": "Charge it in the Crazy Place",
+     "where": "Crazy Place",
+     "text": "Take the Fire tunnel to the Crazy Place, put the staff in the **red** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=375s"
+    }
+   ]
+  },
+  {
+   "id": "ori-lightning-upgrade-guide",
+   "title": "Lightning Staff: upgrade to Kimat's Bite",
+   "category": "Origins",
+   "kind": "walkthrough",
+   "steps": [
+    {
+     "id": "ori-lightning-upgrade-guide-s1",
+     "title": "Crazy Place: play three chords",
+     "where": "Lightning section of the Crazy Place",
+     "text": "The purple triangles on the wall are a keyboard. Use only the **bottom row** and number its seven keys 1 to 7 from left to right. Shoot these with the staff:\n\n- **1, 3, 6**\n- **3, 5, 7**\n- **2, 4, 6**",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=268s"
+    },
+    {
+     "id": "ori-lightning-upgrade-guide-s2",
+     "title": "Turn seven electrical panels",
+     "where": "Main map, in this order",
+     "text": "Only one panel sparks at a time. Turn its knob until it points the way shown.",
+     "options": [
+      "Next to Generator 5: **down**",
+      "Church basement, by torch number 3: **right**",
+      "Church upstairs, by the repairable window: **up**",
+      "Right of the Wind tunnel entrance: **up**",
+      "Spawn room, bottom of the stairs: **left**",
+      "Tank Station, left of the back door: **down**",
+      "Behind the Excavation Site on the path to the Church: **up**"
+     ],
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=335s"
+    },
+    {
+     "id": "ori-lightning-upgrade-guide-s3",
+     "title": "Turn the rings purple and shoot the orb",
+     "where": "Excavation Site, lower level",
+     "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **purple**. Then shoot the purple orb in the middle with the staff. It glows and shoots up.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=409s"
+    },
+    {
+     "id": "ori-lightning-upgrade-guide-s4",
+     "title": "Charge it in the Crazy Place",
+     "where": "Crazy Place",
+     "text": "Take the Lightning tunnel to the Crazy Place, put the staff in the **purple** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=453s"
+    }
+   ]
+  }
+ ]
+}
