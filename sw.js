@@ -11,7 +11,7 @@
  *   youtube.com IFrame API): other origins, so this worker never touches or
  *   caches them; they always come straight from the network.
  */
-const VERSION = '1.1.0';
+const VERSION = '1.1.1';
 const SHELL_CACHE = `gt-shell-${VERSION}`;
 const DATA_CACHE = 'gt-data';
 const MEDIA_CACHE = 'gt-media';

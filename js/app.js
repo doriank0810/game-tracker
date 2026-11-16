@@ -165,16 +165,21 @@ router.init(render);
 // Service worker (offline support). Needs https:// or localhost.
 if ('serviceWorker' in navigator && window.isSecureContext) {
   const hadController = !!navigator.serviceWorker.controller;
-  navigator.serviceWorker.register('sw.js').catch((err) => console.warn('Offline mode unavailable:', err));
+  navigator.serviceWorker
+    .register('sw.js', { updateViaCache: 'none' })
+    .then((reg) => {
+      // Look for a new version at every launch and every time the app comes back to the front.
+      reg.update().catch(() => {});
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') reg.update().catch(() => {});
+      });
+    })
+    .catch((err) => console.warn('Offline mode unavailable:', err));
   let reloading = false;
+  // A new version took over: switch to it straight away, no button to find.
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     if (!hadController || reloading) return;
-    toast('A new version of the app is ready.', {
-      action: 'Reload',
-      onAction: () => {
-        reloading = true;
-        location.reload();
-      },
-    });
+    reloading = true;
+    location.reload();
   });
 }
