@@ -1,8 +1,11 @@
 // Hash routing, so back/refresh work on any static host:
 //   #/                                   home
-//   #/game/<id>                          game page, Next tab
-//   #/game/<id>/list[/<itemId>]          Checklist tab (optionally jump to an item)
-//   #/game/<id>/guides                   Guides tab
+//   #/game/<id>                          game page (layout depends on the game file)
+//   #/game/<id>/section/<sectionId>      one section (a map, for "layout": "maps")
+//   #/game/<id>/groups                   checklist group picker (e.g. weapons)
+//   #/game/<id>/group/<sectionId>/<groupId>   one checklist group
+//   #/game/<id>/list[/<itemId>]          full checklist (optionally jump to an item)
+//   #/game/<id>/guides                   all guides
 //   #/game/<id>/guide/<guideId>          one guide
 //   #/game/<id>/guide/<guideId>/follow[/<stepId>]   walkthrough follow mode
 //   #/search?q=...                       search all games
@@ -33,6 +36,9 @@ export function parseRoute(hash = currentHash()) {
     if (!c || c === 'next') return { name: 'game', gameId: b, tab: 'next' };
     if (c === 'list') return { name: 'game', gameId: b, tab: 'list', focus: d || null };
     if (c === 'guides') return { name: 'game', gameId: b, tab: 'guides' };
+    if (c === 'section' && d) return { name: 'game', gameId: b, tab: 'section', sectionId: d };
+    if (c === 'groups') return { name: 'game', gameId: b, tab: 'groups' };
+    if (c === 'group' && d && e) return { name: 'game', gameId: b, tab: 'group', sectionId: d, groupId: e };
     if (c === 'guide' && d) {
       if (e === 'follow') return { name: 'follow', gameId: b, guideId: d, stepId: f || null };
       return { name: 'guide', gameId: b, guideId: d };

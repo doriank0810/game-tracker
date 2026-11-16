@@ -3,8 +3,27 @@ import * as data from '../data.js';
 import * as store from '../store.js';
 import { esc, enc, relTime, accentStyle, cssEscape } from '../util.js';
 import { STATUS_ORDER, STATUS_LABEL } from '../content.js';
-import { tally, nextItems, effectiveStatus } from '../progress.js';
+import { tally, nextItems, effectiveStatus, whereToContinue } from '../progress.js';
 import { topBar, statusChip, errorBox, emptyBox } from '../ui.js';
+
+/** [label, text] for the card's one-line "what's next", per layout. */
+function nextLine(game, gp) {
+  const { layout } = game;
+  if (layout.type === 'maps') {
+    const c = whereToContinue(game, gp);
+    if (c?.guide) return ['Continue', `${c.section ? `${c.section.title} › ` : ''}${c.guide.title}`];
+    if (c?.section) return ['Continue', c.section.title];
+    return ['Start', `Pick one of ${game.sections.length} ${layout.picker.toLowerCase()}`];
+  }
+  if (layout.type === 'loadouts') {
+    const starred = game.sections.flatMap((s) => s.groups).filter((g) => gp.starred[g.key]).map((g) => g.title);
+    if (starred.length) return ['Starred', starred.join(', ')];
+    const classes = game.guides.filter((g) => layout.cards.includes(g.category)).length;
+    return ['Classes', classes ? `${classes} ready to copy` : `${game.guides.length} guides`];
+  }
+  const n = nextItems(game, gp, 1)[0];
+  return ['Next', n ? n.item.title : game.items.length ? 'All done' : 'Nothing to track yet'];
+}
 
 function cardHTML(g) {
   const { meta } = g;
@@ -12,16 +31,17 @@ function cardHTML(g) {
   const status = effectiveStatus(meta.status, gp);
   const entry = data.peekEntry(meta.id) || g.entry || null;
   let pct = 0;
-  let nextText = 'Loading…';
+  let line = ['Next', 'Loading…'];
   let count = '';
-  if (entry?.error) nextText = "Couldn't load this game's file.";
+  let showBar = true;
+  if (entry?.error) line = ['Next', "Couldn't load this game's file."];
   else if (entry?.game) {
     const game = entry.game;
     const t = tally(gp, game.items);
     pct = t.pct;
     count = t.total ? `${t.done}/${t.total}` : '';
-    const n = nextItems(game, gp, 1)[0];
-    nextText = n ? n.item.title : game.items.length ? 'All done' : 'Nothing to track yet';
+    showBar = game.layout.type !== 'loadouts' && t.total > 0;
+    line = nextLine(game, gp);
   }
   return `<a class="game-card${entry?.error ? ' has-error' : ''}" href="#/game/${enc(meta.id)}" data-game="${esc(
     meta.id
@@ -33,9 +53,9 @@ function cardHTML(g) {
       </div>
       ${statusChip(status)}
     </div>
-    <div class="progress-row"><div class="bar"><span style="width:${pct}%"></span></div><span class="pct">${pct}%</span></div>
-    <div class="card-next"><span class="card-next-label">Next</span><span class="card-next-text">${esc(nextText)}</span></div>
-    <div class="card-foot"><span>${gp.lastPlayed ? `Last played ${relTime(gp.lastPlayed)}` : 'Not played yet'}</span><span class="card-count">${count}</span></div>
+    <div class="card-next"><span class="card-next-label">${esc(line[0])}</span><span class="card-next-text">${esc(line[1])}</span></div>
+    ${showBar ? `<div class="progress-row card-progress"><div class="bar"><span style="width:${pct}%"></span></div><span class="pct">${pct}%</span></div>` : ''}
+    <div class="card-foot"><span>${gp.lastPlayed ? `Played ${relTime(gp.lastPlayed)}` : 'Not played yet'}</span><span class="card-count">${count}</span></div>
   </a>`;
 }
 

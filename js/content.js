@@ -2,7 +2,11 @@
 // structure. Bad or missing fields are fixed up or skipped (with a message)
 // instead of crashing the app. Pure module (no DOM): tools/validate.mjs
 // uses it in Node to check the files.
-import { DEFAULT_ACCENT, fold } from './util.js';
+import { DEFAULT_ACCENT, fold, parseYouTube } from './util.js';
+
+/** How the game page is laid out (top-level "layout" in a game file). */
+export const LAYOUTS = ['story', 'maps', 'loadouts'];
+const LAYOUT_KEYS = ['type', 'order', 'cards', 'checklist', 'picker'];
 
 export const STATUS_ORDER = ['playing', 'paused', 'not-started', 'done'];
 export const STATUS_LABEL = {
@@ -102,6 +106,20 @@ function normalizeSteps(g, gid, errors, warnings) {
       warnings.push(`${at}: "video" must start with http:// or https://; ignored.`);
       video = '';
     }
+    const yt = video ? parseYouTube(video) : null;
+    if (video && !yt && /youtu\.?be/i.test(video)) {
+      warnings.push(`${at}: "video" looks like YouTube but has no video id; it opens as a plain link.`);
+    }
+    let videoEnd = null;
+    if (s.videoEnd != null) {
+      const start = yt ? yt.start : 0;
+      if (!video) warnings.push(`${at}: "videoEnd" without a "video"; ignored.`);
+      else if (typeof s.videoEnd !== 'number' || !Number.isFinite(s.videoEnd)) {
+        warnings.push(`${at}: "videoEnd" must be a number of seconds (like 60); ignored.`);
+      } else if (s.videoEnd <= start) {
+        warnings.push(`${at}: "videoEnd" (${s.videoEnd}) must be greater than the start (${start}s); ignored.`);
+      } else videoEnd = s.videoEnd;
+    }
     let options = [];
     if (Array.isArray(s.options)) options = s.options.map(text).filter((o) => o.trim());
     else if (typeof s.options === 'string' && s.options.trim()) options = [s.options];
@@ -114,6 +132,9 @@ function normalizeSteps(g, gid, errors, warnings) {
       image: str(s.image),
       alt: str(s.alt),
       video,
+      // In-app clip: { id, start, end } for YouTube links, else null.
+      clip: yt ? { id: yt.id, start: yt.start, end: videoEnd ?? yt.end } : null,
+      videoEnd,
       options,
       index: steps.length,
     };
@@ -279,10 +300,33 @@ export function normalizeGame(raw, expectedId = '') {
     sections.push(section);
   });
 
+  // Guides belong to the section whose title (or id) equals their category.
+  const catKey = (v) => fold(v).trim();
+  for (const sec of sections) {
+    const keys = new Set([catKey(sec.title), catKey(sec.id)]);
+    sec.guides = guides.filter((g) => g.category && keys.has(catKey(g.category)));
+  }
+  for (const g of guides) {
+    g.sectionId = sections.find((sec) => sec.guides.includes(g))?.id || null;
+    g.items = items.filter((it) => it.guide === g.id); // checklist items that point at this guide
+  }
+
+  const layout = normalizeLayout(raw.layout, guides, warnings, sections);
+  if (layout.type === 'maps' && !layout.guessed) {
+    for (const g of guides) {
+      if (!g.sectionId) {
+        warnings.push(
+          `Guide "${g.id}": category "${g.category}" matches no section title, so with "layout": "maps" it only shows under "Other guides".`
+        );
+      }
+    }
+  }
+
   return {
     game: {
       id,
       title: str(raw.title),
+      layout,
       sections,
       items,
       byId,
@@ -293,6 +337,88 @@ export function normalizeGame(raw, expectedId = '') {
     errors,
     warnings,
   };
+}
+
+/**
+ * "layout": "maps" | "loadouts" | "story", or an object
+ * { type, order: [categories], cards: [categories], checklist: "label", picker: "label" }.
+ */
+export function normalizeLayout(raw, guides = [], warnings = [], sections = []) {
+  const out = { type: 'story', order: [], cards: null, checklist: '', picker: '', guessed: false };
+  if (raw == null) {
+    // No "layout": guess. Class/loadout guide categories → loadouts; every
+    // section having its own guides (category = section title) → maps.
+    out.guessed = true;
+    if (guides.some((g) => /class|loadout/i.test(g.category))) out.type = 'loadouts';
+    else if (sections.length >= 2 && sections.every((s) => s.guides?.length)) out.type = 'maps';
+    return finishLayout(out, guides);
+  }
+  const obj = typeof raw === 'string' ? { type: raw } : isObj(raw) ? raw : null;
+  if (!obj) {
+    warnings.push('"layout" should be "story", "maps", "loadouts" or an object with a "type"; ignored.');
+    return finishLayout(out, guides);
+  }
+  const type = str(obj.type).toLowerCase();
+  if (!type) warnings.push('"layout" has no "type"; using "story".');
+  else if (!LAYOUTS.includes(type)) warnings.push(`Unknown layout type "${obj.type}"; using "story". Use one of: ${LAYOUTS.join(', ')}.`);
+  else out.type = type;
+  const strList = (v, name) => {
+    if (v == null) return null;
+    if (!Array.isArray(v)) {
+      warnings.push(`"layout.${name}" should be an array of guide categories; ignored.`);
+      return null;
+    }
+    return v.map(str).filter(Boolean);
+  };
+  out.order = strList(obj.order, 'order') || [];
+  out.cards = strList(obj.cards, 'cards');
+  if (obj.checklist != null && typeof obj.checklist !== 'string') warnings.push('"layout.checklist" should be a short text; ignored.');
+  else out.checklist = str(obj.checklist);
+  if (obj.picker != null && typeof obj.picker !== 'string') warnings.push('"layout.picker" should be a short text; ignored.');
+  else out.picker = str(obj.picker);
+  for (const k of Object.keys(obj)) {
+    if (!LAYOUT_KEYS.includes(k)) warnings.push(`"layout.${k}" is not a known layout option; ignored.`);
+  }
+  const cats = new Set(guides.map((g) => g.category).filter(Boolean));
+  for (const [name, list] of [
+    ['order', out.order],
+    ['cards', out.cards || []],
+  ]) {
+    for (const c of list) if (!cats.has(c)) warnings.push(`"layout.${name}" names category "${c}", but no guide has that category.`);
+  }
+  return finishLayout(out, guides);
+}
+
+function finishLayout(out, guides) {
+  // Default class-card categories: any category with "class" or "loadout" in its name.
+  if (!out.cards) {
+    out.cards = [...new Set(guides.map((g) => g.category).filter((c) => /class|loadout/i.test(c)))];
+  }
+  if (!out.checklist) out.checklist = 'Checklist';
+  if (!out.picker) out.picker = 'Maps';
+  return out;
+}
+
+/**
+ * Guide categories in display order: layout.order first, then (loadouts)
+ * "start…" categories, then class-card categories, then the rest in file order.
+ */
+export function categoryOrder(game, guides = game.guides) {
+  const seen = [];
+  for (const g of guides) if (!seen.includes(g.category)) seen.push(g.category);
+  const pos = new Map(seen.map((c, i) => [c, i]));
+  const base = game.layout.order.length;
+  const rank = (c) => {
+    const i = game.layout.order.indexOf(c);
+    if (i >= 0) return i;
+    if (c === '') return base + 100000;
+    if (game.layout.type === 'loadouts') {
+      if (/^start/i.test(c)) return base + 1;
+      if (game.layout.cards.includes(c)) return base + 2;
+    }
+    return base + 10 + pos.get(c);
+  };
+  return [...seen].sort((a, b) => rank(a) - rank(b) || pos.get(a) - pos.get(b));
 }
 
 /** Folded search text for an item (cached on the item). */

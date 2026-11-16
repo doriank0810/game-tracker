@@ -102,6 +102,53 @@ export function accentStyle(hex) {
   return `--accent:${h};--accent-rgb:${rgb.join(',')};--accent-ink:${ink}`;
 }
 
+/** "95", "95s", "1m35s", "1h2m3s" → seconds (0 when unreadable). */
+export function parseSeconds(value) {
+  const t = String(value ?? '').trim();
+  if (!t) return 0;
+  if (/^\d+(\.\d+)?$/.test(t)) return Math.floor(Number(t));
+  const m = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?$/i.exec(t);
+  if (!m) return 0;
+  return (Number(m[1]) || 0) * 3600 + (Number(m[2]) || 0) * 60 + (Number(m[3]) || 0);
+}
+
+/**
+ * A YouTube link → { id, start, end } (seconds; end is null unless the link
+ * has an `end=` parameter), or null when it isn't a YouTube video link.
+ * Accepts youtube.com/watch?v=, youtu.be/, /embed/, /shorts/ and t= / start=.
+ */
+export function parseYouTube(url) {
+  let u;
+  try {
+    u = new URL(String(url ?? '').trim());
+  } catch {
+    return null;
+  }
+  if (!/^https?:$/.test(u.protocol)) return null;
+  const host = u.hostname.toLowerCase().replace(/^(www\.|m\.|music\.)/, '');
+  let id = null;
+  if (host === 'youtu.be') id = u.pathname.slice(1).split('/')[0];
+  else if (host === 'youtube.com' || host === 'youtube-nocookie.com') {
+    if (u.pathname === '/watch') id = u.searchParams.get('v');
+    else id = (/^\/(?:embed|shorts|live|v)\/([^/?#]+)/.exec(u.pathname) || [])[1] || null;
+  }
+  if (!id || !/^[\w-]{11}$/.test(id)) return null;
+  const hashT = /(?:^|[#&])t=([^&]+)/.exec(u.hash)?.[1];
+  const start = parseSeconds(u.searchParams.get('t') || u.searchParams.get('start') || hashT || '');
+  const endRaw = u.searchParams.get('end');
+  const end = endRaw ? parseSeconds(endRaw) : 0;
+  return { id, start, end: end > start ? end : null };
+}
+
+/** 65 → "1:05", 3725 → "1:02:05". */
+export function clock(seconds) {
+  const s = Math.max(0, Math.floor(seconds || 0));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const ss = String(s % 60).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${m}:${ss}`;
+}
+
 export function cssEscape(value) {
   if (globalThis.CSS && typeof CSS.escape === 'function') return CSS.escape(String(value));
   return String(value).replace(/["\\]/g, '\\$&');

@@ -1,6 +1,7 @@
 {
  "id": "bo3-zombies",
  "title": "Black Ops 3 Zombies",
+ "layout": {"type": "maps", "picker": "Maps"},
  "sections": [
   {
    "id": "shadows-of-evil",
@@ -1087,7 +1088,8 @@
      "title": "Become the Beast",
      "where": "Any purple flame shrine",
      "text": "Hold use at a shrine with a purple flame. Solo you get three Beast uses and refill one per round. Each lasts about 30 seconds.",
-     "video": "https://www.youtube.com/watch?v=oALSmR1lPV8&t=5s"
+     "video": "https://www.youtube.com/watch?v=oALSmR1lPV8&t=5s",
+     "videoEnd": 45
     },
     {
      "id": "soe-beast-guide-s2",
@@ -1115,35 +1117,40 @@
      "title": "Get the Summoning Key",
      "where": "Spawn alley, Easy Street",
      "text": "Go Beast. Melee the crate in the back of the truck. Turn back to human and pick up the key.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=33s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=33s",
+     "videoEnd": 60
     },
     {
      "id": "soe-pap-guide-s2",
      "title": "Ritual item 1: Lawyer's pen",
      "where": "Just outside the Easy Street entrance",
      "text": "As the Beast, shock the meter by the crane. The crane swings in and drops its crate, which breaks. Pick up the pen as a human. Every ritual item you pick up spawns two Keepers.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=60s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=60s",
+     "videoEnd": 110
     },
     {
      "id": "soe-pap-guide-s3",
      "title": "Ritual item 2: Championship belt",
      "where": "Waterfront District",
      "text": "A crate hangs from a chain above the district. As the Beast, grapple to the platform where it hangs and melee it so it falls. Pick up the belt.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=147s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=147s",
+     "videoEnd": 207
     },
     {
      "id": "soe-pap-guide-s4",
      "title": "Ritual item 3: Detective badge",
      "where": "Canal District",
      "text": "The crate is behind a locked grate in the canals. As the Beast, find the brickwork painted with the Beast mark and shock the hidden meter behind it. The grate opens. Melee the crate and take the badge.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=299s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=299s",
+     "videoEnd": 359
     },
     {
      "id": "soe-pap-guide-s5",
      "title": "Ritual item 4: Toupee",
      "where": "Walkways into the Footlight District",
      "text": "The crate sits on the edge of a building across a gap. As the Beast, cross the gap and knock the crate down. It breaks on the ground. Take the toupee.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=232s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=232s",
+     "videoEnd": 292
     },
     {
      "id": "soe-pap-guide-s6",
@@ -1156,28 +1163,32 @@
       "Badge: Ruby Rabbit nightclub, Canal",
       "Toupee: Black Lace Burlesque, Footlight"
      ],
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=110s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=110s",
+     "videoEnd": 147
     },
     {
      "id": "soe-pap-guide-s7",
      "title": "Place the first two Gateworms",
      "where": "The Rift (subway under the Junction), Sacred Place",
      "text": "With all four rituals done, the Sacred Place opens. Put a Gateworm on each of the two fiery stands on the altar side. Walls rise out of the gap.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=414s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=414s",
+     "videoEnd": 428
     },
     {
      "id": "soe-pap-guide-s8",
      "title": "Cross and place the other two",
      "where": "Sacred Place, far side",
      "text": "Wall-run across the gap on the new walls. Place the last two Gateworms on the far stands. A one-way path back to the altar appears.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=428s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=428s",
+     "videoEnd": 435
     },
     {
      "id": "soe-pap-guide-s9",
      "title": "Final ritual",
      "where": "Sacred Place altar",
      "text": "Start the ritual at the altar and survive the Keepers. The Shadowman thanks you and a Margwa spawns. The sky turns red and the Pack-a-Punch portal opens in the Sacred Place. Packing is slow on this map.",
-     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=435s"
+     "video": "https://www.youtube.com/watch?v=EMqKlL-QWd0&t=435s",
+     "videoEnd": 475
     }
    ]
   },
@@ -1196,7 +1207,8 @@
       "Leaning against the window in the Smoke Lounge",
       "Against the wall opposite that window"
      ],
-     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=25s"
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=25s",
+     "videoEnd": 73
     },
     {
      "id": "soe-shield-guide-s2",
@@ -1208,7 +1220,8 @@
       "On the bridge that leads to the lounge",
       "Inside the lounge, left of the paid gate to the Waterfront train station, leaning on an overturned coffee table"
      ],
-     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=73s"
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=73s",
+     "videoEnd": 120
     },
     {
      "id": "soe-shield-guide-s3",
@@ -1219,14 +1232,16 @@
       "Next to the perk machine",
       "In the tunnel to the tram station, on a bench on the left"
      ],
-     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=120s"
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=120s",
+     "videoEnd": 172
     },
     {
      "id": "soe-shield-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Hold use at a workbench. The shield boosts you forward and knocks zombies away. White gas canisters with a red valve refill one charge; Max Ammo refills all.",
-     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=172s"
+     "video": "https://www.youtube.com/watch?v=2nAu_0iOqQU&t=172s",
+     "videoEnd": 212
     }
    ]
   },
@@ -1241,28 +1256,32 @@
      "title": "Fuse 1",
      "where": "Canal District",
      "text": "Open the 1250 door near the district's train station and perk machine. The fuse is on the walkway behind it.",
-     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=18s"
+     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=18s",
+     "videoEnd": 78
     },
     {
      "id": "soe-civil-guide-s2",
      "title": "Fuse 2",
      "where": "Waterfront District",
      "text": "Same idea: 1250 door near the train station, fuse on the walkway.",
-     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=279s"
+     "video": "https://www.youtube.com/watch?v=PTZz70UCBrI&t=279s",
+     "videoEnd": 319
     },
     {
      "id": "soe-civil-guide-s3",
      "title": "Fuse 3",
      "where": "Footlight District",
      "text": "Same idea: 1250 door near the train station, fuse on the walkway.",
-     "video": "https://www.youtube.com/watch?v=FA-tpRgLW0w&t=42s"
+     "video": "https://www.youtube.com/watch?v=FA-tpRgLW0w&t=42s",
+     "videoEnd": 82
     },
     {
      "id": "soe-civil-guide-s4",
      "title": "Fit the fuses",
      "where": "Below the city (the Rift)",
      "text": "Put all three fuses in the fuse box called the Master Switch.",
-     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=62s"
+     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=62s",
+     "videoEnd": 69
     },
     {
      "id": "soe-civil-guide-s5",
@@ -1275,7 +1294,8 @@
       "Footlight, near the Apothicon statue by the gate to the Burlesque",
       "Waterfront, near the Mystery Box spawn"
      ],
-     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=69s"
+     "video": "https://www.youtube.com/watch?v=AhcYD-xhG_I&t=69s",
+     "videoEnd": 109
     }
    ]
   },
@@ -1290,28 +1310,32 @@
      "title": "Part 1: Margwa Heart",
      "where": "Wherever you kill a Margwa",
      "text": "Margwas drop it. If you miss it, the next Margwa drops a new one. Margwas come after rituals 2 and 4.",
-     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=50s"
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=50s",
+     "videoEnd": 68
     },
     {
      "id": "soe-servant-guide-s2",
      "title": "Part 2: Margwa Tentacle",
      "where": "Harvest Pods around the map",
      "text": "Comes from a top-tier (fully grown) Harvest Pod. Open fully grown pods until it drops.",
-     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=68s"
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=68s",
+     "videoEnd": 121
     },
     {
      "id": "soe-servant-guide-s3",
      "title": "Part 3: Xenomatter",
      "where": "Anywhere, round 12 or later",
      "text": "Dropped by Parasites or Insanity Elementals once round 12 is reached.",
-     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=121s"
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=121s",
+     "videoEnd": 156
     },
     {
      "id": "soe-servant-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Only one player can take the built one. After that it also goes into the Mystery Box. It cannot be Pack-a-Punched on this map.",
-     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=156s"
+     "video": "https://www.youtube.com/watch?v=y-TNAAYqRtw&t=156s",
+     "videoEnd": 196
     }
    ]
   },
@@ -1331,21 +1355,24 @@
       "Leaving Footlight: left side, after the Peep Show and Celeste's signs",
       "Leaving Canal: left side, after the Devil-O-Donuts and Hotel signs"
      ],
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=52s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=52s",
+     "videoEnd": 112
     },
     {
      "id": "soe-sword-guide-s2",
      "title": "Open the sword wall",
      "where": "The Rift, next to the box spawn and GobbleGum machine",
      "text": "Go Beast. Nine symbols show around a doorway opposite the Sacred Place. Shock the three you saw. A wrong set hides the symbols until next round. The wall dissolves to show a statue with swords and eggs.",
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=150s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=150s",
+     "videoEnd": 169
     },
     {
      "id": "soe-sword-guide-s3",
      "title": "Take an egg",
      "where": "Sword statue",
      "text": "Use the statue to take one egg.",
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=169s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=169s",
+     "videoEnd": 175
     },
     {
      "id": "soe-sword-guide-s4",
@@ -1358,14 +1385,16 @@
       "Waterfront, in the destroyed building, room after the perk machine",
       "The Rift, opposite the sword statue"
      ],
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=175s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=175s",
+     "videoEnd": 216
     },
     {
      "id": "soe-sword-guide-s5",
      "title": "Claim the sword",
      "where": "Sword statue",
      "text": "After four statues the egg glows blue. Return it to the statue to get your sword.",
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=216s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=216s",
+     "videoEnd": 256
     }
    ]
   },
@@ -1386,7 +1415,8 @@
       "Jack: Ruby Rabbit",
       "Jessica: Burlesque"
      ],
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=233s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=233s",
+     "videoEnd": 266
     },
     {
      "id": "soe-sword-up-guide-s2",
@@ -1399,14 +1429,16 @@
       "Waterfront: right in front of the Anvil gym",
       "Junction: outside the Easy Street entrance"
      ],
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=266s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=266s",
+     "videoEnd": 326
     },
     {
      "id": "soe-sword-up-guide-s3",
      "title": "Hand over the sword",
      "where": "Your character's ritual site",
      "text": "Give your sword to the Keeper spirit. It comes back upgraded.",
-     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=340s"
+     "video": "https://www.youtube.com/watch?v=kFOTzYXTRgY&t=340s",
+     "videoEnd": 380
     }
    ]
   },
@@ -1420,14 +1452,16 @@
      "id": "soe-arnie-guide-s1",
      "title": "Finish all four rituals first",
      "where": "Whole map",
-     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=30s"
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=30s",
+     "videoEnd": 54
     },
     {
      "id": "soe-arnie-guide-s2",
      "title": "Get 100 kills with Li'l Arnie",
      "where": "Anywhere",
      "text": "The player holding Arnie needs the kills.",
-     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=54s"
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=54s",
+     "videoEnd": 104
     },
     {
      "id": "soe-arnie-guide-s3",
@@ -1438,14 +1472,16 @@
       "Bow tie: on a shelf in the boxing gym",
       "Walking cane: on a sofa, first floor of the Ruby Rabbit"
      ],
-     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=104s"
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=104s",
+     "videoEnd": 154
     },
     {
      "id": "soe-arnie-guide-s4",
      "title": "Throw Arnie at the stage",
      "where": "Black Lace Burlesque",
      "text": "Throw it at the ritual stand on the stage. A little creature dances with four Gateworms. When the song ends, your Arnies are upgraded.",
-     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=154s"
+     "video": "https://www.youtube.com/watch?v=H-UEEixc3Bs&t=154s",
+     "videoEnd": 194
     }
    ]
   },
@@ -1466,14 +1502,16 @@
      "title": "Turn on the power",
      "where": "Courtyard, back of the big generator",
      "text": "Reach the Courtyard by dropping down next to the bridge from the Lab or Garage side. Pull the switch on the generator.",
-     "video": "https://www.youtube.com/watch?v=FGQgPX0FbUE&t=5s"
+     "video": "https://www.youtube.com/watch?v=FGQgPX0FbUE&t=5s",
+     "videoEnd": 65
     },
     {
      "id": "giant-pap-guide-s2",
      "title": "Link Teleporter A",
      "where": "Behind the Animal Testing Lab (1250 door)",
      "text": "Activate the teleporter at its pad, then run straight back to the mainframe in the spawn room and use it before time runs out.",
-     "video": "https://www.youtube.com/watch?v=FGQgPX0FbUE&t=81s"
+     "video": "https://www.youtube.com/watch?v=FGQgPX0FbUE&t=81s",
+     "videoEnd": 121
     },
     {
      "id": "giant-pap-guide-s3",
@@ -1505,21 +1543,24 @@
      "id": "giant-perk-guide-s1",
      "title": "Get Monkey Bombs and link all teleporters",
      "where": "Mystery Box",
-     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=34s"
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=34s",
+     "videoEnd": 59
     },
     {
      "id": "giant-perk-guide-s2",
      "title": "Teleport with a monkey, three times",
      "where": "Each teleporter",
      "text": "Throw a Monkey Bomb on the teleporter pad and teleport together with it. Back at the mainframe, one of three lights on the panel by the mainframe turns from red to green. Do this at A, B and C.",
-     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=59s"
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=59s",
+     "videoEnd": 97
     },
     {
      "id": "giant-perk-guide-s3",
      "title": "Press the red button",
      "where": "Panel by the mainframe",
      "text": "The giant robot head outside fires its eye beam. It bounces off the metal welcome sign and melts a snow pile, revealing Stamin-Up or Deadshot Daiquiri.",
-     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=97s"
+     "video": "https://www.youtube.com/watch?v=1bf0fa6sxdk&t=97s",
+     "videoEnd": 137
     }
    ]
   },
@@ -1540,35 +1581,40 @@
      "title": "Turn on the power",
      "where": "Armory",
      "text": "The switch is next to a row of generators. Power opens the Undercroft.",
-     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=23s"
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=23s",
+     "videoEnd": 37
     },
     {
      "id": "de-pap-guide-s2",
      "title": "Spot 1: Undercroft",
      "where": "Next to the big central pillar, the side away from the dragon statue",
      "text": "Walk up to the machine pieces and accept the prompt to teleport them.",
-     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=51s"
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=51s",
+     "videoEnd": 81
     },
     {
      "id": "de-pap-guide-s3",
      "title": "Spot 2: Bastion",
      "where": "Outdoors behind the power switch, opposite the Wundersphere",
      "text": "Teleport the pieces here too. After two spots, the third builds the machine.",
-     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=37s"
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=37s",
+     "videoEnd": 51
     },
     {
      "id": "de-pap-guide-s4",
      "title": "Spot 3: Rocket Platform",
      "where": "Walkway next to the rocket",
      "text": "Reach it with the Undercroft teleporter, or the Bastion Wundersphere once its landing pad is on.",
-     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=81s"
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=81s",
+     "videoEnd": 92
     },
     {
      "id": "de-pap-guide-s5",
      "title": "Find the machine later",
      "where": "Any of the three spots",
      "text": "The machine moves between the three spots from time to time. A board near each spot names where it is now.",
-     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=92s"
+     "video": "https://www.youtube.com/watch?v=64ILjYXiwGg&t=92s",
+     "videoEnd": 132
     }
    ]
   },
@@ -1608,7 +1654,8 @@
       "Clock Tower ground floor, on the floor just left of a corpse sitting at a desk",
       "Left side of the stairs up to the Clock Tower and its landing pad, leaning on wooden barrels"
      ],
-     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=69s"
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=69s",
+     "videoEnd": 113
     },
     {
      "id": "de-shield-guide-s2",
@@ -1620,7 +1667,8 @@
       "Same entrance, turn left up the small stairs: at the bottom right of the other small stairs that lead only to a window, against small crates",
       "From the second-floor landing pad, take the stairs up toward the Death Ray: at the base of the second flight, on the left against the stone wall"
      ],
-     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=28s"
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=28s",
+     "videoEnd": 69
     },
     {
      "id": "de-shield-guide-s3",
@@ -1632,14 +1680,16 @@
       "Above the doorway to the Rocket Test teleporter, just under the glowing eye glyph",
       "From the workbench by the Pyramid, turn to face the Pyramid and look up left: hanging on the metal rings that join the four Keeper statues"
      ],
-     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=113s"
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=113s",
+     "videoEnd": 173
     },
     {
      "id": "de-shield-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Free replacement at the same bench if it breaks.",
-     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=194s"
+     "video": "https://www.youtube.com/watch?v=hlsb7rVKmOs&t=194s",
+     "videoEnd": 234
     }
    ]
   },
@@ -1654,7 +1704,8 @@
      "title": "Dragon 1",
      "where": "Courtyard by Double Tap, above the tunnel to the underground lab",
      "text": "Kill a zombie near the stone head to wake it. Then keep killing zombies close to it. It lifts and eats one body at a time; kills during a meal do not count. 8 bodies and it crumbles.",
-     "video": "https://www.youtube.com/watch?v=C92UGjIgGJc&t=63s"
+     "video": "https://www.youtube.com/watch?v=C92UGjIgGJc&t=63s",
+     "videoEnd": 103
     },
     {
      "id": "de-bow-guide-s2",
@@ -1687,14 +1738,16 @@
      "title": "Part 1: kill the first Panzersoldat",
      "where": "Wherever it dies",
      "text": "It drops a part. If you miss it, the next Panzersoldat drops it again.",
-     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=29s"
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=29s",
+     "videoEnd": 46
     },
     {
      "id": "de-ragnarok-guide-s2",
      "title": "Part 2: rocket test console",
      "where": "Rocket Platform",
      "text": "When a rocket test is about to start, pull the lever with a red light at the bottom of the left stairs behind the rocket (the stairs closest to the Wundersphere). Run into the teleporter tunnel. Survive until all three console lights right of the teleporter are solid green, then use the console quickly. The part appears in the teleporter. Miss the window and you wait for the next test.",
-     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=134s"
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=134s",
+     "videoEnd": 194
     },
     {
      "id": "de-ragnarok-guide-s3",
@@ -1705,14 +1758,16 @@
       "On top of the orb above the door to the power switch room",
       "Floating in the air behind the Wundersphere"
      ],
-     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=46s"
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=46s",
+     "videoEnd": 106
     },
     {
      "id": "de-ragnarok-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Plant it to trap zombies and Panzers, or slam it to kill everything nearby.",
-     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=202s"
+     "video": "https://www.youtube.com/watch?v=1Y94XgLzrQ0&t=202s",
+     "videoEnd": 242
     }
    ]
   },
@@ -1727,7 +1782,8 @@
      "title": "Shoot the weathervane",
      "where": "Bastion, facing the Clock Tower",
      "text": "A small tower has a lightning symbol and a weathervane on top. Shoot the vane with the bow. The bricks fall and drop the broken arrow. Pick it up.",
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=7s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=7s",
+     "videoEnd": 22
     },
     {
      "id": "de-storm-guide-s2",
@@ -1739,14 +1795,16 @@
       "From the KRM-262 wall buy by Double Tap, turn about 45 degrees right: far right edge of the ridge over the rocket test site",
       "Rocket Platform, leaving the teleporter tunnel: high on the cliff to your right, looking back at the castle"
      ],
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=22s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=22s",
+     "videoEnd": 61
     },
     {
      "id": "de-storm-guide-s3",
      "title": "Wall-run the five wind symbols",
      "where": "Undercroft, during anti-gravity",
      "text": "Five long hexagon carvings of a gust of wind are on the walls. Touch all five in one wall-run without touching the ground. A sound tells you if you failed; wait for the next anti-gravity if needed.",
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=61s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=61s",
+     "videoEnd": 121
     },
     {
      "id": "de-storm-guide-s4",
@@ -1758,21 +1816,24 @@
       "Rocket Platform tunnel, on the wall across from the teleporter",
       "Clock Tower ground floor, on crates under the spiral stairs"
      ],
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=124s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=124s",
+     "videoEnd": 184
     },
     {
      "id": "de-storm-guide-s5",
      "title": "Reforge the arrow",
      "where": "Back at the weathervane",
      "text": "Blue fog is now on the ground where the arrow fell. Use it to place the arrow. Wait a few seconds and take the reforged arrow.",
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=269s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=269s",
+     "videoEnd": 296
     },
     {
      "id": "de-storm-guide-s6",
      "title": "Charge and claim",
      "where": "Undercroft, lightning shrine next to the Pyramid",
      "text": "Place the arrow in the shrine. Kill 20 zombies inside the square formed by the stairs around the Pyramid. When it stops taking souls, place your bow. Take the Storm Bow.",
-     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=296s"
+     "video": "https://www.youtube.com/watch?v=cMRBJ2p_2KE&t=296s",
+     "videoEnd": 336
     }
    ]
   },
@@ -1787,14 +1848,16 @@
      "title": "Shoot the red symbol",
      "where": "Clock Tower, top of the spiral staircase",
      "text": "Shoot the glowing red symbol on the wall. The clock opens and drops the broken arrow pieces. Pick them up.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=9s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=9s",
+     "videoEnd": 20
     },
     {
      "id": "de-fire-guide-s2",
      "title": "Shoot the hot rock after a rocket test",
      "where": "Rocket Platform",
      "text": "Tests happen every 5 to 7 minutes. Wait near the blast doors. Right after a test, walk straight out, stop just past the cross tracks, turn 90 degrees right and shoot the orange glowing rock on top of the small VMP building. A fireball flies to the castle.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=20s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=20s",
+     "videoEnd": 80
     },
     {
      "id": "de-fire-guide-s3",
@@ -1806,14 +1869,16 @@
       "Bastion, between the Death Ray and its Wundersphere (fly from the Upper Courtyard by the Kuda)",
       "Outside the Clock Tower on the way to the Bastion (fly from the Lower Courtyard above Double Tap)"
      ],
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=82s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=82s",
+     "videoEnd": 142
     },
     {
      "id": "de-fire-guide-s4",
      "title": "Kill zombies while standing in each ring",
      "where": "Each lit ring",
      "text": "Stand inside so the screen edges glow orange. The zombies do not need to be inside. When full, a fire pillar shoots up to the big fireball over the Bastion.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=197s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=197s",
+     "videoEnd": 216
     },
     {
      "id": "de-fire-guide-s5",
@@ -1825,28 +1890,32 @@
       "Cross with a dot left and right: Samantha's room (ring at spawn)",
       "Arrowhead with pierced triangles above and below it: Lower Courtyard supply room across from the dragon (ring outside the Clock Tower)"
      ],
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=216s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=216s",
+     "videoEnd": 261
     },
     {
      "id": "de-fire-guide-s6",
      "title": "Hop the lava to the fireplace",
      "where": "From that ring to its fireplace",
      "text": "Stand in the ring and shoot the ground far toward the fireplace: a lava mound appears. Stand next to it (screen glows orange) and shoot again. Hit the fireplace in 4 shots or fewer, then use it to put the arrow in the fire. Failed? Try again next round.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=261s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=261s",
+     "videoEnd": 321
     },
     {
      "id": "de-fire-guide-s7",
      "title": "Catch the reforged arrow",
      "where": "Next to the Death Ray",
      "text": "The big fireball is now low. Hold use under it. It hardens, explodes and drops the arrow. If the prompt is stubborn, stand against the Death Ray and inch toward it.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=354s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=354s",
+     "videoEnd": 383
     },
     {
      "id": "de-fire-guide-s8",
      "title": "Charge and claim",
      "where": "Undercroft, box with dark volcanic rocks by the Pyramid",
      "text": "Place the arrow, kill 20 zombies close to the box, use the box, take the Fire Bow.",
-     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=383s"
+     "video": "https://www.youtube.com/watch?v=2uiPy-gJUiE&t=383s",
+     "videoEnd": 423
     }
    ]
   },
@@ -1861,14 +1930,16 @@
      "title": "Shoot the Demon Gate glyph",
      "where": "Gate Trap room next to Double Tap",
      "text": "The glyph is painted on the sloped ceiling between the trap's two iron gates. Shoot it with the bow and take the broken arrow.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=17s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=17s",
+     "videoEnd": 28
     },
     {
      "id": "de-void-guide-s2",
      "title": "Free the urn",
      "where": "Trophy Room, centre",
      "text": "A floor tile glows purple. Kill a zombie with a **melee** hit right on it. The tile breaks. Use the urn: it rises and makes a summoning circle.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=28s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=28s",
+     "videoEnd": 68
     },
     {
      "id": "de-void-guide-s3",
@@ -1883,42 +1954,48 @@
       "Undercroft teleporter room, in the sink by a bucket, right side as you enter",
       "Rocket Platform, in the back of the truck left of the Trip Mine wall buy"
      ],
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=68s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=68s",
+     "videoEnd": 128
     },
     {
      "id": "de-void-guide-s4",
      "title": "Feed six crawlers",
      "where": "Trophy Room circle",
      "text": "Lead six legless zombies into the circle. A skull kills each one. Grenades or the Crawl Space GobbleGum make crawlers.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=135s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=135s",
+     "videoEnd": 158
     },
     {
      "id": "de-void-guide-s5",
      "title": "Learn the three crests",
      "where": "Trophy Room, then the armour hallway",
      "text": "The demon says three of six crests in an order. Write the order down. Shoot the urn to hear it again. In the T-shaped hallway between Samantha's room, the Armory and Mission Control, use each suit of armour to see which glyph goes with each crest (it changes every game). Ignore the suit with no crest.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=158s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=158s",
+     "videoEnd": 218
     },
     {
      "id": "de-void-guide-s6",
      "title": "Collect the glyphs",
      "where": "Anywhere",
      "text": "Your kills now sometimes drop glyphs. Keep going until you have the three you need. Extra ones do no harm.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=293s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=293s",
+     "videoEnd": 349
     },
     {
      "id": "de-void-guide-s7",
      "title": "Shoot the name",
      "where": "Trophy Room circle",
      "text": "Shoot the three correct glyphs on the circle floor, in the order the demon said them. A fire pillar rises. Place the arrow in it and take it back reforged. Wrong order resets the name.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=349s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=349s",
+     "videoEnd": 409
     },
     {
      "id": "de-void-guide-s8",
      "title": "Charge and claim",
      "where": "Undercroft, box with the Demon Gate glyph by the Pyramid",
      "text": "Place the arrow and kill zombies near the box. Then place the bow and kill 20 more. Use the glyph to take the Void Bow.",
-     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=497s"
+     "video": "https://www.youtube.com/watch?v=XxslPcDQXv4&t=497s",
+     "videoEnd": 537
     }
    ]
   },
@@ -1939,21 +2016,24 @@
       "Next to the barrier between Samantha's room and the Armory",
       "Control Room balcony closest to the Armory"
      ],
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=15s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=15s",
+     "videoEnd": 75
     },
     {
      "id": "de-wolf-guide-s2",
      "title": "Take the broken arrow",
      "where": "Undercroft, bottom of the stairs from the Family Crypt",
      "text": "Go down from Mission Control through the Family Crypt. The wolf symbol on the wall crumbles. Take the arrow.",
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=134s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=134s",
+     "videoEnd": 142
     },
     {
      "id": "de-wolf-guide-s3",
      "title": "Shoot the red flag",
      "where": "Rocket Platform, cliff above and left of the blast doors",
      "text": "Shoot the base of the pole, not the cloth. Standing on the raised rocket platform helps. A glowing blue dog skull rolls down. Pick it up.",
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=142s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=142s",
+     "videoEnd": 162
     },
     {
      "id": "de-wolf-guide-s4",
@@ -1965,28 +2045,32 @@
       "Just outside spawn, before the Gate Trap",
       "Undercroft, next to the Pack-a-Punch spot"
      ],
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=162s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=162s",
+     "videoEnd": 222
     },
     {
      "id": "de-wolf-guide-s5",
      "title": "Build the platform",
      "where": "Undercroft, under a big hole high on the wall",
      "text": "The wolf sits under the hole. With anti-gravity on, wall-run until a double wolf head symbol shows above the crack, then shoot it a few times until a platform forms.",
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=267s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=267s",
+     "videoEnd": 327
     },
     {
      "id": "de-wolf-guide-s6",
      "title": "Open the coffin",
      "where": "On the new platform",
      "text": "Use the coffin. The king's skeleton holds out the reforged arrow. Take it.",
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=328s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=328s",
+     "videoEnd": 344
     },
     {
      "id": "de-wolf-guide-s7",
      "title": "Charge and claim",
      "where": "Undercroft, Wolf box by the Pyramid",
      "text": "Place the arrow. Kill 20 zombies on the stairs around the Pyramid or the floor it stands on. Place your bow, wait, take the Wolf Bow.",
-     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=344s"
+     "video": "https://www.youtube.com/watch?v=gLQolURWJhc&t=344s",
+     "videoEnd": 384
     }
    ]
   },
@@ -2013,7 +2097,8 @@
       "Inside Lab B (also the upstairs room)",
       "Near the blue pond by Lab A or the green pond by Lab B"
      ],
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=6s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=6s",
+     "videoEnd": 38
     },
     {
      "id": "zns-power-guide-s2",
@@ -2025,49 +2110,56 @@
       "Green: behind Lab B",
       "Purple: Bunker Living Quarters"
      ],
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=38s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=38s",
+     "videoEnd": 43
     },
     {
      "id": "zns-power-guide-s3",
      "title": "Lab A water switch",
      "where": "Inside Lab A",
      "text": "Pour the water into the switch. This gives Lab A power for a few minutes, enough to work its cage. Perks stay off.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=43s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=43s",
+     "videoEnd": 49
     },
     {
      "id": "zns-power-guide-s4",
      "title": "Lab B water switch",
      "where": "Inside Lab B",
      "text": "Refill and pour into the Lab B switch.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=49s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=49s",
+     "videoEnd": 79
     },
     {
      "id": "zns-power-guide-s5",
      "title": "Open the Bunker",
      "where": "Bunker front door",
      "text": "With both labs powered the big door opens for free. Kill the zombies inside fast: one mutates into a Thrasher. The door stays open afterwards.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=79s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=79s",
+     "videoEnd": 92
     },
     {
      "id": "zns-power-guide-s6",
      "title": "Clear turbine 3",
      "where": "Bunker: past the GobbleGum machine, turn left, 1250 door (1500 in co-op)",
      "text": "Three lights above the switch are green and one flashes red. Dive into the water and slash the webs off turbine 3. The room locks.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=92s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=92s",
+     "videoEnd": 110
     },
     {
      "id": "zns-power-guide-s7",
      "title": "Survive the underwater lockdown",
      "where": "Turbine room",
      "text": "Solo, 12 zombies spawn. They give no points. Surface or pop the spore at the back for air.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=110s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=110s",
+     "videoEnd": 134
     },
     {
      "id": "zns-power-guide-s8",
      "title": "Pull the main switch",
      "where": "Same room",
      "text": "Perks now work. A pump pipe for Pack-a-Punch is on the grate in front of turbine 3. Take it.",
-     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=134s"
+     "video": "https://www.youtube.com/watch?v=GJodNxauymE&t=134s",
+     "videoEnd": 174
     }
    ]
   },
@@ -2082,28 +2174,32 @@
      "title": "Part 1: pipe",
      "where": "Turbine room, on the grate in front of turbine 3",
      "text": "Appears after the power lockdown. See the power guide.",
-     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=55s"
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=55s",
+     "videoEnd": 72
     },
     {
      "id": "zns-pap-guide-s2",
      "title": "Part 2: valve wheel",
      "where": "Flooded tunnel right of Mule Kick",
      "text": "Swim in. It is in the first half of the tunnel, before the walls turn into glowing Divinium. Use the air pockets.",
-     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=72s"
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=72s",
+     "videoEnd": 132
     },
     {
      "id": "zns-pap-guide-s3",
      "title": "Part 3: pressure gauge",
      "where": "The room with zombies wrapped in cocoons, next to the Bunker",
      "text": "Knife the cocoons. One of them drops the gauge. Which one changes each game.",
-     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=138s"
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=138s",
+     "videoEnd": 181
     },
     {
      "id": "zns-pap-guide-s4",
      "title": "Fix the pumps",
      "where": "Pack-a-Punch chamber in the Bunker",
      "text": "Use the pumps with all three parts. The water drains and the machine works.",
-     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=181s"
+     "video": "https://www.youtube.com/watch?v=wpzrgPZU1Yc&t=181s",
+     "videoEnd": 221
     }
    ]
   },
@@ -2123,7 +2219,8 @@
       "The pillar nearest the bottom of the staircase",
       "The pillar closest to the window"
      ],
-     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=13s"
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=13s",
+     "videoEnd": 39
     },
     {
      "id": "zns-shield-guide-s2",
@@ -2135,7 +2232,8 @@
       "Tree at the water's edge on the path from Lab B toward the ritual altar and spawn",
       "Tree in the far right corner in front of Lab B, under the one-way drop from behind the altar, near the Trip Mine wall buy"
      ],
-     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=39s"
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=39s",
+     "videoEnd": 65
     },
     {
      "id": "zns-shield-guide-s3",
@@ -2147,7 +2245,8 @@
       "Near the window in the machine gun nest",
       "Up the stairs on the right, in a pile of rubble"
      ],
-     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=65s"
+     "video": "https://www.youtube.com/watch?v=FQ7SHBEsDig&t=65s",
+     "videoEnd": 105
     },
     {
      "id": "zns-shield-guide-s4",
@@ -2167,21 +2266,24 @@
      "title": "Part 1",
      "where": "Behind Lab B, where the sewer pipe comes out by the green water",
      "text": "Either in that area, or next to the ICR-1 wall buy up the stairs on the left.",
-     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=4s"
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=4s",
+     "videoEnd": 38
     },
     {
      "id": "zns-mask-guide-s2",
      "title": "Part 2",
      "where": "The crashed plane",
      "text": "In or around the plane, near the Propeller Trap and a Mystery Box spot.",
-     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=38s"
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=38s",
+     "videoEnd": 70
     },
     {
      "id": "zns-mask-guide-s3",
      "title": "Part 3",
      "where": "Docks under the Bunker",
      "text": "Around the zipline and the trial statue.",
-     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=70s"
+     "video": "https://www.youtube.com/watch?v=JsTuAlJuQ2A&t=70s",
+     "videoEnd": 110
     },
     {
      "id": "zns-mask-guide-s4",
@@ -2202,28 +2304,32 @@
      "title": "Ingredient 1: glowing vial",
      "where": "Usually around Lab B",
      "text": "Only after main power. A scientist zombie glows sickly yellow-green. Kill it; the vial on its hip drops and glows. Play rounds near Lab B and it shows up within a few rounds.",
-     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=125s"
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=125s",
+     "videoEnd": 173
     },
     {
      "id": "zns-kt4-guide-s2",
      "title": "Ingredient 2: spider venom",
      "where": "Lab A cage",
      "text": "With Lab A powered, lower the cage into the swamp. A purple mist arm inside attracts spiders. Lure one in, raise the cage, and a syringe takes its venom.",
-     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=62s"
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=62s",
+     "videoEnd": 122
     },
     {
      "id": "zns-kt4-guide-s3",
      "title": "Ingredient 3: the item at the end of the tunnel",
      "where": "Flooded tunnel right of Mule Kick",
      "text": "Swim to the very end of the Divinium tunnel, deeper than the valve wheel. Use the air pockets and shoot spores for air.",
-     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=7s"
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=7s",
+     "videoEnd": 62
     },
     {
      "id": "zns-kt4-guide-s4",
      "title": "Mix it",
      "where": "KT-4 bench in the Bunker",
      "text": "Use the bench with all three. Take the KT-4. It now also appears in the Mystery Box. It shoots your plants to boost them, too.",
-     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=173s"
+     "video": "https://www.youtube.com/watch?v=LXF6tgohM7s&t=173s",
+     "videoEnd": 213
     }
    ]
   },
@@ -2238,28 +2344,32 @@
      "title": "Burn the webs",
      "where": "Spider lair behind the blue pond near Lab A",
      "text": "Shoot the webs over the entrance with the KT-4.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=76s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=76s",
+     "videoEnd": 83
     },
     {
      "id": "zns-spider-guide-s2",
      "title": "Kill the Giant Spider",
      "where": "Inside the lair",
      "text": "Shoot its glowing orange mouth each time it opens.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=83s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=83s",
+     "videoEnd": 98
     },
     {
      "id": "zns-spider-guide-s3",
      "title": "Free Widow's Wine",
      "where": "Pool in the spider's den",
      "text": "Drink from the pool for a free Widow's Wine.",
-     "video": "https://www.youtube.com/watch?v=n6ELumx8Nbo&t=92s"
+     "video": "https://www.youtube.com/watch?v=n6ELumx8Nbo&t=92s",
+     "videoEnd": 132
     },
     {
      "id": "zns-spider-guide-s4",
      "title": "Take the fang",
      "where": "The spider's body",
      "text": "Use the corpse to pull the fang. Needed for the Masamune.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=98s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=98s",
+     "videoEnd": 138
     }
    ]
   },
@@ -2274,7 +2384,8 @@
      "title": "Start your trials",
      "where": "Trials altar near spawn",
      "text": "Each player gets three random challenges. The altar shows them. Rewards: an empty perk bottle (top), a Dingo, SVG-100 or 205 Brecci (middle; drop it back in to reroll), and a Max Ammo (bottom).",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=355s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=355s",
+     "videoEnd": 368
     },
     {
      "id": "zns-trials-guide-s2",
@@ -2286,7 +2397,8 @@
      "title": "Electrify the shield",
      "where": "Trials altar area",
      "text": "Once every player has all three rewards, lightning strikes the altar now and then. Stand there holding the shield out until it is struck. The electric shield shocks zombies and halves perk and GobbleGum prices when you melee the machine.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=368s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=368s",
+     "videoEnd": 408
     }
    ]
   },
@@ -2301,7 +2413,8 @@
      "title": "Take a bloody skull",
      "where": "Trials altar",
      "text": "Four bloody skulls sit on the altar. Each has a symbol on its forehead. Take one.",
-     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=8s"
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=8s",
+     "videoEnd": 48
     },
     {
      "id": "zns-skull-guide-s2",
@@ -2314,20 +2427,23 @@
       "Bunker docks, left of the main power switch, among wooden crates",
       "Bunker operations room, downstairs by the KT-4 and Masamune benches"
      ],
-     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=48s"
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=48s",
+     "videoEnd": 108
     },
     {
      "id": "zns-skull-guide-s3",
      "title": "Repeat for all four",
      "where": "Back and forth",
-     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=119s"
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=119s",
+     "videoEnd": 179
     },
     {
      "id": "zns-skull-guide-s4",
      "title": "Charge the Skull",
      "where": "New stairs in front of the altar",
      "text": "Go down where the fallen tree was. Try to take the Skull: the room locks and Keepers come for it. Solo, kill 20 Keepers. Then take it.",
-     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=242s"
+     "video": "https://www.youtube.com/watch?v=6pxC9-9LzTo&t=242s",
+     "videoEnd": 282
     }
    ]
   },
@@ -2342,49 +2458,56 @@
      "title": "Electrify your shield",
      "where": "Trials altar",
      "text": "See the trials guide.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=346s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=346s",
+     "videoEnd": 380
     },
     {
      "id": "zns-masamune-guide-s2",
      "title": "Ingredient 1: Liquid Divinium",
      "where": "Lab B cage",
      "text": "Melee the cage control panel with the electric shield. Step into the cage from inside Lab B: it drops into the swamp and opens. A skeleton below holds the vial. Take it and use the console to go back up.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=380s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=380s",
+     "videoEnd": 428
     },
     {
      "id": "zns-masamune-guide-s3",
      "title": "Ingredient 2: spider fang",
      "where": "Giant Spider's body",
      "text": "See the Giant Spider guide.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=67s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=67s",
+     "videoEnd": 127
     },
     {
      "id": "zns-masamune-guide-s4",
      "title": "Reveal the hidden planter",
      "where": "Bunker Living Quarters, then the Mule Kick tunnel",
      "text": "Use the Skull's Mesmerize on the torn blueprint by the purple water. Then swim to where the third KT-4 ingredient was and Mesmerize the wall on the right beside it. A hidden planter appears.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=240s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=240s",
+     "videoEnd": 297
     },
     {
      "id": "zns-masamune-guide-s5",
      "title": "Get rainbow water",
      "where": "Sewer pipe ride, Bunker to Lab B (500 each try)",
      "text": "Start inside the Bunker operations room. Press use just after you pass the second blue section, as a lump of Divinium goes by on the right. Your bucket may need to be empty first.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=138s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=138s",
+     "videoEnd": 198
     },
     {
      "id": "zns-masamune-guide-s6",
      "title": "Grow the plant",
      "where": "Hidden planter",
      "text": "Plant a seed. Water it with rainbow water once a round for three rounds. Pick the special plant.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=297s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=297s",
+     "videoEnd": 346
     },
     {
      "id": "zns-masamune-guide-s7",
      "title": "Make the blue ammo",
      "where": "Second bench, next to the KT-4 bench",
      "text": "Hold the KT-4 in your hands and use the bench.",
-     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=428s"
+     "video": "https://www.youtube.com/watch?v=5zlqxnnUCQw&t=428s",
+     "videoEnd": 468
     }
    ]
   },
@@ -2404,7 +2527,8 @@
      "id": "gk-pap-guide-s1",
      "title": "Turn on the power",
      "where": "Just past the entrance of the Dragon Command Center",
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=15s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=15s",
+     "videoEnd": 32
     },
     {
      "id": "gk-pap-guide-s2",
@@ -2422,34 +2546,39 @@
       "Supply Depot",
       "Tank Factory"
      ],
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=32s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=32s",
+     "videoEnd": 50
     },
     {
      "id": "gk-pap-guide-s4",
      "title": "Defend the pod",
      "where": "Under the green beam",
      "text": "Zombies attack it right away. Kill 15 zombies close to it (they get shocked when it counts). It opens: take the module. If the pod is destroyed, wait for another cylinder.",
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=50s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=50s",
+     "videoEnd": 75
     },
     {
      "id": "gk-pap-guide-s5",
      "title": "Repeat for all three",
      "where": "Three consoles",
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=75s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=75s",
+     "videoEnd": 135
     },
     {
      "id": "gk-pap-guide-s6",
      "title": "Fit the modules",
      "where": "Operations Bunker, middle of the room",
      "text": "Put all three in the Dragon Network console.",
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=141s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=141s",
+     "videoEnd": 151
     },
     {
      "id": "gk-pap-guide-s7",
      "title": "Ride the dragon",
      "where": "Any of the three dragon platforms",
      "text": "Call the dragon for 500 points and hold use to climb on. It drops you into the Hatchery. Pack-a-Punch is on the ground floor.",
-     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=151s"
+     "video": "https://www.youtube.com/watch?v=lrbkeUYCEAg&t=151s",
+     "videoEnd": 191
     }
    ]
   },
@@ -2469,7 +2598,8 @@
       "On the right bunk of the two bunk beds touching the stairs up to Stamin-Up",
       "Facing Stamin-Up, look left: on debris under the leftmost of three broken windows on the green wall"
      ],
-     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=33s"
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=33s",
+     "videoEnd": 58
     },
     {
      "id": "gk-shield-guide-s2",
@@ -2481,7 +2611,8 @@
       "On the door of the truck with blue barrels, downstairs from the store before the Bunker, opposite the GobbleGum machine",
       "On a shelf in the Operations Bunker, right of the electric trap switch, before the stairs up to the Infirmary"
      ],
-     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=8s"
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=8s",
+     "videoEnd": 33
     },
     {
      "id": "gk-shield-guide-s3",
@@ -2493,14 +2624,16 @@
       "Going upstairs, just past the doorway by the GobbleGum machine: on the wall next to the metal door to the Supply Depot",
       "Top level, on the side of a crate straight ahead at the top of the stairs, same wall as the bridge switch"
      ],
-     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=58s"
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=58s",
+     "videoEnd": 96
     },
     {
      "id": "gk-shield-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Hold it in front of you to walk through dragon fire. Its melee shoots a green fireball (three charges, one back per round, all back on Max Ammo).",
-     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=96s"
+     "video": "https://www.youtube.com/watch?v=B-hjdFIQEqk&t=96s",
+     "videoEnd": 136
     }
    ]
   },
@@ -2515,14 +2648,16 @@
      "title": "Stand in dragon fire twice",
      "where": "Any area the dragon burns",
      "text": "Be inside the area **before** the fire starts, shield held out, and stay in for the whole burn. Do it twice.",
-     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=137s"
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=137s",
+     "videoEnd": 183
     },
     {
      "id": "gk-tiamat-guide-s2",
      "title": "Kill 50 zombies with the shield",
      "where": "Anywhere",
      "text": "Melee or fireball. A sound plays when done.",
-     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=21s"
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=21s",
+     "videoEnd": 67
     },
     {
      "id": "gk-tiamat-guide-s3",
@@ -2534,14 +2669,16 @@
       "Supply Depot: opposite the ramp up to Speed Cola, look up at the broken roof",
       "Tank Factory: stand on the right platform as if boarding, look right, on the fallen robot's shoulder"
      ],
-     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=67s"
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=67s",
+     "videoEnd": 127
     },
     {
      "id": "gk-tiamat-guide-s4",
      "title": "Dip the shield",
      "where": "Dead dragon in Belinski Square, by the trial tombstones",
      "text": "Hold use at the pool of blood. A few seconds later you have Tiamat's Maw (red fireballs, 35 hits).",
-     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=183s"
+     "video": "https://www.youtube.com/watch?v=iaY_sbbGd-g&t=183s",
+     "videoEnd": 223
     }
    ]
   },
@@ -2574,7 +2711,8 @@
      "title": "Upgrade: 40 kills",
      "where": "Anywhere",
      "text": "Kill about 40 zombies with Dragon Strikes. A loud roar after a strike means done.",
-     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=31s"
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=31s",
+     "videoEnd": 85
     },
     {
      "id": "gk-strike-guide-s5",
@@ -2587,14 +2725,16 @@
       "Tank Factory: top of the stairs to Double Tap, look out near the hanging tank",
       "Belinski Square: corner by Quick Revive, behind the gushing pipe"
      ],
-     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=85s"
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=85s",
+     "videoEnd": 145
     },
     {
      "id": "gk-strike-guide-s6",
      "title": "Upgrade: second lockdown",
      "where": "Hatchery crystal",
      "text": "Start the lockdown again. In every wave, aim the strike outside as often as it recharges (about every 15 to 20 seconds). Then take the Draconite Controller from the crystal.",
-     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=230s"
+     "video": "https://www.youtube.com/watch?v=1yAdvnjykT0&t=230s",
+     "videoEnd": 270
     }
    ]
   },
@@ -2609,21 +2749,24 @@
      "title": "Shoot down the egg",
      "where": "Hatchery, above the sewer grate back to the square",
      "text": "Shoot the only unbroken egg. It rolls to the right of the grate. Pick it up.",
-     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=37s"
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=37s",
+     "videoEnd": 64
     },
     {
      "id": "gk-gauntlet-guide-s2",
      "title": "Heat it in dragon fire",
      "where": "Nest in front of Dragon Command, opposite the middle of the stairs",
      "text": "Place it **before** the dragon breathes. Then wait out this round and one full round while it cools. Pick it up.",
-     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=64s"
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=64s",
+     "videoEnd": 117
     },
     {
      "id": "gk-gauntlet-guide-s3",
      "title": "Trial 1: napalm zombie kills",
      "where": "Anywhere",
      "text": "Kill the burning zombies made by dragon fire. Holding the egg, trials go in order.",
-     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=117s"
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=117s",
+     "videoEnd": 148
     },
     {
      "id": "gk-gauntlet-guide-s4",
@@ -2642,14 +2785,16 @@
      "title": "Hatch it",
      "where": "Hatchery basement, incubator",
      "text": "Place the egg. Survive the lockdown. Leave and come back when Sophia says it is ready.",
-     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=148s"
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=148s",
+     "videoEnd": 189
     },
     {
      "id": "gk-gauntlet-guide-s7",
      "title": "Claim the Gauntlet",
      "where": "Trials tombstone in Belinski Square",
      "text": "Use the fourth trial on the tombstone. The Gauntlet rises out of the ground.",
-     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=189s"
+     "video": "https://www.youtube.com/watch?v=rRKpJXVOwyg&t=189s",
+     "videoEnd": 229
     }
    ]
   },
@@ -2676,34 +2821,39 @@
       "Verrückt, downstairs (1250 debris)",
       "Der Eisendrache Undercroft area"
      ],
-     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=8s"
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=8s",
+     "videoEnd": 68
     },
     {
      "id": "rev-pap-guide-s2",
      "title": "Wait for the Apothicon",
      "where": "Nacht der Untoten, upstairs (750 debris)",
      "text": "With all four engines on, a panel right of Juggernog lights up and buzzes when the giant Apothicon flies past.",
-     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=143s"
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=143s",
+     "videoEnd": 163
     },
     {
      "id": "rev-pap-guide-s3",
      "title": "Trap it",
      "where": "Panel right of Juggernog",
      "text": "Press the panel while it flashes. Four death rays freeze the Apothicon in place.",
-     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=163s"
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=163s",
+     "videoEnd": 175
     },
     {
      "id": "rev-pap-guide-s4",
      "title": "Go inside",
      "where": "Stairs down from Nacht to the frozen Apothicon",
-     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=175s"
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=175s",
+     "videoEnd": 182
     },
     {
      "id": "rev-pap-guide-s5",
      "title": "Free the machine",
      "where": "Inside the Apothicon",
      "text": "The machine is stuck in a sac in its heart. Shoot the yellow tubes on both sides of the sac until the machine drops down. Exits on the right lead to Mob of the Dead, Verrückt, Der Eisendrache and spawn.",
-     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=182s"
+     "video": "https://www.youtube.com/watch?v=r4xtsq_skww&t=182s",
+     "videoEnd": 222
     }
    ]
   },
@@ -2723,7 +2873,8 @@
       "Past the GobbleGum machine on the left path: before the Pharo wall buy, on a big crate lit by a broken truck",
       "Past the Pharo, turn right and drop toward the Wunderfizz spot: on a chair across from it, by some shelves"
      ],
-     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=6s"
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=6s",
+     "videoEnd": 28
     },
     {
      "id": "rev-shield-guide-s2",
@@ -2735,7 +2886,8 @@
       "Up the stairs by Speed Cola, straight to the zombie hole, then left: on a fallen wheelchair in the corner (orange glow visible)",
       "Upstairs, on the table in the middle of the kitchen (bone side only)"
      ],
-     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=93s"
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=93s",
+     "videoEnd": 134
     },
     {
      "id": "rev-shield-guide-s3",
@@ -2747,13 +2899,15 @@
       "High on the wall above the two Primis statues, halfway between the VMP and the Pyramid, on the left",
       "High and left on the wall with the GobbleGum machine, by small lights on cables, above the small black desk"
      ],
-     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=28s"
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=28s",
+     "videoEnd": 88
     },
     {
      "id": "rev-shield-guide-s4",
      "title": "Build it",
      "where": "Crafting table in Nacht der Untoten",
-     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=134s"
+     "video": "https://www.youtube.com/watch?v=E1KheWSobD0&t=134s",
+     "videoEnd": 174
     }
    ]
   },
@@ -2773,7 +2927,8 @@
       "Top of the stairs right of the Corruption Engine, in a wheelchair on the left",
       "In a wheelchair at a desk with a bloody mattress, near the Wunderfizz spot by the Mob of the Dead jump pad"
      ],
-     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=95s"
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=95s",
+     "videoEnd": 135
     },
     {
      "id": "rev-keeper-guide-s2",
@@ -2785,7 +2940,8 @@
       "Der Eisendrache, in the concrete rubble touching the Pyramid",
       "Kino, on a small table with a red cloth near the jump pad to Verrückt (from the Bowie ramp, through the doorway left of the GobbleGum machine)"
      ],
-     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=9s"
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=9s",
+     "videoEnd": 48
     },
     {
      "id": "rev-keeper-guide-s3",
@@ -2797,14 +2953,16 @@
       "Origins, top of the central mound where Pack-a-Punch used to be, in a corner",
       "Mob of the Dead cafeteria, right of Mule Kick"
      ],
-     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=48s"
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=48s",
+     "videoEnd": 95
     },
     {
      "id": "rev-keeper-guide-s4",
      "title": "Build the altar",
      "where": "Any unfinished altar",
      "text": "Altars are in the Der Eisendrache, Kino, Verrückt and Origins areas. Summoning costs 5000 points.",
-     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=135s"
+     "video": "https://www.youtube.com/watch?v=SysILhxXG3E&t=135s",
+     "videoEnd": 175
     }
    ]
   },
@@ -2826,14 +2984,16 @@
       "Above Verrückt: by the jump pad to the Mob cafeteria, look down the hall at the test tubes, then up",
       "Above the frozen giant Apothicon at Nacht: top of the stairs down to it, next to a big floating rock"
      ],
-     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=22s"
+     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=22s",
+     "videoEnd": 82
     },
     {
      "id": "rev-servant-guide-s2",
      "title": "Pack-a-Punch it",
      "where": "Pack-a-Punch",
      "text": "Now it upgrades for the normal price into the Estoom-oth.",
-     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=141s"
+     "video": "https://www.youtube.com/watch?v=MvIuwsb0HlM&t=141s",
+     "videoEnd": 181
     }
    ]
   },
@@ -2872,35 +3032,40 @@
      "title": "Turn on the power",
      "where": "Backstage, by the wall gun spot (the M16 in the old game)",
      "text": "It opens the stage curtain and the lobby door and starts the projector.",
-     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=147s"
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=147s",
+     "videoEnd": 185
     },
     {
      "id": "kino-pap-guide-s2",
      "title": "Activate the teleporter",
      "where": "Theater",
      "text": "Use the teleporter pad in the theater.",
-     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=185s"
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=185s",
+     "videoEnd": 190
     },
     {
      "id": "kino-pap-guide-s3",
      "title": "Link it",
      "where": "Mainframe in the spawn lobby",
      "text": "Go back to the lobby and use the mainframe.",
-     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=190s"
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=190s",
+     "videoEnd": 202
     },
     {
      "id": "kino-pap-guide-s4",
      "title": "Teleport up",
      "where": "Teleporter",
      "text": "Stand on it. It sends you to the projector room with Pack-a-Punch. After 30 seconds you are sent out, sometimes through a side room first, and land back at the mainframe.",
-     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=202s"
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=202s",
+     "videoEnd": 233
     },
     {
      "id": "kino-pap-guide-s5",
      "title": "Relink for the next visit",
      "where": "Mainframe",
      "text": "The teleporter cools down, then needs a new link each time.",
-     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=233s"
+     "video": "https://www.youtube.com/watch?v=xZ1CvBMX8tA&t=233s",
+     "videoEnd": 273
     }
    ]
   },
@@ -2920,7 +3085,8 @@
      "id": "asc-pap-guide-s1",
      "title": "Turn on the power",
      "where": "Top floor of the main building",
-     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=9s"
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=9s",
+     "videoEnd": 69
     },
     {
      "id": "asc-pap-guide-s2",
@@ -2932,20 +3098,23 @@
       "Lander D (Д): 1250 access gate",
       "Lander F (Ф): 1250 access door"
      ],
-     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=85s"
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=85s",
+     "videoEnd": 145
     },
     {
      "id": "asc-pap-guide-s3",
      "title": "Launch the rocket",
      "where": "Button right of the power switch",
-     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=172s"
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=172s",
+     "videoEnd": 181
     },
     {
      "id": "asc-pap-guide-s4",
      "title": "Pack-a-Punch",
      "where": "Launch area, below the rocket",
      "text": "Once the rocket leaves, the big door opens. The machine is on the right. Stay as long as you like.",
-     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=181s"
+     "video": "https://www.youtube.com/watch?v=4atuws9ZB3s&t=181s",
+     "videoEnd": 221
     }
    ]
   },
@@ -2965,14 +3134,16 @@
      "id": "shang-pap-guide-s1",
      "title": "Pull switch 1",
      "where": "Underground, near the Bowie Knife, where water falls on the turbines",
-     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=5s"
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=5s",
+     "videoEnd": 50
     },
     {
      "id": "shang-pap-guide-s2",
      "title": "Pull switch 2",
      "where": "Same area, other side",
      "text": "Power and the water slide work after both.",
-     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=50s"
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=50s",
+     "videoEnd": 110
     },
     {
      "id": "shang-pap-guide-s3",
@@ -2985,21 +3156,24 @@
       "Next to the power switches",
       "In the cave toward the old AK-74u wall buy"
      ],
-     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=119s"
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=119s",
+     "videoEnd": 139
     },
     {
      "id": "shang-pap-guide-s4",
      "title": "Stand on its slab",
      "where": "Stone slab next to that statue",
      "text": "The part stops. The missing stairs to the machine rise out of the ground.",
-     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=139s"
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=139s",
+     "videoEnd": 198
     },
     {
      "id": "shang-pap-guide-s5",
      "title": "Pack-a-Punch",
      "where": "Top of the stairs in the start area",
      "text": "A skull climbs the side of the stairs. When it reaches the top, water flushes you down.",
-     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=198s"
+     "video": "https://www.youtube.com/watch?v=atxZNYHYBuU&t=198s",
+     "videoEnd": 238
     }
    ]
   },
@@ -3072,7 +3246,8 @@
       "Green tank in the corner right of Deadshot Daiquiri",
       "Shelf between the wall buy and the door to the Bio-Dome"
      ],
-     "video": "https://www.youtube.com/watch?v=lzwc9cbcZ6E&t=13s"
+     "video": "https://www.youtube.com/watch?v=lzwc9cbcZ6E&t=13s",
+     "videoEnd": 53
     },
     {
      "id": "moon-hacker-guide-s2",
@@ -3104,21 +3279,24 @@
      "title": "Go Outside",
      "where": "Labs, 3rd floor door",
      "text": "No oxygen outside: wear a P.E.S.",
-     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=22s"
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=22s",
+     "videoEnd": 31
     },
     {
      "id": "moon-pap-guide-s2",
      "title": "Stand on the teleporter",
      "where": "Outside, above the Power Room",
      "text": "Every player must stand on it. It sends you back to Area 51. You can also jump onto it from the KN-44 wall buy area.",
-     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=31s"
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=31s",
+     "videoEnd": 43
     },
     {
      "id": "moon-pap-guide-s3",
      "title": "Pack and return",
      "where": "Area 51",
      "text": "Pack-a-Punch, then use the Area 51 teleporter again. The Moon teleporter will not take you back to Area 51 until the next round.",
-     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=43s"
+     "video": "https://www.youtube.com/watch?v=eS9Wq_pIxR8&t=43s",
+     "videoEnd": 83
     }
    ]
   },
@@ -3145,7 +3323,8 @@
       "Trench room to the right of the Fire tunnel",
       "Trench tunnel near Speed Cola, behind the crate on the way to the Workshop"
      ],
-     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=84s"
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=84s",
+     "videoEnd": 120
     },
     {
      "id": "ori-shield-guide-s2",
@@ -3157,7 +3336,8 @@
       "End of the trenches past Generator 2 and the Workshop",
       "On top of the Tank Station by Generator 2, near broken piping"
      ],
-     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=35s"
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=35s",
+     "videoEnd": 84
     },
     {
      "id": "ori-shield-guide-s3",
@@ -3169,14 +3349,16 @@
       "In the marsh just outside Generator 4, heading to the trenches for the Church",
       "In a giant robot footprint near the Excavation Site"
      ],
-     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=120s"
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=120s",
+     "videoEnd": 172
     },
     {
      "id": "ori-shield-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Hold the use button at a workbench. If it breaks later, take a new one for free from the same bench.",
-     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=172s"
+     "video": "https://www.youtube.com/watch?v=Ktg_cAGZy9Y&t=172s",
+     "videoEnd": 212
     }
    ]
   },
@@ -3192,7 +3374,8 @@
      "title": "Part 1: Brain",
      "where": "Starting room, lower floor",
      "text": "Always the same place: on a table next to the stairs that go up to Generator 1.",
-     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=40s"
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=40s",
+     "videoEnd": 53
     },
     {
      "id": "ori-drone-guide-s2",
@@ -3204,7 +3387,8 @@
       "By the crossbones sign on the tank's muddy path towards Generator 5",
       "In the Ice tunnel near Generator 6, in front of the portal"
      ],
-     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=87s"
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=87s",
+     "videoEnd": 129
     },
     {
      "id": "ori-drone-guide-s3",
@@ -3216,14 +3400,16 @@
       "On top of the Excavation Site near Pack-a-Punch",
       "Around the secret entrance of the Excavation Site"
      ],
-     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=53s"
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=53s",
+     "videoEnd": 87
     },
     {
      "id": "ori-drone-guide-s4",
      "title": "Build it",
      "where": "Any workbench",
      "text": "Deploy it like equipment. It lasts about 90 seconds, then recharges at the bench.",
-     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=129s"
+     "video": "https://www.youtube.com/watch?v=pHguGg7YFUA&t=129s",
+     "videoEnd": 169
     }
    ]
   },
@@ -3239,7 +3425,8 @@
      "title": "Gramophone",
      "where": "Inside the Excavation Site",
      "text": "Always on the floor next to a table inside the Excavation Site once you have opened it.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=161s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=161s",
+     "videoEnd": 201
     },
     {
      "id": "ori-gramophone-guide-s2",
@@ -3251,14 +3438,16 @@
       "In the wheelbarrow next to Pack-a-Punch",
       "In the trench by the debris that opens the way to the Church"
      ],
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=102s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=102s",
+     "videoEnd": 161
     },
     {
      "id": "ori-gramophone-guide-s3",
      "title": "Blue record (Ice)",
      "where": "Tank Station, Generator 2",
      "text": "On one of the shelves inside the Tank Station.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s",
+     "videoEnd": 100
     },
     {
      "id": "ori-gramophone-guide-s4",
@@ -3270,7 +3459,8 @@
       "On the wagon to the left as you enter that tunnel",
       "On the table next to the Der Wunderfizz machine"
      ],
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s",
+     "videoEnd": 63
     },
     {
      "id": "ori-gramophone-guide-s5",
@@ -3282,7 +3472,8 @@
       "On the boxes near the Lightning tunnel entrance",
       "On the table just inside the Lightning tunnel"
      ],
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s",
+     "videoEnd": 63
     },
     {
      "id": "ori-gramophone-guide-s6",
@@ -3294,7 +3485,8 @@
       "On the church benches opposite the basin",
       "On boxes next to Generator 6"
      ],
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s",
+     "videoEnd": 63
     }
    ]
   },
@@ -3310,40 +3502,46 @@
      "title": "Dig part 1: starting area",
      "where": "Between spawn and the Workshop",
      "text": "Dig every pile on both sides of the trenches until a staff part pops out.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=57s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=57s",
+     "videoEnd": 76
     },
     {
      "id": "ori-ice-build-guide-s2",
      "title": "Dig part 2: middle of the map",
      "where": "No Man's Land around the Excavation Site",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=76s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=76s",
+     "videoEnd": 80
     },
     {
      "id": "ori-ice-build-guide-s3",
      "title": "Dig part 3: church area",
      "where": "Around the Church",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=80s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=80s",
+     "videoEnd": 140
     },
     {
      "id": "ori-ice-build-guide-s4",
      "title": "Blue record",
      "where": "Tank Station, Generator 2",
      "text": "On a shelf inside.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=40s",
+     "videoEnd": 57
     },
     {
      "id": "ori-ice-build-guide-s5",
      "title": "Get the blue gem from the Crazy Place",
      "where": "Ice tunnel, near the Church",
      "text": "You need the gramophone and the blue record. Place the gramophone at the Ice tunnel entrance, go through the portal, and take the gem from the pedestal glowing blue. The gem only appears if you came in through the Ice tunnel. Pick the gramophone back up on your way out.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=184s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=184s",
+     "videoEnd": 219
     },
     {
      "id": "ori-ice-build-guide-s6",
      "title": "Build the staff",
      "where": "Excavation Site, lowest level",
      "text": "You need the gramophone and the black record to open the lower level. Build it on the **blue** pedestal.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=219s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=219s",
+     "videoEnd": 259
     }
    ]
   },
@@ -3359,49 +3557,56 @@
      "title": "How to get inside a robot",
      "where": "Under a robot's path",
      "text": "As a robot walks over, look at the underside of its feet. **One foot has lights on it.** Shoot that foot so the hatch opens, then stand under it and let it step on you. You are pulled up into the head. Which foot is lit changes every pass.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=42s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=42s",
+     "videoEnd": 60
     },
     {
      "id": "ori-wind-build-guide-s2",
      "title": "Part 1: first robot",
      "where": "Under any robot",
      "text": "Grab the part on the floor of the head, then use the exit to drop back down. Each of the three robots holds one part.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=60s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=60s",
+     "videoEnd": 65
     },
     {
      "id": "ori-wind-build-guide-s3",
      "title": "Part 2: second robot",
      "where": "Under a different robot",
      "text": "Same as above.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=65s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=65s",
+     "videoEnd": 79
     },
     {
      "id": "ori-wind-build-guide-s4",
      "title": "Part 3: third robot",
      "where": "Under the last robot",
      "text": "Same as above.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=79s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=79s",
+     "videoEnd": 139
     },
     {
      "id": "ori-wind-build-guide-s5",
      "title": "Yellow record",
      "where": "Generator 5",
      "text": "Half-broken wall right of Stamin-Up, boxes by the Lightning tunnel entrance, or the table just inside that tunnel.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=23s",
+     "videoEnd": 42
     },
     {
      "id": "ori-wind-build-guide-s6",
      "title": "Get the yellow gem from the Crazy Place",
      "where": "Wind tunnel, near Generator 4",
      "text": "You need the gramophone and the yellow record. Place the gramophone at the Wind tunnel entrance, go through the portal, and take the gem from the pedestal glowing yellow. The gem only appears if you came in through the Wind tunnel. Pick the gramophone back up on your way out.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=183s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=183s",
+     "videoEnd": 219
     },
     {
      "id": "ori-wind-build-guide-s7",
      "title": "Build the staff",
      "where": "Excavation Site, lowest level",
      "text": "You need the gramophone and the black record to open the lower level. Build it on the **yellow** pedestal.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=219s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=219s",
+     "videoEnd": 259
     }
    ]
   },
@@ -3417,42 +3622,48 @@
      "title": "Part 1: Generator 6 reward box",
      "where": "Behind the Church",
      "text": "Capture Generator 6. The reward box next to it opens with the part.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=68s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=68s",
+     "videoEnd": 81
     },
     {
      "id": "ori-fire-build-guide-s2",
      "title": "Part 2: shoot down the glowing plane",
      "where": "Look up, near the Excavation Site",
      "text": "After you open the way to the Church, a plane glowing orange circles overhead from the next round. Shoot it down. The part lands by the soul box closest to the Excavation Site, on the small walkway between two robot footprints.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=50s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=50s",
+     "videoEnd": 68
     },
     {
      "id": "ori-fire-build-guide-s3",
      "title": "Part 3: kill the first Panzer Soldat",
      "where": "Round 8 (solo)",
      "text": "It drops the part where it dies.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=81s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=81s",
+     "videoEnd": 141
     },
     {
      "id": "ori-fire-build-guide-s4",
      "title": "Red record",
      "where": "Church",
      "text": "Boxes between the tank and the stairs, church benches opposite the basin, or boxes next to Generator 6.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=23s",
+     "videoEnd": 50
     },
     {
      "id": "ori-fire-build-guide-s5",
      "title": "Get the red gem from the Crazy Place",
      "where": "Fire tunnel, near spawn on the way to Generator 3",
      "text": "You need the gramophone and the red record. Place the gramophone at the Fire tunnel entrance, go through the portal, and take the gem from the pedestal glowing red. The gem only appears if you came in through the Fire tunnel. Pick the gramophone back up on your way out.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=181s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=181s",
+     "videoEnd": 214
     },
     {
      "id": "ori-fire-build-guide-s6",
      "title": "Build the staff",
      "where": "Excavation Site, lowest level",
      "text": "You need the gramophone and the black record to open the lower level. Build it on the **red** pedestal.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=214s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=214s",
+     "videoEnd": 254
     }
    ]
   },
@@ -3468,42 +3679,48 @@
      "title": "Part 1: Church to Tank Station ride",
      "where": "Right side, just before the trench to Generator 2",
      "text": "Jump onto the cut-off wooden staircase on the right. Careful: the robot Thor can step here.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=79s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=79s",
+     "videoEnd": 100
     },
     {
      "id": "ori-lightning-build-guide-s2",
      "title": "Part 2: Tank Station to Church ride",
      "where": "Left side, by the Excavation Site",
      "text": "Jump onto the cut-off wooden scaffolding on the left that hangs off the dig site. It leads into a small hole with the part.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=100s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=100s",
+     "videoEnd": 130
     },
     {
      "id": "ori-lightning-build-guide-s3",
      "title": "Part 3: Tank Station to Church ride",
      "where": "Right side, just before the Church",
      "text": "Jump onto the dirt path on the right. It leads to an upper level of the Church with the part.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=130s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=130s",
+     "videoEnd": 190
     },
     {
      "id": "ori-lightning-build-guide-s4",
      "title": "Purple record",
      "where": "Generator 4",
      "text": "Inside the Wind tunnel by the gateway, on the wagon left of that tunnel's entrance, or on the table next to Der Wunderfizz.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=23s",
+     "videoEnd": 79
     },
     {
      "id": "ori-lightning-build-guide-s5",
      "title": "Get the purple gem from the Crazy Place",
      "where": "Lightning tunnel, near Generator 5",
      "text": "You need the gramophone and the purple record. Place the gramophone at the Lightning tunnel entrance, go through the portal, and take the gem from the pedestal glowing purple. The gem only appears if you came in through the Lightning tunnel. Pick the gramophone back up on your way out.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=224s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=224s",
+     "videoEnd": 261
     },
     {
      "id": "ori-lightning-build-guide-s6",
      "title": "Build the staff",
      "where": "Excavation Site, lowest level",
      "text": "You need the gramophone and the black record to open the lower level. Build it on the **purple** pedestal.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=261s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=261s",
+     "videoEnd": 301
     }
    ]
   },
@@ -3518,7 +3735,8 @@
      "title": "Crazy Place: flip the six stone panels",
      "where": "Ice section of the Crazy Place",
      "text": "A blue panel on the wall shows a dot pattern. Shoot the floating stone above the portal whose symbol matches it. Six in a row; a wrong shot resets them all. A matching chart is the fastest way; tell Claude to add one here.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=228s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=228s",
+     "videoEnd": 279
     },
     {
      "id": "ori-ice-upgrade-guide-s2",
@@ -3530,21 +3748,24 @@
       "Between the Excavation Site and a giant footprint, close to Generator 4",
       "On the small hill to the right of the Tank Station's back exit (Generator 2), by the downed robot's hand"
      ],
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=279s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=279s",
+     "videoEnd": 318
     },
     {
      "id": "ori-ice-upgrade-guide-s3",
      "title": "Turn the rings blue and shoot the orb",
      "where": "Excavation Site, lower level",
      "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **blue**. Then shoot the blue orb in the middle with the staff. It glows and shoots up.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=318s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=318s",
+     "videoEnd": 361
     },
     {
      "id": "ori-ice-upgrade-guide-s4",
      "title": "Charge it in the Crazy Place",
      "where": "Crazy Place",
      "text": "Take the Ice tunnel to the Crazy Place, put the staff in the **blue** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
-     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=361s"
+     "video": "https://www.youtube.com/watch?v=Alg1W9vABu0&t=361s",
+     "videoEnd": 401
     }
    ]
   },
@@ -3559,7 +3780,8 @@
      "title": "Crazy Place: line up the four rings",
      "where": "Wind section of the Crazy Place",
      "text": "Above the portal are four rings of symbols. Shoot a ring with the Wind Staff to rotate it until each column of symbols matches the pillar it points at. The solution never changes, so a reference picture solves it; tell Claude to add one here.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=226s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=226s",
+     "videoEnd": 256
     },
     {
      "id": "ori-wind-upgrade-guide-s2",
@@ -3571,21 +3793,24 @@
       "Behind Stamin-Up near Generator 5",
       "On the tank's return path, outer No Man's Land: reach it from the Church by walking back along the tank track"
      ],
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=256s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=256s",
+     "videoEnd": 302
     },
     {
      "id": "ori-wind-upgrade-guide-s3",
      "title": "Turn the rings yellow and shoot the orb",
      "where": "Excavation Site, lower level",
      "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **yellow**. Then shoot the yellow orb in the middle with the staff. It glows and shoots up.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=302s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=302s",
+     "videoEnd": 322
     },
     {
      "id": "ori-wind-upgrade-guide-s4",
      "title": "Charge it in the Crazy Place",
      "where": "Crazy Place",
      "text": "Take the Wind tunnel to the Crazy Place, put the staff in the **yellow** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
-     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=322s"
+     "video": "https://www.youtube.com/watch?v=ktrulzerJXs&t=322s",
+     "videoEnd": 362
     }
    ]
   },
@@ -3600,28 +3825,32 @@
      "title": "Crazy Place: fill the four cauldrons",
      "where": "Fire section of the Crazy Place",
      "text": "Kill about 30 zombies with the Fire Staff while they stand on the **metal grates**. They burst into black smoke that fills the cauldrons.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=226s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=226s",
+     "videoEnd": 258
     },
     {
      "id": "ori-fire-upgrade-guide-s2",
      "title": "Light the right four torches",
      "where": "Church",
      "text": "Upstairs on the far wall, four symbols are lit. Each stands for a number. In the basement, seven torches have numbers under them (the bloodstain is 4, and 4 is always one of the answers). Light the four matching torches with the staff.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=258s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=258s",
+     "videoEnd": 318
     },
     {
      "id": "ori-fire-upgrade-guide-s3",
      "title": "Turn the rings red and shoot the orb",
      "where": "Excavation Site, lower level",
      "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **red**. Then shoot the red orb in the middle with the staff. It glows and shoots up.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=347s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=347s",
+     "videoEnd": 375
     },
     {
      "id": "ori-fire-upgrade-guide-s4",
      "title": "Charge it in the Crazy Place",
      "where": "Crazy Place",
      "text": "Take the Fire tunnel to the Crazy Place, put the staff in the **red** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
-     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=375s"
+     "video": "https://www.youtube.com/watch?v=nuj5uK5pDkw&t=375s",
+     "videoEnd": 415
     }
    ]
   },
@@ -3636,7 +3865,8 @@
      "title": "Crazy Place: play three chords",
      "where": "Lightning section of the Crazy Place",
      "text": "The purple triangles on the wall are a keyboard. Use only the **bottom row** and number its seven keys 1 to 7 from left to right. Shoot these with the staff:\n\n- **1, 3, 6**\n- **3, 5, 7**\n- **2, 4, 6**",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=268s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=268s",
+     "videoEnd": 328
     },
     {
      "id": "ori-lightning-upgrade-guide-s2",
@@ -3652,21 +3882,24 @@
       "Tank Station, left of the back door: **down**",
       "Behind the Excavation Site on the path to the Church: **up**"
      ],
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=335s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=335s",
+     "videoEnd": 395
     },
     {
      "id": "ori-lightning-upgrade-guide-s3",
      "title": "Turn the rings purple and shoot the orb",
      "where": "Excavation Site, lower level",
      "text": "Go to the lower level of the Excavation Site. Pull the four levers (two on the normal walkway, two on the wooden scaffolding) until the lights on all four floating rings are **purple**. Then shoot the purple orb in the middle with the staff. It glows and shoots up.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=409s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=409s",
+     "videoEnd": 453
     },
     {
      "id": "ori-lightning-upgrade-guide-s4",
      "title": "Charge it in the Crazy Place",
      "where": "Crazy Place",
      "text": "Take the Lightning tunnel to the Crazy Place, put the staff in the **purple** pedestal there, and kill about 20 zombies in the Crazy Place. When Samantha speaks and the staff icon gets an outline, pick it up. If you ever lose it, it returns to its pedestal in the Excavation Site, still upgraded.",
-     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=453s"
+     "video": "https://www.youtube.com/watch?v=KXfN5fI7Hic&t=453s",
+     "videoEnd": 493
     }
    ]
   }

@@ -2,33 +2,46 @@
 import * as store from './store.js';
 import * as data from './data.js';
 import { icons } from './icons.js';
-import { esc, enc } from './util.js';
+import { esc, enc, relTime } from './util.js';
 import { STATUS_ORDER, STATUS_LABEL } from './content.js';
 import { renderMarkdown } from './markdown.js';
-import { isDone, countValue, guideTally, firstOpenStep, stepDone } from './progress.js';
+import { isDone, countValue, guideTally, firstOpenStep, stepDone, tally, effectiveStatus } from './progress.js';
+import { rerender } from './router.js';
 import { openItems, okey } from './state.js';
+import { videoLinkHTML } from './clip.js';
 
 // Page chrome ----------------------------------------------------------------
 
-export function topBar({ title = '', back = null, noSearch = false, noSettings = false } = {}) {
+/**
+ * Sticky top bar. `actions` (HTML) replaces the default search + settings
+ * buttons on the right; `sub` is a small line under the title.
+ */
+export function topBar({ title = '', back = null, noSearch = false, noSettings = false, actions = null, sub = '' } = {}) {
   const lead = back
     ? `<button type="button" class="icon-btn" data-nav="back" data-fallback="${esc(back)}" aria-label="Back">${icons.back}</button>`
     : `<img class="brand-mark" src="icons/icon-192.png" alt="" width="28" height="28">`;
+  const right =
+    actions ??
+    `${noSearch ? '' : `<a class="icon-btn" href="#/search" aria-label="Search all games">${icons.search}</a>`}
+    ${noSettings ? '' : `<a class="icon-btn" href="#/settings" aria-label="Settings">${icons.settings}</a>`}`;
   return `<header class="topbar"><div class="topbar-inner">
     ${lead}
-    <h1 class="topbar-title">${esc(title)}</h1>
-    ${noSearch ? '' : `<a class="icon-btn" href="#/search" aria-label="Search all games">${icons.search}</a>`}
-    ${noSettings ? '' : `<a class="icon-btn" href="#/settings" aria-label="Settings">${icons.settings}</a>`}
+    <div class="topbar-titles"><h1 class="topbar-title">${esc(title)}</h1>${sub ? `<div class="topbar-sub">${esc(sub)}</div>` : ''}</div>
+    ${right}
   </div></header>`;
 }
 
+export const menuButton = (label = 'Game menu') =>
+  `<button type="button" class="icon-btn" data-act="menu" aria-label="${esc(label)}" aria-haspopup="dialog">${icons.more}</button>`;
+
 export const statusChip = (s) => `<span class="chip st-${s}">${STATUS_LABEL[s] || s}</span>`;
 
-export function statusSelect(status) {
-  const opts = STATUS_ORDER.map(
-    (s) => `<option value="${s}"${s === status ? ' selected' : ''}>${STATUS_LABEL[s]}</option>`
-  ).join('');
-  return `<label class="status-wrap"><span class="sr-only">Status</span><select class="status-select st-${status}">${opts}</select></label>`;
+/** Four status buttons (used in the game menu). */
+export function statusButtons(status) {
+  return `<div class="seg seg-wide" role="group" aria-label="Status">${STATUS_ORDER.map(
+    (s) =>
+      `<button type="button" class="st-${s}" data-status="${s}" aria-pressed="${s === status}">${STATUS_LABEL[s]}</button>`
+  ).join('')}</div>`;
 }
 
 export const emptyBox = (html) => `<div class="empty">${html}</div>`;
@@ -44,14 +57,136 @@ export const offlineNote = () =>
 
 export const whereHTML = (item) => `${esc(item.section.title)} › ${esc(item.group.title)}`;
 
-export function mdCtx(game) {
+export function mdCtx(game, extra = {}) {
   return {
     guideHref: (id) => (game.guideById.has(id) ? `#/game/${enc(game.id)}/guide/${enc(id)}` : null),
     imageSrc: (path) => data.mediaUrl(path),
+    videoLink: videoLinkHTML,
+    ...extra,
   };
 }
 
-export const md = (game, src) => renderMarkdown(src, mdCtx(game));
+export const md = (game, src, extra) => renderMarkdown(src, mdCtx(game, extra));
+
+// Game pages -------------------------------------------------------------------
+
+/**
+ * Mount a game page: slim top bar (back, title, ⋯ menu) and the body.
+ * Anything with data-act="menu" opens the game menu. Returns <main>.
+ */
+export function gamePage(ctx, entry, { title, back, sub = '', body = '', cls = '' }) {
+  const { game } = entry;
+  if (
+    !ctx.mount(
+      `${topBar({ title, back, sub, actions: menuButton() })}<main class="page page-game${cls ? ` ${cls}` : ''}">${
+        entry.offline ? offlineNote() : ''
+      }${body}</main>`,
+      { accent: game.accent }
+    )
+  )
+    return null;
+  document.title = `${title === game.title ? '' : `${title} · `}${game.title} · Game Tracker`;
+  const onMenu = (e) => {
+    if (e.target.closest('[data-act="menu"]')) openGameMenu(game);
+  };
+  ctx.root.querySelector('.topbar')?.addEventListener('click', onMenu);
+  const main = ctx.root.querySelector('main');
+  main.addEventListener('click', onMenu);
+  return main;
+}
+
+/** Status, "where I left off" note and links, behind the ⋯ button. */
+export function openGameMenu(game) {
+  const gp = store.game(game.id);
+  const status = effectiveStatus(game.baseStatus, gp);
+  const t = tally(gp, game.items);
+  const id = enc(game.id);
+  const links = [];
+  const loadouts = game.layout.type === 'loadouts';
+  if (game.layout.type !== 'story') links.push([`#/game/${id}`, icons.grid, loadouts ? 'Classes' : game.layout.picker, '']);
+  if (loadouts && game.items.length) links.push([`#/game/${id}/groups`, icons.star, game.layout.checklist, `${t.done}/${t.total}`]);
+  if (game.items.length) links.push([`#/game/${id}/list`, icons.list, loadouts ? 'Full checklist' : 'Checklist', `${t.done}/${t.total} · ${t.pct}%`]);
+  if (game.guides.length) links.push([`#/game/${id}/guides`, icons.book, 'All guides', String(game.guides.length)]);
+  links.push(['#/search', icons.search, 'Search all games', '']);
+  links.push(['#/settings', icons.settings, 'Settings and backup', '']);
+  const openedAt = location.hash;
+  let timer = null;
+  let pending = false;
+  let changed = false;
+  let note = null;
+  const flush = () => {
+    clearTimeout(timer);
+    timer = null;
+    if (!pending || !note) return;
+    pending = false;
+    store.setNote(game.id, note.value);
+    changed = true;
+  };
+  const body = openSheet({
+    title: game.title,
+    html: `<p class="menu-meta">${game.platform ? `${esc(game.platform)} · ` : ''}${
+      gp.lastPlayed ? `Played ${esc(relTime(gp.lastPlayed))}` : 'Not played yet'
+    }</p>
+      <h3 class="label menu-label">Status</h3>
+      ${statusButtons(status)}
+      <div class="menu-label-row"><label class="label menu-label" for="gt-note">Where I left off</label><span class="note-state" aria-live="polite"></span></div>
+      <textarea id="gt-note" class="note" rows="2" placeholder="Where you saved, what you were in the middle of…">${esc(gp.note)}</textarea>
+      <div class="link-list menu-links">${links
+        .map(
+          ([href, icon, label, meta]) =>
+            `<a class="link-row" href="${href}"><span class="link-icon">${icon}</span><span class="link-main"><span class="link-title">${esc(
+              label
+            )}</span></span>${meta ? `<span class="link-meta">${esc(meta)}</span>` : ''}${icons.chevron}</a>`
+        )
+        .join('')}</div>`,
+    onClose: () => {
+      flush();
+      if (changed) setTimeout(() => location.hash === openedAt && rerender(), 0);
+    },
+  });
+  note = body.querySelector('#gt-note');
+  const state = body.querySelector('.note-state');
+  const autosize = () => {
+    note.style.height = 'auto';
+    note.style.height = `${Math.max(note.scrollHeight + 2, 64)}px`;
+  };
+  requestAnimationFrame(autosize);
+  note.addEventListener('input', () => {
+    autosize();
+    pending = true;
+    state.textContent = 'Saving…';
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      flush();
+      state.textContent = 'Saved';
+    }, 600);
+  });
+  note.addEventListener('blur', () => {
+    if (!pending) return;
+    flush();
+    state.textContent = 'Saved';
+  });
+  body.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-status]');
+    if (!b) return;
+    const v = b.dataset.status;
+    store.setStatus(game.id, v === game.baseStatus ? null : v);
+    body.querySelectorAll('[data-status]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  });
+}
+
+/** One-line reminder of the "where I left off" note (opens the menu). */
+export function noteStrip(game) {
+  const note = store.game(game.id).note.trim();
+  if (!note) return '';
+  const line = note.split('\n')[0];
+  return `<button type="button" class="note-strip" data-act="menu" aria-label="Your note: ${esc(line)}. Edit">${icons.note}<span>${esc(
+    line
+  )}</span></button>`;
+}
+
+export const sectionHref = (game, section) => `#/game/${enc(game.id)}/section/${enc(section.id)}`;
+export const groupHref = (game, group) => `#/game/${enc(game.id)}/group/${enc(group.section.id)}/${enc(group.id)}`;
 
 export const guideHref = (game, guide) => `#/game/${enc(game.id)}/guide/${enc(guide.id)}`;
 export const followHref = (game, guide, step) =>
@@ -320,6 +455,56 @@ export function setStepDone(game, guide, step, on) {
 
 export { stepDone };
 
+// Bottom sheet -----------------------------------------------------------------
+
+let sheet = null;
+
+/**
+ * Open a bottom sheet (game menu, step list...). Returns its body element.
+ * Closes on the X, a tap outside, Escape, or any page change.
+ */
+export function openSheet({ title = '', html = '', onClose = null } = {}) {
+  closeSheet();
+  const wrap = document.createElement('div');
+  wrap.className = 'sheet-wrap';
+  // Carry the game's accent colour (set on #app) into the sheet.
+  const accent = document.getElementById('app')?.getAttribute('style');
+  if (accent) wrap.setAttribute('style', accent);
+  wrap.innerHTML = `<div class="sheet-backdrop" data-sheet-close></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}" tabindex="-1">
+      <div class="sheet-head"><h2 class="sheet-title">${esc(title)}</h2>
+        <button type="button" class="icon-btn" data-sheet-close aria-label="Close">${icons.close}</button></div>
+      <div class="sheet-body">${html}</div>
+    </div>`;
+  document.body.appendChild(wrap);
+  document.documentElement.classList.add('no-scroll');
+  sheet = { wrap, onClose, lastFocus: document.activeElement };
+  wrap.addEventListener('click', (e) => {
+    if (e.target.closest('[data-sheet-close]')) closeSheet();
+  });
+  requestAnimationFrame(() => {
+    wrap.classList.add('open');
+    wrap.querySelector('.sheet').focus({ preventScroll: true });
+  });
+  return wrap.querySelector('.sheet-body');
+}
+
+export function closeSheet() {
+  if (!sheet) return;
+  const s = sheet;
+  sheet = null;
+  try {
+    s.onClose?.();
+  } catch (err) {
+    console.error(err);
+  }
+  s.wrap.remove();
+  if (!lightbox) document.documentElement.classList.remove('no-scroll');
+  if (s.lastFocus?.isConnected) s.lastFocus.focus?.({ preventScroll: true });
+}
+
+export const sheetOpen = () => !!sheet;
+
 // Toast ----------------------------------------------------------------------
 
 let toastEl = null;
@@ -333,6 +518,9 @@ export function toast(message, { action, onAction, ms = 3200 } = {}) {
     toastEl.setAttribute('aria-live', 'polite');
     document.body.appendChild(toastEl);
   }
+  const accent = document.getElementById('app')?.getAttribute('style');
+  if (accent) toastEl.setAttribute('style', accent);
+  else toastEl.removeAttribute('style');
   toastEl.innerHTML = `<span class="toast-msg">${esc(message)}</span>${
     action ? `<button type="button" class="toast-btn">${esc(action)}</button>` : ''
   }`;
@@ -389,7 +577,7 @@ export function closeLightbox() {
   if (!lightbox) return;
   lightbox.remove();
   lightbox = null;
-  document.documentElement.classList.remove('no-scroll');
+  if (!sheet) document.documentElement.classList.remove('no-scroll');
   lastFocus?.focus?.({ preventScroll: true });
 }
 

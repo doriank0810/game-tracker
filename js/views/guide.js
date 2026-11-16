@@ -11,15 +11,29 @@ import {
   updateRow,
   errorBox,
   emptyBox,
-  offlineNote,
+  gamePage,
   whereHTML,
   md,
   followHref,
   followLabel,
   setStepDone,
+  sectionHref,
 } from '../ui.js';
 import { icons } from '../icons.js';
 import { rerender } from '../router.js';
+import { clipHTML, warmUp } from '../clip.js';
+
+/** Where "back" goes from a guide: its map/section page, or the game page. */
+export function guideBack(game, guide) {
+  const sec = guide.sectionId && game.layout.type === 'maps' ? game.sections.find((s) => s.id === guide.sectionId) : null;
+  return sec ? sectionHref(game, sec) : `#/game/${enc(game.id)}`;
+}
+
+/** The step's clip: in-app player for YouTube, a plain link for anything else. */
+export function stepClipHTML(step, opts = {}) {
+  if (step.clip) return clipHTML(step.clip, { title: step.title, ...opts });
+  return videoButton(step);
+}
 
 export function stepImageHTML(src, alt, { lazy = true } = {}) {
   if (!src) return '';
@@ -54,11 +68,12 @@ function stepCard(game, guide, step, gp) {
       <div class="step-num">Step ${step.index + 1}</div>
       <h3 class="step-title">${esc(step.title)}</h3>
       ${whereChip(step.where)}
+      ${step.clip ? stepClipHTML(step) : ''}
       ${step.text ? `<div class="md">${md(game, step.text)}</div>` : ''}
       ${stepImageHTML(data.mediaUrl(step.image), step.alt || step.title)}
       ${optionsHTML(game, step)}
       <div class="step-actions">
-        ${videoButton(step)}
+        ${step.clip ? '' : videoButton(step)}
         <a class="text-btn" href="${followHref(game, guide, step)}">${icons.play}<span>Follow from here</span></a>
       </div>
     </div>
@@ -78,13 +93,14 @@ export async function render(ctx) {
   const { gameId, guideId } = ctx.route;
   const entry = await data.getGame(gameId);
   if (!ctx.isCurrent()) return;
-  const back = `#/game/${enc(gameId)}/guides`;
+  let back = `#/game/${enc(gameId)}`;
   if (entry.error) {
     ctx.mount(`${topBar({ title: 'Guide', back })}<main class="page">${errorBox("Couldn't open this game", entry.error)}</main>`);
     return;
   }
   const { game } = entry;
   const guide = game.guideById.get(guideId);
+  if (guide) back = guideBack(game, guide);
   if (!guide) {
     ctx.mount(
       `${topBar({ title: game.title, back })}<main class="page">${emptyBox(
@@ -103,14 +119,19 @@ export async function render(ctx) {
       ${guide.intro ? `<div class="md md-guide">${md(game, guide.intro)}</div>` : ''}
       ${guide.steps.length ? `<ol class="steps">${guide.steps.map((s) => stepCard(game, guide, s, gp)).join('')}</ol>` : emptyBox('This walkthrough has no steps yet.')}`;
   } else {
-    body = `<div class="md md-guide">${guide.body ? md(game, guide.body) : '<p class="muted">This guide is empty.</p>'}</div>`;
+    const card = game.layout.type === 'loadouts' && game.layout.cards.includes(guide.category);
+    body = `<div class="md md-guide${card ? ' md-class' : ''}">${
+      guide.body ? md(game, guide.body, card ? { kvTables: true } : undefined) : '<p class="muted">This guide is empty.</p>'
+    }</div>`;
   }
-  ctx.mount(
-    `${topBar({ title: game.title, back })}
-    <main class="page page-guide">
-      ${entry.offline ? offlineNote() : ''}
-      <article class="guide">
-        ${guide.category ? `<div class="label guide-cat">${esc(guide.category)}</div>` : ''}
+  const sec = guide.sectionId ? game.sections.find((s) => s.id === guide.sectionId) : null;
+  const main = gamePage(ctx, entry, {
+    title: sec && game.layout.type === 'maps' ? sec.title : game.title,
+    sub: sec && game.layout.type === 'maps' ? game.title : '',
+    back,
+    cls: 'page-guide',
+    body: `<article class="guide">
+        ${guide.category && !(sec && game.layout.type === 'maps') ? `<div class="label guide-cat">${esc(guide.category)}</div>` : ''}
         <h2 class="guide-title">${esc(guide.title)}</h2>
         ${body}
       </article>
@@ -119,12 +140,10 @@ export async function render(ctx) {
           ? `<section class="block linked-block"><div class="block-head"><h3 class="label">In your checklist</h3><span class="count linked-count"></span></div>
           <div class="item-list">${linked.map((it) => itemRow(game, it, { meta: whereHTML(it), hideGuide: true })).join('')}</div></section>`
           : ''
-      }
-    </main>`,
-    { accent: game.accent }
-  );
+      }`,
+  });
+  if (!main) return null;
   document.title = `${guide.title} · ${game.title}`;
-  const main = ctx.root.querySelector('main');
 
   const countEl = main.querySelector('.linked-count');
   const updateCount = () => {
@@ -136,6 +155,7 @@ export async function render(ctx) {
   bindItems(main, { onChange: updateCount });
 
   if (!walk) return null;
+  if (guide.steps.some((s) => s.clip)) warmUp();
   const summary = main.querySelector('.walk-summary');
   main.addEventListener('click', (e) => {
     const el = e.target.closest('[data-act]');

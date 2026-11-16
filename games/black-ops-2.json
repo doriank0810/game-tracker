@@ -1,0 +1,177 @@
+{
+ "id": "black-ops-2",
+ "title": "Black Ops 2",
+ "layout": "loadouts",
+ "sections": [
+  {
+   "id": "classes",
+   "title": "Classes to build",
+   "groups": [
+    {
+     "id": "build",
+     "title": "Set these up once in Create a Class",
+     "items": [
+      {
+       "id": "build-an-94-all-rounder",
+       "title": "Build the AN-94 All-Rounder class",
+       "detail": "Any map, any mode. Your default class.",
+       "priority": 1,
+       "type": "check",
+       "guide": "bo2-an-94-all-rounder"
+      },
+      {
+       "id": "build-msmc-rush",
+       "title": "Build the MSMC Rush class",
+       "detail": "Small maps: Hijacked, Nuketown 2025, Slums, Studio.",
+       "priority": 1,
+       "type": "check",
+       "guide": "bo2-msmc-rush"
+      },
+      {
+       "id": "build-m8a1-burst",
+       "title": "Build the M8A1 Burst class",
+       "detail": "Medium and long lanes: Raid, Standoff, Express.",
+       "priority": 1,
+       "type": "check",
+       "guide": "bo2-m8a1-burst"
+      },
+      {
+       "id": "build-mp7-ghost",
+       "title": "Build the MP7 Ghost class",
+       "detail": "Staying off the radar: Team Deathmatch, Search and Destroy, flanking.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-mp7-ghost"
+      },
+      {
+       "id": "build-pdw-57-objective",
+       "title": "Build the PDW-57 Objective class",
+       "detail": "Hardpoint, Domination, Kill Confirmed.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-pdw-57-objective"
+      },
+      {
+       "id": "build-scar-h-lane-holder",
+       "title": "Build the SCAR-H Lane Holder class",
+       "detail": "Long sight lines: Carrier, Turbine, Standoff.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-scar-h-lane-holder"
+      },
+      {
+       "id": "build-remington-870-runner",
+       "title": "Build the Remington 870 Runner class",
+       "detail": "Tiny maps only: Nuketown 2025, Hijacked.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-remington-870-runner"
+      },
+      {
+       "id": "build-dsr-50-sniper",
+       "title": "Build the DSR 50 Sniper class",
+       "detail": "Sniping and quickscoping. Search and Destroy.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-dsr-50-sniper"
+      },
+      {
+       "id": "build-lsat-streak-killer",
+       "title": "Build the LSAT Streak Killer class",
+       "detail": "When the other team keeps calling in streaks, or to anchor a spawn.",
+       "priority": 2,
+       "type": "check",
+       "guide": "bo2-lsat-streak-killer"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "bo2-quick-pick",
+   "title": "Quick pick: what to run right now",
+   "category": "Start here",
+   "body": "| Situation | Run this |\n|---|---|\n| One class for everything | AN-94 All-Rounder |\n| Low level, few unlocks | MP7 or MTAR with Quickdraw, Flak Jacket, Toughness, Dexterity |\n| Nuketown 2025, Hijacked, small maps | MSMC Rush, or Remington 870 Runner for fun |\n| Hardpoint, Domination | PDW-57 Objective |\n| Raid, Standoff, long lanes | M8A1 Burst or SCAR-H Lane Holder |\n| Search and Destroy | MP7 Ghost or DSR 50 Sniper |\n| Enemy streaks all over the sky | LSAT Streak Killer |\n\nIf you only make three classes, make **AN-94 All-Rounder**, **MSMC Rush** and **PDW-57 Objective**.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-pick-10",
+   "title": "Pick 10 in one minute",
+   "category": "Start here",
+   "body": "Every class has **10 points**. Each thing costs 1: the gun, each attachment, each perk, each grenade, each wildcard.\n\n- **Drop what you do not use.** No pistol and no lethal grenade means two more points for perks.\n- **Wildcards** cost a point and unlock an extra slot: *Perk 1/2/3 Greed* = a second perk in that tier, *Primary Gunfighter* = a third attachment, *Overkill* = a second primary, *Danger Close* = a second lethal.\n- **Toughness is nearly mandatory.** It stops your aim jumping when you get shot. Every class here has it except the shotgun.\n- **Fore Grip does almost nothing** in this game. Take Quickdraw, Stock, Fast Mag or Laser Sight instead.\n- **Ghost only hides you while you move**, and it unlocks at level 55.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-perks",
+   "title": "Perks: which ones and why",
+   "category": "Start here",
+   "body": "| Tier | Take | When |\n|---|---|---|\n| Perk 1 | **Flak Jacket** | Objective modes and small maps (grenade spam) |\n| Perk 1 | **Lightweight** | SMGs, shotguns, snipers. Faster, no fall damage |\n| Perk 1 | **Ghost** | Stealth classes with a suppressor |\n| Perk 1 | Hardline | Only if you are chasing high scorestreaks |\n| Perk 2 | **Toughness** | Always |\n| Perk 2 | Fast Hands | Faster weapon swap and grenades. Good second pick |\n| Perk 2 | Scavenger | Stealth and shotgun classes that live long |\n| Perk 3 | **Dexterity** | Aim faster after sprinting. Best for any aggressive class |\n| Perk 3 | Tactical Mask | Objective modes: shrugs off concussions and flashes |\n| Perk 3 | Extreme Conditioning | SMG and shotgun rushing |\n| Perk 3 | Dead Silence | Search and Destroy, flanking |\n| Perk 3 | Engineer | See and hack enemy equipment |\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-streaks",
+   "title": "Scorestreaks to set",
+   "category": "Start here",
+   "body": "Score counts, not kills: captures, defends and assists all add up.\n\n| You are | Set these | Cost |\n|---|---|---|\n| New, or dying a lot | UAV, Hunter Killer, Counter-UAV | 350 / 525 / 600 |\n| Playing normally | UAV, Lightning Strike, Stealth Chopper | 350 / 750 / 1100 |\n| Playing objectives | UAV, Lightning Strike, Orbital VSAT | 350 / 750 / 1200 |\n| Going for big games | Stealth Chopper, VTOL Warship, Swarm | 1100 / 1600 / 1900 |\n\nUAV is worth taking on every setup: it is cheap and helps the whole team.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-an-94-all-rounder",
+   "title": "AN-94 All-Rounder (Assault rifle, tier S)",
+   "category": "Classes",
+   "body": "**Tier S** · Assault rifle · Best for: Any map, any mode. Your default class.\n\n## AN-94\n| Slot | Pick |\n|---|---|\n| Primary | AN-94 |\n| Attachments | Quickdraw, Stock |\n| Secondary | None |\n| Perk 1 | Flak Jacket |\n| Perk 2 | Toughness, Fast Hands |\n| Perk 3 | Dexterity |\n| Lethal | Semtex |\n| Tactical | Concussion |\n| Wildcards | Perk 2 Greed |\n\nUses all 10 points.\n\n## Why it works\nThe first two bullets of every burst fire faster, so it wins most mid-range fights. Unlocks at level 55: until then run the same class with the MTAR.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-msmc-rush",
+   "title": "MSMC Rush (SMG, tier S)",
+   "category": "Classes",
+   "body": "**Tier S** · SMG · Best for: Small maps: Hijacked, Nuketown 2025, Slums, Studio.\n\n## MSMC\n| Slot | Pick |\n|---|---|\n| Primary | MSMC |\n| Attachments | Laser Sight, Fast Mag |\n| Secondary | None |\n| Perk 1 | Lightweight |\n| Perk 2 | Toughness |\n| Perk 3 | Dexterity, Extreme Conditioning |\n| Lethal | Semtex |\n| Tactical | Concussion |\n| Wildcards | Perk 3 Greed |\n\nUses all 10 points.\n\n## Why it works\nThree-shot kill up close and good hip fire with the laser. Keep moving and take close fights only. Unlocks at level 28: before that use the MP7 the same way.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-m8a1-burst",
+   "title": "M8A1 Burst (Assault rifle, tier S)",
+   "category": "Classes",
+   "body": "**Tier S** · Assault rifle · Best for: Medium and long lanes: Raid, Standoff, Express.\n\n## M8A1\n| Slot | Pick |\n|---|---|\n| Primary | M8A1 |\n| Attachments | Quickdraw, Stock |\n| Secondary | None |\n| Perk 1 | Flak Jacket, Lightweight |\n| Perk 2 | Toughness |\n| Perk 3 | Dexterity |\n| Lethal | Frag |\n| Tactical | Concussion |\n| Wildcards | Perk 1 Greed |\n\nUses all 10 points.\n\n## Why it works\nFour-round burst that kills in one burst at most ranges. Aim at the chest and let the recoil climb. Unlocks at level 49.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-mp7-ghost",
+   "title": "MP7 Ghost (SMG, tier A)",
+   "category": "Classes",
+   "body": "**Tier A** · SMG · Best for: Staying off the radar: Team Deathmatch, Search and Destroy, flanking.\n\n## MP7\n| Slot | Pick |\n|---|---|\n| Primary | MP7 |\n| Attachments | Suppressor, Fast Mag |\n| Secondary | None |\n| Perk 1 | Ghost |\n| Perk 2 | Toughness, Scavenger |\n| Perk 3 | Dead Silence, Dexterity |\n| Lethal | None |\n| Tactical | None |\n| Wildcards | Perk 2 Greed, Perk 3 Greed |\n\nUses all 10 points.\n\n## Why it works\nSuppressor keeps you off the minimap when you shoot, Ghost hides you from UAVs, Dead Silence hides your footsteps. Ghost only works while you are moving, and it unlocks at level 55.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-pdw-57-objective",
+   "title": "PDW-57 Objective (SMG, tier A)",
+   "category": "Classes",
+   "body": "**Tier A** · SMG · Best for: Hardpoint, Domination, Kill Confirmed.\n\n## PDW-57\n| Slot | Pick |\n|---|---|\n| Primary | PDW-57 |\n| Attachments | Laser Sight, Long Barrel |\n| Secondary | None |\n| Perk 1 | Flak Jacket |\n| Perk 2 | Toughness |\n| Perk 3 | Tactical Mask, Dexterity |\n| Lethal | Semtex |\n| Tactical | Concussion |\n| Wildcards | Perk 3 Greed |\n\nUses all 10 points.\n\n## Why it works\n50-round magazine, so you can hold a point through several enemies without reloading. Flak Jacket and Tactical Mask keep you alive against the grenades thrown at every objective.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-scar-h-lane-holder",
+   "title": "SCAR-H Lane Holder (Assault rifle, tier A)",
+   "category": "Classes",
+   "body": "**Tier A** · Assault rifle · Best for: Long sight lines: Carrier, Turbine, Standoff.\n\n## SCAR-H\n| Slot | Pick |\n|---|---|\n| Primary | SCAR-H |\n| Attachments | Quickdraw, Fast Mag |\n| Secondary | Tac-45 |\n| Perk 1 | Flak Jacket |\n| Perk 2 | Toughness |\n| Perk 3 | Tactical Mask |\n| Lethal | Frag |\n| Tactical | Concussion, Concussion |\n| Wildcards | None |\n\nUses all 10 points.\n\n## Why it works\nHits hardest of the automatic rifles and keeps its damage at range. Slow fire rate: hold a lane, do not rush. Unlocks at level 40.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-remington-870-runner",
+   "title": "Remington 870 Runner (Shotgun, tier A)",
+   "category": "Classes",
+   "body": "**Tier A** · Shotgun · Best for: Tiny maps only: Nuketown 2025, Hijacked.\n\n## Remington 870 MCS\n| Slot | Pick |\n|---|---|\n| Primary | Remington 870 MCS |\n| Attachments | Laser Sight, Long Barrel |\n| Secondary | None |\n| Perk 1 | Lightweight, Flak Jacket |\n| Perk 2 | Scavenger |\n| Perk 3 | Dexterity, Extreme Conditioning |\n| Lethal | None |\n| Tactical | None |\n| Wildcards | Perk 1 Greed, Perk 3 Greed |\n\nUses all 10 points.\n\n## Why it works\nOne-shot kill up close. Never stop sprinting, come around corners, and do not take fights across open ground.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-dsr-50-sniper",
+   "title": "DSR 50 Sniper (Sniper, tier A)",
+   "category": "Classes",
+   "body": "**Tier A** · Sniper · Best for: Sniping and quickscoping. Search and Destroy.\n\n## DSR 50\n| Slot | Pick |\n|---|---|\n| Primary | DSR 50 |\n| Attachments | Ballistics CPU |\n| Secondary | KAP-40 |\n| Perk 1 | Lightweight |\n| Perk 2 | Toughness, Fast Hands |\n| Perk 3 | Dexterity |\n| Lethal | Bouncing Betty |\n| Tactical | Shock Charge |\n| Wildcards | Perk 2 Greed |\n\nUses all 10 points.\n\n## Why it works\nOne shot kills from the waist up. Ballistics CPU removes the scope sway. The KAP-40 is a full-auto pistol for when someone gets close; put the Bouncing Betty and Shock Charge behind you to cover your back. The Ballista (level 43) scopes in faster but only one-shots to the chest and head.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-lsat-streak-killer",
+   "title": "LSAT Streak Killer (LMG, tier B)",
+   "category": "Classes",
+   "body": "**Tier B** · LMG · Best for: When the other team keeps calling in streaks, or to anchor a spawn.\n\n## LSAT\n| Slot | Pick |\n|---|---|\n| Primary | LSAT |\n| Attachments | Quickdraw, FMJ |\n| Secondary | SMAW |\n| Perk 1 | Flak Jacket |\n| Perk 2 | Toughness |\n| Perk 3 | Tactical Mask, Engineer |\n| Lethal | None |\n| Tactical | Trophy System |\n| Wildcards | Perk 3 Greed |\n\nUses all 10 points.\n\n## Why it works\nFMJ shreds UAVs, choppers and sentry guns, and the SMAW finishes them. Engineer shows enemy equipment through walls. Slow to aim, so sit behind cover watching one lane.\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  },
+  {
+   "id": "bo2-maps",
+   "title": "Which class on which map",
+   "category": "By map",
+   "body": "| Map | Class | One tip |\n|---|---|---|\n| Nuketown 2025 | MSMC Rush or Remington 870 Runner | Flak Jacket. Fight through the houses, not the middle |\n| Hijacked | MSMC Rush | Use the engine room under the deck to cross safely |\n| Slums | MSMC Rush or AN-94 All-Rounder | Hold the centre statue area, it sees every lane |\n| Raid | M8A1 Burst or AN-94 All-Rounder | Pool side and the basketball court are the long lanes |\n| Standoff | M8A1 Burst or SCAR-H Lane Holder | The two top windows over the middle win the map |\n| Express | AN-94 All-Rounder | Stay off the tracks when the train horn sounds |\n| Carrier | SCAR-H Lane Holder or DSR 50 Sniper | Long deck lines, do not run the open middle |\n| Turbine | SCAR-H Lane Holder or DSR 50 Sniper | Biggest map: hold the turbine in the middle |\n| Yemen, Overflow, Plaza | PDW-57 Objective or MSMC Rush | Tight streets, lots of corners |\n| Meltdown, Cargo, Drone | AN-94 All-Rounder | Mixed ranges, the default class is fine |\n| Studio (DLC) | MSMC Rush | Small, same flow as Firing Range |\n\n*Black Ops 2 stopped getting balance patches in 2014, so these classes do not go out of date.*"
+  }
+ ]
+}

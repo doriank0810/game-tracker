@@ -19,6 +19,8 @@ export function gameUI(gameId) {
       autoOpened: false,
       sessionDone: [],
       guideQuery: '',
+      groupQuery: '',
+      openCards: new Set(), // class cards / page cards opened on the hub
     };
     games.set(gameId, s);
   }

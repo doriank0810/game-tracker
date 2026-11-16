@@ -4,13 +4,17 @@
 //   node tools/validate.mjs            (checks this app's games/ folder)
 //   node tools/validate.mjs path/to/Game\ Tracker
 //
-// Uses the same rules as the app (js/content.js). Also checks that pictures
-// exist and that [text](guide:id) links point at real guides.
+// Uses the same rules as the app (js/content.js): ids, "layout", step
+// "video" / "videoEnd" (a number of seconds greater than the video's &t=
+// start) and the rest. Also checks that pictures exist, that
+// [text](guide:id) links point at real guides, and that YouTube links in
+// text can be played in the app.
 // Exit code 1 when something would be skipped by the app.
 import { readFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeIndex, normalizeGame } from '../js/content.js';
+import { parseYouTube } from '../js/util.js';
 
 const appDir = process.argv[2]
   ? path.resolve(process.argv[2])
@@ -44,6 +48,7 @@ async function readJson(file) {
 
 const IMG_MD = /!\[[^\]\n]*\]\(\s*<?([^\s()<>]+)/g;
 const GUIDE_LINK = /\]\(\s*guide:([^\s)]+)\s*\)/g;
+const YT_LINK = /https?:\/\/(?:www\.|m\.)?(?:youtube\.com|youtu\.be)\/[^\s)<>]*/gi;
 
 function markdownSources(game) {
   const out = [];
@@ -65,6 +70,9 @@ async function checkMedia(game, warnings) {
     for (const m of src.matchAll(IMG_MD)) pics.push([where, m[1]]);
     for (const m of src.matchAll(GUIDE_LINK)) {
       if (!game.guideById.has(decodeURIComponent(m[1]))) warnings.push(`${where}: link to unknown guide "${m[1]}".`);
+    }
+    for (const m of src.matchAll(YT_LINK)) {
+      if (!parseYouTube(m[0])) warnings.push(`${where}: YouTube link without a video id (opens YouTube instead of playing here): ${m[0]}`);
     }
   }
   for (const g of game.guides) for (const s of g.steps) if (s.image) pics.push([`guide "${g.id}" step "${s.id}"`, s.image]);

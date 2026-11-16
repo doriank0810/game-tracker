@@ -1,14 +1,15 @@
-// Follow mode: one walkthrough step per screen, big text and buttons, made to
-// be read at arm's length next to the console. Resumes at the first unticked
-// step and keeps the screen awake while open.
+// Follow mode: one walkthrough step per screen, made to be glanced at next to
+// the console. Reads top to bottom: where, the clip, a short text, Done.
+// Resumes at the first unticked step and keeps the screen awake while open.
 import * as data from '../data.js';
 import * as store from '../store.js';
-import { esc, enc } from '../util.js';
-import { guideTally, stepDone, firstOpenStep } from '../progress.js';
-import { errorBox, emptyBox, md, followHref, guideHref, setStepDone, lightboxOpen } from '../ui.js';
-import { stepImageHTML, whereChip, optionsHTML, videoButton } from './guide.js';
+import { esc, enc, plural } from '../util.js';
+import { guideTally, stepDone, firstOpenStep, nextGuideIn, isWalk } from '../progress.js';
+import { errorBox, emptyBox, md, followHref, setStepDone, lightboxOpen, openSheet, closeSheet, sheetOpen } from '../ui.js';
+import { stepImageHTML, whereChip, optionsHTML, stepClipHTML, guideBack } from './guide.js';
+import { warmUp, prefetchPoster } from '../clip.js';
 import { icons } from '../icons.js';
-import { replaceQuiet, goBack } from '../router.js';
+import { replaceQuiet, goBack, navigate } from '../router.js';
 
 const prefetched = new Set();
 
@@ -49,12 +50,11 @@ export async function render(ctx) {
   const { gameId, guideId, stepId } = ctx.route;
   const entry = await data.getGame(gameId);
   if (!ctx.isCurrent()) return null;
-  const close = (label = 'Close') =>
-    `<button type="button" class="icon-btn" data-nav="back" data-fallback="#/game/${enc(gameId)}/guide/${enc(
-      guideId
-    )}" aria-label="${label}">${icons.close}</button>`;
+  const closeBtn = (fallback, label = 'Close') =>
+    `<button type="button" class="icon-btn" data-nav="back" data-fallback="${esc(fallback)}" aria-label="${label}">${icons.close}</button>`;
+  const gameHref = `#/game/${enc(gameId)}`;
   if (entry.error) {
-    ctx.mount(`<div class="follow"><header class="follow-top">${close()}</header><main class="page">${errorBox(
+    ctx.mount(`<div class="follow"><header class="follow-top">${closeBtn(gameHref)}</header><main class="page">${errorBox(
       "Couldn't open this game",
       entry.error
     )}</main></div>`);
@@ -62,9 +62,9 @@ export async function render(ctx) {
   }
   const { game } = entry;
   const guide = game.guideById.get(guideId);
-  if (!guide || guide.kind !== 'walkthrough' || !guide.steps.length) {
+  if (!guide || !isWalk(guide)) {
     ctx.mount(
-      `<div class="follow"><header class="follow-top">${close()}</header><main class="page">${emptyBox(
+      `<div class="follow"><header class="follow-top">${closeBtn(gameHref)}</header><main class="page">${emptyBox(
         '<p class="empty-title">Nothing to follow</p><p>This guide has no steps.</p>'
       )}</main></div>`,
       { accent: game.accent }
@@ -73,24 +73,32 @@ export async function render(ctx) {
   }
 
   const steps = guide.steps;
+  const backHref = guideBack(game, guide);
+  const section = guide.sectionId ? game.sections.find((s) => s.id === guide.sectionId) : null;
+  const siblings = section ? section.guides : game.guides.filter((g) => g.category === guide.category);
   const gp0 = store.game(game.id);
   let index = stepId && guide.stepById.has(stepId) ? guide.stepById.get(stepId).index : firstOpenStep(gp0, guide);
   if (index < 0) index = 0;
+  store.setPlace(game.id, { guide: guide.id, ...(section ? { section: section.id } : {}) });
+  if (steps.some((s) => s.clip)) warmUp();
 
+  const segmented = steps.length <= 24;
   ctx.mount(
     `<div class="follow">
       <header class="follow-top">
-        ${close('Close follow mode')}
+        ${closeBtn(backHref, 'Close follow mode')}
         <div class="follow-head">
           <div class="follow-guide">${esc(guide.title)}</div>
-          <div class="follow-step-n"></div>
+          <div class="follow-step-n" aria-live="polite"></div>
         </div>
-        <span class="follow-count"></span>
+        <button type="button" class="icon-btn" data-act="steps" aria-label="All steps" aria-haspopup="dialog">${icons.list}</button>
       </header>
-      <div class="follow-bar"><span></span></div>
+      <div class="follow-bar${segmented ? ' is-seg' : ''}" aria-hidden="true">${
+        segmented ? steps.map(() => '<span></span>').join('') : '<span class="fill"></span>'
+      }</div>
       <main class="follow-main"></main>
       <footer class="follow-actions">
-        <button type="button" class="btn big follow-prev" data-act="prev">${icons.prev}<span>Back</span></button>
+        <button type="button" class="btn big follow-prev" data-act="prev" aria-label="Previous step">${icons.prev}<span>Back</span></button>
         <button type="button" class="btn big primary follow-done" data-act="done"></button>
       </footer>
     </div>`,
@@ -100,28 +108,47 @@ export async function render(ctx) {
   const root = ctx.root.querySelector('.follow');
   const mainEl = root.querySelector('.follow-main');
   const stepN = root.querySelector('.follow-step-n');
-  const countEl = root.querySelector('.follow-count');
-  const bar = root.querySelector('.follow-bar > span');
+  const barEl = root.querySelector('.follow-bar');
   const prevBtn = root.querySelector('.follow-prev');
   const doneBtn = root.querySelector('.follow-done');
+
+  const drawBar = (gp) => {
+    if (segmented) {
+      [...barEl.children].forEach((seg, i) => {
+        seg.className = `${stepDone(gp, guide, steps[i]) ? 'done' : ''}${i === index ? ' cur' : ''}`;
+      });
+    } else barEl.querySelector('.fill').style.width = `${guideTally(gp, guide).pct}%`;
+  };
+
+  let nextGuide = null;
 
   const draw = () => {
     const gp = store.game(game.id);
     const t = guideTally(gp, guide);
-    bar.style.width = `${t.pct}%`;
-    countEl.textContent = `${t.done}/${t.total} done`;
+    drawBar(gp);
     prevBtn.disabled = index === 0;
 
     if (index >= steps.length) {
       stepN.textContent = 'Finished';
       const open = steps.filter((s) => !stepDone(gp, guide, s));
+      nextGuide = nextGuideIn(gp, siblings, guide);
       mainEl.innerHTML = `<div class="follow-finish">
         <div class="finish-mark${open.length ? '' : ' all'}">${icons.check}</div>
         <h2 class="follow-title">${open.length ? 'End of the guide' : 'All steps done'}</h2>
         <p class="follow-sub">${t.done} of ${t.total} steps ticked.</p>
         ${
+          nextGuide
+            ? `<a class="finish-next" href="${followHref(game, nextGuide)}" data-replace><span class="label">Up next${
+                section ? ` in ${esc(section.title)}` : ''
+              }</span><span class="finish-next-title">${esc(nextGuide.title)}</span><span class="finish-next-meta">${plural(
+                nextGuide.steps.length,
+                'step'
+              )}</span></a>`
+            : ''
+        }
+        ${
           open.length
-            ? `<div class="label">Not ticked yet</div><div class="link-list">${open
+            ? `<div class="label finish-label">Not ticked yet</div><div class="link-list">${open
                 .map(
                   (s) =>
                     `<button type="button" class="link-row" data-act="jump" data-i="${s.index}"><span class="link-main"><span class="link-title">Step ${
@@ -131,22 +158,28 @@ export async function render(ctx) {
                 .join('')}</div>`
             : ''
         }
+        <p><a class="text-btn" href="${esc(backHref)}" data-nav="back" data-fallback="${esc(backHref)}">${icons.back}<span>Back to ${esc(
+          section ? section.title : game.title
+        )}</span></a></p>
       </div>`;
-      doneBtn.innerHTML = `<span>Close</span>`;
-      doneBtn.dataset.act = 'finish';
+      doneBtn.dataset.act = nextGuide ? 'next-guide' : 'finish';
+      doneBtn.innerHTML = nextGuide ? `<span>Next guide</span>${icons.next}` : `<span>Close</span>`;
       return;
     }
 
     const step = steps[index];
     const done = stepDone(gp, guide, step);
     stepN.textContent = `Step ${index + 1} of ${steps.length}`;
+    const clip = step.clip || step.video ? stepClipHTML(step, { big: true }) : '';
+    const img = stepImageHTML(data.mediaUrl(step.image), step.alt || step.title, { lazy: false });
     mainEl.innerHTML = `<article class="follow-step${done ? ' is-done' : ''}">
       ${whereChip(step.where, true)}
       <h2 class="follow-title">${esc(step.title)}</h2>
-      ${stepImageHTML(data.mediaUrl(step.image), step.alt || step.title, { lazy: false })}
+      ${clip}
+      ${clip ? '' : img}
       ${step.text ? `<div class="md md-follow">${md(game, step.text)}</div>` : ''}
+      ${clip ? img : ''}
       ${optionsHTML(game, step)}
-      ${videoButton(step)}
       <div class="follow-tick-row">${
         done
           ? `<span class="done-badge">${icons.check}Done</span><button type="button" class="text-btn" data-act="untick">Untick</button>`
@@ -158,6 +191,7 @@ export async function render(ctx) {
     doneBtn.innerHTML = done
       ? `<span>${last ? 'Finish' : 'Next step'}</span>${icons.next}`
       : `${icons.check}<span>${last ? 'Done, finish' : 'Done, next'}</span>`;
+    prefetchPoster(steps[index + 1]?.clip);
   };
 
   const go = (i) => {
@@ -183,6 +217,29 @@ export async function render(ctx) {
     }
   }
 
+  const openSteps = () => {
+    const gp = store.game(game.id);
+    const body = openSheet({
+      title: guide.title,
+      html: `<ol class="step-list">${steps
+        .map(
+          (s, i) => `<li><button type="button" class="step-pick${i === index ? ' is-cur' : ''}${
+            stepDone(gp, guide, s) ? ' is-done' : ''
+          }" data-i="${i}"><span class="step-pick-n">${stepDone(gp, guide, s) ? icons.check : i + 1}</span><span class="step-pick-main"><span class="step-pick-title">${esc(
+            s.title
+          )}</span>${s.where ? `<span class="step-pick-where">${esc(s.where)}</span>` : ''}</span></button></li>`
+        )
+        .join('')}</ol>`,
+    });
+    body.addEventListener('click', (e) => {
+      const b = e.target.closest('.step-pick');
+      if (!b) return;
+      closeSheet();
+      go(Number(b.dataset.i) || 0);
+    });
+    body.querySelector('.is-cur')?.scrollIntoView({ block: 'center' });
+  };
+
   const act = (name, el) => {
     const step = steps[index];
     switch (name) {
@@ -203,8 +260,14 @@ export async function render(ctx) {
       case 'jump':
         go(Number(el.dataset.i) || 0);
         break;
+      case 'steps':
+        openSteps();
+        break;
+      case 'next-guide':
+        if (nextGuide) navigate(followHref(game, nextGuide), { replace: true });
+        break;
       case 'finish':
-        goBack(guideHref(game, guide));
+        goBack(backHref);
         break;
       default:
     }
@@ -215,11 +278,11 @@ export async function render(ctx) {
   });
 
   const onKey = (e) => {
-    if (lightboxOpen() || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (lightboxOpen() || sheetOpen() || e.metaKey || e.ctrlKey || e.altKey) return;
     const tag = document.activeElement?.tagName;
     if (e.key === 'ArrowRight') act('skip');
     else if (e.key === 'ArrowLeft') act('prev');
-    else if (e.key === 'Escape') goBack(guideHref(game, guide));
+    else if (e.key === 'Escape') goBack(backHref);
     else if (e.key === 'Enter' && tag !== 'BUTTON' && tag !== 'A') act(index >= steps.length ? 'finish' : 'done');
     else return;
     e.preventDefault();
@@ -231,8 +294,8 @@ export async function render(ctx) {
   let sy = 0;
   let tracking = false;
   const onStart = (e) => {
-    // Leave sideways-scrolling content (wide tables, code) alone.
-    if (e.touches.length !== 1 || e.target.closest?.('.table-wrap, pre')) return;
+    // Leave sideways-scrolling content (wide tables, code) and the clip alone.
+    if (e.touches.length !== 1 || e.target.closest?.('.table-wrap, pre, .clip')) return;
     tracking = true;
     sx = e.touches[0].clientX;
     sy = e.touches[0].clientY;

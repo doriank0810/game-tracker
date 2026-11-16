@@ -11,7 +11,11 @@
 //     "pinned":  { "<itemId>": <time pinned> },
 //     "steps":   { "<guideId>": { "<stepId>": <time ticked> } },
 //     "note": "where I left off", "noteAt": <time>,
-//     "lastPlayed": <time>, "status": "paused" | null } } }
+//     "lastPlayed": <time>, "status": "paused" | null,
+//     "starred": { "<sectionId>/<groupId>": <time starred> },   (optional, added later)
+//     "lastSection": "<sectionId>" | null, "lastGuide": "<guideId>" | null } } }
+// The last three are optional additions: older saves without them load fine,
+// so the schema number stays 1.
 import { normStatus } from './content.js';
 
 export const STORAGE_KEY = 'gameTracker.progress';
@@ -28,6 +32,9 @@ const EMPTY_GAME = Object.freeze({
   noteAt: null,
   lastPlayed: null,
   status: null,
+  starred: Object.freeze({}),
+  lastSection: null,
+  lastGuide: null,
 });
 
 let state = emptyState();
@@ -40,8 +47,22 @@ function emptyState() {
 }
 
 function emptyGame() {
-  return { checked: {}, counts: {}, pinned: {}, steps: {}, note: '', noteAt: null, lastPlayed: null, status: null };
+  return {
+    checked: {},
+    counts: {},
+    pinned: {},
+    steps: {},
+    note: '',
+    noteAt: null,
+    lastPlayed: null,
+    status: null,
+    starred: {},
+    lastSection: null,
+    lastGuide: null,
+  };
 }
+
+const shortId = (v) => (typeof v === 'string' && v.trim() ? v.slice(0, 300) : null);
 
 const isObj = (v) => !!v && typeof v === 'object' && !Array.isArray(v);
 const time = (v) => (typeof v === 'number' && Number.isFinite(v) && v > 0 ? v : null);
@@ -98,6 +119,9 @@ function cleanGame(raw) {
   g.noteAt = time(raw.noteAt);
   g.lastPlayed = time(raw.lastPlayed);
   g.status = normStatus(raw.status);
+  if (isObj(raw.starred)) for (const [k, v] of Object.entries(raw.starred)) if (v) g.starred[k] = stamp(v);
+  g.lastSection = shortId(raw.lastSection);
+  g.lastGuide = shortId(raw.lastGuide);
   return g;
 }
 
@@ -236,6 +260,26 @@ export function setNote(gameId, note) {
 export function setStatus(gameId, status) {
   const g = mut(gameId);
   g.status = status ? normStatus(status) : null;
+  commit(gameId);
+}
+
+/** Star a checklist group (e.g. a gun you use) so it is listed first. key = "<sectionId>/<groupId>". */
+export function setStarred(gameId, key, on) {
+  const g = mut(gameId);
+  if (on) g.starred[key] = Date.now();
+  else delete g.starred[key];
+  commit(gameId);
+}
+
+/** Remember where the player was (last map/section opened, last guide followed). */
+export function setPlace(gameId, { section, guide } = {}) {
+  const cur = game(gameId);
+  const nextSection = section === undefined ? cur.lastSection : shortId(section);
+  const nextGuide = guide === undefined ? cur.lastGuide : shortId(guide);
+  if (nextSection === cur.lastSection && nextGuide === cur.lastGuide) return;
+  const g = mut(gameId);
+  g.lastSection = nextSection;
+  g.lastGuide = nextGuide;
   commit(gameId);
 }
 

@@ -7,8 +7,11 @@
  *   used when the network fails or hangs (offline). No need to bump VERSION.
  * - Guide pictures (games/**.png|jpg|webp|gif|svg|avif): cached on first view,
  *   then served from the cache and refreshed in the background.
+ * - Video clips (youtube-nocookie.com embeds, i.ytimg.com posters, the
+ *   youtube.com IFrame API): other origins, so this worker never touches or
+ *   caches them; they always come straight from the network.
  */
-const VERSION = '1.0.0';
+const VERSION = '1.1.0';
 const SHELL_CACHE = `gt-shell-${VERSION}`;
 const DATA_CACHE = 'gt-data';
 const MEDIA_CACHE = 'gt-media';
@@ -28,8 +31,10 @@ const SHELL_FILES = [
   'js/icons.js',
   'js/ui.js',
   'js/state.js',
+  'js/clip.js',
   'js/views/home.js',
   'js/views/game.js',
+  'js/views/hubs.js',
   'js/views/guide.js',
   'js/views/follow.js',
   'js/views/search.js',
@@ -70,6 +75,7 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
+  // Other sites (YouTube clips, thumbnails, the IFrame API) go straight to the network, uncached.
   if (url.origin !== self.location.origin || !url.pathname.startsWith(SCOPE.pathname)) return;
 
   if (url.pathname.startsWith(GAMES_PATH)) {

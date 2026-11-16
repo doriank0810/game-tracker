@@ -4,7 +4,8 @@ import * as router from './router.js';
 import * as store from './store.js';
 import * as data from './data.js';
 import { accentStyle } from './util.js';
-import { topBar, toast, emptyBox, openLightbox, closeLightbox, lightboxOpen } from './ui.js';
+import { topBar, toast, emptyBox, openLightbox, closeLightbox, lightboxOpen, closeSheet, sheetOpen } from './ui.js';
+import { initClips } from './clip.js';
 import * as home from './views/home.js';
 import * as gameView from './views/game.js';
 import * as guideView from './views/guide.js';
@@ -36,6 +37,7 @@ let cleanup = null;
 async function render(route, { scroll, savedScroll }) {
   const my = ++token;
   closeLightbox();
+  closeSheet();
   if (cleanup) {
     try {
       cleanup();
@@ -97,21 +99,24 @@ document.addEventListener('click', (e) => {
 window.addEventListener(
   'keydown',
   (e) => {
-    if (e.key === 'Escape' && lightboxOpen()) {
+    if (e.key === 'Escape' && (lightboxOpen() || sheetOpen())) {
       e.stopPropagation();
       e.preventDefault();
-      closeLightbox();
+      if (lightboxOpen()) closeLightbox();
+      else closeSheet();
     }
   },
   true
 );
+
+initClips();
 
 // Images that fail to load are hidden instead of showing a broken icon.
 document.addEventListener(
   'error',
   (e) => {
     const el = e.target;
-    if (el?.tagName !== 'IMG' || !el.matches('.md-img, .step-img')) return;
+    if (el?.tagName !== 'IMG' || !el.matches('.md-img, .step-img, .clip-thumb')) return;
     el.hidden = true;
     el.closest('.step-figure')?.setAttribute('hidden', '');
   },

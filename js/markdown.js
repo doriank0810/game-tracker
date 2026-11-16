@@ -6,7 +6,9 @@
 //   [guide links](guide:guide-id), ![images](img/my-game/pic.png).
 // A single line break inside a paragraph is kept as a line break.
 //
-// ctx (optional): { guideHref(id) → href|null, imageSrc(path) → url|null }
+// ctx (optional): { guideHref(id) → href|null, imageSrc(path) → url|null,
+//   videoLink(href, labelHTML) → html|null (e.g. YouTube links → in-app clip),
+//   kvTables: true (two-column tables become compact label/value lists) }
 import { esc } from './util.js';
 
 const LIST_RE = /^(\s*)([-*+]|\d{1,9}[.)])\s+(.*)$/;
@@ -200,6 +202,16 @@ function renderTable(lines, start, ctx) {
   const rows = [];
   let i = start + 2;
   while (i < lines.length && lines[i].trim() && lines[i].includes('|')) rows.push(splitRow(lines[i++]));
+  if (ctx.kvTables && head.length === 2) {
+    const dl = rows
+      .map((r) => {
+        const k = (r[0] ?? '').trim();
+        const v = (r[1] ?? '').trim();
+        return `<div class="kv-row${k ? '' : ' kv-wide'}">${k ? `<dt>${renderInline(k, ctx)}</dt>` : ''}<dd>${renderInline(v, ctx)}</dd></div>`;
+      })
+      .join('');
+    return { html: `<dl class="kv">${dl}</dl>`, next: i };
+  }
   const cell = (tag, c, k) =>
     `<${tag}${aligns[k] ? ` class="al-${aligns[k]}"` : ''}>${renderInline(c ?? '', ctx)}</${tag}>`;
   const thead = `<tr>${head.map((c, k) => cell('th', c, k)).join('')}</tr>`;
@@ -264,9 +276,14 @@ export function renderInline(src, ctx = {}) {
     const href = safeHref(url, ctx);
     if (!href) return hold(inner);
     const external = /^(https?:|mailto:)/i.test(href);
+    const video = external && ctx.videoLink ? ctx.videoLink(href, inner) : null;
+    if (video) return hold(video);
     return hold(`<a href="${esc(href)}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${inner}</a>`);
   });
-  s = s.replace(AUTOLINK_RE, (url) => hold(`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a>`));
+  s = s.replace(AUTOLINK_RE, (url) => {
+    const video = ctx.videoLink ? ctx.videoLink(url, 'Watch clip') : null;
+    return hold(video || `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a>`);
+  });
   s = emphasis(esc(s));
   for (let n = 0; n < 5 && s.includes('\u0001'); n++) {
     s = s.replace(/\u0001(\d+)\u0002/g, (_, k) => held[Number(k)] ?? '');

@@ -1,6 +1,7 @@
 {
  "id": "modern-warfare-4",
  "title": "Modern Warfare 4",
+ "layout": {"type": "loadouts", "order": ["Start here", "Meta loadouts", "By map"], "cards": ["Meta loadouts"], "checklist": "Camos"},
  "sections": [
   {
    "id": "camos",
