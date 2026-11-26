@@ -111,14 +111,43 @@ window.addEventListener(
 
 initClips();
 
-// Images that fail to load are hidden instead of showing a broken icon.
+// Same name as REMOTE_CACHE in sw.js (pictures from other sites).
+const REMOTE_PICS = 'gt-remote-img';
+
+// Images that fail to load are hidden instead of showing a broken icon;
+// boxed pictures (.pic) show their placeholder instead.
 document.addEventListener(
   'error',
   (e) => {
     const el = e.target;
-    if (el?.tagName !== 'IMG' || !el.matches('.md-img, .step-img, .clip-thumb')) return;
+    if (el?.tagName !== 'IMG') return;
+    // A saved copy of a picture from another site that turns out broken is
+    // dropped, so the next visit asks the network again.
+    try {
+      const u = new URL(el.currentSrc || el.src, location.href);
+      if (u.protocol === 'https:' && u.origin !== location.origin && 'caches' in window) {
+        caches.open(REMOTE_PICS).then((c) => c.delete(u.href)).catch(() => {});
+      }
+    } catch {
+      /* not a URL */
+    }
+    if (el.matches('.pic-img')) {
+      el.hidden = true;
+      const box = el.closest('.pic');
+      box?.classList.remove('is-loaded');
+      box?.classList.add('is-broken');
+      return;
+    }
+    if (!el.matches('.md-img, .step-img, .clip-thumb')) return;
     el.hidden = true;
     el.closest('.step-figure')?.setAttribute('hidden', '');
+  },
+  true
+);
+document.addEventListener(
+  'load',
+  (e) => {
+    if (e.target?.tagName === 'IMG' && e.target.matches('.pic-img')) e.target.closest('.pic')?.classList.add('is-loaded');
   },
   true
 );

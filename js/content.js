@@ -32,6 +32,35 @@ const text = (v) =>
   typeof v === 'string' ? v : Array.isArray(v) ? v.filter((x) => typeof x === 'string').join('\n') : '';
 const isWebUrl = (v) => /^https?:\/\//i.test(v);
 
+/**
+ * A picture: a path relative to games/ ("img/my-game/pic.png") or an
+ * https:// link. http:// and other schemes are dropped with a warning.
+ */
+export function imageRef(value, at, warnings) {
+  if (value == null || value === '') return '';
+  if (typeof value !== 'string') {
+    warnings.push(`${at}: "image" should be text (a path or an https:// link); ignored.`);
+    return '';
+  }
+  const s = value.trim();
+  if (!s || /^https:\/\//i.test(s)) return s;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(s) || s.startsWith('//')) {
+    warnings.push(`${at}: picture "${s}" must be a path relative to games/ or an https:// link; ignored.`);
+    return '';
+  }
+  return s;
+}
+
+/** Optional one-line text field: a string (or number); anything else is ignored with a warning. */
+function lineField(value, name, at, warnings) {
+  if (value == null) return '';
+  if (typeof value !== 'string' && typeof value !== 'number') {
+    warnings.push(`${at}: "${name}" should be a short text; ignored.`);
+    return '';
+  }
+  return str(value);
+}
+
 function list(value, name, warnings) {
   if (value == null) return [];
   if (Array.isArray(value)) return value;
@@ -129,7 +158,7 @@ function normalizeSteps(g, gid, errors, warnings) {
       title: str(s.title) || `Step ${i + 1}`,
       where: str(s.where),
       text: text(s.text),
-      image: str(s.image),
+      image: imageRef(s.image, at, warnings),
       alt: str(s.alt),
       video,
       // In-app clip: { id, start, end } for YouTube links, else null.
@@ -235,7 +264,19 @@ export function normalizeGame(raw, expectedId = '') {
         gid = n;
       }
       groupIds.add(gid);
-      const group = { id: gid, key: `${sid}/${gid}`, title: str(g.title) || gid, section, items: [] };
+      const gat = `Group "${sid}/${gid}"`;
+      const group = {
+        id: gid,
+        key: `${sid}/${gid}`,
+        title: str(g.title) || gid,
+        // Optional: heading the group is listed under in a picker ("SMG"),
+        // its picture (e.g. a weapon icon) and a one-line note.
+        class: lineField(g.class, 'class', gat, warnings),
+        image: imageRef(g.image, gat, warnings),
+        note: lineField(g.note, 'note', gat, warnings),
+        section,
+        items: [],
+      };
 
       list(g.items, `"items" in group "${group.key}"`, warnings).forEach((it, ii) => {
         const at = `${group.key} item #${ii + 1}`;
@@ -285,6 +326,7 @@ export function normalizeGame(raw, expectedId = '') {
           tags,
           type,
           target,
+          image: imageRef(it.image, `Item "${iid}"`, warnings),
           order: items.length,
           section,
           group,
@@ -424,7 +466,7 @@ export function categoryOrder(game, guides = game.guides) {
 /** Folded search text for an item (cached on the item). */
 export function itemSearchText(it) {
   if (it._s == null) {
-    it._s = fold([it.title, it.detail, it.tags.join(' '), it.group.title, it.section.title].join('\n'));
+    it._s = fold([it.title, it.detail, it.tags.join(' '), it.group.title, it.group.class, it.section.title].join('\n'));
   }
   return it._s;
 }

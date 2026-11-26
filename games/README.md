@@ -87,7 +87,7 @@ settings). What fills the page depends on `layout`:
 |----------|----------|---------------------|
 | `"story"` (default) | Linear games (Inazuma Eleven) | **Up next**: the next item big, with its details, clip links and a big **Done** button (with Undo); then the 4 after it, guides in progress, and links to the full checklist and all guides. |
 | `"maps"` | Zombies, anything split into maps/areas/regions | A **map picker**: one tile per section, the last one opened marked, and **Continue: map › guide** on top (straight into Follow mode). Tapping a tile opens that map: a Start/Continue card, the map's reference pages ("Session plan"), its walkthroughs in file order as big rows (tap = Follow mode) and its checklist. |
-| `"loadouts"` | Shooters (Modern Warfare 4, Black Ops 2) | Guides by category: "Start here" pages as tap-to-open cards, then **class cards**, then the other categories ("By map"). The whole checklist (e.g. camos) sits behind **one entry**: a picker of its groups (e.g. 33 weapons) with a search box and **stars** (starred groups stay on top), then one group's items. |
+| `"loadouts"` | Shooters (Modern Warfare 4, Black Ops 2) | Guides by category: "Start here" pages as tap-to-open cards, then **class cards**, then the other categories ("By map"). The whole checklist (e.g. camos) sits behind **one entry**: a picker of its groups (e.g. 33 weapons) with a search box and **stars** (starred groups stay on top), then one group's items. Groups with a picture show as picture tiles under their `class` heading, and a group whose items have pictures opens as a **picture page** (see "Picture lists" below). |
 
 Short form: `"layout": "maps"`. Long form, with options:
 
@@ -165,9 +165,18 @@ thing to do.
 | `title`  | yes | Shown as the heading. |
 | `groups` | (section) | Array of groups. |
 | `items`  | (group)   | Array of items. |
+| `class`  | no (group) | Short text, e.g. `"SMG"`. In a group picker, groups are listed under one heading per class (in file order), each with how many of that class are finished. A trailing `(SMG)` in the title that repeats the class is hidden there and on the group page. |
+| `image`  | no (group) | The group's picture, e.g. a weapon icon: a path relative to `games/` or an `https://` link (see section 5). Shown on its picker tile and at the top of the group page, in a wide box (14:5; wide pictures with a dark background look best). |
+| `note`   | no (group) | One short line under the name on the group page, e.g. `"Max weapon level 72"`. |
 
 Use sections for the big split (Story, Side quests, Collectibles, Camos,
 Easter eggs, Reference…) and groups for chapters, maps, weapons, regions…
+
+```json
+{ "id": "w-iso-nightshade", "title": "ISO Nightshade (SMG)", "class": "SMG",
+  "image": "https://img.example.com/iso-nightshade.png", "note": "Max weapon level 64",
+  "items": [ … ] }
+```
 
 ### Items
 
@@ -182,6 +191,46 @@ Easter eggs, Reference…) and groups for chapters, maps, weapons, regions…
 | `guide`        | no  | Id of a guide in this file. Shows a "Guide" badge and a button to open it. If the guide is a walkthrough, the button is **Follow guide** (or "Continue at step N") and the badge shows step progress. |
 | `autoComplete` | no  | Only for items linked to a walkthrough. Default `true`: the item ticks itself when every step of that walkthrough is ticked. Set `false` to stop that. (Counters never auto-complete.) |
 | `tags`         | no  | Array of short strings shown as chips and searchable: `["missable", "chapter 2"]`. |
+| `image`        | no  | The item's picture, e.g. a camo swatch: a path relative to `games/` or an `https://` link. When any item of a group has one, that group's page becomes a picture page (below). |
+
+### Picture lists (e.g. one weapon's camos)
+
+When items in a group have an `image`, the group page shows, instead of a
+list of tick boxes:
+
+1. A header: the group's `image` large, its name, `class`, `note`, and
+   done/total with a strip (one cell per item).
+2. **Do now** (only when the group has level steps or a prerequisite chain,
+   see below): the next level to reach, every unfinished challenge, and the
+   next chain item, each as a card with the challenge in big text and a big
+   **Done** button (with Undo). A chain item whose prerequisite isn't met
+   yet shows as locked, with its prerequisite line.
+3. A **picture grid** of every item, in sections by each item's **first
+   tag** (in order of appearance, capitalised: `"military"` → Military).
+   Done items are in full colour with a tick; missing ones are greyed out with
+   their level (or a lock). Tapping a picture opens a sheet with the
+   picture, the full challenge and a Done / "Mark as not done" button.
+
+The item `detail` is read paragraph by paragraph (separate paragraphs with a
+blank line, `\n\n` in JSON); the markdown itself is shown as written:
+
+| Paragraph | Read as |
+|-----------|---------|
+| `Reach weapon level 26.` (or `Reach level 26.`) | A **level step**. Levels add up: ticking one also ticks the lower levels of the group; the lowest unticked one is "Do now". |
+| `**Multiplayer:** 50 Player Kills while Aiming Down Sights` | A **challenge line**. The first one is shown big; the others (e.g. `**DMZ:** …`) smaller underneath. |
+| `Opens at weapon level 46.` | Shown as a note on the challenge (and as `Lv 46` on the greyed picture). |
+| First paragraph starting with `First …` (`First unlock this weapon's 3 special camos.`) | A **prerequisite**: the item is part of a **chain** unlocked in file order. The first chain item waits for every other non-level item of the group (e.g. the 3 special camos); each next one waits for the one before. When the line names a number ("First get Gold on 8 Assault Rifles", "on all 33 weapons", "on both shotguns"), the app also counts how many groups of the same `class` (or of the whole section, for a bigger number) have the previous chain item ticked: "3/8". Locks are a guide only: everything can still be ticked from its sheet. |
+| Anything else | Shown as normal text in the sheet. |
+
+```json
+{ "id": "iso-nightshade-sp-1", "title": "Asphalt", "tags": ["special"],
+  "image": "https://img.example.com/asphalt.webp", "guide": "camo-ladder",
+  "detail": "**Multiplayer:** 50 Player Kills while Aiming Down Sights\n\n**DMZ:** 125 Kills while Aiming Down Sights" }
+```
+
+A group whose pictured items have no level steps and no chain (e.g. a
+collectibles list with photos) gets the header and the picture grid only.
+Groups without any item pictures keep the normal list.
 
 ### How the "Next" list is chosen
 
@@ -312,14 +361,23 @@ starts a new paragraph. In JSON, write line breaks as `\n`.
 - Put them in `games/img/<game-id>/` and refer to them **relative to the
   `games/` folder**: `"image": "img/bo3-origins/shield-1.jpg"` or
   `![Map](img/bo3-origins/map.png)`. (A leading `games/` or `/` is tolerated.)
-  Full `https://` URLs also work but are not saved for offline use.
-- png, jpg, webp, gif, svg or avif. Keep them reasonably small (around 1200 px
-  wide, under ~300 KB) so they load fast on a phone.
-- They never overflow the screen, load lazily, and open full screen when tapped
-  (tap again to zoom in).
-- A missing or broken picture is simply hidden; the rest of the step still shows.
+- Or use a full **`https://`** link to a picture on another site, anywhere a
+  picture is allowed (step `image`, group `image`, item `image`, `![…](…)`).
+  `http://` links and other schemes are ignored (the validator warns), and the
+  page never sends its address to the other site (no referrer).
+- Local files: png, jpg, webp, gif, svg or avif. Keep them reasonably small
+  (around 1200 px wide, under ~300 KB) so they load fast on a phone.
+- They never overflow the screen and load lazily. Step and markdown pictures
+  open full screen when tapped (tap again to zoom in); group and item pictures
+  sit in fixed-size boxes so nothing jumps while they load.
+- A missing or broken picture is hidden (step and markdown pictures) or
+  replaced by a placeholder with the name's initials (group and item pictures).
 - Offline: each picture is saved the first time it's viewed. Starting Follow
-  mode saves every picture of that walkthrough in the background.
+  mode saves every picture of that walkthrough in the background. Pictures
+  from other sites are saved too (up to 400, oldest dropped first) and shown
+  from the saved copy from then on, so a weapon's camo grid is instant on
+  reopen and works on a bad connection. YouTube clips and posters are never
+  saved.
 
 ---
 

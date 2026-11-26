@@ -247,7 +247,7 @@ function imageSrc(raw, ctx) {
   if (ctx.imageSrc) return ctx.imageSrc(url);
   const scheme = /^([a-z][a-z0-9+.-]*):/i.exec(url);
   if (!scheme) return url;
-  return /^https?$/i.test(scheme[1]) ? url : null;
+  return /^https$/i.test(scheme[1]) ? url : null;
 }
 
 function emphasis(s) {

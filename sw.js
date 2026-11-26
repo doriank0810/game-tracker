@@ -7,14 +7,21 @@
  *   used when the network fails or hangs (offline). No need to bump VERSION.
  * - Guide pictures (games/**.png|jpg|webp|gif|svg|avif): cached on first view,
  *   then served from the cache and refreshed in the background.
+ * - Pictures from other sites (https:// "image" links, e.g. weapon icons and
+ *   camo swatches): cache-first in their own cache (REMOTE_CACHE, at most
+ *   REMOTE_MAX pictures, oldest dropped first), so a picture seen once shows
+ *   instantly and offline. Opaque (no-CORS) responses are fine: the page
+ *   deletes a saved copy that turns out broken (js/app.js).
  * - Video clips (youtube-nocookie.com embeds, i.ytimg.com posters, the
- *   youtube.com IFrame API): other origins, so this worker never touches or
- *   caches them; they always come straight from the network.
+ *   youtube.com IFrame API): never touched or cached by this worker; they
+ *   always come straight from the network.
  */
-const VERSION = '1.1.1';
+const VERSION = '1.2.0';
 const SHELL_CACHE = `gt-shell-${VERSION}`;
 const DATA_CACHE = 'gt-data';
 const MEDIA_CACHE = 'gt-media';
+const REMOTE_CACHE = 'gt-remote-img'; // same name in js/app.js
+const REMOTE_MAX = 400;
 
 const SHELL_FILES = [
   'index.html',
@@ -32,9 +39,11 @@ const SHELL_FILES = [
   'js/ui.js',
   'js/state.js',
   'js/clip.js',
+  'js/ladder.js',
   'js/views/home.js',
   'js/views/game.js',
   'js/views/hubs.js',
+  'js/views/ladder.js',
   'js/views/guide.js',
   'js/views/follow.js',
   'js/views/search.js',
@@ -52,6 +61,8 @@ const INDEX_URL = new URL('index.html', SCOPE).href;
 const IMAGE_RE = /\.(png|jpe?g|webp|gif|svg|avif)$/i;
 const DEV = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(self.location.hostname) || self.location.hostname.endsWith('.localhost');
 const NETWORK_TIMEOUT = 8000;
+// Clips and their posters are never cached.
+const NO_CACHE_HOSTS = /(^|\.)(youtube\.com|youtube-nocookie\.com|youtu\.be|ytimg\.com|ggpht\.com|googlevideo\.com)$/i;
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -75,8 +86,15 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  // Other sites (YouTube clips, thumbnails, the IFrame API) go straight to the network, uncached.
-  if (url.origin !== self.location.origin || !url.pathname.startsWith(SCOPE.pathname)) return;
+  if (url.origin !== self.location.origin) {
+    // Pictures from other sites: saved. Everything else from other sites
+    // (YouTube clips, posters, the IFrame API) goes straight to the network.
+    if (req.destination === 'image' && req.mode === 'no-cors' && url.protocol === 'https:' && !NO_CACHE_HOSTS.test(url.hostname)) {
+      event.respondWith(remoteImage(event, req));
+    }
+    return;
+  }
+  if (!url.pathname.startsWith(SCOPE.pathname)) return;
 
   if (url.pathname.startsWith(GAMES_PATH)) {
     if (url.pathname.endsWith('.json')) return event.respondWith(contentFirst(req));
@@ -125,6 +143,48 @@ async function mediaCached(event, req) {
     return saved;
   }
   return network;
+}
+
+/**
+ * Pictures from other sites: the saved copy if there is one (instant, works
+ * offline), else the network, saved for next time. Opaque responses can't be
+ * checked, so anything the network gives is kept; a broken one is deleted by
+ * the page when the <img> fails to show it.
+ */
+async function remoteImage(event, req) {
+  let cache = null;
+  try {
+    cache = await caches.open(REMOTE_CACHE);
+    const saved = await cache.match(req.url);
+    if (saved) return saved;
+  } catch {
+    /* cache unavailable: just use the network */
+  }
+  const res = await fetch(req);
+  if (cache && (res.ok || res.type === 'opaque')) {
+    event.waitUntil(
+      cache
+        .put(req.url, res.clone())
+        .then(() => trimRemote(cache, REMOTE_MAX))
+        .catch(() => trimRemote(cache, Math.floor(REMOTE_MAX / 2))) // storage full: make room
+    );
+  }
+  return res;
+}
+
+let trimming = null;
+/** Keep at most `max` saved remote pictures, dropping the oldest first. */
+function trimRemote(cache, max) {
+  if (trimming) return trimming;
+  trimming = (async () => {
+    const keys = await cache.keys();
+    for (const k of keys.slice(0, Math.max(0, keys.length - max))) await cache.delete(k);
+  })()
+    .catch(() => {})
+    .finally(() => {
+      trimming = null;
+    });
+  return trimming;
 }
 
 async function appPage(req) {

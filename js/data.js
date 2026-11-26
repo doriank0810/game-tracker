@@ -15,12 +15,15 @@ const listeners = new Set();
 let lastRefresh = Date.now();
 let refreshing = null;
 
-/** Resolve an image path from the content (relative to games/) to a URL. */
+/**
+ * Resolve an image path from the content (relative to games/) to a URL.
+ * Absolute links must be https:// (anything else gives null).
+ */
 export function mediaUrl(path) {
   let p = String(path ?? '').trim();
   if (!p) return null;
   const scheme = /^([a-z][a-z0-9+.-]*):/i.exec(p);
-  if (scheme) return /^https?$/i.test(scheme[1]) ? p : null;
+  if (scheme) return /^https$/i.test(scheme[1]) ? p : null;
   if (p.startsWith('//')) return null;
   p = p.replace(/^\.?\/+/, '').replace(/^games\//, '');
   try {

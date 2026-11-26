@@ -40,6 +40,8 @@ import {
 } from '../ui.js';
 import { gameUI } from '../state.js';
 import { icons } from '../icons.js';
+import { hasPictures } from '../ladder.js';
+import { groupTileHTML, renderLadderGroup, isComplete } from './ladder.js';
 
 const hubHref = (game) => `#/game/${enc(game.id)}`;
 
@@ -580,6 +582,17 @@ export function renderGroups(ctx, entry) {
   const input = main.querySelector('.group-q');
   rememberOpenCards(main, st);
 
+  // Groups with a picture (or pictured items, e.g. weapons and their camos)
+  // are tiles; the others stay rows.
+  const pictured = (g) => !!g.image || hasPictures(g);
+  const listHTML = (list, gp, opts) => {
+    const tiles = list.filter(pictured);
+    const rows = list.filter((g) => !pictured(g));
+    return `${tiles.length ? `<div class="wtiles">${tiles.map((g) => groupTileHTML(game, g, gp, opts)).join('')}</div>` : ''}${
+      rows.length ? `<div class="gpick-list">${rows.map((g) => groupPickRow(game, g, gp)).join('')}</div>` : ''
+    }`;
+  };
+
   const draw = () => {
     const gp = store.game(game.id);
     if (!groups.length) {
@@ -587,21 +600,40 @@ export function renderGroups(ctx, entry) {
       return;
     }
     const terms = searchTerms(st.groupQuery);
-    const match = (g) => !terms.length || matchesAll(fold(`${g.title} ${g.section.title}`), terms);
+    const match = (g) => !terms.length || matchesAll(fold(`${g.title} ${g.class} ${g.section.title}`), terms);
     const starred = groups.filter((g) => gp.starred[g.key] && match(g)).sort((a, b) => gp.starred[a.key] - gp.starred[b.key]);
     let html = '';
     if (starred.length) {
-      html += `<section class="block"><div class="block-head"><h2 class="label">Starred</h2></div><div class="gpick-list">${starred
-        .map((g) => groupPickRow(game, g, gp))
-        .join('')}</div></section>`;
+      html += `<section class="block"><div class="block-head"><h2 class="label">Starred</h2></div>${listHTML(starred, gp, {
+        showClass: true,
+      })}</section>`;
     }
     const multi = game.sections.filter((s) => s.groups.some((g) => g.items.length)).length > 1;
     for (const s of game.sections) {
-      const list = s.groups.filter((g) => g.items.length && match(g) && !gp.starred[g.key]);
+      const all = s.groups.filter((g) => g.items.length);
+      const list = all.filter((g) => match(g) && !gp.starred[g.key]);
       if (!list.length) continue;
+      if (all.some((g) => g.class)) {
+        // One heading per class ("Assault rifle", "SMG"…), in file order,
+        // with how many of that class are finished.
+        const byClass = new Map();
+        for (const g of list) {
+          const c = g.class || '';
+          if (!byClass.has(c)) byClass.set(c, []);
+          byClass.get(c).push(g);
+        }
+        for (const [c, members] of byClass) {
+          const everyone = all.filter((g) => (g.class || '') === c);
+          const fin = everyone.filter((g) => isComplete(gp, g)).length;
+          html += `<section class="block"><div class="block-head"><h2 class="label">${esc(c || s.title)}</h2><span class="count${
+            fin && fin === everyone.length ? ' is-all' : ''
+          }">${fin}/${everyone.length} done</span></div>${listHTML(members, gp)}</section>`;
+        }
+        continue;
+      }
       html += `<section class="block">${
         multi || starred.length ? `<div class="block-head"><h2 class="label">${esc(s.title)}</h2></div>` : ''
-      }<div class="gpick-list">${list.map((g) => groupPickRow(game, g, gp)).join('')}</div></section>`;
+      }${listHTML(list, gp)}</section>`;
     }
     if (!html) html = emptyBox(`Nothing matches “${esc(st.groupQuery.trim())}”.`);
     else if (!starred.length && !terms.length) html = `<p class="hint">${icons.star} Star the ones you use and they stay on top.</p>${html}`;
@@ -617,7 +649,7 @@ export function renderGroups(ctx, entry) {
   picker.addEventListener('click', (e) => {
     const b = e.target.closest('[data-act="star"]');
     if (!b) return;
-    const key = b.closest('.gpick').dataset.key;
+    const key = b.closest('[data-key]').dataset.key;
     store.setStarred(game.id, key, !store.game(game.id).starred[key]);
     draw();
   });
@@ -637,6 +669,17 @@ export function renderGroup(ctx, entry, group = null, back = null, names = null)
     });
     return null;
   }
+  // Every item points at the same guide (e.g. the camo table): show it once.
+  const shared = g.items.length > 1 && g.items[0].guide && g.items.every((it) => it.guide === g.items[0].guide);
+  const sharedGuide = shared ? game.guideById.get(g.items[0].guide) : null;
+  const guideBlock = sharedGuide
+    ? `<div class="block">${
+        isWalk(sharedGuide) ? `<div class="rows">${guideRowHTML(game, sharedGuide, store.game(game.id))}</div>` : pageCardHTML(game, sharedGuide, false)
+      }</div>`
+    : '';
+  // Items with pictures (e.g. one weapon's camos): "Do now" + picture grid.
+  if (hasPictures(g)) return renderLadderGroup(ctx, entry, g, { back: backHref, names, guideHTML: guideBlock });
+
   const headHTML = () => {
     const gp = store.game(game.id);
     const t = tally(gp, g.items);
@@ -650,18 +693,13 @@ export function renderGroup(ctx, entry, group = null, back = null, names = null)
           }</span></button>`
     }`;
   };
-  // Every item points at the same guide (e.g. the camo table): show it once.
-  const shared = g.items.length > 1 && g.items[0].guide && g.items.every((it) => it.guide === g.items[0].guide);
-  const sharedGuide = shared ? game.guideById.get(g.items[0].guide) : null;
   const main = gamePage(ctx, entry, {
     title: names?.title || g.title,
     sub: names?.sub || g.section.title,
     back: backHref,
     body: `<div class="group-head">${headHTML()}</div><div class="item-list">${g.items
       .map((it) => itemRow(game, it, { hideGuide: !!sharedGuide }))
-      .join('')}</div>${
-      sharedGuide ? `<div class="block">${isWalk(sharedGuide) ? `<div class="rows">${guideRowHTML(game, sharedGuide, store.game(game.id))}</div>` : pageCardHTML(game, sharedGuide, false)}</div>` : ''
-    }`,
+      .join('')}</div>${guideBlock}`,
   });
   if (!main) return null;
   const head = main.querySelector('.group-head');

@@ -6,7 +6,8 @@
 //
 // Uses the same rules as the app (js/content.js): ids, "layout", step
 // "video" / "videoEnd" (a number of seconds greater than the video's &t=
-// start) and the rest. Also checks that pictures exist, that
+// start), pictures ("image" on steps, groups and items: a path relative to
+// games/ or an https:// link) and the rest. Also checks that local pictures exist, that
 // [text](guide:id) links point at real guides, and that YouTube links in
 // text can be played in the app.
 // Exit code 1 when something would be skipped by the app.
@@ -76,9 +77,14 @@ async function checkMedia(game, warnings) {
     }
   }
   for (const g of game.guides) for (const s of g.steps) if (s.image) pics.push([`guide "${g.id}" step "${s.id}"`, s.image]);
+  // Group pictures (e.g. weapon icons) and item pictures (e.g. camo swatches).
+  // Bad schemes were already dropped (with a warning) by js/content.js.
+  for (const sec of game.sections) for (const g of sec.groups) if (g.image) pics.push([`group "${g.key}"`, g.image]);
+  for (const it of game.items) if (it.image) pics.push([`item "${it.id}"`, it.image]);
   for (const [where, src] of pics) {
-    if (/^https?:\/\//i.test(src)) continue;
-    if (/^[a-z][a-z0-9+.-]*:/i.test(src)) {
+    // https:// links are fine (not fetched here); http:// and other schemes are not.
+    if (/^https:\/\//i.test(src)) continue;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(src) || src.startsWith('//')) {
       warnings.push(`${where}: picture "${src}" must be a relative path or an https:// link.`);
       continue;
     }
