@@ -239,6 +239,8 @@ export function normalizeGame(raw, expectedId = '') {
       category: str(g.category),
       kind,
       body: text(g.body),
+      // Optional picture for the guide's card (e.g. the weapon of a class).
+      image: imageRef(g.image, `Guide "${gid}"`, warnings),
       intro: text(g.intro),
       steps: [],
       stepById: new Map(),

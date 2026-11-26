@@ -431,8 +431,8 @@ export function parseClass(guide) {
 export function classImage(game, guide) {
   if (guide._img !== undefined) return guide._img;
   const w = fold(parseClass(guide).weapon).trim();
-  let img = '';
-  if (w) {
+  let img = guide.image || '';
+  if (!img && w) {
     for (const sec of game.sections) {
       const g = sec.groups.find((x) => x.image && fold(displayTitle(x)).trim() === w);
       if (g) {

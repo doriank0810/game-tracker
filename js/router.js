@@ -22,6 +22,10 @@ const scrollMem = new Map();
 // the Games button can pop straight back to them.
 const roots = new Map();
 let afterPop = null;
+// True while a back the app itself asked for is on its way (its own back
+// button or a tab). A system swipe-back already animates, so it must not
+// be animated a second time.
+let ownBack = false;
 
 export const currentHash = () => location.hash || '#/';
 const depth = () => history.state?.depth || 0;
@@ -72,7 +76,9 @@ export function init(fn) {
       afterPop = null;
       if (h !== currentHash()) history.replaceState(history.state, '', h);
     }
-    if (currentHash() !== current) run('restore', 'pop');
+    const nav = ownBack ? 'pop' : 'instant';
+    ownBack = false;
+    if (currentHash() !== current) run('restore', nav);
   };
   window.addEventListener('popstate', onPop);
   window.addEventListener('hashchange', onPop);
@@ -107,7 +113,10 @@ export function rerender() {
 
 /** Go back inside the app, or to the fallback page if there's no app history. */
 export function goBack(fallback = '#/') {
-  if (depth() > 0) history.back();
+  if (depth() > 0) {
+    ownBack = true;
+    history.back();
+  }
   else navigate(fallback, { replace: true });
 }
 
@@ -126,6 +135,7 @@ export function popTo(key, hash) {
   if (d != null && d < cur) {
     scrollMem.set(currentHash(), window.scrollY);
     afterPop = hash;
+    ownBack = true;
     history.go(d - cur);
   } else navigate(hash, { replace: true, scroll: 'restore' });
 }
