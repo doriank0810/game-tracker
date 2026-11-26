@@ -12,12 +12,12 @@ const GUIDES_PER_GAME = 5;
 
 export async function render(ctx) {
   const q0 = ctx.route.q || '';
-  ctx.mount(`${topBar({ title: 'Search', back: '#/', noSearch: true })}
+  ctx.mount(`${topBar({ title: 'Search', back: '#/', backLabel: 'Back', noSearch: true })}
     <main class="page page-search">
       <label class="search-field big">${icons.search}<span class="sr-only">Search all games</span>
         <input type="search" class="global-q" placeholder="Search all games" value="${esc(q0)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
       </label>
-      <div class="results"><p class="hint">Loading your games…</p></div>
+      <div class="results"><p class="hint">Loading your games</p></div>
     </main>`);
   document.title = 'Search · Game Tracker';
   const input = ctx.root.querySelector('.global-q');
@@ -38,7 +38,7 @@ export async function render(ctx) {
     const q = input.value.trim();
     const terms = searchTerms(q);
     if (!terms.length) {
-      results.innerHTML = `<p class="hint">Search checklist items and guides in all your games.</p>`;
+      results.innerHTML = `<p class="hint">Checklist items, guides and walkthrough steps in all your games</p>`;
       return;
     }
     let html = '';
@@ -51,11 +51,11 @@ export async function render(ctx) {
       items.sort((a, b) => rank.get(a) - rank.get(b) || a.order - b.order);
       const count = guides.length + items.length;
       html += `<section class="result-game" style="${accentStyle(game.accent)}">
-        <div class="result-head"><a class="result-title" href="#/game/${enc(game.id)}">${esc(game.title)}</a><span class="count">${plural(
+        <div class="sec-h result-head"><a class="result-title" href="#/game/${enc(game.id)}">${esc(game.title)}</a><span class="sec-n">${plural(
           count,
           'result'
         )}</span></div>
-        ${guides.length ? `<div class="link-list">${guides.slice(0, GUIDES_PER_GAME).map((g) => guideLinkHTML(game, g)).join('')}</div>` : ''}
+        ${guides.length ? `<div class="group-list">${guides.slice(0, GUIDES_PER_GAME).map((g) => guideLinkHTML(game, g)).join('')}</div>` : ''}
         ${
           items.length
             ? `<div class="item-list">${items
@@ -73,7 +73,7 @@ export async function render(ctx) {
         }
       </section>`;
     }
-    results.innerHTML = html || emptyBox(`Nothing found for “${esc(q)}”.`);
+    results.innerHTML = html || emptyBox(`Nothing found for “${esc(q)}”`);
   };
   run();
 

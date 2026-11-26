@@ -224,6 +224,38 @@ export function setCount(gameId, itemId, value, max) {
   return n;
 }
 
+/**
+ * Mark several items done in one save (cascading ticks). items: content
+ * items; counters are filled to their target.
+ */
+export function markDone(gameId, items) {
+  const g = mut(gameId);
+  const now = Date.now();
+  for (const it of items) {
+    if (it.type === 'counter') g.counts[it.id] = it.target;
+    else g.checked[it.id] = now;
+  }
+  g.lastPlayed = now;
+  commit(gameId);
+}
+
+/** The saved state of some items, to put back exactly with restoreItems (Undo). */
+export function snapshotItems(gameId, ids) {
+  const g = game(gameId);
+  return ids.map((id) => ({ id, checked: g.checked[id] ?? null, count: g.counts[id] ?? null }));
+}
+
+export function restoreItems(gameId, snap) {
+  const g = mut(gameId);
+  for (const s of snap) {
+    if (s.checked) g.checked[s.id] = s.checked;
+    else delete g.checked[s.id];
+    if (s.count) g.counts[s.id] = s.count;
+    else delete g.counts[s.id];
+  }
+  commit(gameId);
+}
+
 export function setPinned(gameId, itemId, on) {
   const g = mut(gameId);
   if (on) g.pinned[itemId] = Date.now();

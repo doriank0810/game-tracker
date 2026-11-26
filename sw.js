@@ -16,7 +16,7 @@
  *   youtube.com IFrame API): never touched or cached by this worker; they
  *   always come straight from the network.
  */
-const VERSION = '1.3.0';
+const VERSION = '2.0.0';
 const SHELL_CACHE = `gt-shell-${VERSION}`;
 const DATA_CACHE = 'gt-data';
 const MEDIA_CACHE = 'gt-media';
@@ -40,6 +40,7 @@ const SHELL_FILES = [
   'js/state.js',
   'js/clip.js',
   'js/ladder.js',
+  'js/tabs.js',
   'js/views/home.js',
   'js/views/game.js',
   'js/views/hubs.js',

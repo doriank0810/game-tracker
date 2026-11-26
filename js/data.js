@@ -60,6 +60,8 @@ function applyMeta(game, meta) {
   game.title = meta?.title || game.title || game.id;
   game.platform = meta?.platform || '';
   game.accent = meta?.accent || DEFAULT_ACCENT;
+  game.cover = meta?.cover || '';
+  game.hero = meta?.hero || '';
   game.baseStatus = meta?.status || 'not-started';
   game.order = meta?.order ?? 9999;
   game.listed = !!meta;

@@ -1,12 +1,15 @@
-// Home: one card per game, grouped by status (playing first).
+// Home: your games as box art. The one you played last is a wide banner on
+// top with what to do next; the others sit on a shelf, grouped by status.
 import * as data from '../data.js';
 import * as store from '../store.js';
 import { esc, enc, relTime, accentStyle, cssEscape } from '../util.js';
 import { STATUS_ORDER, STATUS_LABEL } from '../content.js';
 import { tally, nextItems, effectiveStatus, whereToContinue } from '../progress.js';
-import { topBar, statusChip, errorBox, emptyBox } from '../ui.js';
+import { navBar, iconLink, largeTitle, errorBox, emptyBox, artImg } from '../ui.js';
+import { icons } from '../icons.js';
+import { markRoot } from '../router.js';
 
-/** [label, text] for the card's one-line "what's next", per layout. */
+/** [label, text] for "what's next", per layout. */
 function nextLine(game, gp) {
   const { layout } = game;
   if (layout.type === 'maps') {
@@ -16,8 +19,8 @@ function nextLine(game, gp) {
     return ['Start', `Pick one of ${game.sections.length} ${layout.picker.toLowerCase()}`];
   }
   if (layout.type === 'loadouts') {
-    const starred = game.sections.flatMap((s) => s.groups).filter((g) => gp.starred[g.key]).map((g) => g.title);
-    if (starred.length) return ['Starred', starred.join(', ')];
+    const starred = game.sections.flatMap((s) => s.groups).filter((g) => gp.starred[g.key]);
+    if (starred.length) return ['Starred', starred.map((g) => g.title.replace(/\s*\([^)]*\)\s*$/, '')).join(', ')];
     const classes = game.guides.filter((g) => layout.cards.includes(g.category)).length;
     return ['Classes', classes ? `${classes} ready to copy` : `${game.guides.length} guides`];
   }
@@ -25,89 +28,127 @@ function nextLine(game, gp) {
   return ['Next', n ? n.item.title : game.items.length ? 'All done' : 'Nothing to track yet'];
 }
 
-function cardHTML(g) {
+/** Box art in a fixed frame. wide: prefer the banner art; else the cover. */
+function artHTML(meta, wide) {
+  const main = wide ? meta.hero || meta.cover : meta.cover || meta.hero;
+  if (!main) return `<div class="art no-art"><span class="art-name">${esc(meta.title)}</span></div>`;
+  // Art of the other shape is shown whole over a blurred copy of itself.
+  const fits = wide ? !!meta.hero : !!meta.cover;
+  return `<div class="art${fits ? '' : ' is-contain'}">${fits ? '' : artImg(main, 'art-blur')}${artImg(main, 'art-img', { eager: true })}<span class="art-name">${esc(
+    meta.title
+  )}</span></div>`;
+}
+
+function played(gp) {
+  return gp.lastPlayed ? `Played ${relTime(gp.lastPlayed)}` : 'Not played yet';
+}
+
+function featuredHTML(g) {
   const { meta } = g;
   const gp = store.game(meta.id);
-  const status = effectiveStatus(meta.status, gp);
+  const entry = data.peekEntry(meta.id) || g.entry || null;
+  let line = null;
+  let pct = 0;
+  let bar = false;
+  if (entry?.error) line = ['', "Couldn't load this game's file"];
+  else if (entry?.game) {
+    line = nextLine(entry.game, gp);
+    const t = tally(gp, entry.game.items);
+    pct = t.pct;
+    bar = t.total > 0 && t.done > 0;
+  }
+  // The banner art fills the card; the box art (if any) sits in front of it,
+  // so the game reads at a glance even when the banner's subject is cropped.
+  const backdrop = meta.hero
+    ? `<div class="art">${artImg(meta.hero, 'art-img', { eager: true })}</div>`
+    : meta.cover
+      ? `<div class="art is-backdrop">${artImg(meta.cover, 'art-blur', { eager: true })}</div>`
+      : '<div class="art no-art"></div>';
+  return `<a class="feat${entry?.error ? ' has-error' : ''}${meta.cover ? ' has-cover' : ''}" href="#/game/${enc(meta.id)}" data-game="${esc(meta.id)}" style="${accentStyle(meta.accent)}">
+    ${backdrop}
+    <div class="feat-body">
+      ${meta.cover ? `<span class="feat-cover">${artImg(meta.cover, 'art-img', { eager: true })}</span>` : ''}
+      <div class="feat-text">
+        <h2 class="feat-title${meta.title.length > 22 ? ' is-long' : ''}">${esc(meta.title)}</h2>
+        <p class="feat-next">${line ? `${line[0] ? `<span class="feat-k">${esc(line[0])}</span>` : ''}<span class="feat-v">${esc(line[1])}</span>` : '&nbsp;'}</p>
+        <div class="feat-meta">${esc([meta.platform, played(gp)].filter(Boolean).join(' · '))}</div>
+      </div>
+    </div>
+    ${bar ? `<span class="feat-bar" aria-hidden="true"><span style="width:${pct}%"></span></span>` : ''}
+  </a>`;
+}
+
+function shelfHTML(g) {
+  const { meta } = g;
+  const gp = store.game(meta.id);
   const entry = data.peekEntry(meta.id) || g.entry || null;
   let pct = 0;
-  let line = ['Next', 'Loading…'];
-  let count = '';
-  let showBar = true;
-  if (entry?.error) line = ['Next', "Couldn't load this game's file."];
-  else if (entry?.game) {
-    const game = entry.game;
-    const t = tally(gp, game.items);
-    pct = t.pct;
-    count = t.total ? `${t.done}/${t.total}` : '';
-    showBar = game.layout.type !== 'loadouts' && t.total > 0;
-    line = nextLine(game, gp);
-  }
-  return `<a class="game-card${entry?.error ? ' has-error' : ''}" href="#/game/${enc(meta.id)}" data-game="${esc(
-    meta.id
-  )}" style="${accentStyle(meta.accent)}">
-    <div class="card-top">
-      <div class="card-titles">
-        <h3 class="card-title">${esc(meta.title)}</h3>
-        ${meta.platform ? `<div class="card-platform">${esc(meta.platform)}</div>` : ''}
-      </div>
-      ${statusChip(status)}
-    </div>
-    <div class="card-next"><span class="card-next-label">${esc(line[0])}</span><span class="card-next-text">${esc(line[1])}</span></div>
-    ${showBar ? `<div class="progress-row card-progress"><div class="bar"><span style="width:${pct}%"></span></div><span class="pct">${pct}%</span></div>` : ''}
-    <div class="card-foot"><span>${gp.lastPlayed ? `Played ${relTime(gp.lastPlayed)}` : 'Not played yet'}</span><span class="card-count">${count}</span></div>
+  if (entry?.game) pct = tally(gp, entry.game.items).pct;
+  return `<a class="shelf-item${entry?.error ? ' has-error' : ''}" href="#/game/${enc(meta.id)}" data-game="${esc(meta.id)}" style="${accentStyle(meta.accent)}">
+    <div class="shelf-art">${artHTML(meta, false)}${pct ? `<span class="shelf-bar" aria-hidden="true"><span style="width:${pct}%"></span></span>` : ''}</div>
+    <span class="shelf-title">${esc(meta.title)}</span>
+    <span class="shelf-sub">${entry?.error ? "Couldn't load" : esc(pct ? `${pct}% · ${played(gp).replace('Played ', '')}` : played(gp))}</span>
   </a>`;
 }
 
 export async function render(ctx) {
+  const nav = navBar({ title: 'Games', actions: `${iconLink('#/search', icons.search, 'Search all games')}${iconLink('#/settings', icons.settings, 'Settings')}` });
   let index;
   try {
     index = await data.getIndex();
   } catch (err) {
-    ctx.mount(`${topBar({ title: 'Game Tracker' })}<main class="page">${errorBox(
-      "Couldn't load your game list",
-      err.message
-    )}</main>`);
+    ctx.mount(`${nav}<main class="page page-home">${largeTitle('Games')}${errorBox("Couldn't load your game list", err.message)}</main>`);
     return;
   }
   if (!ctx.isCurrent()) return;
-  document.title = 'Game Tracker';
 
   const games = index.games.map((meta) => {
     const gp = store.game(meta.id);
     return { meta, status: effectiveStatus(meta.status, gp), last: gp.lastPlayed || 0 };
   });
-  games.sort(
-    (a, b) =>
-      STATUS_ORDER.indexOf(a.status) - STATUS_ORDER.indexOf(b.status) || b.last - a.last || a.meta.order - b.meta.order
-  );
+  games.sort((a, b) => STATUS_ORDER.indexOf(a.status) - STATUS_ORDER.indexOf(b.status) || b.last - a.last || a.meta.order - b.meta.order);
 
   let html = '';
   if (!games.length) {
-    html = emptyBox('<p class="empty-title">No games yet</p><p>Add a game to <code>games/index.json</code>.</p>');
+    html = emptyBox('<p class="empty-title">No games yet</p><p>Add a game to <code>games/index.json</code></p>');
   } else {
+    // The game played last (or the first one you're playing) gets the banner.
+    const featured = games.find((g) => g.status === 'playing') || games[0];
+    html += featuredHTML(featured);
+    const rest = games.filter((g) => g !== featured);
     for (const st of STATUS_ORDER) {
-      const group = games.filter((g) => g.status === st);
+      const group = rest.filter((g) => g.status === st);
       if (!group.length) continue;
-      html += `<section class="home-group"><h2 class="label home-label">${STATUS_LABEL[st]}<span class="count">${
-        group.length
-      }</span></h2><div class="cards">${group.map(cardHTML).join('')}</div></section>`;
+      html += `<section class="shelf"><div class="sec-h"><h2>${STATUS_LABEL[st]}</h2></div><div class="shelf-grid">${group.map(shelfHTML).join('')}</div></section>`;
     }
   }
-  const problems = index.errors.length
-    ? `<div class="notice">games/index.json has problems. See Settings → Game files.</div>`
-    : '';
-  ctx.mount(`${topBar({ title: 'Game Tracker' })}<main class="page page-home">${
-    index.offline ? '<div class="notice">You\'re offline. Showing the last saved game list.</div>' : ''
+  const problems = index.errors.length ? `<div class="notice">games/index.json has problems. See Settings, Game files</div>` : '';
+  ctx.mount(`${nav}<main class="page page-home">${largeTitle('Games')}${
+    index.offline ? '<div class="notice">You\'re offline. Showing the last saved game list</div>' : ''
   }${problems}${html}</main>`);
+  document.title = 'Game Tracker';
+  markRoot('home');
 
-  // Fill in progress as each game file arrives.
+  // Fill in what's next and progress as each game file arrives.
   for (const g of games) {
     if (data.peekEntry(g.meta.id)) continue;
     data.getGame(g.meta.id).then((entry) => {
       if (!ctx.isCurrent()) return;
-      const card = ctx.root.querySelector(`.game-card[data-game="${cssEscape(g.meta.id)}"]`);
-      if (card) card.outerHTML = cardHTML({ ...g, entry });
+      const el = ctx.root.querySelector(`[data-game="${cssEscape(g.meta.id)}"]`);
+      if (!el) return;
+      // Patch the text and bar only, so the artwork doesn't flash.
+      const tpl = document.createElement('div');
+      tpl.innerHTML = el.classList.contains('feat') ? featuredHTML({ ...g, entry }) : shelfHTML({ ...g, entry });
+      const fresh = tpl.firstElementChild;
+      for (const sel of ['.feat-text', '.shelf-sub']) {
+        const a = el.querySelector(sel);
+        const b = fresh.querySelector(sel);
+        if (a && b) a.replaceWith(b);
+      }
+      el.querySelector('.feat-bar, .shelf-bar')?.remove();
+      const bar = fresh.querySelector('.feat-bar, .shelf-bar');
+      if (bar) (el.querySelector('.shelf-art') || el).appendChild(bar);
+      el.classList.toggle('has-error', fresh.classList.contains('has-error'));
     });
   }
 }

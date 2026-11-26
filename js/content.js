@@ -74,7 +74,30 @@ function uniqueId(id, taken) {
   return `${id}-${n}`;
 }
 
-/** games/index.json → { games: [{ id, title, platform, status, accent, order }], errors, warnings } */
+/**
+ * Game artwork in index.json ("cover", "hero"): an https:// link or a path
+ * relative to games/. Anything else is ignored with a warning.
+ */
+function artRef(value, name, id, warnings) {
+  if (value == null || value === '') return '';
+  if (typeof value !== 'string') {
+    warnings.push(`"${id}": "${name}" should be an https:// link to a picture; ignored.`);
+    return '';
+  }
+  const s = value.trim();
+  if (/^https:\/\//i.test(s)) return s;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(s) || s.startsWith('//')) {
+    warnings.push(`"${id}": "${name}" must be an https:// link (or a path relative to games/); ignored.`);
+    return '';
+  }
+  if (!/\.(png|jpe?g|webp|gif|avif)$/i.test(s)) {
+    warnings.push(`"${id}": "${name}" "${s}" is not a png/jpg/webp/gif/avif picture; ignored.`);
+    return '';
+  }
+  return s;
+}
+
+/** games/index.json → { games: [{ id, title, platform, status, accent, cover, hero, order }], errors, warnings } */
 export function normalizeIndex(raw) {
   const errors = [];
   const warnings = [];
@@ -111,6 +134,9 @@ export function normalizeIndex(raw) {
       platform: str(g.platform),
       status: status || 'not-started',
       accent: accent || DEFAULT_ACCENT,
+      // Optional artwork: portrait box art (600x900) and a wide banner.
+      cover: artRef(g.cover, 'cover', id, warnings),
+      hero: artRef(g.hero, 'hero', id, warnings),
       order: games.length,
     });
   });

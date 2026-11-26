@@ -4,7 +4,8 @@
 //   node tools/validate.mjs            (checks this app's games/ folder)
 //   node tools/validate.mjs path/to/Game\ Tracker
 //
-// Uses the same rules as the app (js/content.js): ids, "layout", step
+// Uses the same rules as the app (js/content.js): ids, "layout", game art
+// ("cover" / "hero" in index.json: https:// or an existing local picture), step
 // "video" / "videoEnd" (a number of seconds greater than the video's &t=
 // start), pictures ("image" on steps, groups and items: a path relative to
 // games/ or an https:// link) and the rest. Also checks that local pictures exist, that
@@ -104,6 +105,16 @@ async function main() {
     process.exit(1);
   }
   const index = normalizeIndex(rawIndex);
+  // Game artwork ("cover", "hero"): https:// links are fine (not fetched
+  // here); local pictures must exist.
+  for (const g of index.games) {
+    for (const field of ['cover', 'hero']) {
+      const src = g[field];
+      if (!src || /^https:\/\//i.test(src)) continue;
+      const rel = src.replace(/^\.?\/+/, '').replace(/^games\//, '');
+      if (!(await exists(path.join(gamesDir, decodeURI(rel))))) index.warnings.push(`"${g.id}": ${field} picture not found: games/${rel}`);
+    }
+  }
   report('games/index.json', index.errors, index.warnings);
 
   for (const meta of index.games) {

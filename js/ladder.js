@@ -123,11 +123,56 @@ export function doNow(group, gp) {
   return out;
 }
 
-/** Lower level steps that ticking `item` also ticks (levels are cumulative). */
+/**
+ * Everything in the group that must already be done when `item` is done
+ * (in file order). Ticking `item` ticks these too:
+ *   - a level step: the lower level steps (levels add up)
+ *   - a challenge that "Opens at weapon level N": the level steps up to N
+ *   - a chain item (Gold, Platinum, Harmonic Break…): every level step and
+ *     every open challenge of the group (e.g. 8 military + 3 special camos)
+ *     and the chain items before it (Platinum also ticks Gold)
+ */
+export function prerequisites(group, item) {
+  const L = ladderOf(group);
+  const r = readItem(item);
+  const need = new Set();
+  if (L.chain.includes(item)) {
+    for (const it of L.levels) need.add(it);
+    for (const it of L.open) need.add(it);
+    for (const it of L.chain) {
+      if (it === item) break;
+      need.add(it);
+    }
+  } else if (r.level != null && item.type === 'check') {
+    for (const it of L.levels) if (it !== item && readItem(it).level <= r.level) need.add(it);
+  } else if (r.opensAt != null) {
+    for (const it of L.levels) if (readItem(it).level <= r.opensAt) need.add(it);
+  }
+  return group.items.filter((it) => need.has(it));
+}
+
+/** The prerequisites of `item` that aren't done yet (what ticking it adds). */
 export function alsoTicks(group, item, gp) {
-  const lv = readItem(item).level;
-  if (lv == null || item.type !== 'check') return [];
-  return ladderOf(group).levels.filter((it) => it !== item && readItem(it).level <= lv && !isDone(gp, it));
+  return prerequisites(group, item).filter((it) => !isDone(gp, it));
+}
+
+/**
+ * Short text for a set of items of one group: "8 military, 3 special and Gold".
+ * Items are counted per grid section; one or two are named.
+ */
+export function describeItems(group, items) {
+  const L = ladderOf(group);
+  const phrases = [];
+  for (const p of L.parts) {
+    const mine = p.items.filter((it) => items.includes(it));
+    if (!mine.length) continue;
+    const named = mine.filter((it) => L.chain.includes(it) || mine.length <= 2);
+    const counted = mine.filter((it) => !named.includes(it));
+    if (counted.length) phrases.push(`${counted.length} ${p.title.toLowerCase()}`);
+    for (const it of named) phrases.push(it.title);
+  }
+  if (phrases.length <= 1) return phrases.join('');
+  return `${phrases.slice(0, -1).join(', ')} and ${phrases[phrases.length - 1]}`;
 }
 
 /**

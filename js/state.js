@@ -20,7 +20,9 @@ export function gameUI(gameId) {
       sessionDone: [],
       guideQuery: '',
       groupQuery: '',
-      openCards: new Set(), // class cards / page cards opened on the hub
+      openCards: new Set(), // disclosure cards opened on a page
+      groupFilter: 'all', // picker chip: "all", "starred" or a class
+      ladderView: 'now', // picture group page: "now" (Do now) or "all"
     };
     games.set(gameId, s);
   }

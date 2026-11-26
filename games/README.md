@@ -27,24 +27,42 @@ It uses the same rules as the app and also checks that pictures exist and that
 
 ## 1. `games/index.json`
 
-A JSON array, one object per game, in the order you like (the home screen groups
-them by status: playing, paused, not started, done; most recently played first
-within a group).
+A JSON array, one object per game, in the order you like. The home screen shows
+the game played most recently (among those you're playing) as a wide banner on
+top, with what to do next; the others sit on a shelf of box art below it,
+grouped by status (playing, paused, not started, done; most recently played
+first within a group).
 
 ```json
 [
   { "id": "inazuma-eleven-victory-road", "title": "Inazuma Eleven: Victory Road",
-    "platform": "Switch", "status": "playing", "accent": "#3fa9f5" }
+    "platform": "Switch", "status": "playing", "accent": "#3fa9f5",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2799860/library_600x900.jpg",
+    "hero": "https://cdn.akamai.steamstatic.com/steam/apps/2799860/library_hero.jpg" }
 ]
 ```
 
 | Field      | Required | Meaning |
 |------------|----------|---------|
 | `id`       | yes | Must match the file name: `games/<id>.json`. Letters, numbers, `-`, `_`, `.` only. **Never change it** once used (progress is keyed by it). |
-| `title`    | yes | Shown on the home card and the game page. (Wins over a `title` inside the game file.) |
+| `title`    | yes | Shown on the home screen and the game's banner. (Wins over a `title` inside the game file.) |
 | `platform` | no  | Small grey text, e.g. `"PS5"`. |
-| `status`   | no  | `"playing"`, `"paused"`, `"not-started"` (default) or `"done"`. The player can override it on the game page; this is the default. |
-| `accent`   | no  | Hex colour (`"#3fa9f5"` or `"#3af"`) that tints the game's page. Very dark colours are lightened automatically. Default `#5ad1c0`. |
+| `status`   | no  | `"playing"`, `"paused"`, `"not-started"` (default) or `"done"`. The player can override it in the game menu (**⋯**); this is the default. |
+| `accent`   | no  | Hex colour (`"#3fa9f5"` or `"#3af"`): the game's one accent (its tab bar, progress, ticks, main buttons). Very dark colours are lightened automatically. Default `#5ad1c0`. |
+| `cover`    | no  | Portrait box art, about **600x900** (2:3), e.g. Steam's `library_600x900.jpg`. Shown on the home shelf. An `https://` link (or a path relative to `games/`, png/jpg/webp/gif/avif). |
+| `hero`     | no  | Wide art without text works best, e.g. Steam's `library_hero.jpg` (about 3:1). Shown as the home banner when this is the game played last, and as the banner at the top of the game's tabs. Same rules as `cover`. |
+
+A game can have both pictures, only one, or none:
+
+- Only `cover`: the game's banner crops the cover (keeping its top third); the
+  home banner shows it whole over a blurred copy of itself.
+- Only `hero`: the shelf shows the hero whole over a blurred copy of itself.
+- Neither: plain tiles with the title.
+
+Anything that isn't an `https://` link or a local picture path is ignored with a
+warning. A picture that fails to load is hidden. Pictures from other sites are
+saved on the device the first time they're shown (see section 5), so the home
+screen works offline after one visit.
 
 A game listed here whose file is missing or broken shows an error card; nothing else breaks.
 
@@ -73,21 +91,35 @@ A game listed here whose file is missing or broken shows an error card; nothing 
 |------------|----------|---------|
 | `id`       | yes | Same as in `index.json` (if they differ, the index id is used). |
 | `title`    | no  | Only used if the game isn't in `index.json`. |
-| `layout`   | no  | What the game page shows first: `"story"`, `"maps"` or `"loadouts"`, or an object with options. See **2b** below. |
+| `layout`   | no  | Which tabs the game gets: `"story"`, `"maps"` or `"loadouts"`, or an object with options. See **2b** below. |
 | `sections` | no  | Array of sections (checklist). |
 | `guides`   | no  | Array of guides (see section 3). |
 
-### 2b. `layout`: what the game page opens on
+### 2b. `layout`: the game's tabs
 
-The game page has almost no chrome: a back button, the title and a **⋯**
-menu (status, "where I left off" note, full checklist, all guides, search,
-settings). What fills the page depends on `layout`:
+Inside a game, a **tab bar** at the bottom of the screen (always visible,
+in reach of the thumb) switches between the game's areas. The tabs come from
+`layout` and from what the file contains; a tab only appears when it has
+something to show. The app remembers the last tab opened in each game and
+opens on it next time (the first tab the very first time). Each tab's page starts with the game's banner (the
+`hero` or `cover` from `index.json`, the title, and the "where I left off"
+note if there is one).
 
-| `layout` | Good for | The game page shows |
-|----------|----------|---------------------|
-| `"story"` (default) | Linear games (Inazuma Eleven) | **Up next**: the next item big, with its details, clip links and a big **Done** button (with Undo); then the 4 after it, guides in progress, and links to the full checklist and all guides. |
-| `"maps"` | Zombies, anything split into maps/areas/regions | A **map picker**: one tile per section, the last one opened marked, and **Continue: map › guide** on top (straight into Follow mode). Tapping a tile opens that map: a Start/Continue card, the map's reference pages ("Session plan"), its walkthroughs in file order as big rows (tap = Follow mode) and its checklist. |
-| `"loadouts"` | Shooters (Modern Warfare 4, Black Ops 2) | Guides by category: "Start here" pages as tap-to-open cards, then **class cards**, then the other categories ("By map"). The whole checklist (e.g. camos) sits behind **one entry**: a picker of its groups (e.g. 33 weapons) with a search box and **stars** (starred groups stay on top), then one group's items. Groups with a picture show as picture tiles under their `class` heading, and a group whose items have pictures opens as a **picture page** (see "Picture lists" below). |
+Pages opened from a tab (a weapon's camos, a guide, a map) slide in on top
+with a back button named after the tab, and the tab stays lit. Back returns
+to the same place on the tab. Tapping the lit tab on such a page goes
+straight back to the tab; tapping it on the tab itself scrolls to the top.
+Follow mode is full screen, without the tab bar.
+
+The **⋯** button (top right) opens the game menu: status, the "where I left
+off" note, the full checklist and all guides (when they aren't tabs), search
+and settings.
+
+| `layout` | Good for | Tabs |
+|----------|----------|------|
+| `"story"` (default) | Linear games (Inazuma Eleven) | **Next**: the next item big, with its details, clip links and a big **Done** button (with Undo), then the 4 after it, guides in progress and what you ticked this session. **Checklist** (named by `checklist`): every section and group, with search and All / To do / Done. **Guides**: every guide by category, with search. |
+| `"maps"` | Zombies, anything split into maps/areas/regions | **Continue**: the map you're on (the one with the guide you followed last, or the last map opened): a Start/Continue card straight into Follow mode, the map's reference pages ("Session plan"), its walkthroughs in file order as numbered rows (tap = Follow mode), its checklist, and a **Change map** button. **Maps** (named by `picker`): one tile per section, the current one marked; a tile opens that map on top. **Checklist**: the whole checklist. **Guides**: only if some guides belong to no map. The game opens on Continue once you've opened a map, on Maps before that. |
+| `"loadouts"` | Shooters (Modern Warfare 4, Black Ops 2) | **Classes**: the class cards (see below) as tiles with the weapon's picture, or as rows with a "built" tick. **Camos** (named by `checklist`): the checklist group picker, straight away: a search box, filter chips (All, Starred, then one per `class`), the groups as picture tiles under their `class` heading with **stars** (starred groups stay on top), and a **Guides** button for guides whose category equals the checklist name (e.g. the levelling guide). A group whose items have pictures opens as a **picture page** (see "Picture lists" below). **Maps**: guides whose category contains "map" ("By map"); a single page guide is shown right on the tab. **Tips**: the "Start here" guides and any other category. The checklist tab is left out when every checklist item is a "built" tick of a class card (Black Ops 2). |
 
 Short form: `"layout": "maps"`. Long form, with options:
 
@@ -104,10 +136,10 @@ Short form: `"layout": "maps"`. Long form, with options:
 | Option | Applies to | Meaning |
 |--------|-----------|---------|
 | `type` | all | `"story"`, `"maps"` or `"loadouts"`. |
-| `order` | all | Guide categories in the order to show them (on the game page and the All guides page). Categories not listed follow in file order. Default for `"loadouts"`: categories starting with "Start", then the class-card categories, then the rest. |
-| `cards` | `loadouts` | Guide categories shown as **class cards**. Default: every category whose name contains "class" or "loadout" (so `"Classes"` and `"Meta loadouts"` work without this option). |
-| `checklist` | all | Name of the checklist entry (default `"Checklist"`), e.g. `"Camos"`. In `"loadouts"`, guides whose `category` equals this name are shown on that entry's page instead of the game page (e.g. a camo table guide with category `"Camos"`). |
-| `picker` | `maps` | Heading above the map tiles (default `"Maps"`), e.g. `"Regions"`. |
+| `order` | all | Guide categories in the order to show them (on the tabs and the guide lists). Categories not listed follow in file order. Default for `"loadouts"`: categories starting with "Start", then the class-card categories, then the rest. |
+| `cards` | `loadouts` | Guide categories shown as **class cards** (the Classes tab). Default: every category whose name contains "class" or "loadout" (so `"Classes"` and `"Meta loadouts"` work without this option). |
+| `checklist` | all | Name of the checklist tab (default `"Checklist"`), e.g. `"Camos"`. Keep it short: it is a tab label. In `"loadouts"`, guides whose `category` equals this name are listed behind that tab's **Guides** button (e.g. a camo table guide with category `"Camos"`). |
+| `picker` | `maps` | Name of the map picker tab (default `"Maps"`), e.g. `"Regions"`. |
 
 **No `layout`?** The app guesses: `"loadouts"` if any guide category contains
 "class" or "loadout"; `"maps"` if there are 2+ sections and every section has
@@ -142,16 +174,22 @@ The validator warns about guides whose category matches no section.
 | Field upgrade | Portable Radar |
 ```
 
-- First line `**Tier X** · type · Best for: …` → a tier badge and a subtitle. A
-  trailing `(…, tier X)` in the guide title is then hidden on the card.
-- Every **two-column table** becomes a compact label/value list (header row
-  skipped). Other tables and text render normally below.
-- The closed card previews three lines, found by row label: **Attachments**
-  (a row named `Attachments`, or the values of a table whose 2nd header
-  contains "attachment"), **Perks** (`Perks`, or `Perk 1`, `Perk 2`…),
-  **Equipment** (`Equipment`, or `Lethal` + `Tactical`).
-- Checklist items whose `guide` points at a class card get a round tick on the
-  card ("built"), tappable without opening it.
+- First line `**Tier X** · type · Best for: …` → a tier badge, the weapon
+  type and a "best for" line. A trailing `(…, tier X)` in the guide title is
+  then hidden on the card.
+- The first `## heading` names the weapon. When a checklist group with an
+  `image` has that name (e.g. the camo group "ISO Nightshade (SMG)"), its
+  picture becomes the card's picture: the Classes tab then shows tiles with
+  the weapon, and the class page shows it on top. Without pictures the tab
+  shows rows.
+- Opening a card shows the class page: every **two-column table** becomes a
+  label/value list (header row skipped), headed by its `##` heading. Other
+  tables and text render normally below. A line like `*Meta as of 14
+  November 2026 …*` also shows as "As of 14 November 2026" next to the
+  Classes heading.
+- Checklist items whose `guide` points at a class card get a round tick on
+  its row ("built"), tappable without opening it, and a **Mark as built**
+  button on the class page.
 
 ### Sections and groups
 
@@ -201,27 +239,43 @@ When items in a group have an `image`, the group page shows, instead of a
 list of tick boxes:
 
 1. A header: the group's `image` large, its name, `class`, `note`, and
-   done/total with a strip (one cell per item).
-2. **Do now** (only when the group has level steps or a prerequisite chain,
-   see below): the next level to reach, every unfinished challenge, and the
+   done/total with a strip (one cell per item), then the `help` button.
+2. A two-way switch that stays at the top while you scroll: **Do now** and
+   **All camos** (named after the checklist; "Everything" by default). The
+   app remembers which one you used last. Groups without level steps or a
+   chain only have the grid.
+3. **Do now**: the next level to reach, every unfinished challenge, and the
    next chain item, each as a card with the challenge in big text and a big
-   **Done** button (with Undo). A chain item whose prerequisite isn't met
-   yet shows as locked, with its prerequisite line.
-3. A **picture grid** of every item, in sections by each item's **first
-   tag** (in order of appearance, capitalised: `"military"` → Military).
-   Done items are in full colour with a tick; missing ones are greyed out with
-   their level (or a lock). Tapping a picture opens a sheet with the
-   picture, the full challenge and a Done / "Mark as not done" button.
+   **Done** button. A chain item whose prerequisite isn't met yet shows as
+   locked, with its prerequisite line and an **I have it** button.
+4. **All camos**: a **picture grid** of every item, in sections by each
+   item's **first tag** (in order of appearance, capitalised: `"military"`
+   → Military). Done items are in full colour with a tick; missing ones are
+   greyed out with their level (or a lock). Tapping a picture opens a sheet
+   with the picture, the full challenge and **Done** ("I already have this"
+   when it shows as locked) or "Mark as not done".
+
+**Ticking adds up.** Marking an item done also marks everything that must
+have come before it in the group, and the message says what else was ticked,
+with one **Undo** that puts every item back exactly as it was:
+
+- a level step ticks the lower level steps;
+- a challenge with `Opens at weapon level N` ticks the level steps up to N;
+- a chain item ticks every level step and every open challenge of the group
+  and the chain items before it: Gold ticks the 8 military and 3 special
+  camos, Platinum also ticks Gold, Harmonic Break ticks all 13 before it.
+
+Marking an item as not done only changes that one item.
 
 The item `detail` is read paragraph by paragraph (separate paragraphs with a
 blank line, `\n\n` in JSON); the markdown itself is shown as written:
 
 | Paragraph | Read as |
 |-----------|---------|
-| `Reach weapon level 26.` (or `Reach level 26.`) | A **level step**. Levels add up: ticking one also ticks the lower levels of the group; the lowest unticked one is "Do now". |
+| `Reach weapon level 26.` (or `Reach level 26.`) | A **level step**. Levels add up (see above); the lowest unticked one is "Do now". |
 | `**Multiplayer:** 50 Player Kills while Aiming Down Sights` | A **challenge line**. The first one is shown big; the others (e.g. `**DMZ:** …`) smaller underneath. |
-| `Opens at weapon level 46.` | Shown as a note on the challenge (and as `Lv 46` on the greyed picture). |
-| First paragraph starting with `First …` (`First unlock this weapon's 3 special camos.`) | A **prerequisite**: the item is part of a **chain** unlocked in file order. The first chain item waits for every other non-level item of the group (e.g. the 3 special camos); each next one waits for the one before. When the line names a number ("First get Gold on 8 Assault Rifles", "on all 33 weapons", "on both shotguns"), the app also counts how many groups of the same `class` (or of the whole section, for a bigger number) have the previous chain item ticked: "3/8". Locks are a guide only: everything can still be ticked from its sheet. |
+| `Opens at weapon level 46.` | Shown as a note on the challenge (and as `Lv 46` on the greyed picture). Ticking the challenge also ticks the level steps up to 46. |
+| First paragraph starting with `First …` (`First unlock this weapon's 3 special camos.`) | A **prerequisite**: the item is part of a **chain** unlocked in file order. The first chain item waits for every other non-level item of the group (e.g. the 3 special camos); each next one waits for the one before. When the line names a number ("First get Gold on 8 Assault Rifles", "on all 33 weapons", "on both shotguns"), the app also counts how many groups of the same `class` (or of the whole section, for a bigger number) have the previous chain item ticked: "3/8". Locks are a guide only: everything can still be ticked, directly ("I have it"), and ticking it also ticks what comes before it. |
 | Anything else | Shown as normal text in the sheet. |
 
 ```json
@@ -328,7 +382,7 @@ What the player gets:
 - Guide page: progress (3/9), a big **Follow guide** button, then every step as a card with its own tick box, its clip and a "Follow from here" link.
 - **Follow mode**: one step per screen, read top to bottom as *where* (big location chip), the title, the **clip**, the short text, then the picture and other spots. Big **Back** and **Done, next** buttons at the bottom, a segment per step in the progress bar, a step list behind the list button, swipe left/right to move between steps, the screen kept awake while it's open. It opens at the first unticked step. After the last step it offers the **next guide** of the same map (or category).
 - When the last step is ticked, linked checklist items tick themselves (see `autoComplete`).
-- Walkthroughs that are started but not finished appear under "Guides in progress" on the game page.
+- Walkthroughs that are started but not finished appear under "Guides in progress" on the Next tab (story) or on the tab that lists them.
 
 ---
 
@@ -364,7 +418,8 @@ starts a new paragraph. In JSON, write line breaks as `\n`.
   `games/` folder**: `"image": "img/bo3-origins/shield-1.jpg"` or
   `![Map](img/bo3-origins/map.png)`. (A leading `games/` or `/` is tolerated.)
 - Or use a full **`https://`** link to a picture on another site, anywhere a
-  picture is allowed (step `image`, group `image`, item `image`, `![…](…)`).
+  picture is allowed (step `image`, group `image`, item `image`, `![…](…)`,
+  and `cover` / `hero` in `index.json`).
   `http://` links and other schemes are ignored (the validator warns), and the
   page never sends its address to the other site (no referrer).
 - Local files: png, jpg, webp, gif, svg or avif. Keep them reasonably small
@@ -434,6 +489,10 @@ from index.json". `starred` (checklist groups starred in a picker, keyed
 `<sectionId>/<groupId>`), `lastSection` (last map opened) and `lastGuide` (last
 walkthrough followed) were added later and are optional: older saves and
 backups without them load as before, so the schema is still 1.
+
+The last tab opened in each game is kept separately, in `gameTracker.meta`
+(`"tabs": { "<gameId>": "<tab>" }`, with the last backup date). It is not
+part of backups: losing it only means a game opens on its first tab.
 
 ---
 

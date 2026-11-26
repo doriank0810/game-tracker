@@ -1,9 +1,10 @@
-// One guide: a readable reference page, or a walkthrough (list of tickable
-// steps with a big "Follow" button).
+// One guide, pushed from a tab: a readable reference page, a class card
+// (loadouts: the weapon, tier and build as a spec sheet), or a walkthrough
+// (tickable steps with a big "Follow" button).
 import * as data from '../data.js';
 import * as store from '../store.js';
-import { esc, enc, cssEscape } from '../util.js';
-import { tally, guideTally, stepDone } from '../progress.js';
+import { esc, enc, cssEscape, plural } from '../util.js';
+import { tally, guideTally, stepDone, isDone } from '../progress.js';
 import {
   topBar,
   itemRow,
@@ -18,12 +19,19 @@ import {
   followLabel,
   setStepDone,
   sectionHref,
+  head,
+  buzz,
+  pulse,
 } from '../ui.js';
 import { icons } from '../icons.js';
 import { rerender } from '../router.js';
 import { clipHTML, warmUp } from '../clip.js';
+import { tabForGuide } from '../tabs.js';
+import { parseClass, classImage, tierClass } from './hubs.js';
+import { picHTML } from './ladder.js';
+import { initials } from '../ladder.js';
 
-/** Where "back" goes from a guide: its map/section page, or the game page. */
+/** Where "back" goes from a guide when there's no history: its map, or the game. */
 export function guideBack(game, guide) {
   const sec = guide.sectionId && game.layout.type === 'maps' ? game.sections.find((s) => s.id === guide.sectionId) : null;
   return sec ? sectionHref(game, sec) : `#/game/${enc(game.id)}`;
@@ -37,9 +45,7 @@ export function stepClipHTML(step, opts = {}) {
 
 export function stepImageHTML(src, alt, { lazy = true } = {}) {
   if (!src) return '';
-  return `<figure class="step-figure"><img class="step-img" src="${esc(src)}" alt="${esc(alt)}"${
-    lazy ? ' loading="lazy"' : ''
-  } decoding="async" data-zoom></figure>`;
+  return `<figure class="step-figure"><img class="step-img" src="${esc(src)}" alt="${esc(alt)}"${lazy ? ' loading="lazy"' : ''} decoding="async" data-zoom></figure>`;
 }
 
 export function whereChip(where, big = false) {
@@ -48,22 +54,20 @@ export function whereChip(where, big = false) {
 
 export function optionsHTML(game, step) {
   if (!step.options.length) return '';
-  return `<div class="options"><div class="label">Other spots</div><ul>${step.options
-    .map((o) => `<li><div class="md">${md(game, o)}</div></li>`)
-    .join('')}</ul></div>`;
+  return `<div class="options"><div class="options-k">Other spots</div><ul>${step.options.map((o) => `<li><div class="md">${md(game, o)}</div></li>`).join('')}</ul></div>`;
 }
 
 export const videoButton = (step) =>
   step.video
-    ? `<a class="btn clip-btn" href="${esc(step.video)}" target="_blank" rel="noopener noreferrer">${icons.video}<span>Open clip</span></a>`
+    ? `<a class="btn clip-link-btn" href="${esc(step.video)}" target="_blank" rel="noopener noreferrer">${icons.video}<span>Open clip</span></a>`
     : '';
 
 function stepCard(game, guide, step, gp) {
   const done = stepDone(gp, guide, step);
   return `<li class="step-card${done ? ' is-done' : ''}" data-step="${esc(step.id)}" id="step-${esc(step.id)}">
-    <button type="button" class="check" data-act="step" role="checkbox" aria-checked="${done}" aria-label="Step ${
-      step.index + 1
-    }: ${esc(step.title)}"><span class="box">${icons.check}</span></button>
+    <button type="button" class="check" data-act="step" role="checkbox" aria-checked="${done}" aria-label="Step ${step.index + 1}: ${esc(
+      step.title
+    )}"><span class="box">${icons.check}</span></button>
     <div class="step-body">
       <div class="step-num">Step ${step.index + 1}</div>
       <h3 class="step-title">${esc(step.title)}</h3>
@@ -81,66 +85,95 @@ function stepCard(game, guide, step, gp) {
 }
 
 function summaryHTML(game, guide) {
-  const t = guideTally(store.game(game.id), guide);
-  return `<div class="progress-row"><div class="bar"><span style="width:${t.pct}%"></span></div><span class="pct">${t.done}/${t.total}</span></div>
+  const gp = store.game(game.id);
+  const t = guideTally(gp, guide);
+  const cells =
+    guide.steps.length <= 40
+      ? `<span class="strip strip-lg"><span class="strip-part">${guide.steps.map((s) => `<i${stepDone(gp, guide, s) ? ' class="on"' : ''}></i>`).join('')}</span></span>`
+      : `<span class="strip strip-bar strip-lg"><span style="width:${t.pct}%"></span></span>`;
+  return `<div class="walk-progress"><span class="lad-n"><b>${t.done}</b> of ${plural(t.total, 'step')}</span>${cells}</div>
     <div class="walk-actions">
       <a class="btn primary big" href="${followHref(game, guide)}">${icons.play}<span>${esc(followLabel(game, guide))}</span></a>
       ${t.done ? '<button type="button" class="text-btn" data-act="restart">Start over</button>' : ''}
     </div>`;
 }
 
+function classHTML(game, guide) {
+  const c = parseClass(guide);
+  const img = classImage(game, guide);
+  const gp = store.game(game.id);
+  const linked = (guide.items || []).filter((it) => it.type === 'check');
+  const built = linked.length > 0 && linked.every((it) => isDone(gp, it));
+  return `<article class="class-detail">
+    ${img ? `<div class="cd-stage">${picHTML(img, { cls: 'pic-wide', ph: initials(c.weapon || c.title), alt: c.weapon })}</div>` : ''}
+    <div class="cd-head">
+      ${c.tier ? `<span class="tier tier-lg tier-${tierClass(c.tier)}" aria-label="Tier ${esc(c.tier)}">${esc(c.tier)}</span>` : ''}
+      <div class="cd-titles"><h1 class="cd-title" data-title-anchor>${esc(c.title)}</h1>${c.sub ? `<p class="cd-sub">${esc(c.sub)}</p>` : ''}</div>
+    </div>
+    ${
+      linked.length
+        ? `<button type="button" class="built-toggle${built ? ' is-built' : ''}" data-act="built" aria-pressed="${built}"><span class="box">${icons.check}</span><span class="built-label">${
+            built ? 'Built in Create a Class' : 'Mark as built'
+          }</span></button>`
+        : ''
+    }
+    <div class="md md-class">${md(game, c.body, { kvTables: true })}</div>
+  </article>`;
+}
+
 export async function render(ctx) {
   const { gameId, guideId } = ctx.route;
   const entry = await data.getGame(gameId);
-  if (!ctx.isCurrent()) return;
-  let back = `#/game/${enc(gameId)}`;
+  if (!ctx.isCurrent()) return null;
   if (entry.error) {
-    ctx.mount(`${topBar({ title: 'Guide', back })}<main class="page">${errorBox("Couldn't open this game", entry.error)}</main>`);
-    return;
+    ctx.mount(`${topBar({ title: 'Guide', back: `#/game/${enc(gameId)}`, backLabel: 'Game' })}<main class="page">${errorBox("Couldn't open this game", entry.error)}</main>`);
+    return null;
   }
   const { game } = entry;
   const guide = game.guideById.get(guideId);
-  if (guide) back = guideBack(game, guide);
   if (!guide) {
-    ctx.mount(
-      `${topBar({ title: game.title, back })}<main class="page">${emptyBox(
-        `<p class="empty-title">Guide not found</p><p>This guide isn't in the game file (any more).</p>`
-      )}</main>`,
-      { accent: game.accent }
-    );
-    return;
+    gamePage(ctx, entry, {
+      title: game.title,
+      body: emptyBox(`<p class="empty-title">Guide not found</p><p>This guide isn't in the game file any more</p>`),
+    });
+    return null;
   }
   const gp = store.game(game.id);
   const linked = game.items.filter((it) => it.guide === guide.id);
   const walk = guide.kind === 'walkthrough';
-  let body;
-  if (walk) {
-    body = `<div class="walk-summary">${summaryHTML(game, guide)}</div>
-      ${guide.intro ? `<div class="md md-guide">${md(game, guide.intro)}</div>` : ''}
-      ${guide.steps.length ? `<ol class="steps">${guide.steps.map((s) => stepCard(game, guide, s, gp)).join('')}</ol>` : emptyBox('This walkthrough has no steps yet.')}`;
-  } else {
-    const card = game.layout.type === 'loadouts' && game.layout.cards.includes(guide.category);
-    body = `<div class="md md-guide${card ? ' md-class' : ''}">${
-      guide.body ? md(game, guide.body, card ? { kvTables: true } : undefined) : '<p class="muted">This guide is empty.</p>'
-    }</div>`;
-  }
+  const isClass = !walk && game.layout.type === 'loadouts' && game.layout.cards.includes(guide.category);
   const sec = guide.sectionId ? game.sections.find((s) => s.id === guide.sectionId) : null;
-  const main = gamePage(ctx, entry, {
-    title: sec && game.layout.type === 'maps' ? sec.title : game.title,
-    sub: sec && game.layout.type === 'maps' ? game.title : '',
-    back,
-    cls: 'page-guide',
-    body: `<article class="guide">
-        ${guide.category && !(sec && game.layout.type === 'maps') ? `<div class="label guide-cat">${esc(guide.category)}</div>` : ''}
-        <h2 class="guide-title">${esc(guide.title)}</h2>
-        ${body}
-      </article>
+  const metaLine = [sec && game.layout.type === 'maps' ? sec.title : guide.category, walk ? `Walkthrough · ${plural(guide.steps.length, 'step')}` : '']
+    .filter(Boolean)
+    .map(esc)
+    .join(' · ');
+  let body;
+  if (isClass) body = classHTML(game, guide);
+  else {
+    body = `<article class="guide">
+      <h1 class="guide-title" data-title-anchor>${esc(guide.title)}</h1>
+      ${metaLine ? `<p class="guide-meta">${metaLine}</p>` : ''}
       ${
-        linked.length
-          ? `<section class="block linked-block"><div class="block-head"><h3 class="label">In your checklist</h3><span class="count linked-count"></span></div>
+        walk
+          ? `<div class="walk-summary">${summaryHTML(game, guide)}</div>
+            ${guide.intro ? `<div class="md md-guide">${md(game, guide.intro)}</div>` : ''}
+            ${guide.steps.length ? `<ol class="steps">${guide.steps.map((s) => stepCard(game, guide, s, gp)).join('')}</ol>` : emptyBox('This walkthrough has no steps yet')}`
+          : `<div class="md md-guide">${guide.body ? md(game, guide.body) : '<p class="muted">This guide is empty</p>'}</div>`
+      }
+    </article>`;
+  }
+  const showLinked = linked.length && !isClass;
+  const main = gamePage(ctx, entry, {
+    title: isClass ? parseClass(guide).title : guide.title,
+    tab: tabForGuide(game, guide),
+    back: guideBack(game, guide),
+    cls: 'page-guide',
+    body: `${body}${
+      showLinked
+        ? `<section class="block linked-block">${head('In your checklist', '<span class="linked-count"></span>')}
           <div class="item-list">${linked.map((it) => itemRow(game, it, { meta: whereHTML(it), hideGuide: true })).join('')}</div></section>`
-          : ''
-      }`,
+        : ''
+    }`,
   });
   if (!main) return null;
   document.title = `${guide.title} · ${game.title}`;
@@ -153,6 +186,24 @@ export async function render(ctx) {
   };
   updateCount();
   bindItems(main, { onChange: updateCount });
+
+  if (isClass) {
+    main.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-act="built"]');
+      if (!b) return;
+      const items = (guide.items || []).filter((it) => it.type === 'check');
+      const on = !items.every((it) => isDone(store.game(game.id), it));
+      for (const it of items) store.setChecked(game.id, it.id, on);
+      b.classList.toggle('is-built', on);
+      b.setAttribute('aria-pressed', String(on));
+      b.querySelector('.built-label').textContent = on ? 'Built in Create a Class' : 'Mark as built';
+      if (on) {
+        buzz();
+        pulse(b.querySelector('.box'));
+      }
+    });
+    return null;
+  }
 
   if (!walk) return null;
   if (guide.steps.some((s) => s.clip)) warmUp();
@@ -168,6 +219,7 @@ export async function render(ctx) {
       const { ticked } = setStepDone(game, guide, step, on);
       card.classList.toggle('is-done', on);
       el.setAttribute('aria-checked', String(on));
+      if (on) pulse(el.querySelector('.box'));
       summary.innerHTML = summaryHTML(game, guide);
       for (const it of ticked) {
         const row = main.querySelector(`.item[data-id="${cssEscape(it.id)}"]`);

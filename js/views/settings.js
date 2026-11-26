@@ -2,7 +2,7 @@
 import * as data from '../data.js';
 import * as store from '../store.js';
 import { esc, relTime, plural } from '../util.js';
-import { topBar, toast } from '../ui.js';
+import { topBar, toast, largeTitle } from '../ui.js';
 import { resetGameUI, resetAllUI } from '../state.js';
 import { icons } from '../icons.js';
 
@@ -52,7 +52,7 @@ function resetListHTML(index) {
     ...listed.map((g) => ({ id: g.id, title: g.title, extra: '' })),
     ...orphans.map((id) => ({ id, title: id, extra: ' (no longer in the game list)' })),
   ];
-  if (!rows.length) return '<p class="muted small">No games yet.</p>';
+  if (!rows.length) return '<p class="muted small">No games yet</p>';
   return rows
     .map(
       (r) => `<div class="reset-row">
@@ -112,14 +112,15 @@ export async function render(ctx) {
   if (!ctx.isCurrent()) return null;
   const meta = store.getMeta();
   const canShare = shareSupported();
-  ctx.mount(`${topBar({ title: 'Settings', back: '#/', noSettings: true })}
+  ctx.mount(`${topBar({ title: 'Settings', back: '#/', backLabel: 'Back', noSettings: true })}
     <main class="page page-settings">
+      ${largeTitle('Settings')}
       ${store.isAvailable() ? '' : `<div class="notice">This browser isn't letting the app save anything (private browsing?). Your ticks will be lost when you close it.</div>`}
       ${store.loadProblem() ? `<div class="notice">${esc(store.loadProblem())}</div>` : ''}
       <section class="card-block">
-        <h2 class="label">Backup</h2>
+        <h2 class="set-h">Backup</h2>
         <p class="muted">Your progress is saved in this browser, on this device only. Export a backup now and then, and to move to another phone or computer.</p>
-        <p class="muted small last-export">${meta.lastExport ? `Last backup ${relTime(meta.lastExport)}.` : 'No backup made yet.'}</p>
+        <p class="muted small last-export">${meta.lastExport ? `Last backup ${relTime(meta.lastExport)}` : 'No backup made yet'}</p>
         <div class="btn-row">
           <button type="button" class="btn primary" data-act="export">${icons.download}<span>Export backup</span></button>
           ${canShare ? `<button type="button" class="btn" data-act="share">${icons.share}<span>Share backup</span></button>` : ''}
@@ -127,18 +128,18 @@ export async function render(ctx) {
         </div>
       </section>
       <section class="card-block">
-        <h2 class="label">Reset a game</h2>
+        <h2 class="set-h">Reset a game</h2>
         <p class="muted">Clears ticks, counters, pins, guide steps and the note for one game. This can't be undone, so export a backup first if you're not sure.</p>
         <div class="reset-list">${resetListHTML(index)}</div>
       </section>
       <section class="card-block">
-        <h2 class="label">Game files</h2>
+        <h2 class="set-h">Game files</h2>
         <p class="muted">The app loads the newest game files each time you open it while online.</p>
         <div class="btn-row"><button type="button" class="btn" data-act="refresh">${icons.refresh}<span>Check for new content</span></button></div>
         <div class="report"><p class="muted small">Checking files…</p></div>
       </section>
       <section class="card-block">
-        <h2 class="label">About</h2>
+        <h2 class="set-h">About</h2>
         <p class="muted small about">Game Tracker</p>
       </section>
     </main>`);
@@ -163,7 +164,7 @@ export async function render(ctx) {
 
   const markExported = () => {
     store.setMeta({ lastExport: Date.now() });
-    main.querySelector('.last-export').textContent = 'Last backup just now.';
+    main.querySelector('.last-export').textContent = 'Last backup just now';
   };
 
   main.addEventListener('click', async (e) => {
@@ -190,7 +191,7 @@ export async function render(ctx) {
           await navigator.share({ files: [new File([json], name, { type: 'application/json' })], title: 'Game Tracker backup' });
           markExported();
         } catch (err) {
-          if (err?.name !== 'AbortError') toast("Couldn't share the file. Use Export backup instead.");
+          if (err?.name !== 'AbortError') toast("Couldn't share the file. Use Export backup instead");
         }
         break;
       }
@@ -201,18 +202,18 @@ export async function render(ctx) {
         store.resetGame(id);
         resetGameUI(id);
         main.querySelector('.reset-list').innerHTML = resetListHTML(data.peekIndex() || index);
-        toast(`Progress for ${title} was reset.`);
+        toast(`Progress for ${title} was reset`);
         break;
       }
       case 'refresh': {
         if (navigator.onLine === false) {
-          toast("You're offline. Try again when you're connected.");
+          toast("You're offline. Try again when you're connected");
           return;
         }
         el.disabled = true;
         const { changed } = await data.refresh({ force: true });
         el.disabled = false;
-        toast(changed.length ? 'Loaded the newest game files.' : 'Everything is up to date.');
+        toast(changed.length ? 'Loaded the newest game files' : 'Everything is up to date');
         fillReport();
         break;
       }
@@ -229,7 +230,7 @@ export async function render(ctx) {
     try {
       obj = JSON.parse(await file.text());
     } catch {
-      toast("That file isn't a valid backup (not JSON).");
+      toast("That file isn't a valid backup (not JSON)");
       return;
     }
     const res = store.parseBackup(obj);
@@ -242,7 +243,7 @@ export async function render(ctx) {
     if (!confirm(`Replace all your current progress with this backup?\n\nBackup from ${when}, with progress for ${plural(res.count, 'game')}.`)) return;
     store.replaceAll(res.state);
     resetAllUI();
-    toast('Backup restored.');
+    toast('Backup restored');
   });
   return null;
 }

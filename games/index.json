@@ -4,27 +4,34 @@
     "title": "Inazuma Eleven: Victory Road",
     "platform": "Switch",
     "status": "playing",
-    "accent": "#f5b301"
+    "accent": "#f5b301",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2799860/library_600x900.jpg",
+    "hero": "https://cdn.akamai.steamstatic.com/steam/apps/2799860/library_hero.jpg"
   },
   {
     "id": "bo3-zombies",
     "title": "Black Ops 3 Zombies",
     "platform": "Console",
     "status": "playing",
-    "accent": "#e2532f"
+    "accent": "#e2532f",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/311210/library_600x900.jpg",
+    "hero": "https://cdn.akamai.steamstatic.com/steam/apps/311210/library_hero.jpg"
   },
   {
     "id": "modern-warfare-4",
     "title": "Modern Warfare 4",
     "platform": "Console",
     "status": "playing",
-    "accent": "#5fbf5a"
+    "accent": "#5fbf5a",
+    "hero": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/0c492be3204835d71e8b454b6eb1817f8ff68c0d/header.jpg"
   },
   {
     "id": "black-ops-2",
     "title": "Black Ops 2",
     "platform": "Console",
     "status": "playing",
-    "accent": "#ff7a1a"
+    "accent": "#ff7a1a",
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/202970/library_600x900.jpg",
+    "hero": "https://cdn.akamai.steamstatic.com/steam/apps/202970/library_hero.jpg"
   }
 ]

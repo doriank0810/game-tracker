@@ -51,7 +51,7 @@ export async function render(ctx) {
   const entry = await data.getGame(gameId);
   if (!ctx.isCurrent()) return null;
   const closeBtn = (fallback, label = 'Close') =>
-    `<button type="button" class="icon-btn" data-nav="back" data-fallback="${esc(fallback)}" aria-label="${label}">${icons.close}</button>`;
+    `<button type="button" class="nav-icon" data-nav="back" data-fallback="${esc(fallback)}" aria-label="${label}">${icons.close}</button>`;
   const gameHref = `#/game/${enc(gameId)}`;
   if (entry.error) {
     ctx.mount(`<div class="follow"><header class="follow-top">${closeBtn(gameHref)}</header><main class="page">${errorBox(
@@ -65,7 +65,7 @@ export async function render(ctx) {
   if (!guide || !isWalk(guide)) {
     ctx.mount(
       `<div class="follow"><header class="follow-top">${closeBtn(gameHref)}</header><main class="page">${emptyBox(
-        '<p class="empty-title">Nothing to follow</p><p>This guide has no steps.</p>'
+        '<p class="empty-title">Nothing to follow</p><p>This guide has no steps</p>'
       )}</main></div>`,
       { accent: game.accent }
     );
@@ -91,7 +91,7 @@ export async function render(ctx) {
           <div class="follow-guide">${esc(guide.title)}</div>
           <div class="follow-step-n" aria-live="polite"></div>
         </div>
-        <button type="button" class="icon-btn" data-act="steps" aria-label="All steps" aria-haspopup="dialog">${icons.list}</button>
+        <button type="button" class="nav-icon" data-act="steps" aria-label="All steps" aria-haspopup="dialog">${icons.list}</button>
       </header>
       <div class="follow-bar${segmented ? ' is-seg' : ''}" aria-hidden="true">${
         segmented ? steps.map(() => '<span></span>').join('') : '<span class="fill"></span>'
@@ -135,10 +135,10 @@ export async function render(ctx) {
       mainEl.innerHTML = `<div class="follow-finish">
         <div class="finish-mark${open.length ? '' : ' all'}">${icons.check}</div>
         <h2 class="follow-title">${open.length ? 'End of the guide' : 'All steps done'}</h2>
-        <p class="follow-sub">${t.done} of ${t.total} steps ticked.</p>
+        <p class="follow-sub">${t.done} of ${t.total} steps ticked</p>
         ${
           nextGuide
-            ? `<a class="finish-next" href="${followHref(game, nextGuide)}" data-replace><span class="label">Up next${
+            ? `<a class="finish-next" href="${followHref(game, nextGuide)}" data-replace><span class="finish-next-k">Up next${
                 section ? ` in ${esc(section.title)}` : ''
               }</span><span class="finish-next-title">${esc(nextGuide.title)}</span><span class="finish-next-meta">${plural(
                 nextGuide.steps.length,
@@ -148,12 +148,12 @@ export async function render(ctx) {
         }
         ${
           open.length
-            ? `<div class="label finish-label">Not ticked yet</div><div class="link-list">${open
+            ? `<div class="sec-h finish-label"><h2>Not ticked yet</h2></div><div class="group-list">${open
                 .map(
                   (s) =>
-                    `<button type="button" class="link-row" data-act="jump" data-i="${s.index}"><span class="link-main"><span class="link-title">Step ${
+                    `<button type="button" class="row-link" data-act="jump" data-i="${s.index}"><span class="row-main"><span class="row-title">Step ${
                       s.index + 1
-                    }: ${esc(s.title)}</span></span>${icons.chevron}</button>`
+                    }: ${esc(s.title)}</span></span><span class="row-chev">${icons.chevron}</span></button>`
                 )
                 .join('')}</div>`
             : ''

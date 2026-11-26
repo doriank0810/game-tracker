@@ -1,45 +1,94 @@
-// Game pages. The first page depends on the game's layout (views/hubs.js);
-// this file also has the full checklist and the list of all guides.
+// Game pages: picks the tab (js/tabs.js) or the pushed page for a game
+// route, and holds the full checklist and the guide list.
 import * as data from '../data.js';
 import * as store from '../store.js';
-import { esc, enc, plural, debounce, searchTerms, matchesAll, cssEscape } from '../util.js';
+import { esc, plural, debounce, searchTerms, matchesAll, cssEscape } from '../util.js';
 import { itemSearchText, guideSearchText, categoryOrder } from '../content.js';
 import { tally, nextItems, isDone } from '../progress.js';
-import { topBar, itemRow, bindItems, errorBox, emptyBox, whereHTML, guideLinkHTML, gamePage } from '../ui.js';
+import { topBar, itemRow, bindItems, errorBox, emptyBox, whereHTML, guideLinkHTML, gamePage, head } from '../ui.js';
 import { gameUI } from '../state.js';
 import { icons } from '../icons.js';
-import { renderHub, renderSection, renderGroups, renderGroup } from './hubs.js';
+import { hasTab, defaultTab, rememberedTab, tabHref } from '../tabs.js';
+import { replaceQuiet, currentHash } from '../router.js';
+import {
+  renderNext,
+  renderContinue,
+  renderMapPicker,
+  renderSection,
+  renderClasses,
+  renderGuideTab,
+  renderGroups,
+  renderGroup,
+} from './hubs.js';
 
 const CHUNK = 200;
 const FILTERS = { all: 'All', remaining: 'To do', done: 'Done' };
 
 export async function render(ctx) {
-  const { gameId, tab, focus } = ctx.route;
-  const entry = await data.getGame(gameId);
+  const r = ctx.route;
+  const entry = await data.getGame(r.gameId);
   if (!ctx.isCurrent()) return null;
   if (entry.error) {
-    ctx.mount(`${topBar({ title: 'Game', back: '#/' })}<main class="page">${errorBox("Couldn't open this game", entry.error)}</main>`);
+    ctx.mount(`${topBar({ title: 'Game', back: '#/', backLabel: 'Games' })}<main class="page">${errorBox("Couldn't open this game", entry.error)}</main>`);
     return null;
   }
-  switch (tab) {
+  const { game } = entry;
+  const loadouts = game.layout.type === 'loadouts';
+  let tab = null;
+  let focus = null;
+  if (!r.page) tab = r.tab && hasTab(game, r.tab) ? r.tab : rememberedTab(game) || defaultTab(game);
+  else if (r.page === 'groups' && loadouts && hasTab(game, 'checklist')) tab = 'checklist';
+  else if (r.page === 'list' && !loadouts && hasTab(game, 'checklist')) {
+    tab = 'checklist';
+    focus = r.focus;
+  } else if (r.page === 'guides' && hasTab(game, 'guides') && game.layout.type !== 'maps') tab = 'guides';
+
+  if (tab) {
+    const href = tabHref(game, tab);
+    if (currentHash() !== href) replaceQuiet(href);
+    return renderTab(ctx, entry, tab, focus);
+  }
+  switch (r.page) {
     case 'list':
-      return renderChecklist(ctx, entry, focus);
+      return renderChecklist(ctx, entry, r.focus, { root: false });
     case 'guides':
-      return renderGuides(ctx, entry);
+      return renderGuides(ctx, entry, { root: false });
+    case 'groups':
+      return renderGroups(ctx, entry, { root: false });
     case 'section':
       return renderSection(ctx, entry);
-    case 'groups':
-      return renderGroups(ctx, entry);
     case 'group':
       return renderGroup(ctx, entry);
     default:
-      return renderHub(ctx, entry);
+      return renderTab(ctx, entry, defaultTab(game), null);
+  }
+}
+
+function renderTab(ctx, entry, tab, focus) {
+  const type = entry.game.layout.type;
+  switch (tab) {
+    case 'checklist':
+      return type === 'loadouts' ? renderGroups(ctx, entry, { root: true }) : renderChecklist(ctx, entry, focus, { root: true });
+    case 'guides':
+      return renderGuides(ctx, entry, { root: true, looseOnly: type === 'maps' });
+    case 'next':
+      return renderNext(ctx, entry);
+    case 'continue':
+      return renderContinue(ctx, entry);
+    case 'maps':
+      return type === 'maps' ? renderMapPicker(ctx, entry) : renderGuideTab(ctx, entry, 'maps');
+    case 'classes':
+      return renderClasses(ctx, entry);
+    case 'tips':
+      return renderGuideTab(ctx, entry, 'tips');
+    default:
+      return renderGuides(ctx, entry, { root: true });
   }
 }
 
 // Full checklist --------------------------------------------------------------------
 
-function renderChecklist(ctx, entry, focusId) {
+function renderChecklist(ctx, entry, focusId, { root }) {
   const { game } = entry;
   const st = gameUI(game.id);
   const focusItem = focusId ? game.byId.get(focusId) || null : null;
@@ -57,12 +106,13 @@ function renderChecklist(ctx, entry, focusId) {
   }
 
   const main = gamePage(ctx, entry, {
-    title: 'Checklist',
-    sub: game.title,
-    back: `#/game/${enc(game.id)}`,
+    root,
+    tab: root ? 'checklist' : null,
+    title: root ? game.layout.checklist : 'Full checklist',
+    cls: 'page-list',
     body: `<div class="toolbar">
       <label class="search-field">${icons.search}<span class="sr-only">Search this game</span>
-        <input type="search" class="list-q" placeholder="Search this game" value="${esc(st.query)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        <input type="search" class="list-q" placeholder="Search" value="${esc(st.query)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
       </label>
       <div class="toolbar-row">
         <div class="seg" role="group" aria-label="Show">${Object.entries(FILTERS)
@@ -78,8 +128,7 @@ function renderChecklist(ctx, entry, focusId) {
   const tree = panel.querySelector('.tree');
   const input = panel.querySelector('.list-q');
 
-  const visible = (items, gp) =>
-    st.filter === 'all' ? items : items.filter((it) => isDone(gp, it) === (st.filter === 'done'));
+  const visible = (items, gp) => (st.filter === 'all' ? items : items.filter((it) => isDone(gp, it) === (st.filter === 'done')));
 
   const rowsHTML = (g, vis, from) => {
     let until = from + CHUNK;
@@ -92,17 +141,14 @@ function renderChecklist(ctx, entry, focusId) {
     return (
       rows +
       (left > 0
-        ? `<button type="button" class="more-btn" data-act="more" data-from="${until}">Show ${Math.min(
-            left,
-            CHUNK
-          )} more <span class="muted">(${left} left)</span></button>`
+        ? `<button type="button" class="more-btn" data-act="more" data-from="${until}">Show ${Math.min(left, CHUNK)} more <span class="muted">(${left} left)</span></button>`
         : '')
     );
   };
 
   const groupBody = (g, gp) => {
     const vis = visible(g.items, gp);
-    return vis.length ? rowsHTML(g, vis, 0) : '<p class="grp-empty">Nothing to show with this filter.</p>';
+    return vis.length ? rowsHTML(g, vis, 0) : '<p class="grp-empty">Nothing to show with this filter</p>';
   };
 
   const groupHTML = (g, gp) => {
@@ -110,9 +156,9 @@ function renderChecklist(ctx, entry, focusId) {
     const open = st.openGroups.has(g.key);
     return `<div class="grp${open ? ' is-open' : ''}${t.total && t.done === t.total ? ' is-complete' : ''}" data-grp="${esc(g.key)}">
       <button type="button" class="grp-head" data-act="grp" aria-expanded="${open}">
-        <span class="chev">${icons.chevron}</span>
         <span class="grp-title">${esc(g.title)}</span>
         <span class="grp-count">${t.done}/${t.total}</span>
+        <span class="chev">${icons.chevronDown}</span>
         <span class="grp-bar"><span style="width:${t.pct}%"></span></span>
       </button>
       <div class="grp-body">${open ? groupBody(g, gp) : ''}</div>
@@ -121,7 +167,7 @@ function renderChecklist(ctx, entry, focusId) {
 
   const sectionsHTML = () => {
     const gp = store.game(game.id);
-    if (!game.items.length) return emptyBox('No checklist items yet.');
+    if (!game.items.length) return emptyBox('No checklist items yet');
     let out = '';
     for (const sec of game.sections) {
       const groups = sec.groups.filter((g) => g.items.length && (st.filter === 'all' || visible(g.items, gp).length));
@@ -130,14 +176,14 @@ function renderChecklist(ctx, entry, focusId) {
       const closed = st.closedSections.has(sec.id);
       out += `<section class="sec${closed ? ' is-closed' : ''}" data-sec="${esc(sec.id)}">
         <button type="button" class="sec-head" data-act="sec" aria-expanded="${!closed}">
-          <span class="chev">${icons.chevron}</span><span class="sec-title">${esc(sec.title)}</span>
+          <span class="sec-title">${esc(sec.title)}</span>
           <span class="sec-count">${t.done}/${t.total}</span>
+          <span class="chev">${icons.chevronDown}</span>
         </button>
-        <div class="sec-bar"><span style="width:${t.pct}%"></span></div>
         <div class="sec-body">${groups.map((g) => groupHTML(g, gp)).join('')}</div>
       </section>`;
     }
-    if (!out) return emptyBox(st.filter === 'done' ? 'Nothing ticked yet.' : '<p class="empty-title">All done</p><p>Everything here is ticked.</p>');
+    if (!out) return emptyBox(st.filter === 'done' ? 'Nothing ticked yet' : '<p class="empty-title">All done</p><p>Everything here is ticked</p>');
     return out;
   };
 
@@ -145,23 +191,21 @@ function renderChecklist(ctx, entry, focusId) {
     const gp = store.game(game.id);
     const terms = searchTerms(st.query);
     const hits = visible(game.items, gp).filter((it) => matchesAll(itemSearchText(it), terms));
-    if (!hits.length) return emptyBox(`No items match “${esc(st.query.trim())}”.`);
+    if (!hits.length) return emptyBox(`No items match “${esc(st.query.trim())}”`);
     const limit = st.resultLimit || CHUNK;
     let out = `<p class="result-count">${plural(hits.length, 'match', 'matches')}</p>`;
     let lastGroup = null;
     for (const it of hits.slice(0, limit)) {
       if (it.group !== lastGroup) {
         if (lastGroup) out += '</div>';
-        out += `<h3 class="label result-group">${whereHTML(it)}</h3><div class="item-list">`;
+        out += `<h3 class="result-group">${whereHTML(it)}</h3><div class="item-list">`;
         lastGroup = it.group;
       }
       out += itemRow(game, it);
     }
     out += '</div>';
     if (hits.length > limit) {
-      out += `<button type="button" class="more-btn" data-act="more-results">Show more <span class="muted">(${
-        hits.length - limit
-      } left)</span></button>`;
+      out += `<button type="button" class="more-btn solo" data-act="more-results">Show more <span class="muted">(${hits.length - limit} left)</span></button>`;
     }
     return out;
   };
@@ -223,7 +267,7 @@ function renderChecklist(ctx, entry, focusId) {
         } else {
           st.openGroups.delete(g.key);
           body.innerHTML = '';
-          const top = document.querySelector('.topbar')?.getBoundingClientRect().bottom || 0;
+          const top = document.querySelector('.navbar')?.getBoundingClientRect().bottom || 0;
           if (grpEl.getBoundingClientRect().top < top) grpEl.scrollIntoView({ block: 'start' });
         }
         break;
@@ -258,7 +302,6 @@ function renderChecklist(ctx, entry, focusId) {
       if (secEl) {
         const t = tally(gp, item.section.items);
         secEl.querySelector('.sec-count').textContent = `${t.done}/${t.total}`;
-        secEl.querySelector('.sec-bar > span').style.width = `${t.pct}%`;
       }
     },
   });
@@ -266,40 +309,41 @@ function renderChecklist(ctx, entry, focusId) {
   return () => onSearch.cancel();
 }
 
-// All guides ---------------------------------------------------------------------------
+// Guide list ---------------------------------------------------------------------------
 
-function renderGuides(ctx, entry) {
+function renderGuides(ctx, entry, { root, looseOnly = false }) {
   const { game } = entry;
   const st = gameUI(game.id);
+  const pool = looseOnly ? game.guides.filter((g) => !g.sectionId) : game.guides;
   const main = gamePage(ctx, entry, {
-    title: 'All guides',
-    sub: game.title,
-    back: `#/game/${enc(game.id)}`,
-    body: game.guides.length
+    root,
+    tab: root ? 'guides' : null,
+    title: root ? 'Guides' : 'All guides',
+    body: pool.length
       ? `<div class="toolbar">
           <label class="search-field">${icons.search}<span class="sr-only">Search guides</span>
             <input type="search" class="guide-q" placeholder="Search guides" value="${esc(st.guideQuery)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
           </label>
         </div>
         <div class="guide-list"></div>`
-      : emptyBox('No guides for this game yet.'),
+      : emptyBox('No guides for this game yet'),
   });
-  if (!main || !game.guides.length) return null;
+  if (!main || !pool.length) return null;
   const listEl = main.querySelector('.guide-list');
   const input = main.querySelector('.guide-q');
   const draw = () => {
     const terms = searchTerms(st.guideQuery);
-    const found = terms.length ? game.guides.filter((g) => matchesAll(guideSearchText(g), terms)) : game.guides;
+    const found = terms.length ? pool.filter((g) => matchesAll(guideSearchText(g), terms)) : pool;
     if (!found.length) {
-      listEl.innerHTML = emptyBox(`No guides match “${esc(st.guideQuery.trim())}”.`);
+      listEl.innerHTML = emptyBox(`No guides match “${esc(st.guideQuery.trim())}”`);
       return;
     }
     const cats = categoryOrder(game, found);
     const showHeads = cats.length > 1 || cats[0] !== '';
     listEl.innerHTML = cats
       .map(
-        (c) => `<section class="block">${showHeads ? `<div class="block-head"><h2 class="label">${esc(c || 'Other')}</h2></div>` : ''}
-          <div class="link-list">${found
+        (c) => `<section class="block">${showHeads ? head(c || 'Other', String(found.filter((g) => g.category === c).length)) : ''}
+          <div class="group-list">${found
             .filter((g) => g.category === c)
             .map((g) => guideLinkHTML(game, g))
             .join('')}</div></section>`
