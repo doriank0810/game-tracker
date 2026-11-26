@@ -1090,3 +1090,14 @@ summary { cursor: pointer; }
 .all-items { margin-top: var(--s5); }
 .all-items .count { margin-right: 2px; }
 .all-items .grp-block + .grp-block { margin-top: var(--s4); }
+
+/* Where-to-go line on a challenge, and the levelling pop-up */
+.cl-tip { display: flex; align-items: flex-start; gap: 6px; margin: 6px 0 0; font-size: 13.5px; line-height: 1.35; color: var(--text-2); }
+.cl-tip svg { flex: none; width: 15px; height: 15px; margin-top: 2px; color: var(--accent); }
+.csheet-cl .cl-tip { font-size: 15px; padding: 10px 12px; border-radius: 12px; background: var(--surface-3); }
+.lad-help { width: 100%; min-height: 46px; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; }
+.lad-help svg { width: 18px; height: 18px; color: var(--accent); }
+.hsheet { display: flex; flex-direction: column; gap: 14px; padding-bottom: 8px; }
+.hsheet-own { padding: 12px 14px; border-radius: 14px; background: rgba(var(--accent-rgb), .1); border: 1px solid rgba(var(--accent-rgb), .3); }
+.hsheet-k { margin: 0 0 4px; font-size: 12.5px; font-weight: 700; color: var(--accent); }
+.hsheet-own .md > :last-child { margin-bottom: 0; }

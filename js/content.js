@@ -274,6 +274,9 @@ export function normalizeGame(raw, expectedId = '') {
         class: lineField(g.class, 'class', gat, warnings),
         image: imageRef(g.image, gat, warnings),
         note: lineField(g.note, 'note', gat, warnings),
+        // Optional: a short tip for this group, and the id of a guide shown as a pop-up from its page.
+        tip: text(g.tip),
+        help: lineField(g.help, 'help', gat, warnings),
         section,
         items: [],
       };
@@ -327,6 +330,8 @@ export function normalizeGame(raw, expectedId = '') {
           type,
           target,
           image: imageRef(it.image, `Item "${iid}"`, warnings),
+          // Optional: one short line saying where or how to do it ("Shipment, Hardpoint").
+          tip: lineField(it.tip, 'tip', `Item "${iid}"`, warnings),
           order: items.length,
           section,
           group,

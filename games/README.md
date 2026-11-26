@@ -168,6 +168,8 @@ thing to do.
 | `class`  | no (group) | Short text, e.g. `"SMG"`. In a group picker, groups are listed under one heading per class (in file order), each with how many of that class are finished. A trailing `(SMG)` in the title that repeats the class is hidden there and on the group page. |
 | `image`  | no (group) | The group's picture, e.g. a weapon icon: a path relative to `games/` or an `https://` link (see section 5). Shown on its picker tile and at the top of the group page, in a wide box (14:5; wide pictures with a dark background look best). |
 | `note`   | no (group) | One short line under the name on the group page, e.g. `"Max weapon level 72"`. |
+| `tip`    | no (group or item) | On an item: one short line saying where or how to do it (`"Shipment, Hardpoint. Aim at the hill."`), shown under the challenge. On a group: a short markdown tip shown at the top of the group's help pop-up. |
+| `help`   | no (group) | Id of a guide. The group page shows a button with that guide's title; tapping it opens the guide as a pop-up. |
 
 Use sections for the big split (Story, Side quests, Collectibles, Camos,
 Easter eggs, Reference…) and groups for chapters, maps, weapons, regions…

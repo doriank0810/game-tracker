@@ -27,6 +27,7 @@ export const icons = {
   next: svg('<path d="M5 12h14M13 6l6 6-6 6"/>'),
   prev: svg('<path d="M19 12H5M11 6l-6 6 6 6"/>'),
   more: svg('<circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/>'),
+  bolt: svg('<path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/>'),
   star: svg('<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>'),
   replay: svg('<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/>'),
   forward: svg('<path d="M5 5.5v13l8-6.5z"/><path d="M14 5.5v13l7-6.5z"/>'),

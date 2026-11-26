@@ -131,7 +131,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/myriad_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "m4-sp-2",
@@ -143,7 +144,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/nightops_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "m4-sp-3",
@@ -155,7 +157,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/green_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "m4-gold",
@@ -167,7 +170,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/dddpieyjru2zsmhzga9iwydaaylb",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "m4-platinum",
@@ -179,7 +183,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/p7zeb01i7u1k1unudy2ufqpktdq8",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "m4-harmonic",
@@ -191,9 +196,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/jqtl7wuidfonmsm0er05b0jev3sc",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-han-86",
@@ -308,7 +316,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/smoke_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "han-86-sp-2",
@@ -320,7 +329,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/stormwave_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Just fit a suppressor."
       },
       {
        "id": "han-86-sp-3",
@@ -332,7 +342,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/red_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "han-86-gold",
@@ -344,7 +355,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/dha5f7grwalwmrsem0dix1t41hnm",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "han-86-platinum",
@@ -356,7 +368,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/nuor6r8o3yfweohoxzz6zay83fdk",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "han-86-harmonic",
@@ -368,9 +381,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/yw7sc4u2t7y9x6slevqm5vrrqlev",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-kastov-762",
@@ -485,7 +501,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/samnim_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "kastov-762-sp-2",
@@ -497,7 +514,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/rasteraux_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "kastov-762-sp-3",
@@ -509,7 +527,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/yellow_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "kastov-762-gold",
@@ -521,7 +540,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/fh556dvvkwn015miw1jzaagb4jt6",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "kastov-762-platinum",
@@ -533,7 +553,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/2urper82n6dqraf1jj55x657hitf",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "kastov-762-harmonic",
@@ -545,9 +566,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/9o3zaau3j3u22ukdiay162cd43mv",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-hyeon-burst",
@@ -662,7 +686,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/ponderosa_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "hyeon-burst-sp-2",
@@ -674,7 +699,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/redrain_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "hyeon-burst-sp-3",
@@ -686,7 +712,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/kittykaos_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Just fit a suppressor."
       },
       {
        "id": "hyeon-burst-gold",
@@ -698,7 +725,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/4dogdlnlefzrn0zr8vbzpni91au2",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "hyeon-burst-platinum",
@@ -710,7 +738,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/cp7vd8qrg5y6qirgecxgs13avo07",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "hyeon-burst-harmonic",
@@ -722,9 +751,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/4kmzy71rggii9wtwb2hngvuo4trk",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-patriot-xmr",
@@ -839,7 +871,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/dunesea_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "patriot-xmr-sp-2",
@@ -851,7 +884,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/scorch_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Just fit a suppressor."
       },
       {
        "id": "patriot-xmr-sp-3",
@@ -863,7 +897,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/disperse_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "patriot-xmr-gold",
@@ -875,7 +910,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/5c4izti3vz6kafyher9i0m2gzd5z",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "patriot-xmr-platinum",
@@ -887,7 +923,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/j1qhqpxhrj7kfh0d9sjsx5ytf6oe",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "patriot-xmr-harmonic",
@@ -899,9 +936,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/t0xffw0q5kl6gfe1x6f06tvt4eug",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-axion",
@@ -1016,7 +1056,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/splinterrock_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "axion-sp-2",
@@ -1028,7 +1069,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/sunsettropic_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Fit the underbarrel launcher and fire it onto the hill."
       },
       {
        "id": "axion-sp-3",
@@ -1040,7 +1082,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/cyan_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "axion-gold",
@@ -1052,7 +1095,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/em9s3aknjydi4znpwb5t8etzln7u",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "axion-platinum",
@@ -1064,7 +1108,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/04zaodb6ib0ov1b671jk7fufdoak",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "axion-harmonic",
@@ -1076,9 +1121,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/ut9uremv7ikexxavsvcq2d73tdrk",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-cronen-squall",
@@ -1193,7 +1241,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/oni_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "cronen-squall-sp-2",
@@ -1205,7 +1254,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/urbansmoke_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "cronen-squall-sp-3",
@@ -1217,7 +1267,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/opticalreverb_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "cronen-squall-gold",
@@ -1229,7 +1280,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/wzezfvnsw5z3nykw2nnfmj2eukch",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "cronen-squall-platinum",
@@ -1241,7 +1293,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/oynf0d4g0wr5h3dhmmmls3r9m20p",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "cronen-squall-harmonic",
@@ -1253,9 +1306,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/f49wmh6jy1jteizaianlw0932qo4",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-oden",
@@ -1370,7 +1426,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/darkmoss_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Fit the underbarrel launcher and fire it onto the hill."
       },
       {
        "id": "oden-sp-2",
@@ -1382,7 +1439,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/shale_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "oden-sp-3",
@@ -1394,7 +1452,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/hotrod_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Every kill while aiming counts."
       },
       {
        "id": "oden-gold",
@@ -1406,7 +1465,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/42b6vzjztonpzogolj2i6g3c72yj",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "oden-platinum",
@@ -1418,7 +1478,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/wnf0x228h900op7gp4niw3trmpsg",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "oden-harmonic",
@@ -1430,9 +1491,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/k2nmn382c7icv8ri3xvx52vnh88u",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Stay near the hill and take every fight."
     },
     {
      "id": "w-iso-nightshade",
@@ -1547,7 +1611,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/asphalt_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Every kill while aiming counts."
       },
       {
        "id": "iso-nightshade-sp-2",
@@ -1559,7 +1624,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/blacktopo_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "iso-nightshade-sp-3",
@@ -1571,7 +1637,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/brown_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "iso-nightshade-gold",
@@ -1583,7 +1650,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/j0r482fqianmgl52hdvq1s3ngka3",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "iso-nightshade-platinum",
@@ -1595,7 +1663,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/b6pju22wf5du73e4211z3mcwp3bd",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "iso-nightshade-harmonic",
@@ -1607,9 +1676,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/4ly9uf2kxvtqv7iz2n4ko21rkwig",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Rush the hill, SMGs level fastest up close."
     },
     {
      "id": "w-vel-46",
@@ -1724,7 +1796,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/jungleshadow_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Every kill while aiming counts."
       },
       {
        "id": "vel-46-sp-2",
@@ -1736,7 +1809,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/ghast_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "vel-46-sp-3",
@@ -1748,7 +1822,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/gunmetal_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "vel-46-gold",
@@ -1760,7 +1835,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/dwza5wo0mhicrioq9490fdg99ir3",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "vel-46-platinum",
@@ -1772,7 +1848,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/p4w7pyt6c1vwaeoqjlu1vtjn3w3w",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "vel-46-harmonic",
@@ -1784,9 +1861,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/483m1fgvlftj4a617sheoro7tosy",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Rush the hill, SMGs level fastest up close."
     },
     {
      "id": "w-x-58-nyx",
@@ -1901,7 +1981,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/sniperveil_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep strafing or sliding while you fire."
       },
       {
        "id": "x-58-nyx-sp-2",
@@ -1913,7 +1994,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/carbonated_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "x-58-nyx-sp-3",
@@ -1925,7 +2007,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/lime_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "x-58-nyx-gold",
@@ -1937,7 +2020,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/tvbvcovszhwhyrfi1ce0ugyud5c4",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "x-58-nyx-platinum",
@@ -1949,7 +2033,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/vldmudujblgarl800o1gioetxvc7",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "x-58-nyx-harmonic",
@@ -1961,9 +2046,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/bdfnhiezy464di9cp7fzfiiej4gg",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Rush the hill, SMGs level fastest up close."
     },
     {
      "id": "w-wz-55-striga",
@@ -2078,7 +2166,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/stellation_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Just fit a suppressor."
       },
       {
        "id": "wz-55-striga-sp-2",
@@ -2090,7 +2179,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/rattlesnake_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Jump round a container corner and shoot while in the air."
       },
       {
        "id": "wz-55-striga-sp-3",
@@ -2102,7 +2192,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/darktan_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "wz-55-striga-gold",
@@ -2114,7 +2205,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/gb9z0hp89u0qv2yp6fh0a6klpzis",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "wz-55-striga-platinum",
@@ -2126,7 +2218,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/l2is1ic2necd3bx0929ma714rkqm",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "wz-55-striga-harmonic",
@@ -2138,9 +2231,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/p4al7inh5mht02dofonc02epqmi6",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Rush the hill, SMGs level fastest up close."
     },
     {
      "id": "w-ppsh-41",
@@ -2255,7 +2351,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/blackwell_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "ppsh-41-sp-2",
@@ -2267,7 +2364,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/iron_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "ppsh-41-sp-3",
@@ -2279,7 +2377,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/currents_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Every kill while aiming counts."
       },
       {
        "id": "ppsh-41-gold",
@@ -2291,7 +2390,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/hnp84luipfo5zhql0yqljrjnqbq3",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "ppsh-41-platinum",
@@ -2303,7 +2403,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/3iqoy99ewat590j9co859qds2llw",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "ppsh-41-harmonic",
@@ -2315,9 +2416,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/h9uzsuc5k2uoryjjdeh0v8kz6mn3",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment or Kill Block.** Rush the hill, SMGs level fastest up close."
     },
     {
      "id": "w-rezi-12",
@@ -2432,7 +2536,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/struckoil_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "rezi-12-sp-2",
@@ -2444,7 +2549,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/brushstroke_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "rezi-12-sp-3",
@@ -2456,7 +2562,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/whitepine_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Jump round a container corner and shoot while in the air."
       },
       {
        "id": "rezi-12-gold",
@@ -2468,7 +2575,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/lvmvopfl5d0lolv3hd01itdoakhw",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "rezi-12-platinum",
@@ -2480,7 +2588,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/t9ix9cgyv0haimwt858ms0l2zttn",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "rezi-12-harmonic",
@@ -2492,9 +2601,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/u6ovo6qqqgepry8g6i5iy6miu05t",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Hold a container corner next to the hill."
     },
     {
      "id": "w-warlord",
@@ -2609,7 +2721,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/redshift_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep strafing or sliding while you fire."
       },
       {
        "id": "warlord-sp-2",
@@ -2621,7 +2734,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/corruptedclay_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "warlord-sp-3",
@@ -2633,7 +2747,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/magmaire_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "warlord-gold",
@@ -2645,7 +2760,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/12d83a4x33glgbbxy3xiyoaq9qxu",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "warlord-platinum",
@@ -2657,7 +2773,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/qjjq8pjcxnpqvmg42n44ncb1dul1",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "warlord-harmonic",
@@ -2669,9 +2786,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/17wzp7tmgywnr05dwdoty36dgpg7",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Hold a container corner next to the hill."
     },
     {
      "id": "w-apoc-338",
@@ -2786,7 +2906,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/phantomflux_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "apoc-338-sp-2",
@@ -2798,7 +2919,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/mineral_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "apoc-338-sp-3",
@@ -2810,7 +2932,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/tigerswipe_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "apoc-338-gold",
@@ -2822,7 +2945,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/bwspxtxum6jhsvxbx8lr32ucb45z",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "apoc-338-platinum",
@@ -2834,7 +2958,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/oax1pk0gwn25cu4g73nsk3ls60f1",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "apoc-338-harmonic",
@@ -2846,9 +2971,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/3izjyyovl7dp7exhdg5p73azgdqp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Hold fire and sweep across the enemies on the hill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Set up facing the hill and hold the trigger."
     },
     {
      "id": "w-finn-lmg",
@@ -2963,7 +3091,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/deserttactics_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "finn-lmg-sp-2",
@@ -2975,7 +3104,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/greentiger_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "finn-lmg-sp-3",
@@ -2987,7 +3117,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/thunderhead_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "finn-lmg-gold",
@@ -2999,7 +3130,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/e9wy4xwg4i16axyflqcidlx5iytn",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "finn-lmg-platinum",
@@ -3011,7 +3143,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/qvobs9hmka5ydh26crqv00137f6h",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "finn-lmg-harmonic",
@@ -3023,9 +3156,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/pugms79kxp9jey63rsfwtb2itowf",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Hold fire and sweep across the enemies on the hill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Set up facing the hill and hold the trigger."
     },
     {
      "id": "w-type-73",
@@ -3140,7 +3276,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/ashpine_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "type-73-sp-2",
@@ -3152,7 +3289,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/outcrop_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "type-73-sp-3",
@@ -3164,7 +3302,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/foxtrail_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "type-73-gold",
@@ -3176,7 +3315,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/y4ynd5aaf292yu0l9qj3dgog2clv",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "type-73-platinum",
@@ -3188,7 +3328,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/pqb4fr81f3n8awts5ic9rbep0i4a",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "type-73-harmonic",
@@ -3200,9 +3341,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/j27emehh745lwaieb6tgrbourmv6",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Hold fire and sweep across the enemies on the hill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Set up facing the hill and hold the trigger."
     },
     {
      "id": "w-mosin-nagant",
@@ -3317,7 +3461,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/icesheer_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "mosin-nagant-sp-2",
@@ -3329,7 +3474,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/fractalsnow_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "mosin-nagant-sp-3",
@@ -3341,7 +3487,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/stickershock_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House lanes. Hold your breath (Focus) while scoped, then shoot."
       },
       {
        "id": "mosin-nagant-gold",
@@ -3353,7 +3500,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/qlxfaj88mldttd70yhser4ctds77",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "mosin-nagant-platinum",
@@ -3365,7 +3513,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/gfu31gq8jtm0x3ter3mbu64haha2",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "mosin-nagant-harmonic",
@@ -3377,9 +3526,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/5q7okf4xbeopq7v5u04nd67k9akv",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, or Shipment in Hardcore where one hit kills."
     },
     {
      "id": "w-mar-9",
@@ -3494,7 +3646,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/mangrove_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "mar-9-sp-2",
@@ -3506,7 +3659,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/fungalgrid_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Crouch behind a container corner and hold the lane."
       },
       {
        "id": "mar-9-sp-3",
@@ -3518,7 +3672,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/white_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "mar-9-gold",
@@ -3530,7 +3685,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/8kfp37ftvtk6qo2hb1d99hrzbkw5",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "mar-9-platinum",
@@ -3542,7 +3698,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/wdn2zrbbmpennvexy7wps5mqgu71",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "mar-9-harmonic",
@@ -3554,9 +3711,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/5aop1r335vnusqbobp39uem8xe07",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, or Shipment in Hardcore where one hit kills."
     },
     {
      "id": "w-oris-8-6",
@@ -3671,7 +3831,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/hibiscus_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Fire the moment you scope in."
       },
       {
        "id": "oris-8-6-sp-2",
@@ -3683,7 +3844,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/firetopo_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "oris-8-6-sp-3",
@@ -3695,7 +3857,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/deepspace_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "oris-8-6-gold",
@@ -3707,7 +3870,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/v1a1nx811zu4q4l2iaw35iwx9u2h",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "oris-8-6-platinum",
@@ -3719,7 +3883,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/48n2afp4hef06ya1e57o5rxii0iz",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "oris-8-6-harmonic",
@@ -3731,9 +3896,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/5pgaych049nr21x2dmbcglanzzz7",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, or Shipment in Hardcore where one hit kills."
     },
     {
      "id": "w-astaroth-57",
@@ -3848,7 +4016,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/drybrush_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "astaroth-57-sp-2",
@@ -3860,7 +4029,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/backcountry_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House. Mount on a wall or window edge looking down a lane, then wait for them."
       },
       {
        "id": "astaroth-57-sp-3",
@@ -3872,7 +4042,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/dreadplague_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "astaroth-57-gold",
@@ -3884,7 +4055,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/ncoe5i4mmjh1jx9n2b9yngm4c683",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "astaroth-57-platinum",
@@ -3896,7 +4068,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/z8731yxdvea96pfktgir5kty0mew",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "astaroth-57-harmonic",
@@ -3908,9 +4081,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/9ri71kk15gfocp977te8xckw4g1p",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, watching the middle lane. Hardcore makes body shots kill."
     },
     {
      "id": "w-signal-50",
@@ -4025,7 +4201,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/anaconda_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "signal-50-sp-2",
@@ -4037,7 +4214,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/ripplewave_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Fire the moment you scope in."
       },
       {
        "id": "signal-50-sp-3",
@@ -4049,7 +4227,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/sunburn_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "signal-50-gold",
@@ -4061,7 +4240,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/z4strmmui76z6koi7jgshncg034h",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "signal-50-platinum",
@@ -4073,7 +4253,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/okye1vsbj49j98xw3pu463ubxq1r",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "signal-50-harmonic",
@@ -4085,9 +4266,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/27xay5y6bwubg7nv96wn2rmi2ktf",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, watching the middle lane. Hardcore makes body shots kill."
     },
     {
      "id": "w-kg-7-vulcan",
@@ -4202,7 +4386,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/treeline_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       },
       {
        "id": "kg-7-vulcan-sp-2",
@@ -4214,7 +4399,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/spidersilk_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "kg-7-vulcan-sp-3",
@@ -4226,7 +4412,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/tension_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment or Shoot House. Shoot enemies in the back or while they fight someone else."
       },
       {
        "id": "kg-7-vulcan-gold",
@@ -4238,7 +4425,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/wgmdtykzwiznsq1x9s6xs6t5sk7g",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "kg-7-vulcan-platinum",
@@ -4250,7 +4438,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/14x99y2efl3at2nygv9ljiq12d5b",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "kg-7-vulcan-harmonic",
@@ -4262,9 +4451,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/y4euykg1pouiyf3g2gcnriy2kowd",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shoot House**, watching the middle lane. Hardcore makes body shots kill."
     },
     {
      "id": "w-sang-9mm",
@@ -4379,7 +4571,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/autumn_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Every kill while aiming counts."
       },
       {
        "id": "sang-9mm-sp-2",
@@ -4391,7 +4584,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/snakeskin_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "sang-9mm-sp-3",
@@ -4403,7 +4597,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/spacetime_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit Akimbo and fight around the containers."
       },
       {
        "id": "sang-9mm-gold",
@@ -4415,7 +4610,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/fjqjj7q3eqt6t2zix29vhwwr1pca",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "sang-9mm-platinum",
@@ -4427,7 +4623,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/t02i19skx2bkv7wq90ibeiej87e9",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "sang-9mm-harmonic",
@@ -4439,9 +4636,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/6smfn90dqa40u2cjqo0kcq8ay0m2",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment**, with the pistol in your hands the whole match (drop the primary or use a launcher as primary)."
     },
     {
      "id": "w-50-gs",
@@ -4556,7 +4756,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/frosted_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep your aim at head height on the container corners."
       },
       {
        "id": "50-gs-sp-2",
@@ -4568,7 +4769,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/splatterops_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "50-gs-sp-3",
@@ -4580,7 +4782,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/redtiger_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "50-gs-gold",
@@ -4592,7 +4795,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/syc5z132kboxw7z7f7a9rufdcjjq",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "50-gs-platinum",
@@ -4604,7 +4808,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/i2e8fdm9xhmnp3k5wu2u613c7wsk",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "50-gs-harmonic",
@@ -4616,9 +4821,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/8xn2bwch6k9wxer3qzjdm03y0ggc",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment**, with the pistol in your hands the whole match (drop the primary or use a launcher as primary)."
     },
     {
      "id": "w-mojave-357",
@@ -4733,7 +4941,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/miami_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House or Shipment. Hardcore makes almost every hit a one-shot kill."
       },
       {
        "id": "mojave-357-sp-2",
@@ -4745,7 +4954,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/wallpaper_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "mojave-357-sp-3",
@@ -4757,7 +4967,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/garland_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "mojave-357-gold",
@@ -4769,7 +4980,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/5q2k9rlt8qv97nak23s1xaipc7vm",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "mojave-357-platinum",
@@ -4781,7 +4993,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/oj7cs7vxbg2oxroevk1yxuqp7u7o",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "mojave-357-harmonic",
@@ -4793,9 +5006,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/yko2jx6nm5dtk3goawyf8vefe76n",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment**, with the pistol in your hands the whole match (drop the primary or use a launcher as primary)."
     },
     {
      "id": "w-krait-p68",
@@ -4910,7 +5126,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/offgrid_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "A map with ledges to climb, like Rooftops. Hang from an edge and shoot from there."
       },
       {
        "id": "krait-p68-sp-2",
@@ -4922,7 +5139,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/urbanflamingo_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Sprint round the containers: you must be almost touching them."
       },
       {
        "id": "krait-p68-sp-3",
@@ -4934,7 +5152,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/smokescreen_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, any mode. Just fit a suppressor."
       },
       {
        "id": "krait-p68-gold",
@@ -4946,7 +5165,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/vh0lul51s6f5wqa1ha2n0u2w8v88",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "krait-p68-platinum",
@@ -4958,7 +5178,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/db9oyxj9nza6r9op7lipkqke7a4f",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       },
       {
        "id": "krait-p68-harmonic",
@@ -4970,9 +5191,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/7zoj4oz8t7mf69xl3ihf16z72mdr",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Fit a laser, do not aim, and fight at container corners."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment**, with the pistol in your hands the whole match (drop the primary or use a launcher as primary)."
     },
     {
      "id": "w-pila",
@@ -5087,7 +5311,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/frontier_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. The rocket has to hit the player, not the ground next to them."
       },
       {
        "id": "pila-sp-2",
@@ -5099,7 +5324,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/sandwash_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "pila-sp-3",
@@ -5111,7 +5337,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/digitalfall_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Hardpoint or Domination, any map. Shoot UAVs and Counter-UAVs out of the sky. Ground War has vehicles."
       },
       {
        "id": "pila-gold",
@@ -5123,7 +5350,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/1ttv7zozmezvf8vo4rubmhjsuuxb",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "pila-platinum",
@@ -5135,7 +5363,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/upfy1iyjgictyidr3q2k7jdjx78d",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment or Shoot House. Shoot enemies in the back or while they fight someone else."
       },
       {
        "id": "pila-harmonic",
@@ -5147,9 +5376,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/ipqcl5kd0nnnum4uyjdb6d6c6k96",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Every match where you reach the number counts once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint or Domination, any map.** Launchers level slowly from kills: shoot down every UAV and Counter-UAV too, each gives weapon XP."
     },
     {
      "id": "w-rpg-8",
@@ -5264,7 +5496,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/digibark_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Lie down in a back corner facing a lane."
       },
       {
        "id": "rpg-8-sp-2",
@@ -5276,7 +5509,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/stonebits_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "rpg-8-sp-3",
@@ -5288,7 +5522,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/bubblegumops_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Hardpoint or Domination, any map. Shoot UAVs and Counter-UAVs out of the sky. Ground War has vehicles."
       },
       {
        "id": "rpg-8-gold",
@@ -5300,7 +5535,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/8i3ex0owbi7q8m0fcaa5fo7r5qmr",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "rpg-8-platinum",
@@ -5312,7 +5548,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/sa6d19m3y1q16vkzy79p87jptu1v",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment or Shoot House. Shoot enemies in the back or while they fight someone else."
       },
       {
        "id": "rpg-8-harmonic",
@@ -5324,9 +5561,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/f1diriy7o1p729s5mtxu98qiv9q1",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Every match where you reach the number counts once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint or Domination, any map.** Launchers level slowly from kills: shoot down every UAV and Counter-UAV too, each gives weapon XP."
     },
     {
      "id": "w-jokr",
@@ -5441,7 +5681,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/thicket_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "jokr-sp-2",
@@ -5453,7 +5694,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/tectonic_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, down the long middle lane or a side lane. Shipment is usually too short. The kill feed says Longshot when it counts."
       },
       {
        "id": "jokr-sp-3",
@@ -5465,7 +5707,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/bluetiger_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Hardpoint or Domination, any map. Shoot UAVs and Counter-UAVs out of the sky. Ground War has vehicles."
       },
       {
        "id": "jokr-gold",
@@ -5477,7 +5720,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/p0d4931s0iawutv5h3v244hgysn9",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "jokr-platinum",
@@ -5489,7 +5733,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/zcs5xw7xknexgupko3a63ekt87cs",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment or Shoot House. Shoot enemies in the back or while they fight someone else."
       },
       {
        "id": "jokr-harmonic",
@@ -5501,9 +5746,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/ur0fxg1vh6b7g9vdwxkfzeesew1s",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Every match where you reach the number counts once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint or Domination, any map.** Launchers level slowly from kills: shoot down every UAV and Counter-UAV too, each gives weapon XP."
     },
     {
      "id": "w-pm-40-anvil",
@@ -5618,7 +5866,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/nightsnow_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. The rocket has to hit the player, not the ground next to them."
       },
       {
        "id": "pm-40-anvil-sp-2",
@@ -5630,7 +5879,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/recursive_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Biggest magazine you have, and do not touch reload between kills."
       },
       {
        "id": "pm-40-anvil-sp-3",
@@ -5642,7 +5892,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/urbanstandard_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Keep strafing or sliding while you fire."
       },
       {
        "id": "pm-40-anvil-gold",
@@ -5654,7 +5905,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/k7gpdrs158d55u42nx5fnv3m40us",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "pm-40-anvil-platinum",
@@ -5666,7 +5918,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/z8nij7w70y95zchuvhihmccb48uc",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment or Shoot House. Shoot enemies in the back or while they fight someone else."
       },
       {
        "id": "pm-40-anvil-harmonic",
@@ -5678,9 +5931,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/1lhrz0stehyn1gywcvdmpiy9pu85",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Every match where you reach the number counts once."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint or Domination, any map.** Launchers level slowly from kills: shoot down every UAV and Counter-UAV too, each gives weapon XP."
     },
     {
      "id": "w-fss-carbon-edge-1095",
@@ -5795,7 +6051,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/rasterlite_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Jump round a container corner and shoot while in the air."
       },
       {
        "id": "fss-carbon-edge-1095-sp-2",
@@ -5807,7 +6064,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/stockpile_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment. Come up behind an enemy and hold the melee button."
       },
       {
        "id": "fss-carbon-edge-1095-sp-3",
@@ -5819,7 +6077,8 @@
         "special"
        ],
        "image": "https://assets.codmunity.gg/optimized/deathbed_mw4_camo_icon.webp?size=160x160&quality=85&format=webp",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies bunch up on the hill, so two come at once."
       },
       {
        "id": "fss-carbon-edge-1095-gold",
@@ -5831,7 +6090,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/yeip2hxu2i0j1ghezbo247wguspo",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint or Kill Confirmed. One full match is enough."
       },
       {
        "id": "fss-carbon-edge-1095-platinum",
@@ -5843,7 +6103,8 @@
         "mastery"
        ],
        "image": "https://img.game8.co/p8ty5b0j3tl6k1hxyiltzq08318i",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shoot House, Hardpoint. Play slower than on Shipment: get the kills, then back off."
       },
       {
        "id": "fss-carbon-edge-1095-harmonic",
@@ -5855,9 +6116,12 @@
         "mastery"
        ],
        "image": "https://img.game8.co/aqbd42jz3k1jmk6m1ze1nieqekp0",
-       "guide": "camo-ladder"
+       "guide": "camo-ladder",
+       "tip": "Shipment, Hardpoint. Enemies face the hill: run the outside lane and come in behind them."
       }
-     ]
+     ],
+     "help": "weapon-xp",
+     "tip": "**Hardpoint on Shipment.** Run the outside lane and hit them from behind."
     }
    ]
   },
@@ -5901,6 +6165,12 @@
    "title": "Perk packages",
    "category": "Start here",
    "body": "Three perks, two grenades, one field upgrade.\n\n| Style | Perks | Grenades | Field upgrade |\n|---|---|---|---|\n| Aggressive / kills | Quick Fix, Blood Rush, Battle Hardened | Concussion, Frag | Portable Radar |\n| Sneaky | Ghost, Ninja, Cold Blooded | Concussion, Frag | Portable Radar |\n| Objective | Ghost, Birdseye, Combat Grid | Smoke, Thermite | Trophy System |\n| Killstreak farming | Kill Chain, Hardline, Battle Hardened | Stim, Thermite | Riot Shield |\n\n## What they do\n- **Quick Fix**: health regen restarts on a kill or objective capture.\n- **Blood Rush**: Tactical Sprint.\n- **Battle Hardened**: less effect from stuns and flashes.\n- **Ghost**: hidden from UAVs. **Ninja**: quieter movement. **Cold Blooded**: hidden from drones and thermal scopes.\n- **Birdseye**: bigger minimap with enemy facing. **Combat Grid**: see enemy streaks and equipment through walls.\n- **Kill Chain**: streak kills count towards the next streak. **Hardline**: streaks cost one kill less.\n- **Overkill**: two primaries. **Fast Hands**: faster reload and swap. **Scavenger**: ammo from bodies. **Bomb Squad**: less explosive damage."
+  },
+  {
+   "id": "weapon-xp",
+   "title": "Fastest way to level this week",
+   "category": "Camos",
+   "body": "**Week of 23 to 29 November 2026**\n\n- **Double XP event:** none this week. The last one ran 13 to 16 November and the next has not been announced.\n- **Best mode:** Hardpoint. You earn weapon XP from kills and from holding the hill at the same time. Kill Confirmed is second, as long as you pick up the tags.\n- **Best maps:** the smallest ones. Shipment and Kill Block first, then Rooftops, Silkworm, Transit 213 and Lotus.\n- **Skip:** Team Deathmatch (no objective XP) and Search and Destroy (too few kills).\n\n## Make it faster\n- **Double Weapon XP tokens**, not the normal Double XP ones: only the weapon ones level guns. They only count down while you are in a match. Best used when you start a new gun.\n- **Max three to five guns from different classes first.** Attachments are shared, so every later gun skips the levels for attachments you already own.\n- **One or two guns per session**, and keep the gun in your hands the whole match.\n- **Daily challenges** give bonus XP, and you can reroll the ones that do not fit.\n- **DMZ** levels guns quickly too, but you lose the gun if you die.\n\n## By weapon type\n| Type | Where |\n|---|---|\n| Assault rifle, SMG, shotgun, LMG, melee | Hardpoint on Shipment or Kill Block |\n| Sniper, marksman rifle | Hardpoint on Shoot House, or Hardcore on Shipment |\n| Pistol | Hardpoint on Shipment, pistol out all match |\n| Launcher | Hardpoint or Domination, shoot down every UAV |\n\n*Checked 26 November 2026 (Dot Esports, Esports.gg, Game8). Refreshed every Monday.*"
   },
   {
    "id": "camo-ladder",

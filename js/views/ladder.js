@@ -109,6 +109,7 @@ function challengeHTML(game, it, { sheet = false } = {}) {
     if (sheet || (!r.lines.length && r.level == null)) html += `<div class="md cl-md">${md(game, sheet ? r.rest.join('\n\n') : r.rest[0])}</div>`;
   }
   if (r.opensAt != null) html += `<p class="cl-note">${icons.lock}<span>Opens at weapon level ${r.opensAt}</span></p>`;
+  if (it.tip) html += `<p class="cl-tip">${icons.pin}<span>${inline(game, it.tip)}</span></p>`;
   return html;
 }
 
@@ -164,6 +165,7 @@ export function renderLadderGroup(ctx, entry, g, { back, names = null, guideHTML
       })
       .join('');
 
+  const helpGuide = g.help ? game.guideById.get(g.help) : null;
   const gp0 = store.game(game.id);
   const main = gamePage(ctx, entry, {
     title: names?.title || name,
@@ -176,6 +178,7 @@ export function renderLadderGroup(ctx, entry, g, { back, names = null, guideHTML
           <span class="lad-star">${starHTML(gp0)}</span>
         </div>
         <div class="lad-progress">${progressHTML(gp0)}</div>
+        ${helpGuide ? `<button type="button" class="btn lad-help" data-act="help">${icons.bolt}<span>${esc(helpGuide.title)}</span></button>` : ''}
       </section>
       ${L.isLadder ? `<section class="block lad-now"><div class="block-head"><h2 class="label">Do now</h2><span class="count now-n"></span></div><div class="now-list"></div></section>` : ''}
       <section class="block lad-grid" aria-label="${esc(gridLabel)}">${gridHTML(gp0)}</section>
@@ -293,6 +296,13 @@ export function renderLadderGroup(ctx, entry, g, { back, names = null, guideHTML
     if (act === 'star') {
       store.setStarred(game.id, g.key, !store.game(game.id).starred[g.key]);
       main.querySelector('.lad-star').innerHTML = starHTML(store.game(game.id));
+      return;
+    }
+    if (act === 'help' && helpGuide) {
+      openSheet({
+        title: helpGuide.title,
+        html: `<div class="hsheet">${g.tip ? `<div class="hsheet-own"><p class="hsheet-k">${esc(name)}</p><div class="md">${md(game, g.tip)}</div></div>` : ''}<div class="md">${md(game, helpGuide.body || '')}</div></div>`,
+      });
       return;
     }
     const item = el.dataset.id ? game.byId.get(el.dataset.id) : null;
